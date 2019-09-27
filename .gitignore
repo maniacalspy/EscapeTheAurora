@@ -75,3 +75,5 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData_Auto1.uasset
+Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset
