@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Test2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2C9DAD29-4BEC-40EC-8DDE-9CD9F1F61508}</UniqueIdentifier>
+      <UniqueIdentifier>{997AF3AA-0A02-47BE-B1A4-7B3A128A0825}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Test2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{24499301-BB92-4B6F-A03E-9D64F6D70185}</UniqueIdentifier>
+      <UniqueIdentifier>{4A66D4F3-BA79-47B2-92BF-CEDD0CF2B0EA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,12 +30,36 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Test2">
-      <UniqueIdentifier>{CE4FFF59-F559-4963-B9F0-28B188D9C2B4}</UniqueIdentifier>
+      <UniqueIdentifier>{0164E40F-6002-4413-81A5-92A4FACDEE89}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Test2\FitToGrid.cpp">
       <Filter>Source\Test2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Test2\FitToGrid.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\PuzzleBlock.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\PuzzleBlock.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\PuzzleBlockComponent.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\PuzzleBlockComponent.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\PuzzleGrid.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\PuzzleGrid.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\PuzzleGridComponent.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\PuzzleGridComponent.h">
       <Filter>Source\Test2</Filter>
     </ClInclude>
     <None Include="..\..\Source\Test2\Test2.Build.cs">
@@ -73,30 +97,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Test2\PuzzleGrid.h">
-      <Filter>Source\Test2</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Test2\PuzzleBlock.h">
-      <Filter>Source\Test2</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Test2\PuzzleBlockComponent.h">
-      <Filter>Source\Test2</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Test2\PuzzleGridComponent.h">
+    <ClInclude Include="..\..\Source\Test2\OnComponentHit.h">
       <Filter>Source\Test2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Test2\PuzzleGrid.cpp">
-      <Filter>Source\Test2</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Test2\PuzzleBlock.cpp">
-      <Filter>Source\Test2</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Test2\PuzzleBlockComponent.cpp">
-      <Filter>Source\Test2</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Test2\PuzzleGridComponent.cpp">
+    <ClCompile Include="..\..\Source\Test2\OnComponentHit.cpp">
       <Filter>Source\Test2</Filter>
     </ClCompile>
   </ItemGroup>

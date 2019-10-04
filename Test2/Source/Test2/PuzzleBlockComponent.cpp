@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PuzzleBlockComponent.h"
 
+#include "PuzzleBlockComponent.h"
+#include "Components/BoxComponent.h"
 
 // Sets default values for this component's properties
 UPuzzleBlockComponent::UPuzzleBlockComponent()
@@ -9,6 +10,13 @@ UPuzzleBlockComponent::UPuzzleBlockComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
+	
+	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	MyComp->SetSimulatePhysics(false);
+	MyComp->SetNotifyRigidBodyCollision(true);
+
+	MyComp->BodyInstance.SetCollisionProfileName("BlockAllDynamic");
+	MyComp->OnComponentHit.AddDynamic(this, &UPuzzleBlockComponent::OnBlockHit);
 
 	// ...
 }
@@ -28,10 +36,18 @@ void UPuzzleBlockComponent::BeginPlay()
 void UPuzzleBlockComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-	PushBlockOver(*new FVector(1, 1, 1));
+	//PushBlockOver(*new FVector(1, 1, 1));
 	// ...
 }
 
+void UPuzzleBlockComponent::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
+
+	if ((OtherActor != NULL) && (OtherActor != this->GetOwner()) && (OtherComp != NULL))
+	{
+		if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("I Hit: %s"), *OtherActor->GetName()));
+	}
+
+}
 
 void UPuzzleBlockComponent::PushBlockOver(FVector PushVector) {
 
