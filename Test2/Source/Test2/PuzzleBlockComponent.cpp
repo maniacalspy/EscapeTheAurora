@@ -11,12 +11,14 @@ UPuzzleBlockComponent::UPuzzleBlockComponent()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 	
+	BlockActor = this->GetOwner();
+	//BlockActor.
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	MyComp->SetSimulatePhysics(false);
 	MyComp->SetNotifyRigidBodyCollision(true);
 
 	MyComp->BodyInstance.SetCollisionProfileName("BlockAllDynamic");
-	MyComp->OnComponentHit.AddDynamic(this, &UPuzzleBlockComponent::OnBlockHit);
+	
 
 	// ...
 }
@@ -42,7 +44,7 @@ void UPuzzleBlockComponent::TickComponent(float DeltaTime, ELevelTick TickType, 
 
 void UPuzzleBlockComponent::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
 
-	if ((OtherActor != NULL) && (OtherActor != this->GetOwner()) && (OtherComp != NULL))
+	if ((OtherActor != NULL) && (OtherActor != BlockActor) && (OtherComp != NULL))
 	{
 		if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("I Hit: %s"), *OtherActor->GetName()));
 	}

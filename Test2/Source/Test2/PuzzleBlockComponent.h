@@ -35,4 +35,6 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	class UBoxComponent* MyComp;
 
+private:
+	AActor* BlockActor;
 };
