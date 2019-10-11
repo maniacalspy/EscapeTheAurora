@@ -25,6 +25,7 @@ protected:
 private:
 	bool _isTipping;
 
+	const FVector InitialForward, InitialRight;
 	FVector RotatingAxis, DestLocation;
 	FRotator DestRotation;
 
