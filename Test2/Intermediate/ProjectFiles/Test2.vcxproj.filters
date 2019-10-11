@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Test2.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{77D78816-0675-4954-B7AD-A4C9CFCC9EF3}</UniqueIdentifier>
+			<UniqueIdentifier>{6F715892-5299-4E96-AF75-4536DA4DC931}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Test2.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{E2BBE00D-4875-42B6-B4C9-774A3909B454}</UniqueIdentifier>
+			<UniqueIdentifier>{5F0DDF27-E066-492E-86AB-F4DCB9F4DBAC}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Test2">
-			<UniqueIdentifier>{C3D4578B-1C64-4772-8F35-967C5868C7FA}</UniqueIdentifier>
+			<UniqueIdentifier>{310D05E9-A64F-4AB7-B585-C72B27BECE69}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Test2\FitToGrid.cpp">
 			<Filter>Source\Test2</Filter>

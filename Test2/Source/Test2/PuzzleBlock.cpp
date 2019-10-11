@@ -2,11 +2,18 @@
 
 #include "PuzzleBlock.h"
 #include "Components/BoxComponent.h"
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 // Sets default values
 APuzzleBlock::APuzzleBlock()
 {
 	_isTipping = false;
+
+	RotatingAxis = GetActorRightVector();
+	DestLocation = GetActorLocation();
+	DestRotation = GetActorRotation();
+
 
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -39,7 +46,7 @@ void APuzzleBlock::BeginPlay()
 void APuzzleBlock::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (_isTipping) PushBlockOver();
 }
 
 void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
@@ -51,19 +58,62 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("That Was The Player")));
 			if (!_isTipping)
 			{
-				PushBlockOver(Hit.ImpactNormal);
-				//_isTipping = true;
+				FVector PushVector = Hit.ImpactNormal;
+				DestLocation = GetActorLocation() + PushVector;
+				FVector PushXY, ForwardXY, RightXY;
+				PushXY = *new FVector(PushVector.X, PushVector.Y, 0);
+				ForwardXY = *new FVector(GetActorForwardVector().X, GetActorForwardVector().Y, 0);
+				RightXY = *new FVector(GetActorRightVector().X, GetActorRightVector().Y, 0);
+
+				float ForwardAngle = acosf(FVector::DotProduct(PushXY, ForwardXY) / (PushXY.Size() * ForwardXY.Size()));
+				float RightAngle = acosf(FVector::DotProduct(PushXY, RightXY) / (PushXY.Size() * RightXY.Size()));
+
+				if (ForwardAngle > M_PI / 2) ForwardAngle -= M_PI_2;
+				if (RightAngle > M_PI / 2) RightAngle -= M_PI_2;
+				RotatingAxis = GetActorRightVector();
+				if (RightAngle < ForwardAngle) RotatingAxis = GetActorForwardVector();
+				DestRotation = GetActorRotation() + *new FRotator(*new FQuat(RotatingAxis, M_PI_2));
+				_isTipping = true;
 			}
 		}
 	}
 
 }
 
-void APuzzleBlock::PushBlockOver(FVector PushVector) {
+void APuzzleBlock::PushBlockOver() {
+	float Alpha = .05f;
+	bool needsTranslation = false;
+	bool needsRotation = false;
+	FVector CurrentLocation = GetActorLocation();
+	FVector Distance = DestLocation - CurrentLocation;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("%s, %s, %s"), *DestLocation.ToString(), *CurrentLocation.ToString(), *(Distance).ToString()));
+	needsTranslation = (!FMath::IsNearlyZero(Distance.Size(), .01f)) ;
+	if (needsTranslation)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("still needs translation")));
+	}
+	
+	
 
-	AddActorLocalOffset(PushVector);
+	FRotator CurrentRot;
+	CurrentRot = GetActorRotation();
 
-	AddActorLocalRotation(*(new FQuat(PushVector, 1)));
+	if (!(DestRotation - CurrentRot).IsNearlyZero(.01f)) {
+		needsRotation = true;
+	}
+
+	if (!needsTranslation && !needsRotation) _isTipping = false;
+	else {
+		if (needsTranslation)
+		{
+			SetActorLocation(FMath::Lerp(CurrentLocation, DestLocation, Alpha));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("NeedsTranslation")));
+		}
+		if (needsRotation) {
+			SetActorRotation(FMath::Lerp(CurrentRot, DestRotation, Alpha));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("NeedsRotation")));
+		}
+	}
 
 }
 

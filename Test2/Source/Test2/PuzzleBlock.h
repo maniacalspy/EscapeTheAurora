@@ -25,6 +25,10 @@ protected:
 private:
 	bool _isTipping;
 
+	FVector RotatingAxis, DestLocation;
+	FRotator DestRotation;
+
+
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		class UStaticMeshComponent* BlockMesh;
 
@@ -35,7 +39,7 @@ public:
 	UFUNCTION()
 	void OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	void PushBlockOver(FVector PushDirection);
+	void PushBlockOver();
 
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
