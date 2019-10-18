@@ -6,7 +6,7 @@
 #include <math.h>
 
 // Sets default values
-APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialRight(GetActorRightVector()), BoxExtents(*new FVector(16,16,30))
+APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialRight(GetActorRightVector()), BoxExtents(*new FVector(16,16,31))
 {
 	_isTipping = false;
 	_canBePushed = true;
@@ -77,6 +77,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 						RotatingAxis = InitialForward;
 						RotationDirection = CosRightAngle > 0 ? -1 : 1;
 					}
+
 					DestRotation = GetActorRotation() + *new FRotator(*new FQuat(RotatingAxis, RotationDirection * M_PI_2));
 					_isTipping = true;
 					_canBePushed = false;
@@ -113,6 +114,7 @@ void APuzzleBlock::PushBlockOver() {
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
 		if (pOwnerGrid != nullptr) {
+			//_canBePushed = true;
 			TellGridBlockTipped();
 		}
 	}
