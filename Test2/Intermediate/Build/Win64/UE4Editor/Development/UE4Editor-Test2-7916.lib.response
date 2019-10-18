@@ -1,0 +1,32 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Test2-7916.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\FitToGrid.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlock.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlockComponent.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleGrid.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleGridComponent.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Character.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2GameMode.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2HUD.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Projectile.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\FitToGrid.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlock.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlockComponent.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleGrid.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleGridComponent.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2.init.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Character.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2GameMode.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2HUD.gen.cpp.obj"
+"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Projectile.gen.cpp.obj"
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Test2\PCLaunch.rc.res"
+"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\Git\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-7916.lib"
