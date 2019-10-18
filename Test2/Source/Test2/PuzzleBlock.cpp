@@ -6,10 +6,10 @@
 #include <math.h>
 
 // Sets default values
-APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialRight(GetActorRightVector())
+APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialRight(GetActorRightVector()), BoxExtents(*new FVector(16,16,30))
 {
 	_isTipping = false;
-
+	_canBePushed = true;
 	//InitialForward = GetActorForwardVector();
 	//InitialRight = GetActorRightVector();
 
@@ -26,7 +26,7 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
 
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	MyComp->SetRelativeLocation(*new FVector(0, 0, 31.f));
-	//MyComp->SetBoxExtent(UStaticMeshComponent::)
+	MyComp->SetBoxExtent(BoxExtents);
 	//MyComp->SetRelativeScale3D(*new FVector(.45f, .45f, .9f));
 
 	
@@ -51,21 +51,18 @@ void APuzzleBlock::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	if (_isTipping) PushBlockOver();
+
 }
 
 void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit) {
 
 	if ((OtherActor != NULL) && (OtherActor != this) && (OtherComp != NULL))
 	{
-		if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("I Hit: %s"), *OtherActor->GetName()));
 		if (OtherActor->ActorHasTag("Player")) {
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("That Was The Player")));
-			if (!_isTipping)
+			if (!_isTipping && _canBePushed)
 			{
 				FVector PushVector = Hit.ImpactNormal;
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, PushVector.ToString());
 				DestLocation = GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, DestLocation.ToString());
 				if (DestLocation != GetActorLocation()) {
 					FVector PushXY, ForwardXY, RightXY;
 					PushXY = *new FVector(PushVector.X, PushVector.Y, 0);
@@ -74,8 +71,6 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 
 					float CosForwardAngle = (FVector::DotProduct(PushXY, ForwardXY) / (PushXY.Size() * ForwardXY.Size()));
 					float CosRightAngle = (FVector::DotProduct(PushXY, RightXY) / (PushXY.Size() * RightXY.Size()));
-					GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Forward: %f"), CosForwardAngle));
-					GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("Right: %f"), CosRightAngle));
 					RotatingAxis = InitialRight;
 					int RotationDirection = CosForwardAngle > 0 ? 1 : -1;
 					if (FMath::Abs(CosRightAngle) > FMath::Abs(CosForwardAngle)) {
@@ -84,6 +79,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 					}
 					DestRotation = GetActorRotation() + *new FRotator(*new FQuat(RotatingAxis, RotationDirection * M_PI_2));
 					_isTipping = true;
+					_canBePushed = false;
 				}
 			}
 		}
@@ -91,14 +87,17 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 
 }
 
+void APuzzleBlock::TellGridBlockTipped() {
+	pOwnerGrid->OnBlockDoneTipping();
+}
+
 void APuzzleBlock::PushBlockOver() {
-	float Alpha = .1f;
+	float Alpha = .05f;
 	bool needsTranslation = false;
 	bool needsRotation = false;
 	FVector CurrentLocation = GetActorLocation();
 	FVector Distance = DestLocation - CurrentLocation;
 	needsTranslation = (!FMath::IsNearlyZero(Distance.Size(), .01f)) ;
-	//if (needsTranslation) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("still needs translation")));
 	
 	
 	
@@ -107,24 +106,24 @@ void APuzzleBlock::PushBlockOver() {
 	CurrentRot = GetActorRotation();
 	FRotator RotationDiff = DestRotation - CurrentRot;
 
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(*RotationDiff.ToString()));
 
 	needsRotation = !RotationDiff.IsNearlyZero(.01f);
-	//if (needsRotation) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("still needs Rotation")));
 
 
-	if (!needsTranslation && !needsRotation) _isTipping = false;
+	if (!needsTranslation && !needsRotation) {
+		_isTipping = false;
+		if (pOwnerGrid != nullptr) {
+			TellGridBlockTipped();
+		}
+	}
 	else {
 		if (needsTranslation)
 		{
 			FVector IntermediateVector = FMath::Lerp(CurrentLocation, DestLocation, Alpha);
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, *IntermediateVector.ToString());
 			SetActorLocation(IntermediateVector);
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("NeedsTranslation")));
 		}
 		if (needsRotation) {
 			SetActorRotation(FMath::Lerp(CurrentRot, DestRotation, Alpha));
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::Printf(TEXT("NeedsRotation")));
 		}
 	}
 

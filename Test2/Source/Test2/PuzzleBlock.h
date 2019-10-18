@@ -3,7 +3,7 @@
 #pragma once
 #include "Engine/Engine.h"
 #include "Components/BoxComponent.h"
-
+#include "PuzzleGrid.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PuzzleBlock.generated.h"
@@ -24,14 +24,16 @@ protected:
 
 private:
 	bool _isTipping;
-
-	const FVector InitialForward, InitialRight;
+	bool _canBePushed;
+	const FVector InitialForward, InitialRight, BoxExtents;
 	FVector RotatingAxis, DestLocation;
 	FRotator DestRotation;
 
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		class UStaticMeshComponent* BlockMesh;
+
+	void TellGridBlockTipped();
 
 public:	
 	// Called every frame
@@ -44,6 +46,11 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
+
+	
+	class APuzzleGrid* pOwnerGrid;
+
+
 
 
 };
