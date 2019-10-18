@@ -9,7 +9,8 @@ AEndLevelDoor::AEndLevelDoor()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	DoorMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Door_Mesh"));
+	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
+	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
 
 }
 
@@ -33,7 +34,5 @@ void AEndLevelDoor::Tick(float DeltaTime)
 
 void AEndLevelDoor::OpenDoor()
 {
-	this->SetActorLocation(this->GetActorLocation() + *new FVector(100, 100, 100));
-
-
+	DoorPanelSkeleton->Play(false);
 }

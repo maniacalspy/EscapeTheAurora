@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Components/StaticMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "EndLevelDoor.generated.h"
@@ -26,8 +26,10 @@ public:
 	void OpenDoor();
 
 private:
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		class UStaticMeshComponent* DoorMesh;
-	
-	
+	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+		class USkeletalMeshComponent* DoorFrameSkeleton;
+
+	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+		class USkeletalMeshComponent* DoorPanelSkeleton;
+
 };
