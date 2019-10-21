@@ -27,7 +27,7 @@ private:
 	bool _canBePushed;
 	const FVector InitialForward, InitialRight, BoxExtents;
 	FVector RotatingAxis, DestLocation;
-	FRotator DestRotation;
+	FQuat DestRotation;
 
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
