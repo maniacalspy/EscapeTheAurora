@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PuzzleBlock.h"
-#include "Components/BoxComponent.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
 
@@ -15,7 +14,8 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
 
 	RotatingAxis = GetActorRightVector();
 	DestLocation = GetActorLocation();
-	DestRotation = GetActorRotation();
+	DestRotation = GetActorQuat();
+
 
 
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -78,7 +78,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 						RotationDirection = CosRightAngle > 0 ? -1 : 1;
 					}
 
-					DestRotation = GetActorRotation() + *new FRotator(*new FQuat(RotatingAxis, RotationDirection * M_PI_2));
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * GetActorQuat();
 					_isTipping = true;
 					_canBePushed = false;
 				}
@@ -103,18 +103,18 @@ void APuzzleBlock::PushBlockOver() {
 	
 	
 
-	FRotator CurrentRot;
-	CurrentRot = GetActorRotation();
-	FRotator RotationDiff = DestRotation - CurrentRot;
+	FQuat CurrentRot;
+	CurrentRot = GetActorQuat();
 
 
-	needsRotation = !RotationDiff.IsNearlyZero(.01f);
+	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(DestRotation), .005f));
 
 
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
+		if (!needsRotation) SetActorRotation(DestRotation);
 		if (pOwnerGrid != nullptr) {
-			//_canBePushed = true;
+			_canBePushed = true;
 			TellGridBlockTipped();
 		}
 	}
@@ -125,9 +125,13 @@ void APuzzleBlock::PushBlockOver() {
 			SetActorLocation(IntermediateVector);
 		}
 		if (needsRotation) {
-			SetActorRotation(FMath::Lerp(CurrentRot, DestRotation, Alpha));
+			SetActorRotation(FQuat::Slerp(CurrentRot, DestRotation, Alpha));
 		}
 	}
 
+}
+
+void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
+	pOwnerGrid = &newOwner;
 }
 
