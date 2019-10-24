@@ -1,7 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PuzzleBlock.h"
-#include "Components/BoxComponent.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
 
@@ -16,6 +15,7 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
 	RotatingAxis = GetActorRightVector();
 	DestLocation = GetActorLocation();
 	DestRotation = GetActorQuat();
+
 
 
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -107,11 +107,12 @@ void APuzzleBlock::PushBlockOver() {
 	CurrentRot = GetActorQuat();
 
 
-	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(DestRotation), .01f));
+	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(DestRotation), .005f));
 
 
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
+		if (!needsRotation) SetActorRotation(DestRotation);
 		if (pOwnerGrid != nullptr) {
 			_canBePushed = true;
 			TellGridBlockTipped();
@@ -128,5 +129,9 @@ void APuzzleBlock::PushBlockOver() {
 		}
 	}
 
+}
+
+void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
+	pOwnerGrid = &newOwner;
 }
 

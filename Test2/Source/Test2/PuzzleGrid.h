@@ -2,11 +2,15 @@
 
 #pragma once
 #include "EndLevelDoor.h"
+#include "GridTile.h"
 #include "PuzzleBlock.h"
 #include "EngineUtils.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PuzzleGrid.generated.h"
+
+class PuzzleBlock;
+class GridTile;
 
 UCLASS()
 class TEST2_API APuzzleGrid : public AActor
@@ -27,10 +31,18 @@ public:
 
 	void OnBlockDoneTipping();
 
+	
+
 private:
 
 	class APuzzleBlock* _puzzleActor;
 	class AEndLevelDoor* _doorActor;
 
+	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
+	GridTile* GetTileNeighbor(GridTile& tile, int direction);
+
+	const float _gridColumnCount = 1, _gridRowCount = 1, _tileWidth = 1, _tileHeight = 1;
+
+	TArray<GridTile*> _puzzleGrid;
 
 };

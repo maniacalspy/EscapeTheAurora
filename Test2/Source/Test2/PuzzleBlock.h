@@ -29,6 +29,7 @@ private:
 	FVector RotatingAxis, DestLocation;
 	FQuat DestRotation;
 
+	class APuzzleGrid* pOwnerGrid;
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 		class UStaticMeshComponent* BlockMesh;
@@ -47,10 +48,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
 
-	
-	class APuzzleGrid* pOwnerGrid;
 
-
-
+	void SetOwnerGrid(APuzzleGrid& newOwner);
 
 };
