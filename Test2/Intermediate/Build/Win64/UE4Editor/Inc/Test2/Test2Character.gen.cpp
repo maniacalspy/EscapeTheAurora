@@ -26,7 +26,6 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void ATest2Character::StaticRegisterNativesATest2Character()
 	{
@@ -173,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 				{ "ToolTip", "Gun mesh: 1st person view (seen only by self)" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FP_Gun = { UE4CodeGen_Private::EPropertyClass::Object, "FP_Gun", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(ATest2Character, FP_Gun), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_FP_Gun_MetaData, ARRAY_COUNT(NewProp_FP_Gun_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FP_Gun = { UE4CodeGen_Private::EPropertyClass::Object, "FP_Gun", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(ATest2Character, FP_Gun), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_FP_Gun_MetaData, ARRAY_COUNT(NewProp_FP_Gun_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Mesh1P_MetaData[] = {
 				{ "Category", "Mesh" },
@@ -218,7 +217,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 1714366111);
+	IMPLEMENT_CLASS(ATest2Character, 376723588);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATest2Character(Z_Construct_UClass_ATest2Character, &ATest2Character::StaticClass, TEXT("/Script/Test2"), TEXT("ATest2Character"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATest2Character);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
