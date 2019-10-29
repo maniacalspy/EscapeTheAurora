@@ -2,10 +2,14 @@
 #include "GridTile.h"
 
 
-GridTile::GridTile() {
+GridTile::GridTile() : GridTile(TT_tileTypes::NonTraversable, TT_tileStates::Empty, 0,0) {
 
 }
 
+GridTile::GridTile(TT_tileTypes tiletype, TT_tileStates tilestate, float x, float y) : xPos(x), yPos(y) {
+	this->type = tiletype;
+	this->state = tilestate;
+}
 
 void GridTile::setNeighbor(GridTile& neighbor, _tileDirections direction) {
 	switch (direction)
@@ -35,37 +39,19 @@ void GridTile::setTileState(TT_tileStates tilestate) {
 	switch (tilestate)
 	{
 	case TT_tileStates::Empty:
-		if (thisTileState == TT_tileStates::BlockCovered) validChange = true;
+		if (state == TT_tileStates::Covered) validChange = true;
 		break;
 
-	case TT_tileStates::BlockCovered:
-		if (thisTileState == TT_tileStates::Empty) validChange = true;
+	case TT_tileStates::Covered:
+		if (state == TT_tileStates::Empty) validChange = true;
 		break;
-
-	///This one isn't dependent on current state
-	case TT_tileStates::CantTravel:
-		validChange = true;
-		break;
-
-	case TT_tileStates::EmptyStart:
-		if (thisTileState == TT_tileStates::BlockCoveredStart) validChange = true;
-		break;
-
-	case TT_tileStates::BlockCoveredStart:
-		if (thisTileState == TT_tileStates::EmptyStart) validChange = true;
-		break;
-
-	case TT_tileStates::EmptyGoal:
-		if (thisTileState == TT_tileStates::BlockCoveredGoal) validChange = true;
-		break;
-
-	case TT_tileStates::BlockCoveredGoal:
-		if (thisTileState == TT_tileStates::EmptyGoal) validChange = true;
-		break;
-
 	default:
 		throw "Invalid state, you likely added a new state and forgot to update this function";
 		break;
 	}
-	if (validChange) thisTileState = tilestate;
+	if (validChange) state = tilestate;
+}
+
+void GridTile::setTileType(TT_tileTypes tiletype) {
+	this->type = tiletype;
 }
