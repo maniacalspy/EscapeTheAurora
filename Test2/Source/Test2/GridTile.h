@@ -20,14 +20,14 @@ private:
 	TT_tileStates state;
 	GridTile *northNeighbor, *southNeighbor, *eastNeighbor, *westNeighbor;
 
+	
+
+public:
+
 	void setNeighbor(GridTile& neighbor, _tileDirections direction);
 
 	void setTileType(TT_tileTypes tiletype);
 
 	void setTileState(TT_tileStates tilestate);
-
-public:
-
-
 
 };

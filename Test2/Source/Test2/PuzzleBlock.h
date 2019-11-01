@@ -3,11 +3,12 @@
 #pragma once
 #include "Engine/Engine.h"
 #include "Components/BoxComponent.h"
-#include "PuzzleGrid.h"
+#include <functional>
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PuzzleBlock.generated.h"
 
+class APuzzleGrid;
 UCLASS()
 class TEST2_API APuzzleBlock : public AActor
 {
@@ -29,10 +30,12 @@ private:
 	FVector RotatingAxis, DestLocation;
 	FQuat DestRotation;
 
-	class APuzzleGrid* pOwnerGrid;
+	APuzzleGrid* pOwnerGrid;
+
+	std::function<void()> GridCallBack;
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		class UStaticMeshComponent* BlockMesh;
+	class UStaticMeshComponent* pBlockMesh;
 
 	void TellGridBlockTipped();
 
@@ -48,7 +51,8 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
 
+	//void SetOwnerGrid(APuzzleGrid& newOwner);
 
-	void SetOwnerGrid(APuzzleGrid& newOwner);
+	void SetCallBack(std::function<void()> pfunc);
 
 };

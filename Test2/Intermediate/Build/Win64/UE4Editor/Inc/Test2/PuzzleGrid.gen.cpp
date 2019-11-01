@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	TEST2_API UClass* Z_Construct_UClass_APuzzleGrid();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void APuzzleGrid::StaticRegisterNativesAPuzzleGrid()
 	{
@@ -40,6 +41,17 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 				{ "ModuleRelativePath", "PuzzleGrid.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_pTileGridMesh_MetaData[] = {
+				{ "Category", "Mesh" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "PuzzleGrid.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pTileGridMesh = { UE4CodeGen_Private::EPropertyClass::Object, "pTileGridMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APuzzleGrid, pTileGridMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_pTileGridMesh_MetaData, ARRAY_COUNT(NewProp_pTileGridMesh_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_pTileGridMesh,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<APuzzleGrid>::IsAbstract,
 			};
@@ -48,7 +60,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
 				nullptr, 0,
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -58,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleGrid, 543545265);
+	IMPLEMENT_CLASS(APuzzleGrid, 1653042520);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APuzzleGrid(Z_Construct_UClass_APuzzleGrid, &APuzzleGrid::StaticClass, TEXT("/Script/Test2"), TEXT("APuzzleGrid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APuzzleGrid);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

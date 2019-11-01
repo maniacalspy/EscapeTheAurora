@@ -7,6 +7,7 @@
 #include "EngineUtils.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "LevelGridStruct.cpp"
 #include "PuzzleGrid.generated.h"
 
 class PuzzleBlock;
@@ -35,8 +36,12 @@ public:
 
 private:
 
-	class APuzzleBlock* _puzzleActor;
-	class AEndLevelDoor* _doorActor;
+	class APuzzleBlock* _pPuzzleActor;
+	class AEndLevelDoor* _pDoorActor;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	class UStaticMeshComponent* pTileGridMesh;
+
 
 	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
 	GridTile* GetTileNeighbor(GridTile& tile, int direction);

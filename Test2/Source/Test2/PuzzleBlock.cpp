@@ -21,7 +21,7 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	BlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
+	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
 
 
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
@@ -89,7 +89,13 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 }
 
 void APuzzleBlock::TellGridBlockTipped() {
-	pOwnerGrid->OnBlockDoneTipping();
+	if (GridCallBack != nullptr) {
+		GridCallBack();
+	}
+}
+
+void APuzzleBlock::SetCallBack(std::function<void()> pfunc) {
+	GridCallBack = pfunc;
 }
 
 void APuzzleBlock::PushBlockOver() {
@@ -113,7 +119,7 @@ void APuzzleBlock::PushBlockOver() {
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
 		if (!needsRotation) SetActorRotation(DestRotation);
-		if (pOwnerGrid != nullptr) {
+		if (GridCallBack != nullptr) {
 			_canBePushed = true;
 			TellGridBlockTipped();
 		}
@@ -131,7 +137,8 @@ void APuzzleBlock::PushBlockOver() {
 
 }
 
-void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
+/*void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
 	pOwnerGrid = &newOwner;
 }
+*/
 
