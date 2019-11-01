@@ -406,8 +406,6 @@
     <NMakeOutput>..\..\Binaries\HTML5\Test2-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="LevelGridStruct.cpp" />
-    <ClInclude Include="LevelGridStruct.h" />
     <None Include="..\..\Test2.uproject" />
     <None Include="..\..\Source\Test2.Target.cs" />
     <None Include="..\..\Source\Test2Editor.Target.cs" />
@@ -422,7 +420,9 @@
     <ClInclude Include="..\..\Source\Test2\FitToGrid.h" />
     <ClCompile Include="..\..\Source\Test2\GridTile.cpp" />
     <ClInclude Include="..\..\Source\Test2\GridTile.h" />
+    <ClCompile Include="..\..\Source\Test2\LevelGridStruct.cpp" />
     <ClCompile Include="..\..\Source\Test2\PuzzleBlock.cpp" />
+    <ClInclude Include="..\..\Source\Test2\LevelGridStruct.h" />
     <ClInclude Include="..\..\Source\Test2\PuzzleBlock.h" />
     <ClCompile Include="..\..\Source\Test2\PuzzleBlockComponent.cpp" />
     <ClInclude Include="..\..\Source\Test2\PuzzleBlockComponent.h" />

@@ -7,7 +7,7 @@
 #include "EngineUtils.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "LevelGridStruct.cpp"
+#include "LevelGridStruct.h"
 #include "PuzzleGrid.generated.h"
 
 class PuzzleBlock;
