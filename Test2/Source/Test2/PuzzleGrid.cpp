@@ -14,6 +14,8 @@ APuzzleGrid::APuzzleGrid() : _gridColumnCount(1.f), _gridRowCount(1.f), _tileWid
 
 }
 
+
+
 // Called when the game starts or when spawned
 void APuzzleGrid::BeginPlay()
 {
@@ -48,8 +50,4 @@ void APuzzleGrid::OnBlockDoneTipping()
 
 GridTile* APuzzleGrid::GetTileNeighbor(GridTile& tile, int direction) {
 	return &tile;
-}
-
-void APuzzleGrid::createGrid(TArray<bool> puzzleMapGrid) {
-
 }

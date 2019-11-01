@@ -31,7 +31,7 @@ public:
 
 	void OnBlockDoneTipping();
 
-	void createGrid(TArray<bool> puzzleGridMap);
+	
 
 private:
 
