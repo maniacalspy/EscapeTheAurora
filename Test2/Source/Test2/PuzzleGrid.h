@@ -7,6 +7,7 @@
 #include "EngineUtils.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "LevelGridStruct.h"
 #include "PuzzleGrid.generated.h"
 
 class PuzzleBlock;
@@ -31,18 +32,37 @@ public:
 
 	void OnBlockDoneTipping();
 
-	void createGrid(TArray<bool> puzzleGridMap);
-
 private:
 
-	class APuzzleBlock* _puzzleActor;
-	class AEndLevelDoor* _doorActor;
+	class APuzzleBlock* _pPuzzleActor;
+	class AEndLevelDoor* _pDoorActor;
+
+	void createGrid();
+	void SetBlockStartPosition();
+
+	const float _XScale = 1;
+	const float _YScale = 1;
+
+	virtual void PostInitializeComponents() override;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	class UStaticMeshComponent* pTileGridMesh;
+
+	UPROPERTY(EditAnywhere)
+		int8 LevelGridNumber;
+
+	struct LevelGrid* MyLevelGrid;
+	
+	TArray<GridTile*> MyStartPoints;
+
+	TArray<GridTile*> TilesBlockIsOn;
+
+	void MoveBlock(FVector impactNormal);
 
 	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
-	GridTile* GetTileNeighbor(GridTile& tile, int direction);
+	//GridTile* GetTileNeighbor(GridTile& tile, int direction);
 
-	const float _gridColumnCount = 1, _gridRowCount = 1, _tileWidth = 1, _tileHeight = 1;
+	const float _tileWidth = 1, _tileHeight = 1;
 
 	TArray<GridTile*> _puzzleGrid;
-
 };

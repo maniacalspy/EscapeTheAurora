@@ -21,7 +21,7 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	BlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
+	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
 
 
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
@@ -61,8 +61,10 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 		if (OtherActor->ActorHasTag("Player")) {
 			if (!_isTipping && _canBePushed)
 			{
+
 				FVector PushVector = Hit.ImpactNormal;
-				DestLocation = GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
+				GridMoveBlockCallBack(PushVector);
+				/*DestLocation = GridGetLocationCallBack(Hit.ImpactNormal);//GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
 				if (DestLocation != GetActorLocation()) {
 					FVector PushXY, ForwardXY, RightXY;
 					PushXY = *new FVector(PushVector.X, PushVector.Y, 0);
@@ -82,6 +84,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 					_isTipping = true;
 					_canBePushed = false;
 				}
+				*/
 			}
 		}
 	}
@@ -89,8 +92,24 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 }
 
 void APuzzleBlock::TellGridBlockTipped() {
-	pOwnerGrid->OnBlockDoneTipping();
+	if (GridTippedCallBack != nullptr) {
+		GridTippedCallBack();
+	}
 }
+
+void APuzzleBlock::SetTippedCallBack(std::function<void()> pfunc) {
+	GridTippedCallBack = pfunc;
+}
+
+void APuzzleBlock::SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB)
+{
+	GridTippedCallBack = ptippedCB;
+	GridMoveBlockCallBack = pMoveCB;
+}
+
+//void APuzzleBlock::SetAllCallBacks(std::function<void()> ptippedCB, std::function<FVector(FVector)> pLocationCB, std::function<void()> pMoveCB) {
+//
+//}
 
 void APuzzleBlock::PushBlockOver() {
 	float Alpha = .05f;
@@ -113,7 +132,7 @@ void APuzzleBlock::PushBlockOver() {
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
 		if (!needsRotation) SetActorRotation(DestRotation);
-		if (pOwnerGrid != nullptr) {
+		if (GridTippedCallBack != nullptr) {
 			_canBePushed = true;
 			TellGridBlockTipped();
 		}
@@ -131,7 +150,15 @@ void APuzzleBlock::PushBlockOver() {
 
 }
 
-void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
-	pOwnerGrid = &newOwner;
-}
+//void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
+//	pOwnerGrid = &newOwner;
+//}
 
+
+void APuzzleBlock::SetDestLocation(FVector destLocation) {
+	DestLocation = destLocation;
+
+}
+void APuzzleBlock::SetDestRotation(FQuat destRotation) {
+	DestRotation = destRotation;
+}

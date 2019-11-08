@@ -114,16 +114,16 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MyComp = { UE4CodeGen_Private::EPropertyClass::Object, "MyComp", RF_Public|RF_Transient|RF_MarkAsNative, 0x00100000000a0009, 1, nullptr, STRUCT_OFFSET(APuzzleBlock, MyComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(NewProp_MyComp_MetaData, ARRAY_COUNT(NewProp_MyComp_MetaData)) };
 #if WITH_METADATA
-			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BlockMesh_MetaData[] = {
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_pBlockMesh_MetaData[] = {
 				{ "Category", "Mesh" },
 				{ "EditInline", "true" },
 				{ "ModuleRelativePath", "PuzzleBlock.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_BlockMesh = { UE4CodeGen_Private::EPropertyClass::Object, "BlockMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APuzzleBlock, BlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_BlockMesh_MetaData, ARRAY_COUNT(NewProp_BlockMesh_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pBlockMesh = { UE4CodeGen_Private::EPropertyClass::Object, "pBlockMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APuzzleBlock, pBlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_pBlockMesh_MetaData, ARRAY_COUNT(NewProp_pBlockMesh_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MyComp,
-				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_BlockMesh,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_pBlockMesh,
 			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<APuzzleBlock>::IsAbstract,
@@ -143,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleBlock, 3578429495);
+	IMPLEMENT_CLASS(APuzzleBlock, 3361372949);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APuzzleBlock(Z_Construct_UClass_APuzzleBlock, &APuzzleBlock::StaticClass, TEXT("/Script/Test2"), TEXT("APuzzleBlock"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APuzzleBlock);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

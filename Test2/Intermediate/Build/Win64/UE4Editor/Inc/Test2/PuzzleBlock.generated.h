@@ -17,7 +17,7 @@ struct FHitResult;
 #endif
 #define TEST2_PuzzleBlock_generated_h
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_RPC_WRAPPERS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnBlockHit) \
 	{ \
@@ -33,7 +33,7 @@ struct FHitResult;
 	}
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnBlockHit) \
 	{ \
@@ -49,7 +49,7 @@ struct FHitResult;
 	}
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_INCLASS_NO_PURE_DECLS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPuzzleBlock(); \
 	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleBlock(); \
@@ -59,7 +59,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_INCLASS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAPuzzleBlock(); \
 	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleBlock(); \
@@ -69,7 +69,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_STANDARD_CONSTRUCTORS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APuzzleBlock(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APuzzleBlock) \
@@ -82,7 +82,7 @@ private: \
 public:
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_ENHANCED_CONSTRUCTORS \
+#define Test2_Source_Test2_PuzzleBlock_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APuzzleBlock(APuzzleBlock&&); \
@@ -93,29 +93,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleBlock); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APuzzleBlock)
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__BlockMesh() { return STRUCT_OFFSET(APuzzleBlock, BlockMesh); }
+#define Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__pBlockMesh() { return STRUCT_OFFSET(APuzzleBlock, pBlockMesh); }
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_11_PROLOG
-#define Test2_Source_Test2_PuzzleBlock_h_14_GENERATED_BODY_LEGACY \
+#define Test2_Source_Test2_PuzzleBlock_h_12_PROLOG
+#define Test2_Source_Test2_PuzzleBlock_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_PuzzleBlock_h_14_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_PuzzleBlock_h_14_RPC_WRAPPERS \
-	Test2_Source_Test2_PuzzleBlock_h_14_INCLASS \
-	Test2_Source_Test2_PuzzleBlock_h_14_STANDARD_CONSTRUCTORS \
+	Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS \
+	Test2_Source_Test2_PuzzleBlock_h_15_INCLASS \
+	Test2_Source_Test2_PuzzleBlock_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Test2_Source_Test2_PuzzleBlock_h_14_GENERATED_BODY \
+#define Test2_Source_Test2_PuzzleBlock_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_PuzzleBlock_h_14_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_PuzzleBlock_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	Test2_Source_Test2_PuzzleBlock_h_14_INCLASS_NO_PURE_DECLS \
-	Test2_Source_Test2_PuzzleBlock_h_14_ENHANCED_CONSTRUCTORS \
+	Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test2_Source_Test2_PuzzleBlock_h_15_INCLASS_NO_PURE_DECLS \
+	Test2_Source_Test2_PuzzleBlock_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
