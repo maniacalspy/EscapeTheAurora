@@ -134,26 +134,69 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		else TileDirection = _tileDirections::East;
 	}
 
-	if (TilesBlockIsOn.Num() == 2) {
+	GridTile* FirstCurrentTile = TilesBlockIsOn[0];
+	GridTile* FirstOtherTile = nullptr;
+	GridTile* SecondOtherTile = nullptr;
+	if (FirstCurrentTile) FirstOtherTile = FirstCurrentTile->GetNeighbor(TileDirection);
 
-	}
-	else if (TilesBlockIsOn.Num() == 1) {
-		GridTile* CurrentTile = TilesBlockIsOn[0];
-		GridTile * OtherTile = nullptr;
-		if (CurrentTile) OtherTile = CurrentTile->GetNeighbor(TileDirection);
-		if (OtherTile) {
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::SanitizeFloat(OtherTile->GetXPosition()));
-			if (OtherTile->type != TT_tileTypes::NonTraversable) {
-				TilesBlockIsOn.Add(OtherTile);
-				float XMidPoint = (CurrentTile->xPos + OtherTile->xPos) / 2;
-				float YMidPoint = (CurrentTile->yPos + OtherTile->yPos) / 2;
-				DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
-				DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
-				_pPuzzleActor->SetDestLocation(DestLocation);
-				_pPuzzleActor->SetDestRotation(DestRotation);
-				_pPuzzleActor->_isTipping = true;
-				_pPuzzleActor->_canBePushed = false;
+	if (TilesBlockIsOn.Num() == 2) {
+		GridTile* SecondCurrentTile = TilesBlockIsOn[1];
+		if (SecondCurrentTile && FirstOtherTile) {
+			SecondOtherTile = SecondCurrentTile->GetNeighbor(TileDirection);
+			if (FirstOtherTile->type != TT_tileTypes::NonTraversable && SecondOtherTile->type != TT_tileTypes::NonTraversable) {
+				if (FirstOtherTile == SecondCurrentTile) {
+					TilesBlockIsOn.Empty();
+					TilesBlockIsOn.Add(SecondOtherTile);
+					DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, _pPuzzleActor->GetActorLocation().Z);
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+				}
+
+				else if (SecondOtherTile == FirstCurrentTile) {
+					TilesBlockIsOn.Empty();
+					TilesBlockIsOn.Add(FirstOtherTile);
+					DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, _pPuzzleActor->GetActorLocation().Z);
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+
+				}
+
+				else {
+					TilesBlockIsOn[0] = FirstOtherTile;
+					TilesBlockIsOn[1] = SecondOtherTile;
+					float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
+					float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
+					DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+
+				}
 			}
 		}
 	}
+
+
+	else if (TilesBlockIsOn.Num() == 1) {
+		if (FirstOtherTile) {
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::SanitizeFloat(OtherTile->GetXPosition()));
+			if (FirstOtherTile->type != TT_tileTypes::NonTraversable) {
+				SecondOtherTile = FirstOtherTile->GetNeighbor(TileDirection);
+				if (SecondOtherTile) {
+					if (SecondOtherTile->type != TT_tileTypes::NonTraversable) {
+						TilesBlockIsOn[0] = FirstOtherTile;
+						TilesBlockIsOn.Add(SecondOtherTile);
+						float XMidPoint = (FirstOtherTile->xPos + SecondOtherTile->xPos) / 2;
+						float YMidPoint = (FirstOtherTile->yPos + SecondOtherTile->yPos) / 2;
+						DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
+						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+					}
+				}
+			}
+		}
+	}
+
+	if (DestLocation != FVector::OneVector && DestRotation != FQuat::Identity) {
+		_pPuzzleActor->SetDestLocation(DestLocation);
+		_pPuzzleActor->SetDestRotation(DestRotation);
+		_pPuzzleActor->_isTipping = true;
+		_pPuzzleActor->_canBePushed = false;
+	}
+
 }
