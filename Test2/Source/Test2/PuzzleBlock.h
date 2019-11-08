@@ -17,6 +17,7 @@ class TEST2_API APuzzleBlock : public AActor
 public:	
 	// Sets default values for this actor's properties
 	APuzzleBlock();
+	friend class APuzzleGrid;
 
 protected:
 	// Called when the game starts or when spawned
@@ -30,14 +31,25 @@ private:
 	FVector RotatingAxis, DestLocation;
 	FQuat DestRotation;
 
-	APuzzleGrid* pOwnerGrid;
+	//APuzzleGrid* pOwnerGrid;
 
-	std::function<void()> GridCallBack;
+	typedef std::function<void()> VoidFunctionPtr;
+	typedef std::function<void(FVector)> InVectorFunctionPtr;
+
+	VoidFunctionPtr GridTippedCallBack;
+	InVectorFunctionPtr GridMoveBlockCallBack;
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class UStaticMeshComponent* pBlockMesh;
 
 	void TellGridBlockTipped();
+
+	void SetDestLocation(FVector destLocation);
+	void SetDestRotation(FQuat destRotation);
+
+	
+
+	void SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB);
 
 public:	
 	// Called every frame
@@ -53,6 +65,6 @@ public:
 
 	//void SetOwnerGrid(APuzzleGrid& newOwner);
 
-	void SetCallBack(std::function<void()> pfunc);
+	void SetTippedCallBack(std::function<void()> pfunc);
 
 };

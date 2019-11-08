@@ -61,8 +61,10 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 		if (OtherActor->ActorHasTag("Player")) {
 			if (!_isTipping && _canBePushed)
 			{
+
 				FVector PushVector = Hit.ImpactNormal;
-				DestLocation = GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
+				GridMoveBlockCallBack(PushVector);
+				/*DestLocation = GridGetLocationCallBack(Hit.ImpactNormal);//GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
 				if (DestLocation != GetActorLocation()) {
 					FVector PushXY, ForwardXY, RightXY;
 					PushXY = *new FVector(PushVector.X, PushVector.Y, 0);
@@ -82,6 +84,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 					_isTipping = true;
 					_canBePushed = false;
 				}
+				*/
 			}
 		}
 	}
@@ -89,14 +92,24 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 }
 
 void APuzzleBlock::TellGridBlockTipped() {
-	if (GridCallBack != nullptr) {
-		GridCallBack();
+	if (GridTippedCallBack != nullptr) {
+		GridTippedCallBack();
 	}
 }
 
-void APuzzleBlock::SetCallBack(std::function<void()> pfunc) {
-	GridCallBack = pfunc;
+void APuzzleBlock::SetTippedCallBack(std::function<void()> pfunc) {
+	GridTippedCallBack = pfunc;
 }
+
+void APuzzleBlock::SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB)
+{
+	GridTippedCallBack = ptippedCB;
+	GridMoveBlockCallBack = pMoveCB;
+}
+
+//void APuzzleBlock::SetAllCallBacks(std::function<void()> ptippedCB, std::function<FVector(FVector)> pLocationCB, std::function<void()> pMoveCB) {
+//
+//}
 
 void APuzzleBlock::PushBlockOver() {
 	float Alpha = .05f;
@@ -119,7 +132,7 @@ void APuzzleBlock::PushBlockOver() {
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
 		if (!needsRotation) SetActorRotation(DestRotation);
-		if (GridCallBack != nullptr) {
+		if (GridTippedCallBack != nullptr) {
 			_canBePushed = true;
 			TellGridBlockTipped();
 		}
@@ -137,8 +150,15 @@ void APuzzleBlock::PushBlockOver() {
 
 }
 
-/*void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
-	pOwnerGrid = &newOwner;
-}
-*/
+//void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
+//	pOwnerGrid = &newOwner;
+//}
 
+
+void APuzzleBlock::SetDestLocation(FVector destLocation) {
+	DestLocation = destLocation;
+
+}
+void APuzzleBlock::SetDestRotation(FQuat destRotation) {
+	DestRotation = destRotation;
+}

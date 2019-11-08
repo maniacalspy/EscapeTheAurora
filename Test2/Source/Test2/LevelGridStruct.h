@@ -1,6 +1,7 @@
 #pragma once
+#include "Gridtile.h"
 
-extern struct LevelGrid {	
+struct LevelGrid {	
 	int RowCount;
 	int ColumnCount;
 	int StartSpots;
@@ -8,8 +9,13 @@ extern struct LevelGrid {
 	int* StartCoordinates;
 	int* GoalCoordinates;
 
-	bool* thisGrid;
+	TT_tileTypes* thisGrid;
 
-	LevelGrid(int rows, int columns, int startspots, int goalspots, int* startpositions, int* goalpositions, bool* grid);
+	LevelGrid(int rows, int columns, int startspots, int goalspots, int* startpositions, int* goalpositions, TT_tileTypes* grid);
 
 };
+
+LevelGrid* GetLevelByNumber(int levelnumber);
+
+
+extern LevelGrid* Level_One;

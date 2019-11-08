@@ -60,7 +60,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleGrid); \
 
 
 #define Test2_Source_Test2_PuzzleGrid_h_19_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__pTileGridMesh() { return STRUCT_OFFSET(APuzzleGrid, pTileGridMesh); }
+	FORCEINLINE static uint32 __PPO__pTileGridMesh() { return STRUCT_OFFSET(APuzzleGrid, pTileGridMesh); } \
+	FORCEINLINE static uint32 __PPO__LevelGridNumber() { return STRUCT_OFFSET(APuzzleGrid, LevelGridNumber); }
 
 
 #define Test2_Source_Test2_PuzzleGrid_h_16_PROLOG

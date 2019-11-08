@@ -11,24 +11,50 @@ GridTile::GridTile(TT_tileTypes tiletype, TT_tileStates tilestate, float x, floa
 	this->state = tilestate;
 }
 
-void GridTile::setNeighbor(GridTile& neighbor, _tileDirections direction) {
+void GridTile::setNeighbor(GridTile* neighbor, _tileDirections direction) {
 	switch (direction)
 	{
 		
 	case(_tileDirections::North):
-		northNeighbor = &neighbor;
+		northNeighbor = neighbor;
+		if (neighbor->GetNeighbor(_tileDirections::South) != this) neighbor->setNeighbor(this, _tileDirections::South);
 		break;
 	case(_tileDirections::East):
-		eastNeighbor = &neighbor;
+		eastNeighbor = neighbor;
+		if (neighbor->GetNeighbor(_tileDirections::West) != this) neighbor->setNeighbor(this, _tileDirections::West);
 		break;
 	case(_tileDirections::South):
-		southNeighbor = &neighbor;
+		southNeighbor = neighbor;
+		if (neighbor->GetNeighbor(_tileDirections::North) != this) neighbor->setNeighbor(this, _tileDirections::North);
 		break;
 	case(_tileDirections::West):
-		westNeighbor = &neighbor;
+		westNeighbor = neighbor;
+		if (neighbor->GetNeighbor(_tileDirections::East) != this) neighbor->setNeighbor(this, _tileDirections::East);
 		break;
 	default:
-		throw "Invalid direction";
+		//throw "Invalid direction";
+		break;
+	}
+}
+
+GridTile* GridTile::GetNeighbor(_tileDirections direction) {
+	switch (direction)
+	{
+
+	case(_tileDirections::North):
+		return this->northNeighbor;
+		break;
+	case(_tileDirections::East):
+		return this->eastNeighbor;
+		break;
+	case(_tileDirections::South):
+		return this->southNeighbor;
+		break;
+	case(_tileDirections::West):
+		return this->westNeighbor;
+		break;
+	default:
+		return nullptr;
 		break;
 	}
 }
@@ -54,4 +80,16 @@ void GridTile::setTileState(TT_tileStates tilestate) {
 
 void GridTile::setTileType(TT_tileTypes tiletype) {
 	this->type = tiletype;
+}
+
+float GridTile::GetXPosition() {
+	return xPos;
+}
+
+float GridTile::GetYPosition() {
+	return yPos;
+}
+
+TT_tileTypes GridTile::GetTileType() {
+	return type;
 }
