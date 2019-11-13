@@ -84,7 +84,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{1271E678-163C-45BC-978B-9D9A1DC99CB0}</ProjectGuid>
+		<ProjectGuid>{CF96607E-592F-4D6A-AAEA-70A2D9606AA9}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>Test2</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>
