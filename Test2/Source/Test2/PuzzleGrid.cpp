@@ -181,21 +181,22 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 			if (SecondCurrentTile && FirstOtherTile) {
 				SecondOtherTile = SecondCurrentTile->GetNeighbor(TileDirection);
 				if (FirstOtherTile->type != TT_tileTypes::NonTraversable && SecondOtherTile->type != TT_tileTypes::NonTraversable) {
+					//Stand block on its edge
 					if (FirstOtherTile == SecondCurrentTile) {
 						TilesBlockIsOn.Empty();
 						TilesBlockIsOn.Add(SecondOtherTile);
-						DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, _pPuzzleActor->GetActorLocation().Z);
+						DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
 						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
 					}
-
+					//Stand Block on edge other direction
 					else if (SecondOtherTile == FirstCurrentTile) {
 						TilesBlockIsOn.Empty();
 						TilesBlockIsOn.Add(FirstOtherTile);
-						DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, _pPuzzleActor->GetActorLocation().Z);
+						DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
 						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
 
 					}
-
+					//Block Stays on side
 					else {
 						TilesBlockIsOn[0] = FirstOtherTile;
 						TilesBlockIsOn[1] = SecondOtherTile;
@@ -209,7 +210,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 			}
 		}
 
-
+		//Standing vertically -> tipped on side
 		else if (TilesBlockIsOn.Num() == 1) {
 			if (FirstOtherTile) {
 				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Yellow, FString::SanitizeFloat(OtherTile->GetXPosition()));
@@ -221,7 +222,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							TilesBlockIsOn.Add(SecondOtherTile);
 							float XMidPoint = (FirstOtherTile->xPos + SecondOtherTile->xPos) / 2;
 							float YMidPoint = (FirstOtherTile->yPos + SecondOtherTile->yPos) / 2;
-							DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
+							DestLocation = *new FVector(XMidPoint, YMidPoint, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.X * _pPuzzleActor->GetActorScale().X));
 							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
 						}
 					}
