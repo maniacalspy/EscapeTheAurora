@@ -42,8 +42,8 @@ private:
 	void createGrid();
 	void SetBlockStartPosition();
 
-	const float _XScale = 1;
-	const float _YScale = 1;
+	float _XScale;
+	float _YScale;
 
 	virtual void PostInitializeComponents() override;
 
@@ -70,7 +70,7 @@ private:
 	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
 	//GridTile* GetTileNeighbor(GridTile& tile, int direction);
 
-	const float _tileWidth = 1, _tileHeight = 1;
+	float _tileWidth, _tileHeight;
 
 	TArray<GridTile*> _puzzleGrid;
 

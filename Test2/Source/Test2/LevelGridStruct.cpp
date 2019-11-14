@@ -2,33 +2,47 @@
 
 #include "LevelGridStruct.h"
 
+const int Level_Count = 2;
+
+//for shortening array lengths
+const auto Basic = TT_tileTypes::Basic;
+const auto Goal = TT_tileTypes::Goal;
+const auto Start = TT_tileTypes::Start;
+const auto NT = TT_tileTypes::NonTraversable;
+
+
 extern TT_tileTypes Level_One_Grid[12] = {
-	TT_tileTypes::Basic, TT_tileTypes::Goal, TT_tileTypes::Basic,
-	TT_tileTypes::Basic, TT_tileTypes::Basic, TT_tileTypes::Basic,
-	TT_tileTypes::Basic, TT_tileTypes::Basic, TT_tileTypes::Basic,
-	TT_tileTypes::Basic, TT_tileTypes::Start, TT_tileTypes::Basic
+	Basic, Goal, Basic,
+	Basic, Basic, Basic,
+	Basic, Basic, Basic,
+	Basic, Start, Basic
 };
 
-LevelGrid* Level_One = new LevelGrid(4, 3, 1, 1, new int[2]{ 3,1 }, new int[2]{ 0,1 }, Level_One_Grid);
+LevelGrid* Level_One = new LevelGrid(4, 3, 1, 1, Level_One_Grid);
 
-LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, int* startpositions, int* goalpositions, TT_tileTypes* grid)
+extern TT_tileTypes Level_Two_Grid[36] = {
+	Basic, Basic, Basic, Basic, NT, NT,
+	NT, Basic, Basic, Basic, Goal, NT,
+	NT, NT, Basic, Basic, Basic, Basic,
+	NT, NT, NT, Basic, Basic, Basic,
+	NT, NT, NT, NT, Basic, Basic,
+	NT, NT, NT, NT, NT, Start
+};
+
+LevelGrid* Level_Two = new LevelGrid(6, 6, 1, 1, Level_Two_Grid);
+
+LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid)
 {
 	RowCount = rows;
 	ColumnCount = columns;
 	StartSpots = startspots;
 	GoalSpots = goalspots;
-	StartCoordinates = startpositions;
-	GoalCoordinates = goalpositions;
 	thisGrid = grid;
 }
 
+LevelGrid *Levels[Level_Count] = { Level_One, Level_Two };
+
 LevelGrid* GetLevelByNumber(int levelnumber) {
-	switch (levelnumber) {
-	case 1:
-		return Level_One;
-		break;
-	default:
-		return nullptr;
-		break;
-	}
+	if (levelnumber > 0 && levelnumber <= Level_Count) return (Levels[levelnumber - 1]);
+	else return nullptr;
 }

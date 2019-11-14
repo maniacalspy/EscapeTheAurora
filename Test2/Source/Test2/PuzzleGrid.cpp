@@ -8,7 +8,7 @@
 #include <math.h>
 
 // Sets default values
-APuzzleGrid::APuzzleGrid() : _XScale(2.f), _YScale(2.f), _tileWidth(30.f * _YScale), _tileHeight(30.f * _XScale)
+APuzzleGrid::APuzzleGrid()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -23,11 +23,15 @@ APuzzleGrid::APuzzleGrid() : _XScale(2.f), _YScale(2.f), _tileWidth(30.f * _YSca
 
 void APuzzleGrid::PostInitializeComponents() {
 	Super::PostInitializeComponents();
-
-	SetActorScale3D(*new FVector(_XScale, _YScale, 1.f));
+	_XScale = GetActorScale().X;
+	_YScale = GetActorScale().Y;
+	_tileWidth = 30.f * _YScale;
+	_tileHeight = 30.f * _XScale;
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Purple, FString::SanitizeFloat(_XScale));
+	//SetActorScale3D(*new FVector(_XScale, _YScale, 1.f));
 
 	MyLevelGrid = GetLevelByNumber(LevelGridNumber);
-	createGrid();
+	if(MyLevelGrid != nullptr) createGrid();
 }
 
 
@@ -49,7 +53,7 @@ void APuzzleGrid::BeginPlay()
 
 	//TODO: MAKE THIS ACTOR SPAWN A DOOR ACTOR RATHER THAN FINDING ONE IN WORLD, THAT WAY WE DON'T HAVE TO CLARIFY WHICH DOOR WE WANT TO USE IF THERE IS AN ENTRANCE/EXIT DOOR
 	for (TActorIterator<AEndLevelDoor> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
-		_pDoorActor = *ActorIterator;
+		if((*ActorIterator)->GetName().Equals("EndLevelDoor" + FString::FromInt(LevelGridNumber))) _pDoorActor = *ActorIterator;
 	}
 
 	if (_pPuzzleActor != nullptr) {
@@ -59,7 +63,7 @@ void APuzzleGrid::BeginPlay()
 		//_pPuzzleActor->SetOwnerGrid(*this);
 	}
 
-	SetBlockStartPosition();
+	if (MyLevelGrid != nullptr) SetBlockStartPosition();
 
 }
 
@@ -145,12 +149,12 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		FQuat DestRotation = FQuat::Identity;
 
 		FVector ImpactXY = *new FVector(impactNormal.X, impactNormal.Y, 0);
-		FVector ForwardXY = *new FVector(GetActorForwardVector().X, GetActorForwardVector().Y, 0);
-		FVector RightXY = *new FVector(GetActorRightVector().X, GetActorRightVector().Y, 0);
+		FVector ForwardXY = (*new FVector(GetActorForwardVector().X, GetActorForwardVector().Y, 0)).RotateAngleAxis(GetActorRotation().Yaw, GetActorUpVector());
+		FVector RightXY = (*new FVector(GetActorRightVector().X, GetActorRightVector().Y, 0)).RotateAngleAxis(GetActorRotation().Yaw, GetActorUpVector());
 
 		float CosForwardAngle = (FVector::DotProduct(ImpactXY, ForwardXY) / (ImpactXY.Size() * ForwardXY.Size()));
 		float CosRightAngle = (FVector::DotProduct(ImpactXY, RightXY) / (ImpactXY.Size() * RightXY.Size()));
-		FVector RotatingAxis = GetActorRightVector();
+		FVector RotatingAxis = GetActorRightVector().RotateAngleAxis(GetActorRotation().Yaw, GetActorUpVector());
 		_tileDirections TileDirection = _tileDirections::North;
 		int RotationDirection = 1;
 		if (CosForwardAngle < 0) {
@@ -158,7 +162,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 			TileDirection = _tileDirections::South;
 		}
 		if (FMath::Abs(CosRightAngle) > FMath::Abs(CosForwardAngle)) {
-			RotatingAxis = GetActorForwardVector();
+			RotatingAxis = GetActorForwardVector().RotateAngleAxis(GetActorRotation().Yaw, GetActorUpVector());
 			RotationDirection = -1;
 			if (CosRightAngle < 0) {
 				RotationDirection = 1;
