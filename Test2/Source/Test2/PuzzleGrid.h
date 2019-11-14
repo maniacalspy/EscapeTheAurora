@@ -34,14 +34,16 @@ public:
 
 private:
 
+	bool puzzleIsSolved;
+
 	class APuzzleBlock* _pPuzzleActor;
 	class AEndLevelDoor* _pDoorActor;
 
 	void createGrid();
 	void SetBlockStartPosition();
 
-	const float _XScale = 1;
-	const float _YScale = 1;
+	float _XScale;
+	float _YScale;
 
 	virtual void PostInitializeComponents() override;
 
@@ -55,14 +57,21 @@ private:
 	
 	TArray<GridTile*> MyStartPoints;
 
+	TArray<GridTile*> MyGoalPoints;
+
 	TArray<GridTile*> TilesBlockIsOn;
 
 	void MoveBlock(FVector impactNormal);
 
+	void CheckPuzzleSolved();
+
+	void OnPuzzleSolved();
+
 	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
 	//GridTile* GetTileNeighbor(GridTile& tile, int direction);
 
-	const float _tileWidth = 1, _tileHeight = 1;
+	float _tileWidth, _tileHeight;
 
 	TArray<GridTile*> _puzzleGrid;
+
 };

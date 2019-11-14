@@ -27,7 +27,7 @@ protected:
 private:
 	bool _isTipping;
 	bool _canBePushed;
-	const FVector InitialForward, InitialRight, BoxExtents;
+	const FVector BoxExtents;
 	FVector RotatingAxis, DestLocation;
 	FQuat DestRotation;
 
@@ -41,6 +41,10 @@ private:
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class UStaticMeshComponent* pBlockMesh;
+
+	UPROPERTY(VisibleDefaultsOnly, Category = Material)
+	class UMaterial* pBlockMaterial;
+
 
 	void TellGridBlockTipped();
 

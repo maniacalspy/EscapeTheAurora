@@ -94,7 +94,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleBlock); \
 
 
 #define Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__pBlockMesh() { return STRUCT_OFFSET(APuzzleBlock, pBlockMesh); }
+	FORCEINLINE static uint32 __PPO__pBlockMesh() { return STRUCT_OFFSET(APuzzleBlock, pBlockMesh); } \
+	FORCEINLINE static uint32 __PPO__pBlockMaterial() { return STRUCT_OFFSET(APuzzleBlock, pBlockMaterial); }
 
 
 #define Test2_Source_Test2_PuzzleBlock_h_12_PROLOG

@@ -3,9 +3,9 @@
 #include "PuzzleBlock.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
-
+#include "ConstructorHelpers.h"
 // Sets default values
-APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialRight(GetActorRightVector()), BoxExtents(*new FVector(16,16,31))
+APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 {
 	_isTipping = false;
 	_canBePushed = true;
@@ -21,15 +21,13 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
-
-
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	MyComp->SetupAttachment(RootComponent);
 	MyComp->SetRelativeLocation(*new FVector(0, 0, 31.f));
 	MyComp->SetBoxExtent(BoxExtents);
 	//MyComp->SetRelativeScale3D(*new FVector(.45f, .45f, .9f));
 
-	
+
 	MyComp->SetSimulatePhysics(false);
 	MyComp->SetNotifyRigidBodyCollision(true);
 	MyComp->CanCharacterStepUpOn = ECB_No;
@@ -37,6 +35,27 @@ APuzzleBlock::APuzzleBlock() : InitialForward(GetActorForwardVector()), InitialR
 
 	MyComp->BodyInstance.SetCollisionProfileName("BlockAllDynamic");
 	MyComp->OnComponentHit.AddDynamic(this, &APuzzleBlock::OnBlockHit);
+	RootComponent = MyComp;
+
+	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
+	pBlockMesh->SetupAttachment(RootComponent);
+
+	pBlockMaterial = CreateDefaultSubobject<UMaterial>(TEXT("Block_Material"));
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Assets/Battery_1_0.Battery_1_0'"));
+	static ConstructorHelpers::FObjectFinder<UMaterial> BatteryMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Battery/Battery.Battery'"));
+
+	if (BatteryMeshAsset.Succeeded())
+	{
+		pBlockMesh->SetStaticMesh(BatteryMeshAsset.Object);
+		if (BatteryMaterialAsset.Succeeded()) {
+			pBlockMesh->SetMaterial(0, BatteryMaterialAsset.Object);
+		}
+		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(BoxExtents.Z / 2) * 2));
+	}
+
+
+	
 }
 
 // Called when the game starts or when spawned
@@ -157,8 +176,9 @@ void APuzzleBlock::PushBlockOver() {
 
 void APuzzleBlock::SetDestLocation(FVector destLocation) {
 	DestLocation = destLocation;
-
+	_isTipping = true;
 }
 void APuzzleBlock::SetDestRotation(FQuat destRotation) {
 	DestRotation = destRotation;
+	_isTipping = true;
 }
