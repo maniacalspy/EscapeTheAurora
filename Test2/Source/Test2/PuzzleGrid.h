@@ -67,9 +67,6 @@ private:
 
 	void OnPuzzleSolved();
 
-	///Get a given neighbor for a tile, 1 is north, 2 is east, 3 is south, 4 is west 
-	//GridTile* GetTileNeighbor(GridTile& tile, int direction);
-
 	float _tileWidth, _tileHeight;
 
 	TArray<GridTile*> _puzzleGrid;

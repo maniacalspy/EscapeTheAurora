@@ -9,8 +9,6 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 {
 	_isTipping = false;
 	_canBePushed = true;
-	//InitialForward = GetActorForwardVector();
-	//InitialRight = GetActorRightVector();
 
 	RotatingAxis = GetActorRightVector();
 	DestLocation = GetActorLocation();
@@ -39,8 +37,6 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 
 	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
 	pBlockMesh->SetupAttachment(RootComponent);
-
-	pBlockMaterial = CreateDefaultSubobject<UMaterial>(TEXT("Block_Material"));
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Assets/Battery_1_0.Battery_1_0'"));
 	static ConstructorHelpers::FObjectFinder<UMaterial> BatteryMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Battery/Battery.Battery'"));
@@ -83,67 +79,43 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 
 				FVector PushVector = Hit.ImpactNormal;
 				GridMoveBlockCallBack(PushVector);
-				/*DestLocation = GridGetLocationCallBack(Hit.ImpactNormal);//GetActorLocation() + *new FVector(PushVector.X, PushVector.Y, 0) * 33;
-				if (DestLocation != GetActorLocation()) {
-					FVector PushXY, ForwardXY, RightXY;
-					PushXY = *new FVector(PushVector.X, PushVector.Y, 0);
-					ForwardXY = *new FVector(InitialForward.X, InitialForward.Y, 0);
-					RightXY = *new FVector(InitialRight.X, InitialRight.Y, 0);
-
-					float CosForwardAngle = (FVector::DotProduct(PushXY, ForwardXY) / (PushXY.Size() * ForwardXY.Size()));
-					float CosRightAngle = (FVector::DotProduct(PushXY, RightXY) / (PushXY.Size() * RightXY.Size()));
-					RotatingAxis = InitialRight;
-					int RotationDirection = CosForwardAngle > 0 ? 1 : -1;
-					if (FMath::Abs(CosRightAngle) > FMath::Abs(CosForwardAngle)) {
-						RotatingAxis = InitialForward;
-						RotationDirection = CosRightAngle > 0 ? -1 : 1;
-					}
-
-					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * GetActorQuat();
-					_isTipping = true;
-					_canBePushed = false;
-				}
-				*/
 			}
 		}
 	}
 
 }
 
+//Tells the puzzle grid the block tipped through the GridTippedCallBack function pointer
 void APuzzleBlock::TellGridBlockTipped() {
 	if (GridTippedCallBack != nullptr) {
 		GridTippedCallBack();
 	}
 }
 
-void APuzzleBlock::SetTippedCallBack(std::function<void()> pfunc) {
-	GridTippedCallBack = pfunc;
-}
 
-void APuzzleBlock::SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB)
+///<summary> Set all the puzzle block's callback functions
+/// <param name="pTippedCB">pointer to function that should be called when the block is done tipping</param>
+/// <param name="pMoveCB">pointer to function that should be called to get the block to move, the function must take in an FVector and return void</param>
+///</summary>
+void APuzzleBlock::SetAllCallBacks(VoidFunctionPtr pTippedCB, InVectorFunctionPtr pMoveCB)
 {
-	GridTippedCallBack = ptippedCB;
+	GridTippedCallBack = pTippedCB;
 	GridMoveBlockCallBack = pMoveCB;
 }
 
-//void APuzzleBlock::SetAllCallBacks(std::function<void()> ptippedCB, std::function<FVector(FVector)> pLocationCB, std::function<void()> pMoveCB) {
-//
-//}
 
+//Moves the block to DestLocation and DestRotation
 void APuzzleBlock::PushBlockOver() {
+
 	float Alpha = .05f;
 	bool needsTranslation = false;
 	bool needsRotation = false;
 	FVector CurrentLocation = GetActorLocation();
 	FVector Distance = DestLocation - CurrentLocation;
 	needsTranslation = (!FMath::IsNearlyZero(Distance.Size(), .01f)) ;
-	
-	
-	
 
 	FQuat CurrentRot;
 	CurrentRot = GetActorQuat();
-
 
 	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(DestRotation), .005f));
 
@@ -168,10 +140,6 @@ void APuzzleBlock::PushBlockOver() {
 	}
 
 }
-
-//void APuzzleBlock::SetOwnerGrid(APuzzleGrid& newOwner) {
-//	pOwnerGrid = &newOwner;
-//}
 
 
 void APuzzleBlock::SetDestLocation(FVector destLocation) {

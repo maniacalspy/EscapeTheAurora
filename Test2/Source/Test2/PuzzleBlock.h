@@ -31,8 +31,6 @@ private:
 	FVector RotatingAxis, DestLocation;
 	FQuat DestRotation;
 
-	//APuzzleGrid* pOwnerGrid;
-
 	typedef std::function<void()> VoidFunctionPtr;
 	typedef std::function<void(FVector)> InVectorFunctionPtr;
 
@@ -40,10 +38,7 @@ private:
 	InVectorFunctionPtr GridMoveBlockCallBack;
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-	class UStaticMeshComponent* pBlockMesh;
-
-	UPROPERTY(VisibleDefaultsOnly, Category = Material)
-	class UMaterial* pBlockMaterial;
+		class UStaticMeshComponent* pBlockMesh;
 
 
 	void TellGridBlockTipped();
@@ -66,9 +61,5 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
-
-	//void SetOwnerGrid(APuzzleGrid& newOwner);
-
-	void SetTippedCallBack(std::function<void()> pfunc);
 
 };

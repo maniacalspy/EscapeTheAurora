@@ -120,6 +120,7 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
 
 	// Bind fire event
 	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATest2Character::OnFire);
@@ -190,6 +191,15 @@ void ATest2Character::OnFire()
 	}
 }
 */
+
+void ATest2Character::TogglePause() {
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+	
+	if (mycontroller) {
+		bool isPaused = mycontroller->IsPaused();
+		mycontroller->SetPause(!isPaused);
+	}
+}
 
 void ATest2Character::OnResetVR()
 {

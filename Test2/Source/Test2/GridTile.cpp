@@ -32,7 +32,6 @@ void GridTile::setNeighbor(GridTile* neighbor, _tileDirections direction) {
 		if (neighbor->GetNeighbor(_tileDirections::East) != this) neighbor->setNeighbor(this, _tileDirections::East);
 		break;
 	default:
-		//throw "Invalid direction";
 		break;
 	}
 }
@@ -60,7 +59,7 @@ GridTile* GridTile::GetNeighbor(_tileDirections direction) {
 }
 
 void GridTile::setTileState(TT_tileStates tilestate) {
-	///Switch over which tile state to set to, and ensure that the current state allows for a valid transition
+	//Switch over which tile state to set to, and ensure that the current state allows for a valid transition
 	bool validChange = false;
 	switch (tilestate)
 	{

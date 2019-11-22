@@ -88,6 +88,9 @@ protected:
 	/** Fires a projectile. */
 	//void OnFire();
 
+	/** Pauses/Unpauses the game */
+	void TogglePause();
+
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();
 
