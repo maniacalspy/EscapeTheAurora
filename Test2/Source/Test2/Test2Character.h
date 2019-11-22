@@ -88,6 +88,10 @@ protected:
 	/** Fires a projectile. */
 	//void OnFire();
 
+	void QuitGame();
+
+	void ResetLevel();
+
 	/** Pauses/Unpauses the game */
 	void TogglePause();
 

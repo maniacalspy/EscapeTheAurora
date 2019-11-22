@@ -196,38 +196,39 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 			if (SecondCurrentTile && FirstOtherTile) {
 				
 				SecondOtherTile = SecondCurrentTile->GetNeighbor(TileDirection);
-				
-				//both target tiles are valid to travel on
-				if (FirstOtherTile->type != TT_tileTypes::NonTraversable && SecondOtherTile->type != TT_tileTypes::NonTraversable) {
+				if (SecondOtherTile) {
+					//both target tiles are valid to travel on
+					if (FirstOtherTile->type != TT_tileTypes::NonTraversable && SecondOtherTile->type != TT_tileTypes::NonTraversable) {
 
-					//Stand block on its edge
-					if (FirstOtherTile == SecondCurrentTile) {
-						TilesBlockIsOn.Empty();
-						TilesBlockIsOn.Add(SecondOtherTile);
-						DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
-						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
-					}
+						//Stand block on its edge
+						if (FirstOtherTile == SecondCurrentTile) {
+							TilesBlockIsOn.Empty();
+							TilesBlockIsOn.Add(SecondOtherTile);
+							DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+						}
 
-					//Stand Block on edge other direction
-					else if (SecondOtherTile == FirstCurrentTile) {
-						TilesBlockIsOn.Empty();
-						TilesBlockIsOn.Add(FirstOtherTile);
-						DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
-						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+						//Stand Block on edge other direction
+						else if (SecondOtherTile == FirstCurrentTile) {
+							TilesBlockIsOn.Empty();
+							TilesBlockIsOn.Add(FirstOtherTile);
+							DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
 
-					}
+						}
 
-					//Block Stays on side
-					else {
-						TilesBlockIsOn[0] = FirstOtherTile;
-						TilesBlockIsOn[1] = SecondOtherTile;
-						float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
-						float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
-						DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
-						DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
+						//Block Stays on side
+						else {
+							TilesBlockIsOn[0] = FirstOtherTile;
+							TilesBlockIsOn[1] = SecondOtherTile;
+							float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
+							float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
+							DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
+							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_2) * _pPuzzleActor->GetActorQuat();
 
-					} //end of else
-				} //end of nontraversable if
+						} //end of else
+					} //end of nontraversable if
+				}//end of verify Secondother if
 			}//end of verify pointers if
 		} //end of TilesBlockIsOn if
 

@@ -8,7 +8,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{A49D9C16-52F3-40FF-8392-1C0D877C54F8}</ProjectGuid>
+		<ProjectGuid>{F3ADE1DA-4D83-40DC-8A32-68133647DE95}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>Studio</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>

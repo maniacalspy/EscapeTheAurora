@@ -121,6 +121,9 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
+	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &ATest2Character::ResetLevel);
+	PlayerInputComponent->BindAction("Quit", IE_Pressed, this, &ATest2Character::QuitGame);
+
 
 	// Bind fire event
 	//PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATest2Character::OnFire);
@@ -191,6 +194,14 @@ void ATest2Character::OnFire()
 	}
 }
 */
+
+void ATest2Character::QuitGame() {
+	FGenericPlatformMisc::RequestExit(false);
+}
+
+void ATest2Character::ResetLevel() {
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName()), false);
+}
 
 void ATest2Character::TogglePause() {
 	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
