@@ -45,9 +45,13 @@ void APuzzleGrid::BeginPlay()
 	_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
 
 
-	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelDoor WITH THE LEVEL NUMBER APPENDED AT THE END
-	for (TActorIterator<AEndLevelDoor> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
-		if((*ActorIterator)->GetName().Equals("EndLevelDoor" + FString::FromInt(LevelGridNumber))) _pDoorActor = *ActorIterator;
+	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelTriggers WITH THE LEVEL NUMBER APPENDED AT THE END
+	for (TActorIterator<AEndLevelTriggers> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
+		
+		FString ActorName = (*ActorIterator)->GetName();
+		if (ActorName.Equals("EndLevelTriggers" + FString::FromInt(LevelGridNumber)) || ActorName.Equals("EndLevelTriggers_" + FString::FromInt(LevelGridNumber))) {
+			_pTriggerActor = *ActorIterator;
+		}
 	}
 
 	//verify puzzle block actor pointer
@@ -91,11 +95,11 @@ void APuzzleGrid::CheckPuzzleSolved() {
 	}
 }
 
-//lowers the block into the hole and opens the door
+//lowers the block into the hole and triggers the events
 void APuzzleGrid::OnPuzzleSolved() {
 	puzzleIsSolved = true;
 	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0,0,_pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
-	if (_pDoorActor != nullptr) _pDoorActor->OpenDoor();
+	if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
 }
 
 //create the puzzle grid based on MyLevelGrid

@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "EndLevelDoor.h"
+#include "EndLevelTriggers.h"
 #include "GridTile.h"
 #include "PuzzleBlock.h"
 #include "EngineUtils.h"
@@ -37,7 +37,7 @@ private:
 	bool puzzleIsSolved;
 
 	class APuzzleBlock* _pPuzzleActor;
-	class AEndLevelDoor* _pDoorActor;
+	class AEndLevelTriggers* _pTriggerActor;
 
 	void createGrid();
 	void SetBlockStartPosition();
