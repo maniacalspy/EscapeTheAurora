@@ -2,7 +2,7 @@
 
 #include "EndLevelDoor.h"
 #include "Engine/Engine.h"
-
+#include "ConstructorHelpers.h"
 // Sets default values
 AEndLevelDoor::AEndLevelDoor()
 {
@@ -12,16 +12,24 @@ AEndLevelDoor::AEndLevelDoor()
 	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
 
+	
+	static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
+	if (PanelOnMaterialAsset.Succeeded()) {
+		pPanelOnMaterial = PanelOnMaterialAsset.Object;
+	}
+
+}
+
+//get the panel's off material (not used currently)
+void AEndLevelDoor::PostInitializeComponents() {
+	Super::PostInitializeComponents();
+	pPanelOffMaterial = DoorPanelSkeleton->GetMaterial(0)->GetMaterial();
 }
 
 // Called when the game starts or when spawned
 void AEndLevelDoor::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	
-
-
 }
 
 // Called every frame
@@ -31,8 +39,9 @@ void AEndLevelDoor::Tick(float DeltaTime)
 
 }
 
-
+//Changes the material and plays the door's opening animation
 void AEndLevelDoor::OpenDoor()
 {
+	if(pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
 	DoorPanelSkeleton->Play(false);
 }

@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\Test2.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{FD44C845-34F5-4DC4-9927-6A00643F0AD1}</UniqueIdentifier>
+			<UniqueIdentifier>{EEA02CE4-1262-4E7E-A21F-DEF10CEA10CD}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\Test2.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{232B45BF-04C2-4971-8D33-40A29CCFDC13}</UniqueIdentifier>
+			<UniqueIdentifier>{3FBDCE66-C8C6-49B5-A413-0578D6725B90}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\Test2">
-			<UniqueIdentifier>{78F8D291-D2AF-4A3C-9267-DC75856AEBEB}</UniqueIdentifier>
+			<UniqueIdentifier>{CC310EA5-5866-4C8F-B716-AEA2F3DDAF6D}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\Test2\EndLevelDoor.cpp">
 			<Filter>Source\Test2</Filter>

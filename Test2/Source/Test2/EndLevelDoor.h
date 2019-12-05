@@ -4,6 +4,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Materials/Material.h"
 #include "EndLevelDoor.generated.h"
 
 UCLASS()
@@ -19,6 +20,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void PostInitializeComponents() override;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -32,4 +35,7 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorPanelSkeleton;
 
+		class UMaterial* pPanelOffMaterial;
+
+		class UMaterial* pPanelOnMaterial;
 };
