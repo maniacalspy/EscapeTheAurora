@@ -35,6 +35,10 @@ public:
 private:
 
 	bool puzzleIsSolved;
+	FQuat LastValidRotation;
+	FVector LastValidLocation; 
+
+	bool IsInvalidTip;
 
 	class APuzzleBlock* _pPuzzleActor;
 	class AEndLevelTriggers* _pTriggerActor;
