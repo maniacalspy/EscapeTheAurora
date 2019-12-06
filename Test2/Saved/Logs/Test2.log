@@ -1,4 +1,4 @@
-﻿Log file open, 12/03/19 20:26:44
+﻿Log file open, 12/06/19 10:07:10
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: Test2
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(764558799) SRandInit(764558800).
+LogInit: Display: RandInit(-1922627315) SRandInit(-1922627315).
 LogInit: Read version file with build ID '3944462'
 LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
 LogInit: Registered custom module enumerator with build ID '3944462'
-LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.564204
+LogTaskGraph: Started task graph with 5 named threads and 26 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.286088
 LogD3D11RHI: Aftermath initialized
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -84,181 +84,8 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.339s to configure plugins.
-LogModuleManager: Warning: Module file ../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/Binaries/Win64/UE4Editor-Test2-8554.dll is missing. This is likely a stale module that must be recompiled.
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperTiledImporter.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-SmartSnapping.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLink.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Animation/LiveLink/Binaries/Win64/UE4Editor-LiveLinkEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeRuntime.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Blendables/LightPropagationVolume/Binaries/Win64/UE4Editor-LightPropagationVolumeEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/CLionSourceCodeAccess/Binaries/Win64/UE4Editor-CLionSourceCodeAccess.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/GitSourceControl/Binaries/Win64/UE4Editor-GitSourceControl.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/PerforceSourceControl/Binaries/Win64/UE4Editor-PerforceSourceControl.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/SubversionSourceControl/Binaries/Win64/UE4Editor-SubversionSourceControl.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/UObjectPlugin/Binaries/Win64/UE4Editor-UObjectPlugin.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioCodeSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioCodeSourceCodeAccess.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Developer/VisualStudioSourceCodeAccess/Binaries/Win64/UE4Editor-VisualStudioSourceCodeAccess.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/AssetManagerEditor/Binaries/Win64/UE4Editor-AssetManagerEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeys.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/CryptoKeys/Binaries/Win64/UE4Editor-CryptoKeysOpenSSL.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/DataValidation/Binaries/Win64/UE4Editor-DataValidation.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimation.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/FacialAnimation/Binaries/Win64/UE4Editor-FacialAnimationEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/GameplayTagsEditor/Binaries/Win64/UE4Editor-GameplayTagsEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/MobileLauncherProfileWizard/Binaries/Win64/UE4Editor-MobileLauncherProfileWizard.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/PluginBrowser/Binaries/Win64/UE4Editor-PluginBrowser.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UE4Editor-SpeedTreeImporter.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Enterprise/DatasmithContent/Binaries/Win64/UE4Editor-DatasmithContent.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicImporter.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/AlembicImporter/Binaries/Win64/UE4Editor-AlembicLibrary.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/CharacterAI/Binaries/Win64/UE4Editor-CharacterAI.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Experimental/HTML5Networking/Binaries/Win64/UE4Editor-HTML5Networking.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AndroidMedia/Binaries/Win64/UE4Editor-AndroidMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/AvfMedia/Binaries/Win64/UE4Editor-AvfMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMedia.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-ImgMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/ImgMedia/Binaries/Win64/UE4Editor-OpenExrWrapper.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/LinearTimecode/Binaries/Win64/UE4Editor-LinearTimecode.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositing.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaCompositing/Binaries/Win64/UE4Editor-MediaCompositingEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/MediaPlayerEditor/Binaries/Win64/UE4Editor-MediaPlayerEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMedia.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Media/WmfMedia/Binaries/Win64/UE4Editor-WmfMediaFactory.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/TcpMessaging/Binaries/Win64/UE4Editor-TcpMessaging.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Messaging/UdpMessaging/Binaries/Win64/UE4Editor-UdpMessaging.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/ActorSequence/Binaries/Win64/UE4Editor-ActorSequence.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/LevelSequenceEditor/Binaries/Win64/UE4Editor-LevelSequenceEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/MovieScene/MatineeToLevelSequence/Binaries/Win64/UE4Editor-MatineeToLevelSequence.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NetcodeUnitTest/Binaries/Win64/UE4Editor-NetcodeUnitTest.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/NetcodeUnitTest/NUTUnrealEngine4/Binaries/Win64/UE4Editor-NUTUnrealEngine4.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystem/Binaries/Win64/UE4Editor-OnlineSubsystem.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemNull/Binaries/Win64/UE4Editor-OnlineSubsystemNull.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineSubsystemUtils.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Online/OnlineSubsystemUtils/Binaries/Win64/UE4Editor-OnlineBlueprintSupport.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidDeviceProfileSelector/Binaries/Win64/UE4Editor-AndroidDeviceProfileSelector.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AndroidPermission/Binaries/Win64/UE4Editor-AndroidPermission.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AppleARKit/Binaries/Win64/UE4Editor-AppleARKit.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ArchVisCharacter/Binaries/Win64/UE4Editor-ArchVisCharacter.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCapture.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/AudioCapture/Binaries/Win64/UE4Editor-AudioCaptureEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CableComponent/Binaries/Win64/UE4Editor-CableComponent.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/CustomMeshComponent/Binaries/Win64/UE4Editor-CustomMeshComponent.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ExampleDeviceProfileSelector/Binaries/Win64/UE4Editor-ExampleDeviceProfileSelector.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysics.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ImmediatePhysics/Binaries/Win64/UE4Editor-ImmediatePhysicsEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/LocationServicesBPLibrary/Binaries/Win64/UE4Editor-LocationServicesBPLibrary.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/MobilePatchingUtils/Binaries/Win64/UE4Editor-MobilePatchingUtils.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusHMD.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusInput.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Binaries/Win64/UE4Editor-OculusEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehicles.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/PhysXVehicles/Binaries/Win64/UE4Editor-PhysXVehiclesEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponent.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/ProceduralMeshComponent/Binaries/Win64/UE4Editor-ProceduralMeshComponentEditor.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/RuntimePhysXCooking/Binaries/Win64/UE4Editor-RuntimePhysXCooking.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVR.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/Steam/SteamVR/Binaries/Win64/UE4Editor-SteamVRController.dll (API version 3944462).
-LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/Runtime/WindowsMoviePlayer/Binaries/Win64/UE4Editor-WindowsMoviePlayer.dll (API version 3944462).
-LogInit: Warning: Incompatible or missing module: UE4Editor-Test2.dll
-Running C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 Development Win64 -project="C:/Users/nolan/Documents/GitHub/Nudge/Test2/Test2.uproject" -editorrecompile -progress -NoHotReloadFromIDE
-Using 'git status' to determine working set for adaptive non-unity build.
-Creating makefile for Test2 (no existing makefile)
-@progress push 5%
-@progress pop
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1058.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1058.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1147.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1147.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1340.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1340.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1744.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1744.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1889.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1889.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1922.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1922.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1999.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-1999.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2041.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2041.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2594.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2594.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2763.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-2763.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-30.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-30.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-3690.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-3690.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-3747.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-3747.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-4292.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-4292.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-439.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-439.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-4844.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-4844.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5008.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5008.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5106.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5106.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5448.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5448.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5525.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5525.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5676.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5676.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5769.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5769.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-589.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-589.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-594.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-594.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5943.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-5943.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6101.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6101.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6148.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6148.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6187.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6187.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6659.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6659.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6798.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-6798.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7518.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7518.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7631.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7631.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7842.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-7842.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-8252.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-8252.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-837.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-837.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-888.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-888.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-9355.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-9355.pdb".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-9837.dll".
-Deleting old hot reload file: "C:\Users\nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2-9837.pdb".
-Performing 2 actions (2 in parallel)
-[1/2] Link UE4Editor-Test2.dll
-[2/2] Link UE4Editor-Test2.lib
-   Creating library C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2.lib and object C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2.exp
-   Creating library C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2.suppressed.lib and object C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2.suppressed.exp
-Total build time: 16.11 seconds (Local executor: 1.74 seconds)
-LogModuleManager: Display: Found up-to-date module file ../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/Binaries/Win64/UE4Editor-Test2.dll (API version 3944462).
+LogStreaming: Display: Took  0.164s to configure plugins.
+LogModuleManager: Display: Found up-to-date module file ../../../../../../Workspace/Github/Nudge/Test2/Binaries/Win64/UE4Editor-Test2.dll (API version 3944462).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2DEditor.dll (API version 3944462).
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-PaperSpriteSheetImporter.dll (API version 3944462).
@@ -362,7 +189,7 @@ LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured
 LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
 LogInit:  - LocalHostAddr = Default
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-LogInit: WinSock: I am NolanDesktop (10.11.189.189:0)
+LogInit: WinSock: I am 916-iam-139-01 (172.23.16.180:0)
 LogInit: Build: ++UE4+Release-4.19-CL-4033788
 LogInit: Engine Version: 4.19.2-4033788+++UE4+Release-4.19
 LogInit: Compatible Engine Version: 4.19.0-3944462+++UE4+Release-4.19
@@ -390,186 +217,817 @@ LogInit: Compiled (64-bit): Apr 27 2018 02:06:57
 LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.19
-LogInit: Command Line:  
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
-LogStreaming: Display: Took  0.072s to delete old logs.
+LogStreaming: Display: Took  0.001s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2019.12.04-02.27.16:290][  0]LogInit: Selected Device Profile: [Windows]
-[2019.12.04-02.27.16:291][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.12.04-02.27.16:323][  0]LogInit: Computer: NOLANDESKTOP
-[2019.12.04-02.27.16:323][  0]LogInit: User: nolan
-[2019.12.04-02.27.16:323][  0]LogInit: CPU Page size=4096, Cores=2
-[2019.12.04-02.27.16:323][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2019.12.04-02.27.16:323][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
-[2019.12.04-02.27.16:323][  0]LogMemory: Platform Memory Stats for Windows
-[2019.12.04-02.27.16:323][  0]LogMemory: Process Physical Memory: 279.51 MB used, 279.52 MB peak
-[2019.12.04-02.27.16:323][  0]LogMemory: Process Virtual Memory: 270.80 MB used, 270.80 MB peak
-[2019.12.04-02.27.16:323][  0]LogMemory: Physical Memory: 4418.87 MB used,  3717.91 MB free, 8136.79 MB total
-[2019.12.04-02.27.16:323][  0]LogMemory: Virtual Memory: 4805.39 MB used,  3717.91 MB free, 134217728.00 MB total
-[2019.12.04-02.27.16:635][  0]LogInit: Using OS detected language (en-US).
-[2019.12.04-02.27.16:636][  0]LogInit: Using OS detected locale (en-US).
-[2019.12.04-02.27.16:781][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.12.04-02.27.17:763][  0]LogStreaming: Display: Took  1.127s to EndInitTextLocalization.
-[2019.12.04-02.27.17:763][  0]LogInit: Setting process to per monitor DPI aware
-[2019.12.04-02.27.17:950][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.12.04-02.27.17:950][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.12.04-02.27.22:069][  0]LogD3D11RHI: D3D11 adapters:
-[2019.12.04-02.27.22:204][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GPU' (Feature Level 11_0)
-[2019.12.04-02.27.22:204][  0]LogD3D11RHI:       2007/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.12.04-02.27.22:254][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.12.04-02.27.22:254][  0]LogD3D11RHI:       0/0/4068 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.12.04-02.27.22:254][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.12.04-02.27.22:271][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.12.04-02.27.22:271][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
-[2019.12.04-02.27.22:271][  0]LogWindows: EnumDisplayDevices:
-[2019.12.04-02.27.22:272][  0]LogWindows:    0. 'NVIDIA GeForce GPU' (P:1 D:1)
-[2019.12.04-02.27.22:273][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2019.12.04-02.27.22:273][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GPU
-[2019.12.04-02.27.22:273][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2019.12.04-02.27.22:273][  0]LogD3D11RHI:      Driver Date: Unknown
-[2019.12.04-02.27.22:273][  0]LogRHI: Texture pool is 1405 MB (70% of 2007 MB)
-[2019.12.04-02.27.22:324][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2019.12.04-02.27.22:324][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2019.12.04-02.27.22:324][  0]LogD3D11RHI: Async texture creation enabled
-[2019.12.04-02.27.22:344][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2019.12.04-02.27.22:396][  0]LogShaderCompilers: Guid format shader working directory is -13 characters bigger than the processId version (../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/Intermediate/Shaders/WorkingDirectory/17296/).
-[2019.12.04-02.27.22:397][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/nolan/AppData/Local/Temp/UnrealShaderWorkingDir/3C7654DA45ADB7F3091C6F868F721814/'.
-[2019.12.04-02.27.23:187][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2019.12.04-02.27.23:213][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2019.12.04-02.27.23:235][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2019.12.04-02.27.23:258][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2019.12.04-02.27.23:312][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2019.12.04-02.27.23:347][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2019.12.04-02.27.23:374][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2019.12.04-02.27.23:408][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2019.12.04-02.27.23:431][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2019.12.04-02.27.23:461][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2019.12.04-02.27.23:488][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2019.12.04-02.27.23:521][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2019.12.04-02.27.23:548][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
-[2019.12.04-02.27.23:575][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2019.12.04-02.27.23:615][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2019.12.04-02.27.23:660][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2019.12.04-02.27.23:660][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2019.12.04-02.27.23:685][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2019.12.04-02.27.23:705][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2019.12.04-02.27.23:807][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2019.12.04-02.27.23:827][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2019.12.04-02.27.23:851][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2019.12.04-02.27.23:878][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2019.12.04-02.27.23:907][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2019.12.04-02.27.23:944][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2019.12.04-02.27.23:944][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.12.04-02.27.24:602][  0]LogXGEController: Cleaning working directory: C:/Users/nolan/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2019.12.04-02.27.24:603][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.12.04-02.27.24:603][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.12.04-02.27.24:603][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.12.04-02.27.28:522][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.12.04-02.27.29:235][  0]LogDerivedDataCache: Loaded boot cache 0.71s 77MB C:/Users/nolan/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2019.12.04-02.27.29:235][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/nolan/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
-[2019.12.04-02.27.29:235][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.12.04-02.27.29:235][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.12.04-02.27.29:236][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.12.04-02.27.29:236][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.12.04-02.27.29:271][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.12.04-02.27.29:285][  0]LogDerivedDataCache: Using Local data cache path C:/Users/nolan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.12.04-02.27.29:285][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.12.04-02.27.29:285][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.12.04-02.27.29:298][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.12.04-02.27.29:299][  0]LogSlate: Using Freetype 2.6.0
-[2019.12.04-02.27.29:318][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.12.04-02.27.29:318][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.12.04-02.27.33:779][  0]LogAssetRegistry: FAssetRegistry took 0.0287 seconds to start up
-[2019.12.04-02.27.34:934][  0]LogInit: Selected Device Profile: [Windows]
-[2019.12.04-02.27.35:523][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2019.12.04-02.27.35:542][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2019.12.04-02.27.35:542][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.12.04-02.27.35:542][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2019.12.04-02.27.35:542][  0]LogMeshReduction: No automatic mesh merging module available
-[2019.12.04-02.27.35:542][  0]LogMeshMerging: No automatic mesh merging module available
-[2019.12.04-02.27.35:617][  0]LogNetVersion: Test2 , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 7524354)
-[2019.12.04-02.27.36:376][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.161278 seconds
-[2019.12.04-02.27.36:387][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
-[2019.12.04-02.27.36:387][  0]LogUObjectAllocator: 7314304 out of 0 bytes used by permanent object pool.
-[2019.12.04-02.27.36:387][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.12.04-02.28.00:327][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.12.04-02.28.00:411][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.12.04-02.28.01:127][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730d2be480, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_AnimBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
-[2019.12.04-02.28.01:138][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002730d2be480, Size=72
-[2019.12.04-02.28.01:138][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730d283920, Size=72, Default__FirstPerson_AnimBP_C Function /Engine/Transient.REINST_FirstPerson_AnimBP_C_0:ExecuteUbergraph_FirstPerson_AnimBP
-[2019.12.04-02.28.01:149][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730ded9a80, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_AnimBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
-[2019.12.04-02.28.01:245][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730d5f9d80, Size=184, Default__FirstPersonCharacter_C Function /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter_C:ExecuteUbergraph_FirstPersonCharacter
-[2019.12.04-02.28.01:255][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002730d5f9d80, Size=184
-[2019.12.04-02.28.01:255][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730e6d7e80, Size=184, Default__FirstPersonCharacter_C Function /Engine/Transient.REINST_FirstPersonCharacter_C_6:ExecuteUbergraph_FirstPersonCharacter
-[2019.12.04-02.28.01:260][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x000002730e6d5180, Size=184, Default__FirstPersonCharacter_C Function /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter_C:ExecuteUbergraph_FirstPersonCharacter
-[2019.12.04-02.28.01:313][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.755500ms] /Game/FirstPerson/Character/Mesh/SK_Mannequin_Arms.SK_Mannequin_Arms
-[2019.12.04-02.28.01:326][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.615200ms] /Game/FirstPerson/FPWeapon/Mesh/SK_FPGun.SK_FPGun
-[2019.12.04-02.28.02:126][  0]SourceControl: Source control is disabled
-[2019.12.04-02.28.02:126][  0]SourceControl: Source control is disabled
-[2019.12.04-02.28.02:210][  0]SourceControl: Source control is disabled
-[2019.12.04-02.28.02:286][  0]SourceControl: Source control is disabled
-[2019.12.04-02.28.04:081][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.12.04-02.28.04:927][  0]LogOcInput: OculusInput pre-init called
-[2019.12.04-02.28.05:271][  0]LogEngine: Initializing Engine...
-[2019.12.04-02.28.05:273][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.12.04-02.28.05:275][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.12.04-02.28.05:275][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.12.04-02.28.05:630][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.12.04-02.28.05:714][  0]LogInit: XAudio2 using 'Speakers (USB Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2019.12.04-02.28.05:788][  0]LogInit: FAudioDevice initialized.
-[2019.12.04-02.28.05:941][  0]LogDerivedDataCache: Saved boot cache 0.15s 77MB C:/Users/nolan/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2019.12.04-02.28.05:952][  0]LogInit: Texture streaming: Enabled
-[2019.12.04-02.28.06:074][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.12.04-02.28.06:131][  0]LogInit: Transaction tracking system initialized
-[2019.12.04-02.28.06:273][  0]BlueprintLog: New page: Editor Load
-[2019.12.04-02.28.06:816][  0]LocalizationService: Localization service is disabled
-[2019.12.04-02.28.07:377][  0]LogConsoleResponse: Display: 
-[2019.12.04-02.28.07:776][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.12.04-02.28.07:776][  0]LogCook: Display: Mobile HDR setting 1
-[2019.12.04-02.28.07:776][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2019.12.04-02.28.07:777][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2019.12.04-02.28.07:777][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2019.12.04-02.28.08:347][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nolan/Documents/GitHub/Nudge/Test2/Content/' took 0.03s
-[2019.12.04-02.28.09:810][  0]SourceControl: Source control is disabled
-[2019.12.04-02.28.09:810][  0]Cmd: MAP LOAD FILE="../../../../../../Users/nolan/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.12.04-02.28.09:810][  0]LightingResults: New page: Lighting Build
-[2019.12.04-02.28.09:830][  0]MapCheck: New page: Map Check
-[2019.12.04-02.28.09:830][  0]LightingResults: New page: Lighting Build
-[2019.12.04-02.28.09:846][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002730d283920, Size=72
-[2019.12.04-02.28.09:847][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x000002730e6d7e80, Size=184
-[2019.12.04-02.28.09:867][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000027373b4ee30, Size=12, Default__FlickeringLight_Blueprint_C Function /Game/FirstPersonCPP/Blueprints/FlickeringLight_Blueprint.FlickeringLight_Blueprint_C:ExecuteUbergraph_FlickeringLight_Blueprint
-[2019.12.04-02.28.09:869][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000027373b4ee30, Size=12
-[2019.12.04-02.28.09:869][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000027373b4ee30, Size=12, Default__FlickeringLight_Blueprint_C Function /Engine/Transient.REINST_FlickeringLight_Blueprint_C_8:ExecuteUbergraph_FlickeringLight_Blueprint
-[2019.12.04-02.28.09:871][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x0000027373b4ee70, Size=12, Default__FlickeringLight_Blueprint_C Function /Game/FirstPersonCPP/Blueprints/FlickeringLight_Blueprint.FlickeringLight_Blueprint_C:ExecuteUbergraph_FlickeringLight_Blueprint
-[2019.12.04-02.28.11:345][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [9.783400ms] /Game/FirstPerson/Animations/Door/DoorOpenPanels.DoorOpenPanels
-[2019.12.04-02.28.11:379][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [33.189098ms] /Game/FirstPerson/Animations/Door/DoorOpenFrame.DoorOpenFrame
-[2019.12.04-02.28.11:437][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2019.12.04-02.28.11:461][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.12.04-02.28.11:484][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x0000027373b4ee30, Size=12
-[2019.12.04-02.28.11:485][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.12.04-02.28.11:694][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 209.172ms to complete.
-[2019.12.04-02.28.11:694][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 1.884
-[2019.12.04-02.28.11:940][  0]LogCollectionManager: Loaded 0 collections in 0.003824 seconds
-[2019.12.04-02.28.12:004][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nolan/Documents/GitHub/Nudge/Test2/Saved/Collections/' took 0.01s
-[2019.12.04-02.28.12:005][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nolan/Documents/GitHub/Nudge/Test2/Content/Developers/nolan/Collections/' took 0.01s
-[2019.12.04-02.28.12:005][  0]LogFileCache: Scanning file cache for directory 'C:/Users/nolan/Documents/GitHub/Nudge/Test2/Content/Collections/' took 0.01s
-[2019.12.04-02.28.12:005][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.12.04-02.28.12:020][  0]LogContentBrowser: Native class hierarchy populated in 0.0153 seconds. Added 2463 classes and 560 folders.
-[2019.12.04-02.28.12:051][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0032 seconds. Added 0 classes and 0 folders.
-[2019.12.04-02.28.13:150][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0020 seconds. Added 0 classes and 0 folders.
-[2019.12.04-02.28.13:172][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
-[2019.12.04-02.28.13:208][  0]LogSlate: Took 0.009893 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.12.04-02.28.13:224][  0]LogSlate: Took 0.013020 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.12.04-02.28.13:246][  0]LogSlate: Took 0.013787 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.12.04-02.28.13:379][  0]LogRenderer: Reallocating scene render targets to support 1196x576 Format 10 NumSamples 1 (Frame:1).
-[2019.12.04-02.28.13:554][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0020 seconds. Added 0 classes and 0 folders.
-[2019.12.04-02.28.13:554][  0]LogLoad: (Engine Initialization) Total time: 95.36 seconds
-[2019.12.04-02.28.13:554][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.12.04-02.28.13:565][  0]Cmd: ACTOR HIDE SELECTED
-[2019.12.04-02.28.13:868][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.12.04-02.28.14:121][  2]LogAssetRegistry: Asset discovery search completed in 40.3642 seconds
-[2019.12.04-02.28.14:123][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2019.12.04-02.28.14:123][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000077 seconds (updated 0 objects)
-[2019.12.04-02.30.04:380][558]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.07.12:178][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.06-16.07.12:178][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.12.06-16.07.12:189][  0]LogInit: Computer: 916-IAM-139-01
+[2019.12.06-16.07.12:189][  0]LogInit: User: nolanroher
+[2019.12.06-16.07.12:189][  0]LogInit: CPU Page size=4096, Cores=8
+[2019.12.06-16.07.12:189][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.12.06-16.07.12:189][  0]LogMemory: Memory total: Physical=31.8GB (32GB approx)
+[2019.12.06-16.07.12:189][  0]LogMemory: Platform Memory Stats for Windows
+[2019.12.06-16.07.12:189][  0]LogMemory: Process Physical Memory: 275.45 MB used, 275.45 MB peak
+[2019.12.06-16.07.12:189][  0]LogMemory: Process Virtual Memory: 264.98 MB used, 264.98 MB peak
+[2019.12.06-16.07.12:189][  0]LogMemory: Physical Memory: 8104.62 MB used,  24502.29 MB free, 32606.91 MB total
+[2019.12.06-16.07.12:189][  0]LogMemory: Virtual Memory: 4782.07 MB used,  24502.29 MB free, 134217728.00 MB total
+[2019.12.06-16.07.12:198][  0]LogInit: Using OS detected language (en-US).
+[2019.12.06-16.07.12:198][  0]LogInit: Using OS detected locale (en-US).
+[2019.12.06-16.07.12:200][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.12.06-16.07.12:501][  0]LogStreaming: Display: Took  0.303s to EndInitTextLocalization.
+[2019.12.06-16.07.12:501][  0]LogInit: Setting process to per monitor DPI aware
+[2019.12.06-16.07.12:519][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.12.06-16.07.12:520][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.12.06-16.07.12:654][  0]LogD3D11RHI: D3D11 adapters:
+[2019.12.06-16.07.12:703][  0]LogD3D11RHI:    0. 'NVIDIA Quadro P5000' (Feature Level 11_0)
+[2019.12.06-16.07.12:703][  0]LogD3D11RHI:       16255/0/16303 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.12.06-16.07.12:714][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2019.12.06-16.07.12:714][  0]LogD3D11RHI:       128/0/16303 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.12.06-16.07.12:715][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.12.06-16.07.12:715][  0]LogD3D11RHI:       0/0/16303 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.12.06-16.07.12:715][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.12.06-16.07.12:720][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.12.06-16.07.12:720][  0]LogD3D11RHI:     GPU DeviceId: 0x1bb0 (for the marketing name, search the web for "GPU Device Id")
+[2019.12.06-16.07.12:720][  0]LogWindows: EnumDisplayDevices:
+[2019.12.06-16.07.12:720][  0]LogWindows:    0. 'NVIDIA Quadro P5000' (P:1 D:1)
+[2019.12.06-16.07.12:720][  0]LogWindows:    1. 'NVIDIA Quadro P5000' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows:    2. 'NVIDIA Quadro P5000' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows:    3. 'NVIDIA Quadro P5000' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows:    4. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows:    5. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows:    6. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2019.12.06-16.07.12:721][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.12.06-16.07.12:721][  0]LogD3D11RHI:     Adapter Name: NVIDIA Quadro P5000
+[2019.12.06-16.07.12:721][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.12.06-16.07.12:721][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.12.06-16.07.12:721][  0]LogRHI: Texture pool is 11378 MB (70% of 16255 MB)
+[2019.12.06-16.07.12:751][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2019.12.06-16.07.12:751][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2019.12.06-16.07.12:751][  0]LogD3D11RHI: Async texture creation enabled
+[2019.12.06-16.07.12:762][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.12.06-16.07.12:804][  0]LogShaderCompilers: Guid format shader working directory is 6 characters bigger than the processId version (../../../../../../Workspace/Github/Nudge/Test2/Intermediate/Shaders/WorkingDirectory/1480/).
+[2019.12.06-16.07.12:804][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/nolan.roher/AppData/Local/Temp/UnrealShaderWorkingDir/CBD0B37F468436F4A0AEF1A35E492C76/'.
+[2019.12.06-16.07.12:969][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.12.06-16.07.12:978][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.12.06-16.07.12:988][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.12.06-16.07.12:998][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.12.06-16.07.13:008][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.12.06-16.07.13:018][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.12.06-16.07.13:028][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.12.06-16.07.13:036][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.12.06-16.07.13:041][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.12.06-16.07.13:049][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2019.12.06-16.07.13:059][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2019.12.06-16.07.13:068][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2019.12.06-16.07.13:077][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2019.12.06-16.07.13:085][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2019.12.06-16.07.13:094][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2019.12.06-16.07.13:113][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2019.12.06-16.07.13:113][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2019.12.06-16.07.13:122][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.12.06-16.07.13:123][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.12.06-16.07.13:157][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.12.06-16.07.13:166][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.12.06-16.07.13:174][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.12.06-16.07.13:183][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.12.06-16.07.13:192][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.12.06-16.07.13:202][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.12.06-16.07.13:202][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.12.06-16.07.13:290][  0]LogShaderCompilers: Display: Using XGE Shader Compiler (Interception Interface).
+[2019.12.06-16.07.13:831][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: Loaded boot cache 0.05s 78MB C:/Users/nolan.roher/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/nolan.roher/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Workspace/Github/Nudge/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Workspace/Github/Nudge/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.12.06-16.07.13:878][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.12.06-16.07.13:889][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.12.06-16.07.13:901][  0]LogDerivedDataCache: Using Local data cache path C:/Users/nolan.roher/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.12.06-16.07.13:901][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.12.06-16.07.13:901][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.12.06-16.07.13:910][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.12.06-16.07.13:910][  0]LogSlate: Using Freetype 2.6.0
+[2019.12.06-16.07.13:910][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.12.06-16.07.13:911][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.12.06-16.07.14:002][  0]LogAssetRegistry: FAssetRegistry took 0.0248 seconds to start up
+[2019.12.06-16.07.14:227][  0]LogInit: Selected Device Profile: [Windows]
+[2019.12.06-16.07.14:333][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.12.06-16.07.14:335][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.12.06-16.07.14:335][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.12.06-16.07.14:335][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.12.06-16.07.14:335][  0]LogMeshReduction: No automatic mesh merging module available
+[2019.12.06-16.07.14:335][  0]LogMeshMerging: No automatic mesh merging module available
+[2019.12.06-16.07.14:358][  0]LogNetVersion: Test2 , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 7524354)
+[2019.12.06-16.07.14:696][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 2 prioritized culture(s) in 0.055248 seconds
+[2019.12.06-16.07.14:701][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2019.12.06-16.07.14:701][  0]LogUObjectAllocator: 7314312 out of 0 bytes used by permanent object pool.
+[2019.12.06-16.07.14:701][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.12.06-16.07.15:871][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.12.06-16.07.15:894][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.12.06-16.07.16:126][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bc71dc10, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_AnimBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
+[2019.12.06-16.07.16:132][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229bc71dc10, Size=72
+[2019.12.06-16.07.16:132][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bd22f3d0, Size=72, Default__FirstPerson_AnimBP_C Function /Engine/Transient.REINST_FirstPerson_AnimBP_C_0:ExecuteUbergraph_FirstPerson_AnimBP
+[2019.12.06-16.07.16:137][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bd7dd850, Size=72, Default__FirstPerson_AnimBP_C Function /Game/FirstPerson/Animations/FirstPerson_AnimBP.FirstPerson_AnimBP_C:ExecuteUbergraph_FirstPerson_AnimBP
+[2019.12.06-16.07.16:182][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bd7cbe80, Size=184, Default__FirstPersonCharacter_C Function /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter_C:ExecuteUbergraph_FirstPersonCharacter
+[2019.12.06-16.07.16:187][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229bd7cbe80, Size=184
+[2019.12.06-16.07.16:187][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bd7cbe80, Size=184, Default__FirstPersonCharacter_C Function /Engine/Transient.REINST_FirstPersonCharacter_C_6:ExecuteUbergraph_FirstPersonCharacter
+[2019.12.06-16.07.16:190][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229bdfe7400, Size=184, Default__FirstPersonCharacter_C Function /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter_C:ExecuteUbergraph_FirstPersonCharacter
+[2019.12.06-16.07.16:221][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.679800ms] /Game/FirstPerson/Character/Mesh/SK_Mannequin_Arms.SK_Mannequin_Arms
+[2019.12.06-16.07.16:229][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.490200ms] /Game/FirstPerson/FPWeapon/Mesh/SK_FPGun.SK_FPGun
+[2019.12.06-16.07.16:319][  0]SourceControl: Source control is disabled
+[2019.12.06-16.07.16:319][  0]SourceControl: Source control is disabled
+[2019.12.06-16.07.16:330][  0]SourceControl: Source control is disabled
+[2019.12.06-16.07.16:341][  0]SourceControl: Source control is disabled
+[2019.12.06-16.07.16:693][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.12.06-16.07.16:811][  0]LogOcInput: OculusInput pre-init called
+[2019.12.06-16.07.16:883][  0]LogEngine: Initializing Engine...
+[2019.12.06-16.07.16:883][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.12.06-16.07.16:884][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.12.06-16.07.16:884][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.12.06-16.07.17:039][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.12.06-16.07.17:054][  0]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.07.17:084][  0]LogInit: FAudioDevice initialized.
+[2019.12.06-16.07.17:120][  0]LogDerivedDataCache: Saved boot cache 0.04s 78MB C:/Users/nolan.roher/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2019.12.06-16.07.17:129][  0]LogInit: Texture streaming: Enabled
+[2019.12.06-16.07.17:139][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.12.06-16.07.17:155][  0]LogInit: Transaction tracking system initialized
+[2019.12.06-16.07.17:169][  0]BlueprintLog: New page: Editor Load
+[2019.12.06-16.07.17:252][  0]LocalizationService: Localization service is disabled
+[2019.12.06-16.07.17:314][  0]LogConsoleResponse: Display: 
+[2019.12.06-16.07.17:431][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.12.06-16.07.17:431][  0]LogCook: Display: Mobile HDR setting 1
+[2019.12.06-16.07.17:431][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.12.06-16.07.17:431][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.12.06-16.07.17:431][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.12.06-16.07.17:657][  0]LogFileCache: Scanning file cache for directory 'C:/Workspace/Github/Nudge/Test2/Content/' took 0.01s
+[2019.12.06-16.07.17:657][  0]SourceControl: Source control is disabled
+[2019.12.06-16.07.17:658][  0]Cmd: MAP LOAD FILE="../../../../../../Workspace/Github/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.12.06-16.07.17:658][  0]LightingResults: New page: Lighting Build
+[2019.12.06-16.07.17:660][  0]MapCheck: New page: Map Check
+[2019.12.06-16.07.17:660][  0]LightingResults: New page: Lighting Build
+[2019.12.06-16.07.17:666][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229bd22f3d0, Size=72
+[2019.12.06-16.07.17:666][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229bd7cbe80, Size=184
+[2019.12.06-16.07.17:674][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229c0142e20, Size=12, Default__FlickeringLight_Blueprint_C Function /Game/FirstPersonCPP/Blueprints/FlickeringLight_Blueprint.FlickeringLight_Blueprint_C:ExecuteUbergraph_FlickeringLight_Blueprint
+[2019.12.06-16.07.17:675][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229c0142e20, Size=12
+[2019.12.06-16.07.17:675][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229c0142e20, Size=12, Default__FlickeringLight_Blueprint_C Function /Engine/Transient.REINST_FlickeringLight_Blueprint_C_8:ExecuteUbergraph_FlickeringLight_Blueprint
+[2019.12.06-16.07.17:676][  0]LogUObjectGlobals: Created PersistentFrame Addr=0x00000229c0142e60, Size=12, Default__FlickeringLight_Blueprint_C Function /Game/FirstPersonCPP/Blueprints/FlickeringLight_Blueprint.FlickeringLight_Blueprint_C:ExecuteUbergraph_FlickeringLight_Blueprint
+[2019.12.06-16.07.17:765][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.110100ms] /Game/FirstPerson/Animations/Door/DoorOpenPanels.DoorOpenPanels
+[2019.12.06-16.07.17:765][  0]LogSkeletalMesh: Skeletal Mesh found in DDC [0.135900ms] /Game/FirstPerson/Animations/Door/DoorOpenFrame.DoorOpenFrame
+[2019.12.06-16.07.17:837][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.07.17:846][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.12.06-16.07.17:853][  0]LogUObjectGlobals: Destroyed PersistentFrame Addr=0x00000229c0142e20, Size=12
+[2019.12.06-16.07.17:853][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.12.06-16.07.17:900][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 46.286ms to complete.
+[2019.12.06-16.07.17:900][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.242
+[2019.12.06-16.07.18:020][  0]LogCollectionManager: Loaded 0 collections in 0.001037 seconds
+[2019.12.06-16.07.18:059][  0]LogFileCache: Scanning file cache for directory 'C:/Workspace/Github/Nudge/Test2/Saved/Collections/' took 0.01s
+[2019.12.06-16.07.18:059][  0]LogFileCache: Scanning file cache for directory 'C:/Workspace/Github/Nudge/Test2/Content/Developers/nolanroher/Collections/' took 0.01s
+[2019.12.06-16.07.18:059][  0]LogFileCache: Scanning file cache for directory 'C:/Workspace/Github/Nudge/Test2/Content/Collections/' took 0.01s
+[2019.12.06-16.07.18:059][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.12.06-16.07.18:066][  0]LogContentBrowser: Native class hierarchy populated in 0.0066 seconds. Added 2463 classes and 560 folders.
+[2019.12.06-16.07.18:071][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.06-16.07.18:098][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.06-16.07.18:101][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2019.12.06-16.07.18:117][  0]LogSlate: Took 0.000169 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.12.06-16.07.18:118][  0]LogSlate: Took 0.000101 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.12.06-16.07.18:122][  0]LogSlate: Took 0.000116 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.12.06-16.07.18:191][  0]LogRenderer: Reallocating scene render targets to support 1616x812 Format 10 NumSamples 1 (Frame:1).
+[2019.12.06-16.07.18:272][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.07.18:285][  0]LogSlate: Window 'Tutorials' being destroyed
+[2019.12.06-16.07.18:314][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.12.06-16.07.18:314][  0]LogLoad: (Engine Initialization) Total time: 8.34 seconds
+[2019.12.06-16.07.18:314][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.12.06-16.07.18:342][  0]LogAssetRegistry: Asset discovery search completed in 4.3622 seconds
+[2019.12.06-16.07.18:343][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.12.06-16.07.18:343][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000044 seconds (updated 0 objects)
+[2019.12.06-16.07.18:346][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.12.06-16.07.22:780][512]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.07.28:393][185]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.12.06-16.07.43:196][363]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2019.12.06-16.08.13:474][546]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.08.13:557][556]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.08.13:573][556]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.08.13:573][556]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.08.13:573][556]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:08:13 AM)
+[2019.12.06-16.08.13:573][556]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.08.13:592][556]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018678s)
+[2019.12.06-16.08.13:592][556]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.08.13:593][556]LogPlayLevel: PIE: World Init took: (0.000796s)
+[2019.12.06-16.08.13:593][556]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.019660s)
+[2019.12.06-16.08.13:609][556]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.08.13:620][556]LogInit: FAudioDevice initialized.
+[2019.12.06-16.08.13:665][556]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.08.13:668][556]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.08.13
+[2019.12.06-16.08.13:669][556]LogWorld: Bringing up level for play took: 0.003125
+[2019.12.06-16.08.13:670][556]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.08.13:672][556]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2019.12.06-16.08.13:673][556]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.317
+[2019.12.06-16.08.13:674][556]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.08.27:101][164]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.08.27:136][164]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.08.28:288][296]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid2)
+[2019.12.06-16.08.35:943][203]LogSlate: Took 0.000144 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.12.06-16.08.36:231][237]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.08.44:805][254]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.08.58:288][856]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.09.07:636][954]LogEditorViewport: Clicking on Actor (LMB): EndLevelTriggers (EndLevelTriggers1)
+[2019.12.06-16.09.15:615][900]LogEditorViewport: Clicking on Actor (LMB): EndLevelDoor (EndLevelDoor1)
+[2019.12.06-16.09.16:307][972]LogEditorViewport: Clicking on Actor (LMB): SpotLight (SpotLight4)
+[2019.12.06-16.09.18:129][183]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.09.24:354][921]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.09.28:292][382]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.09.34:325][ 93]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.10.11:768][209]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.10.13:419][400]EditorErrors: New page: Actor attachment
+[2019.12.06-16.10.16:668][788]EditorErrors: New page: Actor attachment
+[2019.12.06-16.10.20:774][269]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SciFi_Hallway_Module_Straight2)
+[2019.12.06-16.10.31:666][745]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid1)
+[2019.12.06-16.10.33:242][928]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.10.43:033][ 95]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.10.43:048][ 95]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.10.43:048][ 95]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.10.43:048][ 95]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:10:43 AM)
+[2019.12.06-16.10.43:048][ 95]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.10.43:059][ 95]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012133s)
+[2019.12.06-16.10.43:060][ 95]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.10.43:060][ 95]LogPlayLevel: PIE: World Init took: (0.000644s)
+[2019.12.06-16.10.43:060][ 95]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.012915s)
+[2019.12.06-16.10.43:077][ 95]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.10.43:089][ 95]LogInit: FAudioDevice initialized.
+[2019.12.06-16.10.43:120][ 95]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.10.43:123][ 95]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.10.43
+[2019.12.06-16.10.43:123][ 95]LogWorld: Bringing up level for play took: 0.002847
+[2019.12.06-16.10.43:124][ 95]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.10.43:125][ 95]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.864
+[2019.12.06-16.10.43:125][ 95]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.10.50:411][968]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.10.50:440][968]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.10.51:020][ 32]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid1)
+[2019.12.06-16.11.09:482][762]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.11.09:557][771]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.11.09:572][771]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.11.09:572][771]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.11.09:572][771]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:11:09 AM)
+[2019.12.06-16.11.09:572][771]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.11.09:585][771]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012668s)
+[2019.12.06-16.11.09:586][771]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.11.09:586][771]LogPlayLevel: PIE: World Init took: (0.000871s)
+[2019.12.06-16.11.09:586][771]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013722s)
+[2019.12.06-16.11.09:604][771]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.11.09:615][771]LogInit: FAudioDevice initialized.
+[2019.12.06-16.11.09:647][771]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.11.09:650][771]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.11.09
+[2019.12.06-16.11.09:650][771]LogWorld: Bringing up level for play took: 0.002688
+[2019.12.06-16.11.09:651][771]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.11.09:651][771]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.338
+[2019.12.06-16.11.09:652][771]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.11.43:096][783]LogNet: Browse: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2019.12.06-16.11.43:096][783]LogLoad: LoadMap: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2019.12.06-16.11.43:104][783]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.11.43:116][783]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011355s)
+[2019.12.06-16.11.43:117][783]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.11.43:117][783]LogPlayLevel: PIE: World Init took: (0.000658s)
+[2019.12.06-16.11.43:117][783]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.012241s)
+[2019.12.06-16.11.43:117][783]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.11.43:119][783]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.11.43
+[2019.12.06-16.11.43:120][783]LogWorld: Bringing up level for play took: 0.002498
+[2019.12.06-16.11.43:120][783]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.11.43:121][783]LogLoad: Took 0.025185 seconds to LoadMap(/Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap)
+[2019.12.06-16.12.48:922][576]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.12.48:957][576]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.12.49:815][673]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.13.00:628][962]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CenterConsole_With_Hologram)
+[2019.12.06-16.14.40:487][ 92]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid2)
+[2019.12.06-16.16.40:172][636]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.19.22:803][925]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.19.22:951][925]LogSavePackage: Save=118.39ms
+[2019.12.06-16.19.22:951][925]LogSavePackage: Moving '../../../../../../Workspace/Github/Nudge/Test2/Saved/FirstPersonExampleMap_Auto1AC1E49124F0836C4EE168B92A30FCE50.tmp' to '../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2019.12.06-16.19.22:953][925]LogSavePackage: Display: Finished SavePackage ../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap
+[2019.12.06-16.19.22:958][925]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.144
+[2019.12.06-16.19.22:958][925]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.144
+[2019.12.06-16.20.09:028][433]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.20.16:066][265]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid2)
+[2019.12.06-16.20.17:686][454]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.20.41:905][325]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.20.57:607][190]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.22.22:052][614]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.23.20:702][  4]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.23.46:879][113]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.23.52:318][755]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -152.01,2673.33,244.75
+[2019.12.06-16.23.52:318][755]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.23.52:805][811]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -274.17,2798.23,244.75
+[2019.12.06-16.23.52:805][811]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.23.54:035][955]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.23.57:584][376]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.23.57:591][376]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2019.12.06-16.24.12:102][108]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.24.23:305][441]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.24.45:154][ 30]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -194.22,2893.20,244.75
+[2019.12.06-16.24.45:154][ 30]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.24.45:639][ 86]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -87.72,2924.92,244.75
+[2019.12.06-16.24.45:639][ 86]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.24.46:892][233]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.25.10:465][ 36]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.25.10:471][ 36]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2019.12.06-16.27.53:517][952]Candidate modules for hot reload:
+[2019.12.06-16.27.53:517][952]  Test2
+[2019.12.06-16.27.53:517][952]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,4111 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.27.53:523][952]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:28:08 AM
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Creating makefile for hot reloading Test2 (no existing makefile)
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Parsing headers for Test2Editor
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:   Running UnrealHeaderTool "C:\Workspace\Github\Nudge\Test2\Test2.uproject" "C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Reflection code generated for Test2Editor in 6.8752963 seconds
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Distributing 4 actions to XGE
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: License is invalid:
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: PuzzleGrid.gen.cpp (0:00.89 at +0:00)
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: PuzzleGrid.cpp (0:01.20 at +0:00)
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: UE4Editor-Test2-4111.dll (0:00.68 at +0:02)
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4111.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4111.suppressed.exp
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: UE4Editor-Test2-4111.lib (0:00.09 at +0:02)
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4111.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4111.exp
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.28.08:061][494]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: 
+[2019.12.06-16.28.08:061][494]CompilerResultsLog: Total build time: 14.15 seconds (XGE executor: 2.98 seconds)
+[2019.12.06-16.28.08:061][494]LogMainFrame: MainFrame: Module compiling took 14.548 seconds
+[2019.12.06-16.28.08:084][494]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.28.08:150][494]LogHotReload: Re-instancing PuzzleGrid after hot-reload.
+[2019.12.06-16.28.08:150][494]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.28.08:151][494]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.28.08:224][494]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.28.08:225][494]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.28.08:335][494]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.28.08:339][494]Display: HotReload took 14.8s.
+[2019.12.06-16.29.26:886][729]LogSavePackage: Save=115.29ms
+[2019.12.06-16.29.26:887][729]LogSavePackage: Moving '../../../../../../Workspace/Github/Nudge/Test2/Saved/FirstPersonExampleMap_Auto2E179104C42265DCA336ADCA44FF0A00E.tmp' to '../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto2.umap'
+[2019.12.06-16.29.26:888][729]LogSavePackage: Display: Finished SavePackage ../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto2.umap
+[2019.12.06-16.29.26:890][729]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.140
+[2019.12.06-16.29.26:890][729]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.140
+[2019.12.06-16.30.02:977][583]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.30.25:562][324]Cmd: TRANSACTION UNDO
+[2019.12.06-16.30.25:562][324]LogEditorTransaction: Undo Clicking on Component (tree view)
+[2019.12.06-16.30.26:840][465]Candidate modules for hot reload:
+[2019.12.06-16.30.26:840][465]  Test2
+[2019.12.06-16.30.26:840][465]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,8297 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.30.26:845][465]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:30:29 AM
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: Distributing 3 actions to XGE
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.30.29:862][817]CompilerResultsLog: License is invalid:
+[2019.12.06-16.30.29:862][817]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.30.29:862][817]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: PuzzleGrid.cpp (0:01.25 at +0:00)
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: UE4Editor-Test2-8297.dll (0:00.67 at +0:01)
+[2019.12.06-16.30.29:863][817]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8297.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8297.suppressed.exp
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: UE4Editor-Test2-8297.lib (0:00.09 at +0:01)
+[2019.12.06-16.30.29:863][817]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8297.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8297.exp
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.30.29:863][817]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: 
+[2019.12.06-16.30.29:863][817]CompilerResultsLog: Total build time: 2.87 seconds (XGE executor: 2.20 seconds)
+[2019.12.06-16.30.29:863][817]LogMainFrame: MainFrame: Module compiling took 3.027 seconds
+[2019.12.06-16.30.29:888][817]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.30.29:954][817]LogHotReload: Re-instancing PuzzleGrid after hot-reload.
+[2019.12.06-16.30.29:954][817]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.30.29:954][817]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.30.30:031][817]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0006 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.30.30:032][817]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.30.30:063][817]LogContentBrowser: Native class hierarchy populated in 0.0084 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.30.30:063][817]Display: HotReload took  3.2s.
+[2019.12.06-16.30.47:091][ 61]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at 366.78,-282.89,-571.05
+[2019.12.06-16.30.47:091][ 61]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.30.47:308][ 85]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at 366.78,-282.89,-571.05
+[2019.12.06-16.30.47:308][ 85]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.30.48:836][265]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.31.12:541][271]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.31.12:548][271]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2019.12.06-16.31.21:995][371]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.31.22:068][379]Candidate modules for hot reload:
+[2019.12.06-16.31.22:068][379]  Test2
+[2019.12.06-16.31.22:068][379]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,4937 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.31.22:074][379]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:31:33 AM
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Parsing headers for Test2Editor
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:   Running UnrealHeaderTool "C:\Workspace\Github\Nudge\Test2\Test2.uproject" "C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Reflection code generated for Test2Editor in 6.8981675 seconds
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Distributing 5 actions to XGE
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: License is invalid:
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Test2.init.gen.cpp (0:00.34 at +0:00)
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: PuzzleGrid.gen.cpp (0:00.87 at +0:00)
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: PuzzleGrid.cpp (0:01.21 at +0:01)
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: UE4Editor-Test2-4937.dll (0:00.68 at +0:02)
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4937.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4937.suppressed.exp
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: UE4Editor-Test2-4937.lib (0:00.09 at +0:03)
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4937.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-4937.exp
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.31.33:345][732]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: 
+[2019.12.06-16.31.33:345][732]CompilerResultsLog: Total build time: 11.12 seconds (XGE executor: 3.39 seconds)
+[2019.12.06-16.31.33:345][732]LogMainFrame: MainFrame: Module compiling took 11.281 seconds
+[2019.12.06-16.31.33:367][732]LogClass: Could not find existing class PuzzleGrid in package /Script/Test2 for HotReload, assuming new class
+[2019.12.06-16.31.33:370][732]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.31.33:437][732]LogHotReload: Re-instancing PuzzleGrid after hot-reload.
+[2019.12.06-16.31.33:437][732]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.31.33:437][732]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.31.33:535][732]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.31.33:536][732]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.31.33:563][732]LogContentBrowser: Native class hierarchy populated in 0.0071 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.31.33:563][732]Display: HotReload took 11.5s.
+[2019.12.06-16.31.46:743][312]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -10.05,1137.62,247.61
+[2019.12.06-16.31.46:743][312]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.31.47:142][357]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -25.21,1008.47,247.61
+[2019.12.06-16.31.47:142][357]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.31.49:185][598]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.31.52:855][ 35]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.31.52:862][ 35]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2019.12.06-16.32.27:321][772]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.32.27:387][779]Candidate modules for hot reload:
+[2019.12.06-16.32.27:388][779]  Test2
+[2019.12.06-16.32.27:388][779]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,229 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.32.27:393][779]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:32:30 AM
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: Distributing 3 actions to XGE
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: License is invalid:
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: PuzzleGrid.cpp (0:01.26 at +0:00)
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: UE4Editor-Test2-229.dll (0:00.70 at +0:01)
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-229.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-229.suppressed.exp
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: UE4Editor-Test2-229.lib (0:00.10 at +0:01)
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-229.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-229.exp
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.32.30:403][138]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: 
+[2019.12.06-16.32.30:403][138]CompilerResultsLog: Total build time: 2.86 seconds (XGE executor: 2.19 seconds)
+[2019.12.06-16.32.30:403][138]LogMainFrame: MainFrame: Module compiling took 3.020 seconds
+[2019.12.06-16.32.30:428][138]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.32.30:495][138]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.32.30:496][138]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.32.30:525][138]LogContentBrowser: Native class hierarchy populated in 0.0073 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.32.30:525][138]Display: HotReload took  3.1s.
+[2019.12.06-16.32.31:510][256]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.32.31:707][278]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -12.25,1164.35,247.61
+[2019.12.06-16.32.31:707][278]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.32.31:931][302]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -66.89,1088.48,247.61
+[2019.12.06-16.32.31:931][302]LogActor: Warning: PuzzleGrid /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.PuzzleGrid_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.12.06-16.32.33:275][459]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.32.38:555][ 89]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.32.38:562][ 89]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2019.12.06-16.36.01:279][204]Candidate modules for hot reload:
+[2019.12.06-16.36.01:279][204]  Test2
+[2019.12.06-16.36.01:279][204]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,92 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.36.01:284][204]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:36:04 AM
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: Distributing 3 actions to XGE
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: License is invalid:
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: PuzzleGrid.cpp (0:01.25 at +0:00)
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: UE4Editor-Test2-92.dll (0:00.68 at +0:01)
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-92.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-92.suppressed.exp
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: UE4Editor-Test2-92.lib (0:00.09 at +0:01)
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-92.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-92.exp
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.36.04:313][568]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: 
+[2019.12.06-16.36.04:313][568]CompilerResultsLog: Total build time: 2.88 seconds (XGE executor: 2.19 seconds)
+[2019.12.06-16.36.04:313][568]LogMainFrame: MainFrame: Module compiling took 3.038 seconds
+[2019.12.06-16.36.04:339][568]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.36.04:404][568]LogHotReload: Re-instancing PuzzleGrid after hot-reload.
+[2019.12.06-16.36.04:473][568]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.36.04:475][568]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.36.04:502][568]LogContentBrowser: Native class hierarchy populated in 0.0071 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.36.04:502][568]Display: HotReload took  3.2s.
+[2019.12.06-16.37.12:849][768]Candidate modules for hot reload:
+[2019.12.06-16.37.12:849][768]  Test2
+[2019.12.06-16.37.12:849][768]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,7861 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.37.12:854][768]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.37.13:665][866]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:37:13 AM
+[2019.12.06-16.37.13:665][866]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.37.13:665][866]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.37.13:665][866]CompilerResultsLog: Target is up to date
+[2019.12.06-16.37.13:665][866]CompilerResultsLog: Total build time: 0.66 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2019.12.06-16.37.13:665][866]LogMainFrame: MainFrame: Module compiling took 0.821 seconds
+[2019.12.06-16.37.13:682][866]LogContentBrowser: Native class hierarchy populated in 0.0078 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.37.13:682][866]Display: HotReload took  0.8s.
+[2019.12.06-16.37.21:189][765]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -89.86,1150.75,247.61
+[2019.12.06-16.37.21:429][791]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -62.27,983.17,247.61
+[2019.12.06-16.37.22:397][903]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.37.36:522][580]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.37.54:890][769]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.37.56:583][971]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.37.56:590][971]LogEditorActor: Deleted 1 Actors (0.009 secs)
+[2019.12.06-16.38.18:675][587]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.38.46:489][891]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.38.59:827][467]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.39.04:611][ 38]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.39.04:618][ 38]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2019.12.06-16.39.05:168][102]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -170.18,2871.29,244.75
+[2019.12.06-16.39.05:761][170]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -92.59,2831.05,244.75
+[2019.12.06-16.39.08:116][449]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.39.24:644][411]Cmd: TRANSACTION UNDO
+[2019.12.06-16.39.24:644][411]LogEditorTransaction: Undo Move Components
+[2019.12.06-16.39.25:645][525]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.39.29:615][994]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.39.35:550][701]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.39.45:847][339]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.39.46:796][447]Candidate modules for hot reload:
+[2019.12.06-16.39.46:796][447]  Test2
+[2019.12.06-16.39.46:796][447]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,1296 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.39.46:801][447]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:39:49 AM
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: Distributing 3 actions to XGE
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: License is invalid:
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: PuzzleGrid.cpp (0:01.23 at +0:00)
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: UE4Editor-Test2-1296.dll (0:00.65 at +0:01)
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-1296.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-1296.suppressed.exp
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: UE4Editor-Test2-1296.lib (0:00.09 at +0:01)
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-1296.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-1296.exp
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.39.49:799][804]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: 
+[2019.12.06-16.39.49:799][804]CompilerResultsLog: Total build time: 2.85 seconds (XGE executor: 2.18 seconds)
+[2019.12.06-16.39.49:799][804]LogMainFrame: MainFrame: Module compiling took 3.008 seconds
+[2019.12.06-16.39.49:823][804]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.39.49:892][804]LogHotReload: Re-instancing PuzzleGrid after hot-reload.
+[2019.12.06-16.39.49:997][804]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.39.49:998][804]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.39.50:026][804]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.39.50:026][804]Display: HotReload took  3.2s.
+[2019.12.06-16.40.04:125][474]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -154.65,2894.09,244.75
+[2019.12.06-16.40.04:558][523]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -19.08,2930.29,244.75
+[2019.12.06-16.40.06:429][743]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.40.25:517][  5]Cmd: TRANSACTION UNDO
+[2019.12.06-16.40.25:517][  5]LogEditorTransaction: Undo Move Components
+[2019.12.06-16.40.25:850][ 41]Cmd: TRANSACTION UNDO
+[2019.12.06-16.40.25:850][ 41]LogEditorTransaction: Undo Edit Static Mesh
+[2019.12.06-16.40.27:606][248]Cmd: TRANSACTION UNDO
+[2019.12.06-16.40.27:606][248]LogEditorTransaction: Undo Clicking on Component (tree view)
+[2019.12.06-16.40.34:018][989]Cmd: TRANSACTION UNDO
+[2019.12.06-16.40.34:018][989]LogEditorTransaction: Undo Clicking on Component (tree view)
+[2019.12.06-16.40.34:481][ 38]Cmd: TRANSACTION UNDO
+[2019.12.06-16.40.34:481][ 38]LogEditorTransaction: Undo Create Actors
+[2019.12.06-16.40.38:121][466]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.40.38:188][473]Candidate modules for hot reload:
+[2019.12.06-16.40.38:188][473]  Test2
+[2019.12.06-16.40.38:188][473]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,2222 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.40.38:192][473]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.40.39:012][572]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:40:39 AM
+[2019.12.06-16.40.39:012][572]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.40.39:012][572]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.40.39:012][572]CompilerResultsLog: Target is up to date
+[2019.12.06-16.40.39:012][572]CompilerResultsLog: Total build time: 0.67 seconds (NoActionsToExecute executor: 0.00 seconds)
+[2019.12.06-16.40.39:012][572]LogMainFrame: MainFrame: Module compiling took 0.830 seconds
+[2019.12.06-16.40.39:029][572]LogContentBrowser: Native class hierarchy populated in 0.0071 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.40.39:029][572]Display: HotReload took  0.9s.
+[2019.12.06-16.40.42:197][950]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at -135.80,2885.15,244.75
+[2019.12.06-16.40.42:362][967]LogEditor: Attempting to add actor of class 'PuzzleGrid' to level at 8.03,2999.32,248.96
+[2019.12.06-16.40.43:143][ 57]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.05:906][641]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.17:628][ 35]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.31:503][676]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.33:615][928]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid21)
+[2019.12.06-16.41.35:983][201]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.39:591][625]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.41.56:571][636]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.05:769][724]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.09:960][220]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.23:351][788]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.25:011][985]LogEditorActor: Deleted Actor: PuzzleGrid
+[2019.12.06-16.42.25:018][985]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2019.12.06-16.42.34:169][ 69]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SciFi_Hallway_Module_Intersection)
+[2019.12.06-16.42.34:348][ 82]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.42.34:490][ 82]LogSavePackage: Save=116.68ms
+[2019.12.06-16.42.34:490][ 82]LogSavePackage: Moving '../../../../../../Workspace/Github/Nudge/Test2/Saved/FirstPersonExampleMapBA46CA7F47E956FD8795E2A8FFC87275.tmp' to '../../../../../../Workspace/Github/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2019.12.06-16.42.34:493][ 82]LogSavePackage: Display: Finished SavePackage ../../../../../../Workspace/Github/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap
+[2019.12.06-16.42.34:565][ 82]LogSavePackage: Save=35.71ms
+[2019.12.06-16.42.34:565][ 82]LogSavePackage: Moving '../../../../../../Workspace/Github/Nudge/Test2/Saved/FirstPersonExampleMap_BuiltDataAA5AD0CC49E245F4A6080CA34EEAAA0C.tmp' to '../../../../../../Workspace/Github/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2019.12.06-16.42.34:566][ 82]LogSavePackage: Display: Finished SavePackage ../../../../../../Workspace/Github/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset
+[2019.12.06-16.42.35:428][183]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.40:438][771]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.44:801][288]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.42.47:192][571]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.43.20:999][586]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.43.31:855][878]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.43.36:938][481]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.43.36:953][481]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.43.36:954][481]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.43.36:954][481]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:43:36 AM)
+[2019.12.06-16.43.36:954][481]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.43.36:966][481]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013213s)
+[2019.12.06-16.43.36:967][481]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.43.36:967][481]LogPlayLevel: PIE: World Init took: (0.000595s)
+[2019.12.06-16.43.36:967][481]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013939s)
+[2019.12.06-16.43.36:988][481]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.43.36:998][481]LogInit: FAudioDevice initialized.
+[2019.12.06-16.43.37:033][481]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.43.37:036][481]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.43.37
+[2019.12.06-16.43.37:036][481]LogWorld: Bringing up level for play took: 0.002748
+[2019.12.06-16.43.37:037][481]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.43.37:038][481]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.054
+[2019.12.06-16.43.37:038][481]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.43.50:765][127]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-16.43.54:718][597]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.43.54:752][597]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.43.59:507][160]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Nudge_Level_02)
+[2019.12.06-16.44.10:245][965]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.45.45:730][272]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.45.47:364][450]Candidate modules for hot reload:
+[2019.12.06-16.45.47:364][450]  Test2
+[2019.12.06-16.45.47:365][450]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.19/Engine/Binaries/DotNET/UnrealBuildTool.exe Test2 -ModuleWithSuffix=Test2,8560 Win64 Development -editorrecompile -canskiplink "C:/Workspace/Github/Nudge/Test2/Test2.uproject" ]
+[2019.12.06-16.45.47:369][450]Warning: Starting HotReload took  0.0s.
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: New page: Compilation - Dec 6, 2019, 4:45:49 AM
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: Compiling game modules for hot reload
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: Distributing 3 actions to XGE
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: --------------------Build System Warning---------------------------------------
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: License is invalid:
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:     License information is invalid. Please try reloading your license file using the Coordinator Monitor application on the Coordinator machine, or reinstall IncrediBuild.
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:     This build will run in standalone mode.
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: -------------------------------------------------------------------------------
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: --------------------Project: Default-------------------------------------------
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: LevelGridStruct.cpp (0:00.34 at +0:00)
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: UE4Editor-Test2-8560.dll (0:00.68 at +0:00)
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8560.suppressed.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8560.suppressed.exp
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: UE4Editor-Test2-8560.lib (0:00.09 at +0:01)
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:    Creating library C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8560.lib and object C:\Workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-Test2-8560.exp
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: ---------------------- Done ----------------------
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:     Rebuild All: 1 succeeded, 0 failed, 0 skipped
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 1 build system warning(s):
+[2019.12.06-16.45.49:489][703]CompilerResultsLog:    - License is invalid
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: 
+[2019.12.06-16.45.49:489][703]CompilerResultsLog: Total build time: 1.97 seconds (XGE executor: 1.29 seconds)
+[2019.12.06-16.45.49:489][703]LogMainFrame: MainFrame: Module compiling took 2.128 seconds
+[2019.12.06-16.45.49:514][703]LogHotReload: Re-instancing PuzzleBlock after hot-reload.
+[2019.12.06-16.45.49:583][703]LogContentBrowser: Native class hierarchy updated for 'Test2' in 0.0005 seconds. Added 11 classes and 2 folders.
+[2019.12.06-16.45.49:585][703]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.12.06-16.45.49:612][703]LogContentBrowser: Native class hierarchy populated in 0.0070 seconds. Added 2464 classes and 562 folders.
+[2019.12.06-16.45.49:612][703]Display: HotReload took  2.3s.
+[2019.12.06-16.45.50:804][846]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.45.50:819][846]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.45.50:819][846]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.45.50:819][846]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:45:50 AM)
+[2019.12.06-16.45.50:819][846]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.45.50:831][846]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012169s)
+[2019.12.06-16.45.50:832][846]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.45.50:832][846]LogPlayLevel: PIE: World Init took: (0.000540s)
+[2019.12.06-16.45.50:832][846]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.012838s)
+[2019.12.06-16.45.50:849][846]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.45.50:858][846]LogInit: FAudioDevice initialized.
+[2019.12.06-16.45.50:904][846]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.45.50:915][846]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.45.50
+[2019.12.06-16.45.50:915][846]LogWorld: Bringing up level for play took: 0.009007
+[2019.12.06-16.45.50:917][846]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.45.50:919][846]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0.935
+[2019.12.06-16.45.50:919][846]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.46.15:465][790]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.46.15:503][790]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.46.16:689][925]LogEditorViewport: Clicking on Actor (LMB): PuzzleGrid (PuzzleGrid2)
+[2019.12.06-16.46.23:021][676]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.46.24:496][853]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.46.24:510][853]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.46.24:510][853]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.46.24:510][853]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:46:24 AM)
+[2019.12.06-16.46.24:510][853]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.46.24:523][853]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012272s)
+[2019.12.06-16.46.24:523][853]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.46.24:524][853]LogPlayLevel: PIE: World Init took: (0.000776s)
+[2019.12.06-16.46.24:524][853]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013272s)
+[2019.12.06-16.46.24:540][853]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.46.24:552][853]LogInit: FAudioDevice initialized.
+[2019.12.06-16.46.24:585][853]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.46.24:588][853]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.46.24
+[2019.12.06-16.46.24:589][853]LogWorld: Bringing up level for play took: 0.002988
+[2019.12.06-16.46.24:589][853]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.46.24:590][853]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0.605
+[2019.12.06-16.46.24:590][853]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.47.00:575][169]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.47.00:612][169]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.47.01:640][286]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.12.06-16.47.01:723][296]LogTemp: Repeating last play command: Selected Viewport
+[2019.12.06-16.47.01:737][296]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.47.01:738][296]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.12.06-16.47.01:738][296]PIE: New page: PIE session: FirstPersonExampleMap (Dec 6, 2019, 4:47:01 AM)
+[2019.12.06-16.47.01:738][296]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.47.01:749][296]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011142s)
+[2019.12.06-16.47.01:750][296]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.47.01:750][296]LogPlayLevel: PIE: World Init took: (0.000624s)
+[2019.12.06-16.47.01:750][296]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.011943s)
+[2019.12.06-16.47.01:767][296]LogInit: XAudio2 using 'Speakers (Realtek(R) Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.12.06-16.47.01:779][296]LogInit: FAudioDevice initialized.
+[2019.12.06-16.47.01:814][296]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.47.01:817][296]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.47.01
+[2019.12.06-16.47.01:817][296]LogWorld: Bringing up level for play took: 0.002720
+[2019.12.06-16.47.01:818][296]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.47.01:818][296]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.167
+[2019.12.06-16.47.01:819][296]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.48.47:499][975]LogNet: Browse: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2019.12.06-16.48.47:499][975]LogLoad: LoadMap: /Game/FirstPersonCPP/Maps/FirstPersonExampleMap
+[2019.12.06-16.48.47:508][975]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2019.12.06-16.48.47:519][975]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010921s)
+[2019.12.06-16.48.47:520][975]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2019.12.06-16.48.47:520][975]LogPlayLevel: PIE: World Init took: (0.000777s)
+[2019.12.06-16.48.47:520][975]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.011922s)
+[2019.12.06-16.48.47:520][975]LogLoad: Game class is 'Test2GameMode'
+[2019.12.06-16.48.47:523][975]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2019.12.06-10.48.47
+[2019.12.06-16.48.47:523][975]LogWorld: Bringing up level for play took: 0.002680
+[2019.12.06-16.48.47:524][975]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.12.06-16.48.47:525][975]LogLoad: Took 0.025711 seconds to LoadMap(/Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap)
+[2019.12.06-16.48.50:299][307]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.48.50:329][307]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2019.12.06-16.55.45:577][171]LogSavePackage: Save=120.20ms
+[2019.12.06-16.55.45:577][171]LogSavePackage: Moving '../../../../../../Workspace/Github/Nudge/Test2/Saved/FirstPersonExampleMap_Auto3A142E5394BE27D2AD550A5B5EB6DED78.tmp' to '../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto3.umap'
+[2019.12.06-16.55.45:579][171]LogSavePackage: Display: Finished SavePackage ../../../../../../Workspace/Github/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto3.umap
+[2019.12.06-16.55.45:581][171]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.149
+[2019.12.06-16.55.45:581][171]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.149
+[2019.12.06-17.02.57:625][547]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-17.02.58:416][641]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.12.06-17.06.07:447][195]LogSlate: Window 'Editor Preferences' being destroyed
+[2019.12.06-17.06.07:456][195]LogSlate: Window 'Editor Preferences' being destroyed

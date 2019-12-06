@@ -47,7 +47,7 @@ private:
 
 	virtual void PostInitializeComponents() override;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	UPROPERTY(EditAnywhere, Category = Mesh)
 	class UStaticMeshComponent* pTileGridMesh;
 
 	UPROPERTY(EditAnywhere)

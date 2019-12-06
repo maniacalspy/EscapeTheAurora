@@ -13,7 +13,9 @@ APuzzleGrid::APuzzleGrid()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	pTileGridMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene component"));
+
+	pTileGridMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tile_Mesh"));
 
 	TilesBlockIsOn = *new TArray<GridTile*>();
 	MyStartPoints = *new TArray<GridTile*>();

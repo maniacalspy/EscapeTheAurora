@@ -55,7 +55,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 				{ "ModuleRelativePath", "PuzzleGrid.h" },
 			};
 #endif
-			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pTileGridMesh = { UE4CodeGen_Private::EPropertyClass::Object, "pTileGridMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(APuzzleGrid, pTileGridMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_pTileGridMesh_MetaData, ARRAY_COUNT(NewProp_pTileGridMesh_MetaData)) };
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pTileGridMesh = { UE4CodeGen_Private::EPropertyClass::Object, "pTileGridMesh", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(APuzzleGrid, pTileGridMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(NewProp_pTileGridMesh_MetaData, ARRAY_COUNT(NewProp_pTileGridMesh_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_LevelGridNumber,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_pTileGridMesh,
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleGrid, 2494779862);
+	IMPLEMENT_CLASS(APuzzleGrid, 557798109);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APuzzleGrid(Z_Construct_UClass_APuzzleGrid, &APuzzleGrid::StaticClass, TEXT("/Script/Test2"), TEXT("APuzzleGrid"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APuzzleGrid);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
