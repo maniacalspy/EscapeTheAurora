@@ -24,9 +24,9 @@
 /wd4838
 /w44668
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source"
-/I C:\Users\nolan\Documents\GitHub\Nudge\Test2\Source
-/I C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
-/I C:\Users\nolan\Documents\GitHub\Nudge\Test2\Source\Test2
+/I C:\Workspace\Nudge\Test2\Source
+/I C:\Workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
+/I C:\Workspace\Nudge\Test2\Source\Test2
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public"
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public\Internationalization"
 /I "C:\Program Files\Epic Games\UE_4.19\Engine\Source\Runtime\Core\Public\Async"
@@ -364,9 +364,9 @@
 /FI"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Program Files\Epic Games\UE_4.19\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleBlock.cpp"
-/FI"C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
-/Fo"C:\Users\nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlock.cpp.obj"
+"C:\Workspace\Nudge\Test2\Source\Test2\PuzzleBlock.cpp"
+/FI"C:\Workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
+/Fo"C:\Workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlock.cpp.obj"
 /TP
 /GR-
 /W4
