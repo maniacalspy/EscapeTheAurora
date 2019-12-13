@@ -17,9 +17,10 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	TEST2_API UClass* Z_Construct_UClass_ATest2Character();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	TEST2_API UClass* Z_Construct_UClass_UPauseHudWidget_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
-	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TEST2_API UClass* Z_Construct_UClass_ATest2Projectile_NoRegister();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	HEADMOUNTEDDISPLAY_API UClass* Z_Construct_UClass_UMotionControllerComponent_NoRegister();
@@ -50,6 +51,19 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 				{ "ModuleRelativePath", "Test2Character.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseHudInstance_MetaData[] = {
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "Test2Character.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PauseHudInstance = { UE4CodeGen_Private::EPropertyClass::Object, "PauseHudInstance", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080008, 1, nullptr, STRUCT_OFFSET(ATest2Character, PauseHudInstance), Z_Construct_UClass_UPauseHudWidget_NoRegister, METADATA_PARAMS(NewProp_PauseHudInstance_MetaData, ARRAY_COUNT(NewProp_PauseHudInstance_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PauseHudClass_MetaData[] = {
+				{ "ModuleRelativePath", "Test2Character.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FClassPropertyParams NewProp_PauseHudClass = { UE4CodeGen_Private::EPropertyClass::Class, "PauseHudClass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0044000000000000, 1, nullptr, STRUCT_OFFSET(ATest2Character, PauseHudClass), Z_Construct_UClass_UPauseHudWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(NewProp_PauseHudClass_MetaData, ARRAY_COUNT(NewProp_PauseHudClass_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUsingMotionControllers_MetaData[] = {
 				{ "Category", "Gameplay" },
@@ -183,6 +197,8 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh1P = { UE4CodeGen_Private::EPropertyClass::Object, "Mesh1P", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000b0009, 1, nullptr, STRUCT_OFFSET(ATest2Character, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_Mesh1P_MetaData, ARRAY_COUNT(NewProp_Mesh1P_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PauseHudInstance,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_PauseHudClass,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_bUsingMotionControllers,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FireAnimation,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_FireSound,
@@ -217,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 376723588);
+	IMPLEMENT_CLASS(ATest2Character, 1132245881);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATest2Character(Z_Construct_UClass_ATest2Character, &ATest2Character::StaticClass, TEXT("/Script/Test2"), TEXT("ATest2Character"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATest2Character);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

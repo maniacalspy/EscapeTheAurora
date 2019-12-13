@@ -11,7 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
-#//include "UObject/ConstructorHelpers.h"
+#include "UObject/ConstructorHelpers.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -31,12 +31,20 @@ ATest2Character::ATest2Character()
 	BaseMoveSpeed = 45.f;
 
 
-	/*ConstructorHelpers::FClassFinder<UUserWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
 
-	TSubclassOf<class UUserWidget> MenuClass = MenuClassFinder.Class;
+	PauseHudClass = MenuClassFinder.Class;
 
-	PauseHud = CreateWidget<UPauseHudWidget>(this->GetGameInstance(), MenuClass);
-	*/
+
+	//FStringClassReference MyWidgetClassRef(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
+	//if (UClass* MyWidgetClass = MyWidgetClassRef.TryLoadClass<UUserWidget>())
+	//{
+	//	UUserWidget* MyWidget = CreateWidget<UUserWidget>(GetWorld(), MyWidgetClass);
+	//	// Do stuff with MyWidget
+	//}
+	//PauseHud = CreateWidget<UPauseHudWidget>(GetWorld(), MenuClass);
+	//PauseHud->Setup();
+	
 	// Create a CameraComponent	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
@@ -202,10 +210,19 @@ void ATest2Character::TogglePause() {
 	if (mycontroller) {
 		bool isPaused = mycontroller->IsPaused();
 		if (!isPaused) {
-			//PauseHud->OpenMenu();
+			if (PauseHudClass) {
+				if (!PauseHudInstance) {
+						PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
+						PauseHudInstance->Setup();
+						PauseHudInstance->OpenMenu();
+				}
+				else if (!(PauseHudInstance->IsInViewport())) {
+					PauseHudInstance->OpenMenu();
+				}
+			}
 		}
 		else {
-			//PauseHud->CloseMenu();
+			PauseHudInstance->CloseMenu();
 		}
 		mycontroller->SetPause(!isPaused);
 	}

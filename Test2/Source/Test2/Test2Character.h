@@ -45,8 +45,6 @@ class ATest2Character : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UMotionControllerComponent* L_MotionController;
 
-	//class UPauseHudWidget* PauseHud;
-
 public:
 	ATest2Character();
 
@@ -150,5 +148,13 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+
+private:
+
+	UPROPERTY()
+	TSubclassOf<class UPauseHudWidget> PauseHudClass;
+
+	UPROPERTY()
+	class UPauseHudWidget* PauseHudInstance;
 };
 

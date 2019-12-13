@@ -2,17 +2,19 @@
 
 #include "PauseHudWidget.h"
 
-
 void UPauseHudWidget::Setup() {
 	World = GetWorld();
 	PlayerController = World->GetFirstPlayerController();
 }
 
 void UPauseHudWidget::OpenMenu() {
+	if (!World) {
+		this->Setup();
+	}
 	this->AddToViewport();
 	
 	
-	FInputModeUIOnly InputModeData;
+	FInputModeGameAndUI InputModeData;
 	InputModeData.SetWidgetToFocus(this->TakeWidget());
 	InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 
