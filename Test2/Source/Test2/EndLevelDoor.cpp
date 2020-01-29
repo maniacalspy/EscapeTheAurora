@@ -11,7 +11,8 @@ AEndLevelDoor::AEndLevelDoor()
 
 	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
-
+	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
+	pOpenSound->bAutoActivate = false;
 	
 	static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
 	if (PanelOnMaterialAsset.Succeeded()) {
@@ -43,5 +44,6 @@ void AEndLevelDoor::Tick(float DeltaTime)
 void AEndLevelDoor::OpenDoor()
 {
 	if(pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+	if (pOpenSound) pOpenSound->Play();
 	DoorPanelSkeleton->Play(false);
 }

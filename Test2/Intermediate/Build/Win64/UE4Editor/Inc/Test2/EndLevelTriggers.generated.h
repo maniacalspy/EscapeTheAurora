@@ -13,8 +13,44 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_EndLevelTriggers_generated_h
 
-#define Test2_Source_Test2_EndLevelTriggers_h_16_RPC_WRAPPERS
-#define Test2_Source_Test2_EndLevelTriggers_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_EndLevelTriggers_h_16_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execPlayNextSound) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayNextSound(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDebugPing) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DebugPing(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_EndLevelTriggers_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execPlayNextSound) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->PlayNextSound(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execDebugPing) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->DebugPing(); \
+		P_NATIVE_END; \
+	}
+
+
 #define Test2_Source_Test2_EndLevelTriggers_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEndLevelTriggers(); \

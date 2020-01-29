@@ -17,10 +17,32 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 	TEST2_API UClass* Z_Construct_UClass_AEndLevelDoor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	TEST2_API UFunction* Z_Construct_UFunction_AEndLevelDoor_OpenDoor();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
 	void AEndLevelDoor::StaticRegisterNativesAEndLevelDoor()
 	{
+		UClass* Class = AEndLevelDoor::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OpenDoor", &AEndLevelDoor::execOpenDoor },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AEndLevelDoor_OpenDoor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "EndLevelDoor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AEndLevelDoor, "OpenDoor", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AEndLevelDoor_NoRegister()
 	{
@@ -35,12 +57,23 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 				(UObject* (*)())Z_Construct_UClass_AActor,
 				(UObject* (*)())Z_Construct_UPackage__Script_Test2,
 			};
+			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AEndLevelDoor_OpenDoor, "OpenDoor" }, // 3225187016
+			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 				{ "IncludePath", "EndLevelDoor.h" },
 				{ "ModuleRelativePath", "EndLevelDoor.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_pOpenSound_MetaData[] = {
+				{ "Category", "Audio" },
+				{ "EditInline", "true" },
+				{ "ModuleRelativePath", "EndLevelDoor.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pOpenSound = { UE4CodeGen_Private::EPropertyClass::Object, "pOpenSound", RF_Public|RF_Transient|RF_MarkAsNative, 0x0040000000080009, 1, nullptr, STRUCT_OFFSET(AEndLevelDoor, pOpenSound), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(NewProp_pOpenSound_MetaData, ARRAY_COUNT(NewProp_pOpenSound_MetaData)) };
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DoorPanelSkeleton_MetaData[] = {
 				{ "Category", "SkeletalMesh" },
@@ -58,6 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 #endif
 			static const UE4CodeGen_Private::FObjectPropertyParams NewProp_DoorFrameSkeleton = { UE4CodeGen_Private::EPropertyClass::Object, "DoorFrameSkeleton", RF_Public|RF_Transient|RF_MarkAsNative, 0x00400000000a0009, 1, nullptr, STRUCT_OFFSET(AEndLevelDoor, DoorFrameSkeleton), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(NewProp_DoorFrameSkeleton_MetaData, ARRAY_COUNT(NewProp_DoorFrameSkeleton_MetaData)) };
 			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_pOpenSound,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DoorPanelSkeleton,
 				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_DoorFrameSkeleton,
 			};
@@ -68,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 				&AEndLevelDoor::StaticClass,
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
-				nullptr, 0,
+				FuncInfo, ARRAY_COUNT(FuncInfo),
 				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
@@ -79,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEndLevelDoor, 4144913387);
+	IMPLEMENT_CLASS(AEndLevelDoor, 603797771);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AEndLevelDoor(Z_Construct_UClass_AEndLevelDoor, &AEndLevelDoor::StaticClass, TEXT("/Script/Test2"), TEXT("AEndLevelDoor"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AEndLevelDoor);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

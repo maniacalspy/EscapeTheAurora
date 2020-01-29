@@ -2,6 +2,7 @@
 
 #pragma once
 #include "Components/SkeletalMeshComponent.h"
+#include "Components/AudioComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Materials/Material.h"
@@ -26,7 +27,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void OpenDoor();
+	UFUNCTION()
+		void OpenDoor();
 
 private:
 	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
@@ -34,6 +36,9 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorPanelSkeleton;
+
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* pOpenSound;
 
 		class UMaterial* pPanelOffMaterial;
 

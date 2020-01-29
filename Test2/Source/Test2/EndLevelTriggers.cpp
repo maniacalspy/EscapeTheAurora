@@ -23,17 +23,21 @@ void AEndLevelTriggers::PostInitializeComponents() {
 	Children.Append(AttachedActors);
 
 	TArray<ULightComponent*> LightsToAdd = *new TArray<ULightComponent*>();
+	TArray<UAudioComponent*> SoundsToAdd = *new TArray<UAudioComponent*>();
 
 
 
 	for (auto Child : Children) {
-		Child->GetComponents<ULightComponent>(LightsToAdd, true);
 		AEndLevelDoor* TheDoor = Cast<AEndLevelDoor>(Child);
 		if (TheDoor) DoorsToTrigger.Add(TheDoor);
+		else {
+			Child->GetComponents<ULightComponent>(LightsToAdd, true);
+			Child->GetComponents<UAudioComponent>(SoundsToAdd, true);
+		}
 		LightsToTrigger.Append(LightsToAdd);
+		SoundsToTrigger.Append(SoundsToAdd);
 	}
 
-	
 }
 
 // Called when the game starts or when spawned
@@ -46,11 +50,35 @@ void AEndLevelTriggers::BeginPlay()
 
 }
 
+void AEndLevelTriggers::DebugPing() {
+	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, TEXT("Ping!"));
+}
+
+void AEndLevelTriggers::PlayNextSound() {
+	SoundsToTrigger.RemoveAt(0);
+	//SoundsToTrigger.Shrink();
+	if (SoundsToTrigger.Num() > 0) {
+		if (SoundsToTrigger[0]) {
+			(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
+			SoundsToTrigger[0]->Play();
+		}
+	}
+
+	else OpenDoors();
+}
+
 // Called every frame
 void AEndLevelTriggers::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AEndLevelTriggers::OpenDoors() {
+
+	for (auto Door : DoorsToTrigger) {
+		Door->OpenDoor();
+	}
 }
 
 void AEndLevelTriggers::TriggerAll()
@@ -59,12 +87,17 @@ void AEndLevelTriggers::TriggerAll()
 		Light->SetIntensity(8);
 	}
 
+	/*
 	for (auto Sound : SoundsToTrigger) {
 		Sound->Play();
 	}
+	*/
 
-	for (auto Door : DoorsToTrigger) {
-		Door->OpenDoor();
+	if (SoundsToTrigger[0]) {
+		(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
+		SoundsToTrigger[0]->Play();
 	}
+
+	else OpenDoors();
 }
 

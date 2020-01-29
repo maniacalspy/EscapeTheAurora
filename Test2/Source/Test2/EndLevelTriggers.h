@@ -31,6 +31,14 @@ protected:
 
 	TArray<UAudioComponent*> SoundsToTrigger;
 
+	UFUNCTION()
+		void DebugPing();
+
+	UFUNCTION()
+		void PlayNextSound();
+
+	void OpenDoors();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
