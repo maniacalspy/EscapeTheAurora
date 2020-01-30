@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_PuzzleGrid_generated_h
@@ -13,26 +13,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_PuzzleGrid_generated_h
 
+#define Test2_Source_Test2_PuzzleGrid_h_19_SPARSE_DATA
 #define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS
 #define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS_NO_PURE_DECLS
 #define Test2_Source_Test2_PuzzleGrid_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPuzzleGrid(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleGrid(); \
+	friend struct Z_Construct_UClass_APuzzleGrid_Statics; \
 public: \
-	DECLARE_CLASS(APuzzleGrid, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(APuzzleGrid) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(APuzzleGrid, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(APuzzleGrid)
 
 
 #define Test2_Source_Test2_PuzzleGrid_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesAPuzzleGrid(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleGrid(); \
+	friend struct Z_Construct_UClass_APuzzleGrid_Statics; \
 public: \
-	DECLARE_CLASS(APuzzleGrid, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(APuzzleGrid) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(APuzzleGrid, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(APuzzleGrid)
 
 
 #define Test2_Source_Test2_PuzzleGrid_h_19_STANDARD_CONSTRUCTORS \
@@ -69,6 +68,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleGrid); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_PuzzleGrid_h_19_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleGrid_h_19_SPARSE_DATA \
 	Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS \
 	Test2_Source_Test2_PuzzleGrid_h_19_INCLASS \
 	Test2_Source_Test2_PuzzleGrid_h_19_STANDARD_CONSTRUCTORS \
@@ -80,12 +80,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_PuzzleGrid_h_19_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleGrid_h_19_SPARSE_DATA \
 	Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_PuzzleGrid_h_19_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_PuzzleGrid_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class APuzzleGrid>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_PuzzleGrid_h

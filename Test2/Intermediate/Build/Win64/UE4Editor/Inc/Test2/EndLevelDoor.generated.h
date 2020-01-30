@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_EndLevelDoor_generated_h
@@ -13,6 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_EndLevelDoor_generated_h
 
+#define Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA
 #define Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOpenDoor) \
@@ -38,21 +39,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define Test2_Source_Test2_EndLevelDoor_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_AEndLevelDoor(); \
+	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(AEndLevelDoor) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
 #define Test2_Source_Test2_EndLevelDoor_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_AEndLevelDoor(); \
+	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(AEndLevelDoor) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
 #define Test2_Source_Test2_EndLevelDoor_h_14_STANDARD_CONSTRUCTORS \
@@ -90,6 +89,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEndLevelDoor); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_EndLevelDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA \
 	Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS \
 	Test2_Source_Test2_EndLevelDoor_h_14_INCLASS \
 	Test2_Source_Test2_EndLevelDoor_h_14_STANDARD_CONSTRUCTORS \
@@ -101,12 +101,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_EndLevelDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA \
 	Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_EndLevelDoor_h_14_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_EndLevelDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class AEndLevelDoor>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_EndLevelDoor_h

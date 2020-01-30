@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPrimitiveComponent;
@@ -17,6 +17,7 @@ struct FHitResult;
 #endif
 #define TEST2_PuzzleBlock_generated_h
 
+#define Test2_Source_Test2_PuzzleBlock_h_15_SPARSE_DATA
 #define Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnBlockHit) \
@@ -52,21 +53,19 @@ struct FHitResult;
 #define Test2_Source_Test2_PuzzleBlock_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPuzzleBlock(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleBlock(); \
+	friend struct Z_Construct_UClass_APuzzleBlock_Statics; \
 public: \
-	DECLARE_CLASS(APuzzleBlock, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(APuzzleBlock) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(APuzzleBlock, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(APuzzleBlock)
 
 
 #define Test2_Source_Test2_PuzzleBlock_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAPuzzleBlock(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_APuzzleBlock(); \
+	friend struct Z_Construct_UClass_APuzzleBlock_Statics; \
 public: \
-	DECLARE_CLASS(APuzzleBlock, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(APuzzleBlock) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(APuzzleBlock, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(APuzzleBlock)
 
 
 #define Test2_Source_Test2_PuzzleBlock_h_15_STANDARD_CONSTRUCTORS \
@@ -102,6 +101,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleBlock); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleBlock_h_15_SPARSE_DATA \
 	Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS \
 	Test2_Source_Test2_PuzzleBlock_h_15_INCLASS \
 	Test2_Source_Test2_PuzzleBlock_h_15_STANDARD_CONSTRUCTORS \
@@ -113,12 +113,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_PuzzleBlock_h_15_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_PuzzleBlock_h_15_SPARSE_DATA \
 	Test2_Source_Test2_PuzzleBlock_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_PuzzleBlock_h_15_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_PuzzleBlock_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class APuzzleBlock>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_PuzzleBlock_h
