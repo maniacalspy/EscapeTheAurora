@@ -1,0 +1,1090 @@
+﻿Log file open, 01/31/20 16:00:12
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: Test2
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.058589
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: Test2
+Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/daisu/Documents/GitHub/Nudge/Test2/Test2.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\daisu\Documents\GitHub\Nudge).
+Creating makefile for Test2Editor (game project files are newer)
+@progress push 5%
+Parsing headers for Test2Editor
+  Running UnrealHeaderTool "C:\Users\daisu\Documents\GitHub\Nudge\Test2\Test2.uproject" "C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for Test2Editor in 5.260871 seconds
+@progress pop
+Building Test2Editor...
+Using Visual Studio 2019 14.24.28315 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+Building 34 actions with 12 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 3%
+  [1/34] SharedPCH.Engine.cpp
+  @progress 'Compiling C++ source code...' 6%
+  [2/34] LevelGridStruct.cpp
+  @progress 'Compiling C++ source code...' 9%
+  [3/34] GridTile.cpp
+  @progress 'Compiling C++ source code...' 12%
+  [4/34] Test2.cpp
+  @progress 'Compiling C++ source code...' 15%
+  [5/34] FitToGrid.cpp
+  @progress 'Compiling C++ source code...' 18%
+  [6/34] PuzzleGridComponent.cpp
+  @progress 'Compiling C++ source code...' 21%
+  [7/34] PuzzleBlockComponent.cpp
+  @progress 'Compiling C++ source code...' 24%
+  [8/34] EndLevelDoor.cpp
+  @progress 'Compiling C++ source code...' 26%
+  [9/34] Test2HUD.cpp
+  @progress 'Compiling C++ source code...' 29%
+  [10/34] DoorBase.cpp
+  @progress 'Compiling C++ source code...' 32%
+  [11/34] EndLevelTriggers.cpp
+  @progress 'Compiling C++ source code...' 35%
+  [12/34] FitToGrid.gen.cpp
+  @progress 'Compiling C++ source code...' 38%
+  [13/34] Test2Projectile.cpp
+  @progress 'Compiling C++ source code...' 41%
+  [14/34] EndLevelDoor.gen.cpp
+  @progress 'Compiling C++ source code...' 44%
+  [15/34] EndLevelTriggers.gen.cpp
+  @progress 'Compiling C++ source code...' 47%
+  [16/34] PuzzleGrid.gen.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [17/34] PuzzleGrid.cpp
+  @progress 'Compiling C++ source code...' 53%
+  [18/34] PuzzleBlockComponent.gen.cpp
+  @progress 'Compiling C++ source code...' 56%
+  [19/34] Test2.init.gen.cpp
+  @progress 'Compiling C++ source code...' 59%
+  [20/34] PuzzleBlock.gen.cpp
+  @progress 'Compiling C++ source code...' 62%
+  [21/34] PuzzleGridComponent.gen.cpp
+  @progress 'Compiling C++ source code...' 65%
+  [22/34] DoorBase.gen.cpp
+  @progress 'Compiling C++ source code...' 68%
+  [23/34] Test2HUD.gen.cpp
+  @progress 'Compiling C++ source code...' 71%
+  [24/34] Test2Projectile.gen.cpp
+  @progress 'Compiling C++ source code...' 74%
+  [25/34] Test2GameMode.gen.cpp
+  @progress 'Compiling C++ source code...' 76%
+  [26/34] PuzzleBlock.cpp
+  @progress 'Compiling C++ source code...' 79%
+  [27/34] PauseHudWidget.cpp
+  @progress 'Compiling C++ source code...' 82%
+  [28/34] Test2GameMode.cpp
+  @progress 'Compiling C++ source code...' 85%
+  [29/34] Test2Character.cpp
+  C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.cpp(51): warning C4996: 'USceneComponent::RelativeLocation': This member will be made private. Please use GetRelativeLocation or SetRelativeLocation. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(154): note: see declaration of 'USceneComponent::RelativeLocation'
+  C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.cpp(60): warning C4996: 'USceneComponent::RelativeRotation': This member will be made private. Please use GetRelativeRotation or SetRelativeRotation. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(159): note: see declaration of 'USceneComponent::RelativeRotation'
+  C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.cpp(61): warning C4996: 'USceneComponent::RelativeLocation': This member will be made private. Please use GetRelativeLocation or SetRelativeLocation. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(154): note: see declaration of 'USceneComponent::RelativeLocation'
+  @progress 'Compiling C++ source code...' 88%
+  [30/34] PauseHudWidget.gen.cpp
+  @progress 'Compiling C++ source code...' 91%
+  [31/34] Test2Character.gen.cpp
+  @progress 'Compiling C++ source code...' 94%
+  [32/34] UE4Editor-Test2.lib
+     Creating library C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib and object C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.exp
+  @progress 'Compiling C++ source code...' 97%
+  [33/34] UE4Editor-Test2.dll
+     Creating library C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib and object C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [34/34] Test2Editor.target
+Total time in Parallel executor: 23.52 seconds
+Total execution time: 30.38 seconds
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.24-CL-11100242
+LogInit: Engine Version: 4.24.2-11100242+++UE4+Release-4.24
+LogInit: Compatible Engine Version: 4.24.0-10570792+++UE4+Release-4.24
+LogInit: Net CL: 10570792
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Jan 24 2020 02:05:53
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.24
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 25
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 37
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 36
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 2
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 36
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 8
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 8
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:080][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:082][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:082][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.01.31-22.00.54:082][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.01.31-22.00.54:082][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.01.31-22.00.54:083][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.01.31-22.00.54:084][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.01.31-22.00.54:084][  0]LogInit: Selected Device Profile: [Windows]
+[2020.01.31-22.00.54:084][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.01.31-22.00.54:086][  0]LogHAL: Display: Platform has ~ 16 GB [16983629824 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.01.31-22.00.54:086][  0]LogInit: Going up to parent DeviceProfile []
+[2020.01.31-22.00.54:086][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.01.31-22.00.54:086][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.01.31-22.00.54:087][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.01.31-22.00.54:087][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.01.31-22.00.54:088][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.01.31-22.00.54:088][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.01.31-22.00.54:088][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.01.31-22.00.54:088][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.01.31-22.00.54:088][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.01.31-22.00.54:088][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.01.31-22.00.54:088][  0]LogInit: Computer: DESKTOP-VIGLBGD
+[2020.01.31-22.00.54:088][  0]LogInit: User: daisu
+[2020.01.31-22.00.54:088][  0]LogInit: CPU Page size=4096, Cores=6
+[2020.01.31-22.00.54:088][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.01.31-22.00.54:088][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2020.01.31-22.00.54:088][  0]LogMemory: Platform Memory Stats for Windows
+[2020.01.31-22.00.54:088][  0]LogMemory: Process Physical Memory: 110.43 MB used, 110.43 MB peak
+[2020.01.31-22.00.54:088][  0]LogMemory: Process Virtual Memory: 102.60 MB used, 102.60 MB peak
+[2020.01.31-22.00.54:088][  0]LogMemory: Physical Memory: 6487.15 MB used,  9709.70 MB free, 16196.85 MB total
+[2020.01.31-22.00.54:088][  0]LogMemory: Virtual Memory: 5222.93 MB used,  134212504.00 MB free, 134217728.00 MB total
+[2020.01.31-22.00.54:091][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.01.31-22.00.54:117][  0]LogInit: Using OS detected language (en-US).
+[2020.01.31-22.00.54:117][  0]LogInit: Using OS detected locale (en-US).
+[2020.01.31-22.00.54:118][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.01.31-22.00.54:269][  0]LogInit: Setting process to per monitor DPI aware
+[2020.01.31-22.00.54:290][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.01.31-22.00.54:290][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.01.31-22.00.54:439][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.01.31-22.00.54:439][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.01.31-22.00.54:439][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.01.31-22.00.54:439][  0]LogD3D11RHI: D3D11 adapters:
+[2020.01.31-22.00.54:503][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2020.01.31-22.00.54:503][  0]LogD3D11RHI:       5980/0/8098 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.01.31-22.00.54:524][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2020.01.31-22.00.54:524][  0]LogD3D11RHI:       128/0/8098 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2020.01.31-22.00.54:527][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.01.31-22.00.54:527][  0]LogD3D11RHI:       0/0/8098 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.01.31-22.00.54:527][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.01.31-22.00.54:563][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.01.31-22.00.54:563][  0]LogD3D11RHI:     GPU DeviceId: 0x1f11 (for the marketing name, search the web for "GPU Device Id")
+[2020.01.31-22.00.54:563][  0]LogWindows: EnumDisplayDevices:
+[2020.01.31-22.00.54:563][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2020.01.31-22.00.54:563][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2020.01.31-22.00.54:564][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2020.01.31-22.00.54:564][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2020.01.31-22.00.54:564][  0]LogWindows:    4. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2020.01.31-22.00.54:564][  0]LogWindows:    5. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2020.01.31-22.00.54:565][  0]LogWindows:    6. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2020.01.31-22.00.54:565][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2020.01.31-22.00.54:565][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2020.01.31-22.00.54:565][  0]LogD3D11RHI:   Driver Version: 431.53 (internal:26.21.14.3153, unified:431.53)
+[2020.01.31-22.00.54:565][  0]LogD3D11RHI:      Driver Date: 7-12-2019
+[2020.01.31-22.00.54:565][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2020.01.31-22.00.54:601][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.01.31-22.00.54:601][  0]LogD3D11RHI: Async texture creation enabled
+[2020.01.31-22.00.54:615][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.01.31-22.00.54:873][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.01.31-22.00.54:901][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.01.31-22.00.54:918][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.01.31-22.00.54:918][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.01.31-22.00.54:925][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.01.31-22.00.54:931][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.01.31-22.00.54:938][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.01.31-22.00.54:944][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.01.31-22.00.54:950][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.01.31-22.00.54:957][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.01.31-22.00.54:979][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.01.31-22.00.54:980][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.01.31-22.00.54:992][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.01.31-22.00.54:992][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.01.31-22.00.54:999][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.01.31-22.00.55:006][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.01.31-22.00.55:013][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.01.31-22.00.55:019][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.01.31-22.00.55:019][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.01.31-22.00.55:022][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.01.31-22.00.55:048][  0]LogShaderCompilers: Guid format shader working directory is -11 characters bigger than the processId version (../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Intermediate/Shaders/WorkingDirectory/112/).
+[2020.01.31-22.00.55:049][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/daisu/AppData/Local/Temp/UnrealShaderWorkingDir/893F8AF245474A6B7A7024836E53139B/'.
+[2020.01.31-22.00.55:049][  0]LogXGEController: Cleaning working directory: C:/Users/daisu/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.01.31-22.00.55:049][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.01.31-22.00.55:049][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.01.31-22.00.55:049][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.01.31-22.00.55:667][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: Loaded boot cache 0.05s 86MB C:/Users/daisu/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/daisu/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.01.31-22.00.55:716][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.01.31-22.00.55:725][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.01.31-22.00.55:725][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.01.31-22.00.55:725][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.01.31-22.00.55:726][  0]LogDerivedDataCache: Using Local data cache path C:/Users/daisu/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.01.31-22.00.55:726][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.01.31-22.00.55:726][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.01.31-22.00.55:747][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.01.31-22.00.55:749][  0]LogSlate: Using FreeType 2.10.0
+[2020.01.31-22.00.55:749][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.01.31-22.00.55:792][  0]LogAssetRegistry: FAssetRegistry took 0.0021 seconds to start up
+[2020.01.31-22.00.56:029][  0]LogInit: Selected Device Profile: [Windows]
+[2020.01.31-22.00.56:159][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.01.31-22.00.56:159][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.01.31-22.00.56:159][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.01.31-22.00.56:159][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.01.31-22.00.56:159][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.01.31-22.00.56:170][  0]LogNetVersion: Test2 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 123441186)
+[2020.01.31-22.00.56:210][  0]LogInput: Warning: Action Jump uses deprecated key MotionController_Left_Trigger.
+[2020.01.31-22.00.56:210][  0]LogInput: Warning: Action Fire uses deprecated key MotionController_Right_Trigger.
+[2020.01.31-22.00.56:210][  0]LogInput: Warning: Action ResetVR uses deprecated key MotionController_Left_Grip1.
+[2020.01.31-22.00.56:210][  0]LogInput: Warning: Axis MoveForward uses deprecated key MotionController_Left_Thumbstick_Y.
+[2020.01.31-22.00.56:210][  0]LogInput: Warning: Axis MoveRight uses deprecated key MotionController_Left_Thumbstick_X.
+[2020.01.31-22.00.57:044][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.025660 seconds
+[2020.01.31-22.00.57:049][  0]LogUObjectArray: 46746 objects as part of root set at end of initial load.
+[2020.01.31-22.00.57:050][  0]LogUObjectAllocator: 8135816 out of 0 bytes used by permanent object pool.
+[2020.01.31-22.00.57:050][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.01.31-22.00.57:371][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.01.31-22.00.57:374][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.01.31-22.00.59:058][  0]SourceControl: Source control is disabled
+[2020.01.31-22.00.59:059][  0]SourceControl: Source control is disabled
+[2020.01.31-22.00.59:060][  0]SourceControl: Source control is disabled
+[2020.01.31-22.00.59:060][  0]SourceControl: Source control is disabled
+[2020.01.31-22.00.59:061][  0]SourceControl: Source control is disabled
+[2020.01.31-22.00.59:132][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.01.31-22.00.59:140][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.01.31-22.00.59:140][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.01.31-22.00.59:208][  0]LogOcInput: OculusInput pre-init called
+[2020.01.31-22.00.59:215][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.01.31-22.00.59:215][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.01.31-22.00.59:270][  0]LogEngine: Initializing Engine...
+[2020.01.31-22.00.59:271][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.01.31-22.00.59:272][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.01.31-22.00.59:540][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.01.31-22.00.59:546][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.01.31-22.00.59:604][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.01.31-22.00.59:604][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.01.31-22.00.59:604][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Name: Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Channel Count Used: 8
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Device Channel Count: 8
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: Channel Order:
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 2: FrontCenter
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 3: LowFrequency
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 4: BackLeft
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 5: BackRight
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 6: SideLeft
+[2020.01.31-22.00.59:686][  0]LogAudioMixer: Display: 7: SideRight
+[2020.01.31-22.01.01:173][  0]LogAudioMixer: Display: Using Audio Device Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.01.01:177][  0]LogInit: FAudioDevice initialized.
+[2020.01.31-22.01.01:177][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.01.31-22.01.01:281][  0]LogDerivedDataCache: Saved boot cache 0.10s 86MB C:/Users/daisu/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.01.31-22.01.01:282][  0]LogInit: Texture streaming: Enabled
+[2020.01.31-22.01.01:294][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.01.31-22.01.01:294][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.01.31-22.01.01:299][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.01.31-22.01.01:324][  0]LogInit: Transaction tracking system initialized
+[2020.01.31-22.01.01:332][  0]BlueprintLog: New page: Editor Load
+[2020.01.31-22.01.01:358][  0]LocalizationService: Localization service is disabled
+[2020.01.31-22.01.01:581][  0]LogFileCache: Scanning file cache for directory 'C:/Users/daisu/Documents/GitHub/Nudge/Test2/Content/' took 0.00s
+[2020.01.31-22.01.01:581][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.01.31-22.01.01:581][  0]LogCook: Display: Mobile HDR setting 1
+[2020.01.31-22.01.02:127][  0]SourceControl: Source control is disabled
+[2020.01.31-22.01.02:128][  0]Cmd: MAP LOAD FILE="../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.01.31-22.01.02:128][  0]LightingResults: New page: Lighting Build
+[2020.01.31-22.01.02:128][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.01.02:128][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.01.02:129][  0]MapCheck: New page: Map Check
+[2020.01.31-22.01.02:129][  0]LightingResults: New page: Lighting Build
+[2020.01.31-22.01.02:155][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: AOMaterialMask1_2 (BC4, 128X64)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 128X128)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 128X128)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: AOMaterialMask1_1 (BC4, 512X256)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 128X64)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 128X16)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (BGRA8, 512X64)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 512X256)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2020.01.31-22.01.02:265][  0]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2020.01.31-22.01.02:475][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.01.31-22.01.02:489][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.01.31-22.01.02:518][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2020.01.31-22.01.02:518][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.01.31-22.01.02:518][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.167ms to complete.
+[2020.01.31-22.01.02:518][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.391
+[2020.01.31-22.01.02:648][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.01.02:653][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.01.02:658][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.01.02:663][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.01.02:668][  0]LogCollectionManager: Loaded 0 collections in 0.000722 seconds
+[2020.01.31-22.01.02:680][  0]LogFileCache: Scanning file cache for directory 'C:/Users/daisu/Documents/GitHub/Nudge/Test2/Saved/Collections/' took 0.00s
+[2020.01.31-22.01.02:680][  0]LogFileCache: Scanning file cache for directory 'C:/Users/daisu/Documents/GitHub/Nudge/Test2/Content/Developers/daisu/Collections/' took 0.00s
+[2020.01.31-22.01.02:680][  0]LogFileCache: Scanning file cache for directory 'C:/Users/daisu/Documents/GitHub/Nudge/Test2/Content/Collections/' took 0.00s
+[2020.01.31-22.01.02:680][  0]LogContentBrowser: Native class hierarchy populated in 0.0071 seconds. Added 3028 classes and 719 folders.
+[2020.01.31-22.01.02:682][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.01.31-22.01.02:731][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.01.31-22.01.02:734][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 3 folders.
+[2020.01.31-22.01.02:786][  0]LogSlate: Took 0.000151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.01.31-22.01.02:788][  0]LogSlate: Took 0.000126 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.01.31-22.01.02:792][  0]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.01.31-22.01.02:852][  0]LogRenderer: Reallocating scene render targets to support 1232x632 Format 10 NumSamples 1 (Frame:1).
+[2020.01.31-22.01.02:997][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.01.31-22.01.02:997][  0]LogLoad: (Engine Initialization) Total time: 51.63 seconds
+[2020.01.31-22.01.02:997][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.01.31-22.01.03:050][  0]LogAssetRegistry: Asset discovery search completed in 7.2598 seconds
+[2020.01.31-22.01.03:053][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
+[2020.01.31-22.01.03:059][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.01.31-22.01.03:077][  0]LogSlate: Took 0.000125 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.01.31-22.01.13:559][625]LogSlate: Took 0.000107 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.01.31-22.01.13:606][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:607][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:609][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:609][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:614][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:614][625]LoadErrors: Failed to load /Game/FirstPersonCPP/Maps/TestingArea_BuiltData.TestingArea_BuiltData Referenced by PersistentLevel
+[2020.01.31-22.01.13:614][625]LogLinker: Warning: While loading '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap' failed to load '/Game/FirstPersonCPP/Maps/TestingArea_BuiltData': Can't find file.
+[2020.01.31-22.01.13:636][625]LogAIModule: Creating AISystem for world TestingArea
+[2020.01.31-22.01.13:637][625]LogAssetEditorSubsystem: Opening Asset editor for World /Game/FirstPersonCPP/Maps/TestingArea.TestingArea
+[2020.01.31-22.01.13:662][625]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2020.01.31-22.01.13:665][625]Cmd: MAP LOAD FILE="../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.01.31-22.01.13:665][625]LightingResults: New page: Lighting Build
+[2020.01.31-22.01.13:665][625]LoadErrors: New page: Loading map: TestingArea.umap
+[2020.01.31-22.01.13:666][625]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.01.13:666][625]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.01.13:666][625]MapCheck: New page: Map Check
+[2020.01.31-22.01.13:666][625]LightingResults: New page: Lighting Build
+[2020.01.31-22.01.13:695][625]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2020.01.31-22.01.13:696][625]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_4.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_4.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.13:697][625]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.01.31-22.01.13:727][625]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2020.01.31-22.01.13:731][625]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.01.31-22.01.13:731][625]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.103ms to complete.
+[2020.01.31-22.01.13:731][625]LogFileHelpers: Loading map 'TestingArea' took 0.067
+[2020.01.31-22.01.19:701][982]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (DoorOpenFramePhysics)
+[2020.01.31-22.01.20:697][ 40]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (DoorOpenPanelsPhysics)
+[2020.01.31-22.01.23:635][215]Cmd: DELETE
+[2020.01.31-22.01.23:635][215]Cmd: ACTOR DELETE
+[2020.01.31-22.01.23:637][215]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2020.01.31-22.01.23:663][215]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2020.01.31-22.01.23:664][215]LogEditorActor: Deleted 1 Actors (0.029 secs)
+[2020.01.31-22.01.24:393][259]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (DoorOpenFramePhysics)
+[2020.01.31-22.01.24:598][270]Cmd: DELETE
+[2020.01.31-22.01.24:598][270]Cmd: ACTOR DELETE
+[2020.01.31-22.01.24:599][270]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2020.01.31-22.01.24:625][270]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2020.01.31-22.01.24:626][270]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2020.01.31-22.01.28:788][520]Cmd: DELETE
+[2020.01.31-22.01.28:788][520]Cmd: ACTOR DELETE
+[2020.01.31-22.01.28:789][520]LogEditorActor: Deleted Actor: StaticMeshActor
+[2020.01.31-22.01.28:814][520]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2020.01.31-22.01.28:815][520]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2020.01.31-22.01.38:223][ 85]PIE: Warning: AttachTo: '/Engine/Transient.World_3:PersistentLevel.Keycard_BP_C_0.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Engine/Transient.World_3:PersistentLevel.Keycard_BP_C_0.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:100][310]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_7.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_7.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:101][310]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:101][310]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:102][310]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:106][310]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:115][311]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:131][312]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:147][313]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:164][314]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:181][315]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:182][315]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:197][316]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:198][316]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:214][317]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:231][318]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:247][319]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:264][320]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:281][321]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:298][322]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:301][322]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:314][323]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:317][323]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:330][324]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:331][324]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:347][325]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:363][326]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:380][327]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:397][328]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:414][329]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:430][330]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:431][330]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:447][331]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:448][331]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:464][332]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:480][333]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:497][334]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:514][335]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:531][336]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:547][337]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:564][338]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:567][338]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:581][339]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:582][339]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:597][340]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:614][341]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:631][342]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:648][343]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:664][344]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:681][345]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:682][345]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:697][346]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:698][346]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:713][347]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:730][348]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:747][349]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:764][350]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:780][351]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.42:797][352]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:180][375]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:714][407]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:780][411]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:814][413]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:847][415]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:897][418]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:930][420]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:947][421]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:964][422]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.43:997][424]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:014][425]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:536][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_8.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_C_8.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:536][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:541][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:541][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:542][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.44:543][456]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.01.47:006][604]LogSlate: Took 0.000150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.01.31-22.01.55:662][122]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2020.01.31-22.02.24:096][827]LogTemp: Repeating last play command: Selected Viewport
+[2020.01.31-22.02.24:099][827]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.01.31-22.02.24:099][827]PIE: New page: PIE session: TestingArea (Jan 31, 2020, 10:02:24 AM)
+[2020.01.31-22.02.24:100][827]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.01.31-22.02.24:100][827]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.01.31-22.02.24:101][827]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea
+[2020.01.31-22.02.24:103][827]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001818s)
+[2020.01.31-22.02.24:103][827]LogAIModule: Creating AISystem for world TestingArea
+[2020.01.31-22.02.24:103][827]LogPlayLevel: PIE: World Init took: (0.000738s)
+[2020.01.31-22.02.24:103][827]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/TestingArea.TestingArea to /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea.TestingArea (0.002754s)
+[2020.01.31-22.02.24:128][827]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2020.01.31-22.02.24:130][827]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.01.31-22.02.24:131][827]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.01.31-22.02.24:131][827]LogAudio: Display: Using built-in audio occlusion.
+[2020.01.31-22.02.24:131][827]LogAudioMixer: Display: Initializing audio mixer.
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Name: Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Is Default: Yes
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Sample Rate: 48000
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Channel Count Used: 8
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Device Channel Count: 8
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: Channel Order:
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: 0: FrontLeft
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: 1: FrontRight
+[2020.01.31-22.02.24:137][827]LogAudioMixer: Display: 2: FrontCenter
+[2020.01.31-22.02.24:138][827]LogAudioMixer: Display: 3: LowFrequency
+[2020.01.31-22.02.24:138][827]LogAudioMixer: Display: 4: BackLeft
+[2020.01.31-22.02.24:138][827]LogAudioMixer: Display: 5: BackRight
+[2020.01.31-22.02.24:138][827]LogAudioMixer: Display: 6: SideLeft
+[2020.01.31-22.02.24:138][827]LogAudioMixer: Display: 7: SideRight
+[2020.01.31-22.02.24:145][827]LogAudioMixer: Display: Using Audio Device Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.02.24:146][827]LogInit: FAudioDevice initialized.
+[2020.01.31-22.02.24:156][827]LogLoad: Game class is 'Test2GameMode'
+[2020.01.31-22.02.24:157][827]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea.TestingArea up for play (max tick rate 60) at 2020.01.31-16.02.24
+[2020.01.31-22.02.24:157][827]LogWorld: Bringing up level for play took: 0.000445
+[2020.01.31-22.02.24:157][827]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2020.01.31-22.02.24:160][827]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.01.31-22.02.24:161][827]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea 0.94
+[2020.01.31-22.02.27:921][ 52]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.02.27:921][ 52]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.02.27:921][ 52]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.02.27:921][ 52]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea
+[2020.01.31-22.02.27:921][ 52]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.02.27:921][ 52]LogWorld: UWorld::CleanupWorld for TestingArea, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.02.27:921][ 52]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.02.27:927][ 52]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.01.31-22.02.27:930][ 52]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.02.27:953][ 52]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.02.27:956][ 52]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.02.27:958][ 52]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2020.01.31-22.02.28:021][ 56]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2020.01.31-22.02.52:645][521]LogEditor: Attempting to add actor of class 'EndLevelDoor' to level at -340.00,-30.00,20.00
+[2020.01.31-22.02.52:645][521]LogActor: Warning: EndLevelDoor /Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.EndLevelDoor_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.01.31-22.02.59:329][918]LogEditor: Attempting to add actor of class 'EndLevelTriggers' to level at -350.00,-10.00,20.00
+[2020.01.31-22.03.03:473][166]LogEditor: Attempting to add actor of class 'Test2Projectile' to level at -280.00,220.00,20.00
+[2020.01.31-22.03.15:728][900]LogEditor: Attempting to add actor of class 'EndLevelTriggers' to level at -660.00,340.00,-90.00
+[2020.01.31-22.03.20:638][192]LogEditor: Attempting to add actor of class 'EndLevelTriggers' to level at -260.00,630.00,-80.00
+[2020.01.31-22.03.21:735][258]LogEditor: Attempting to add actor of class 'EndLevelTriggers' to level at -280.00,610.00,-90.00
+[2020.01.31-22.03.31:000][813]LogEditor: Attempting to add actor of class 'EndLevelDoor' to level at -930.00,10.00,150.00
+[2020.01.31-22.03.31:000][813]LogActor: Warning: EndLevelDoor /Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.EndLevelDoor_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.01.31-22.03.33:597][967]LogEditor: Attempting to add actor of class 'EndLevelDoor' to level at -690.00,220.00,40.00
+[2020.01.31-22.03.33:597][967]LogActor: Warning: EndLevelDoor /Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.EndLevelDoor_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.01.31-22.03.56:556][338]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2020.01.31-22.03.56:571][338]LogSavePackage: Moving '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Saved/TestingArea28100B1747F96B8F7BE903B8D988F857.tmp' to '../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap'
+[2020.01.31-22.03.56:590][338]AssetCheck: New page: Asset Save: TestingArea
+[2020.01.31-22.03.56:590][338]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/TestingArea.TestingArea
+[2020.01.31-22.04.11:659][239]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.01.31-22.04.11:663][239]LogAssetEditorSubsystem: Opening Asset editor for World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2020.01.31-22.04.11:689][239]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2020.01.31-22.04.11:690][239]Cmd: MAP LOAD FILE="../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.01.31-22.04.11:690][239]LightingResults: New page: Lighting Build
+[2020.01.31-22.04.11:691][239]LoadErrors: New page: Loading map: FirstPersonExampleMap.umap
+[2020.01.31-22.04.11:691][239]LogWorld: UWorld::CleanupWorld for TestingArea, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.04.11:691][239]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.04.11:691][239]MapCheck: New page: Map Check
+[2020.01.31-22.04.11:691][239]LightingResults: New page: Lighting Build
+[2020.01.31-22.04.11:720][239]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2020.01.31-22.04.11:724][239]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.01.31-22.04.11:751][239]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2020.01.31-22.04.11:756][239]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.01.31-22.04.11:757][239]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.111ms to complete.
+[2020.01.31-22.04.11:757][239]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.067
+[2020.01.31-22.04.26:988][152]LogTemp: Repeating last play command: Selected Viewport
+[2020.01.31-22.04.26:991][152]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.01.31-22.04.26:991][152]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.01.31-22.04.26:991][152]PIE: New page: PIE session: FirstPersonExampleMap (Jan 31, 2020, 10:04:26 AM)
+[2020.01.31-22.04.26:991][152]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.01.31-22.04.27:007][152]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016108s)
+[2020.01.31-22.04.27:008][152]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.01.31-22.04.27:008][152]LogPlayLevel: PIE: World Init took: (0.000801s)
+[2020.01.31-22.04.27:008][152]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.017148s)
+[2020.01.31-22.04.27:033][152]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.01.31-22.04.27:035][152]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.01.31-22.04.27:035][152]LogAudio: Display: Using built-in audio occlusion.
+[2020.01.31-22.04.27:035][152]LogAudioMixer: Display: Initializing audio mixer.
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Name: Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Is Default: Yes
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Sample Rate: 48000
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Channel Count Used: 8
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Device Channel Count: 8
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: Channel Order:
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 0: FrontLeft
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 1: FrontRight
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 2: FrontCenter
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 3: LowFrequency
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 4: BackLeft
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 5: BackRight
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 6: SideLeft
+[2020.01.31-22.04.27:042][152]LogAudioMixer: Display: 7: SideRight
+[2020.01.31-22.04.27:049][152]LogAudioMixer: Display: Using Audio Device Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.04.27:051][152]LogInit: FAudioDevice initialized.
+[2020.01.31-22.04.27:059][152]LogLoad: Game class is 'GameModeBase'
+[2020.01.31-22.04.27:061][152]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2020.01.31-16.04.27
+[2020.01.31-22.04.27:062][152]LogWorld: Bringing up level for play took: 0.002806
+[2020.01.31-22.04.27:062][152]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.01.31-22.04.27:064][152]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.157
+[2020.01.31-22.04.27:064][152]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.01.31-22.05.04:627][406]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.05.04:627][406]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.05.04:627][406]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.01.31-22.05.04:627][406]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.05.04:627][406]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.01.31-22.05.04:628][406]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.05.04:628][406]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.05.04:628][406]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.05.04:636][406]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.01.31-22.05.04:636][406]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.01.31-22.05.04:639][406]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.05.04:663][406]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.01.31-22.05.04:666][406]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.01.31-22.05.04:668][406]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2020.01.31-22.05.04:735][410]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.01.31-22.05.16:471][114]LogEditorViewport: Clicking on Actor (LMB): EndLevelDoor (EndLevelDoor4)
+[2020.01.31-22.05.33:007][100]LogEditorViewport: Clicking on Actor (LMB): EndLevelDoor (EndLevelDoor4)
+[2020.01.31-22.05.41:155][584]LogAIModule: Creating AISystem for world TestingArea
+[2020.01.31-22.05.41:156][584]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.05.41:157][584]LogAssetEditorSubsystem: Opening Asset editor for World /Game/FirstPersonCPP/Maps/TestingArea.TestingArea
+[2020.01.31-22.05.41:182][584]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2020.01.31-22.05.41:184][584]Cmd: MAP LOAD FILE="../../../../../../Users/daisu/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/TestingArea.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.01.31-22.05.41:184][584]LightingResults: New page: Lighting Build
+[2020.01.31-22.05.41:185][584]LoadErrors: New page: Loading map: TestingArea.umap
+[2020.01.31-22.05.41:186][584]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.01.31-22.05.41:186][584]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.01.31-22.05.41:186][584]MapCheck: New page: Map Check
+[2020.01.31-22.05.41:186][584]LightingResults: New page: Lighting Build
+[2020.01.31-22.05.41:213][584]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2020.01.31-22.05.41:215][584]PIE: Warning: AttachTo: '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.DefaultSceneRoot' is not static  (in blueprint "Keycard_BP"), cannot attach '/Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.Keycard_BP_9.KeycardMesh' which is static to it. Aborting.
+[2020.01.31-22.05.41:216][584]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.01.31-22.05.41:244][584]LogUObjectHash: Compacting FUObjectHashTables data took   1.33ms
+[2020.01.31-22.05.41:249][584]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.01.31-22.05.41:250][584]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.106ms to complete.
+[2020.01.31-22.05.41:250][584]LogFileHelpers: Loading map 'TestingArea' took 0.066
+[2020.01.31-22.05.54:408][371]LogEditor: Attempting to add actor of class 'EndLevelDoor' to level at -310.00,350.00,20.00
+[2020.01.31-22.05.54:409][371]LogActor: Warning: EndLevelDoor /Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.EndLevelDoor_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.01.31-22.05.56:218][478]LogEditor: Attempting to add actor of class 'EndLevelDoor' to level at 0.00,350.00,20.00
+[2020.01.31-22.05.56:219][478]LogActor: Warning: EndLevelDoor /Game/FirstPersonCPP/Maps/TestingArea.TestingArea:PersistentLevel.EndLevelDoor_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.01.31-22.06.02:277][839]Cmd: TRANSACTION UNDO
+[2020.01.31-22.06.02:277][839]LogEditorTransaction: Undo Move Actors
+[2020.01.31-22.07.20:661][499]LogTemp: Repeating last play command: Selected Viewport
+[2020.01.31-22.07.20:664][499]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.01.31-22.07.20:664][499]PIE: New page: PIE session: TestingArea (Jan 31, 2020, 10:07:20 AM)
+[2020.01.31-22.07.20:664][499]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea
+[2020.01.31-22.07.20:666][499]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001892s)
+[2020.01.31-22.07.20:667][499]LogAIModule: Creating AISystem for world TestingArea
+[2020.01.31-22.07.20:667][499]LogPlayLevel: PIE: World Init took: (0.000771s)
+[2020.01.31-22.07.20:667][499]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/TestingArea.TestingArea to /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea.TestingArea (0.002755s)
+[2020.01.31-22.07.20:691][499]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.01.31-22.07.20:692][499]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.01.31-22.07.20:693][499]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.01.31-22.07.20:693][499]LogAudio: Display: Using built-in audio occlusion.
+[2020.01.31-22.07.20:693][499]LogAudioMixer: Display: Initializing audio mixer.
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Name: Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Is Default: Yes
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Sample Rate: 48000
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Channel Count Used: 8
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Device Channel Count: 8
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: Channel Order:
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 0: FrontLeft
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 1: FrontRight
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 2: FrontCenter
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 3: LowFrequency
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 4: BackLeft
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 5: BackRight
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 6: SideLeft
+[2020.01.31-22.07.20:699][499]LogAudioMixer: Display: 7: SideRight
+[2020.01.31-22.07.20:707][499]LogAudioMixer: Display: Using Audio Device Speakers/Headphones (Realtek(R) Audio)
+[2020.01.31-22.07.20:708][499]LogInit: FAudioDevice initialized.
+[2020.01.31-22.07.20:713][499]LogLoad: Game class is 'Test2GameMode'
+[2020.01.31-22.07.20:713][499]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_TestingArea.TestingArea up for play (max tick rate 60) at 2020.01.31-16.07.20
+[2020.01.31-22.07.21:895][499]LogWindows: Error: === Critical error: ===
+[2020.01.31-22.07.21:895][499]LogWindows: Error: 
+[2020.01.31-22.07.21:895][499]LogWindows: Error: Fatal error!
+[2020.01.31-22.07.21:895][499]LogWindows: Error: 
+[2020.01.31-22.07.21:895][499]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x00000000
+[2020.01.31-22.07.21:895][499]LogWindows: Error: 
+[2020.01.31-22.07.21:895][499]LogWindows: Error: [Callstack] 0x00007ff8253a3a24 UE4Editor-Test2.dll!UnknownFunction []
+[2020.01.31-22.07.21:895][499]LogWindows: Error: [Callstack] 0x00007ff846af97e1 UE4Editor-Engine.dll!UnknownFunction []
+[2020.01.31-22.07.21:895][499]LogWindows: Error: [Callstack] 0x00007ff8474c9c86 UE4Editor-Engine.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff84692ec0e UE4Editor-Engine.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff844d1239c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff844d32746 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff844d4d1c5 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff84481a5f5 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff84507e3b6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff7e5287f62 UE4Editor.exe!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff7e529c3ec UE4Editor.exe!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff7e529c4ca UE4Editor.exe!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff7e52aceae UE4Editor.exe!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff7e52afcbe UE4Editor.exe!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff8bd997bd4 KERNEL32.DLL!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: [Callstack] 0x00007ff8be76ced1 ntdll.dll!UnknownFunction []
+[2020.01.31-22.07.21:896][499]LogWindows: Error: 
+[2020.01.31-22.07.21:913][499]LogExit: Executing StaticShutdownAfterError
+[2020.01.31-22.07.21:915][499]LogWindows: FPlatformMisc::RequestExit(1)
+[2020.01.31-22.07.21:915][499]LogCore: Engine exit requested (reason: Win RequestExit)
+[2020.01.31-22.07.21:920][499]Log file closed, 01/31/20 16:07:21
