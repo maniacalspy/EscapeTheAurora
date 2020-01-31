@@ -13,12 +13,15 @@ APuzzleGrid::APuzzleGrid()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	pTileGridMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene component"));
+
+	pTileGridMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Tile_Mesh"));
 
 	TilesBlockIsOn = *new TArray<GridTile*>();
 	MyStartPoints = *new TArray<GridTile*>();
 
 	puzzleIsSolved = false;
+	IsInvalidTip = false;
 }
 
 void APuzzleGrid::PostInitializeComponents() {
@@ -45,9 +48,13 @@ void APuzzleGrid::BeginPlay()
 	_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
 
 
-	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelDoor WITH THE LEVEL NUMBER APPENDED AT THE END
-	for (TActorIterator<AEndLevelDoor> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
-		if((*ActorIterator)->GetName().Equals("EndLevelDoor" + FString::FromInt(LevelGridNumber))) _pDoorActor = *ActorIterator;
+	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelTriggers WITH THE LEVEL NUMBER APPENDED AT THE END
+	for (TActorIterator<AEndLevelTriggers> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
+		
+		FString ActorName = (*ActorIterator)->GetName();
+		if (ActorName.Equals("EndLevelTriggers" + FString::FromInt(LevelGridNumber)) || ActorName.Equals("EndLevelTriggers_" + FString::FromInt(LevelGridNumber))) {
+			_pTriggerActor = *ActorIterator;
+		}
 	}
 
 	//verify puzzle block actor pointer
@@ -72,7 +79,15 @@ void APuzzleGrid::Tick(float DeltaTime)
 //Call when The block has finished tipping
 void APuzzleGrid::OnBlockDoneTipping() 
 {
-	if(!puzzleIsSolved) CheckPuzzleSolved();
+	if (IsInvalidTip)
+	{
+		_pPuzzleActor->SetDestLocation(LastValidLocation);
+		_pPuzzleActor->SetDestRotation(LastValidRotation);
+		IsInvalidTip = false;
+		_pPuzzleActor->_isTipping = true;
+		_pPuzzleActor->_canBePushed = false;
+	}
+	else if(!puzzleIsSolved) CheckPuzzleSolved();
 }
 
 
@@ -91,11 +106,11 @@ void APuzzleGrid::CheckPuzzleSolved() {
 	}
 }
 
-//lowers the block into the hole and opens the door
+//lowers the block into the hole and triggers the events
 void APuzzleGrid::OnPuzzleSolved() {
 	puzzleIsSolved = true;
 	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0,0,_pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
-	if (_pDoorActor != nullptr) _pDoorActor->OpenDoor();
+	if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
 }
 
 //create the puzzle grid based on MyLevelGrid
@@ -228,8 +243,42 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 
 						} //end of else
 					} //end of nontraversable if
+					else if (SecondOtherTile->type == TT_tileTypes::NonTraversable || FirstOtherTile->type == TT_tileTypes::NonTraversable) // flip but not fully 
+					{
+						
+						if (FirstOtherTile == SecondCurrentTile || SecondOtherTile == FirstCurrentTile) 
+						{
+							IsInvalidTip = true;
+							LastValidRotation = _pPuzzleActor -> GetActorQuat();
+							LastValidLocation = _pPuzzleActor -> GetActorLocation();
+							DestLocation = *new FVector((FirstOtherTile->xPos + SecondOtherTile->xPos)/2, (FirstOtherTile->yPos + SecondOtherTile->yPos)/2, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_4) * _pPuzzleActor->GetActorQuat();
+						}
+						else {
+							float Xoffset = (TileDirection == _tileDirections::North || TileDirection == _tileDirections::South) ? _tileWidth : 0;
+							Xoffset *= RotationDirection;
+							float Yoffset = (TileDirection == _tileDirections::East || TileDirection == _tileDirections::West) ? _tileHeight : 0;
+							Yoffset *= -RotationDirection;
+							IsInvalidTip = true;
+							LastValidRotation = _pPuzzleActor->GetActorQuat();
+							LastValidLocation = _pPuzzleActor->GetActorLocation();
+							float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
+							float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
+							DestLocation = *new FVector(XMidPoint + Xoffset/2, YMidPoint + Yoffset/2, _pPuzzleActor->GetActorLocation().Z);
+							DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_4) * _pPuzzleActor->GetActorQuat();
+
+						} //end of else
+
+					
+
+					}
+
+
 				}//end of verify Secondother if
 			}//end of verify pointers if
+
+			
+
 		} //end of TilesBlockIsOn if
 
 		//Standing vertically -> tipped on side
@@ -259,6 +308,43 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 				}//end of firstOtherTile NonTraversable if
 			}// end of verifying first tile
 		}//end of TilesBlockIsOn if
+
+		if (!FirstOtherTile || !SecondOtherTile)
+		{
+			float Xoffset = (TileDirection == _tileDirections::North || TileDirection == _tileDirections::South) ? _tileWidth : 0;
+			Xoffset *= RotationDirection;
+			float Yoffset = (TileDirection == _tileDirections::East || TileDirection == _tileDirections::West) ? _tileHeight : 0;
+			Yoffset *= -RotationDirection;
+			if (FirstOtherTile)
+			{
+				IsInvalidTip = true;
+				LastValidRotation = _pPuzzleActor->GetActorQuat();
+				LastValidLocation = _pPuzzleActor->GetActorLocation();
+				DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos , (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+				DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_4) * _pPuzzleActor->GetActorQuat();
+			}
+			else {
+				
+				if (TilesBlockIsOn.Num() == 2)
+				{
+					IsInvalidTip = true;	
+					LastValidRotation = _pPuzzleActor->GetActorQuat();
+					LastValidLocation = _pPuzzleActor->GetActorLocation();
+					float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
+					float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
+					DestLocation = *new FVector(XMidPoint + Xoffset, YMidPoint + Yoffset, _pPuzzleActor->GetActorLocation().Z);
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_4) * _pPuzzleActor->GetActorQuat();
+				}
+				else {
+					IsInvalidTip = true;
+					LastValidRotation = _pPuzzleActor->GetActorQuat();
+					LastValidLocation = _pPuzzleActor->GetActorLocation();
+					DestLocation = *new FVector(TilesBlockIsOn[0]->xPos + Xoffset, TilesBlockIsOn[0]->yPos + Yoffset, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+					DestRotation = *new FQuat(RotatingAxis, RotationDirection * M_PI_4) * _pPuzzleActor->GetActorQuat();
+				}
+			}
+		}
+
 
 		//check if DestLocation or DestRotation were changed
 		if (DestLocation != FVector::OneVector && DestRotation != FQuat::Identity) {

@@ -71,7 +71,7 @@ void GridTile::setTileState(TT_tileStates tilestate) {
 		if (state == TT_tileStates::Empty) validChange = true;
 		break;
 	default:
-		throw "Invalid state, you likely added a new state and forgot to update this function";
+		//throw "Invalid state, you likely added a new state and forgot to update this function";
 		break;
 	}
 	if (validChange) state = tilestate;

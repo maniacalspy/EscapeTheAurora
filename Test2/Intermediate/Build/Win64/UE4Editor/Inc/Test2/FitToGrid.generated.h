@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_FitToGrid_generated_h
@@ -13,26 +13,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_FitToGrid_generated_h
 
+#define Test2_Source_Test2_FitToGrid_h_13_SPARSE_DATA
 #define Test2_Source_Test2_FitToGrid_h_13_RPC_WRAPPERS
 #define Test2_Source_Test2_FitToGrid_h_13_RPC_WRAPPERS_NO_PURE_DECLS
 #define Test2_Source_Test2_FitToGrid_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUFitToGrid(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_UFitToGrid(); \
+	friend struct Z_Construct_UClass_UFitToGrid_Statics; \
 public: \
-	DECLARE_CLASS(UFitToGrid, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(UFitToGrid) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFitToGrid, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(UFitToGrid)
 
 
 #define Test2_Source_Test2_FitToGrid_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesUFitToGrid(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_UFitToGrid(); \
+	friend struct Z_Construct_UClass_UFitToGrid_Statics; \
 public: \
-	DECLARE_CLASS(UFitToGrid, UActorComponent, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(UFitToGrid) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(UFitToGrid, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(UFitToGrid)
 
 
 #define Test2_Source_Test2_FitToGrid_h_13_STANDARD_CONSTRUCTORS \
@@ -65,6 +64,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UFitToGrid); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_FitToGrid_h_13_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_FitToGrid_h_13_SPARSE_DATA \
 	Test2_Source_Test2_FitToGrid_h_13_RPC_WRAPPERS \
 	Test2_Source_Test2_FitToGrid_h_13_INCLASS \
 	Test2_Source_Test2_FitToGrid_h_13_STANDARD_CONSTRUCTORS \
@@ -76,12 +76,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_FitToGrid_h_13_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_FitToGrid_h_13_SPARSE_DATA \
 	Test2_Source_Test2_FitToGrid_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_FitToGrid_h_13_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_FitToGrid_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class UFitToGrid>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_FitToGrid_h

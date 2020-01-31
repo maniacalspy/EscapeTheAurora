@@ -1,5 +1,5 @@
 #pragma once
-#include "Gridtile.h"
+#include "GridTile.h"
 
 struct LevelGrid {	
 	int RowCount;

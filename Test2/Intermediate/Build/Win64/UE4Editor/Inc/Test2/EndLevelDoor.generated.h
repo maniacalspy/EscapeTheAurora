@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_EndLevelDoor_generated_h
@@ -13,29 +13,48 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_EndLevelDoor_generated_h
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_RPC_WRAPPERS
-#define Test2_Source_Test2_EndLevelDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define Test2_Source_Test2_EndLevelDoor_h_13_INCLASS_NO_PURE_DECLS \
+#define Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA
+#define Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOpenDoor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenDoor(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOpenDoor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenDoor(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_EndLevelDoor_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_AEndLevelDoor(); \
+	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(AEndLevelDoor) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_INCLASS \
+#define Test2_Source_Test2_EndLevelDoor_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_AEndLevelDoor(); \
+	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(AEndLevelDoor) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(AEndLevelDoor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_STANDARD_CONSTRUCTORS \
+#define Test2_Source_Test2_EndLevelDoor_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEndLevelDoor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEndLevelDoor) \
@@ -48,7 +67,7 @@ private: \
 public:
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_ENHANCED_CONSTRUCTORS \
+#define Test2_Source_Test2_EndLevelDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEndLevelDoor(AEndLevelDoor&&); \
@@ -59,33 +78,38 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEndLevelDoor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEndLevelDoor)
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_PRIVATE_PROPERTY_OFFSET \
+#define Test2_Source_Test2_EndLevelDoor_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__DoorFrameSkeleton() { return STRUCT_OFFSET(AEndLevelDoor, DoorFrameSkeleton); } \
-	FORCEINLINE static uint32 __PPO__DoorPanelSkeleton() { return STRUCT_OFFSET(AEndLevelDoor, DoorPanelSkeleton); }
+	FORCEINLINE static uint32 __PPO__DoorPanelSkeleton() { return STRUCT_OFFSET(AEndLevelDoor, DoorPanelSkeleton); } \
+	FORCEINLINE static uint32 __PPO__pOpenSound() { return STRUCT_OFFSET(AEndLevelDoor, pOpenSound); }
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_10_PROLOG
-#define Test2_Source_Test2_EndLevelDoor_h_13_GENERATED_BODY_LEGACY \
+#define Test2_Source_Test2_EndLevelDoor_h_11_PROLOG
+#define Test2_Source_Test2_EndLevelDoor_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_EndLevelDoor_h_13_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_EndLevelDoor_h_13_RPC_WRAPPERS \
-	Test2_Source_Test2_EndLevelDoor_h_13_INCLASS \
-	Test2_Source_Test2_EndLevelDoor_h_13_STANDARD_CONSTRUCTORS \
+	Test2_Source_Test2_EndLevelDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA \
+	Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS \
+	Test2_Source_Test2_EndLevelDoor_h_14_INCLASS \
+	Test2_Source_Test2_EndLevelDoor_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Test2_Source_Test2_EndLevelDoor_h_13_GENERATED_BODY \
+#define Test2_Source_Test2_EndLevelDoor_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_EndLevelDoor_h_13_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_EndLevelDoor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	Test2_Source_Test2_EndLevelDoor_h_13_INCLASS_NO_PURE_DECLS \
-	Test2_Source_Test2_EndLevelDoor_h_13_ENHANCED_CONSTRUCTORS \
+	Test2_Source_Test2_EndLevelDoor_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelDoor_h_14_SPARSE_DATA \
+	Test2_Source_Test2_EndLevelDoor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test2_Source_Test2_EndLevelDoor_h_14_INCLASS_NO_PURE_DECLS \
+	Test2_Source_Test2_EndLevelDoor_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class AEndLevelDoor>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_EndLevelDoor_h

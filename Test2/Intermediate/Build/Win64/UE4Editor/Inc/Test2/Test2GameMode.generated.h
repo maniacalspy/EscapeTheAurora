@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_Test2GameMode_generated_h
@@ -13,26 +13,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_Test2GameMode_generated_h
 
+#define Test2_Source_Test2_Test2GameMode_h_12_SPARSE_DATA
 #define Test2_Source_Test2_Test2GameMode_h_12_RPC_WRAPPERS
 #define Test2_Source_Test2_Test2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
 #define Test2_Source_Test2_Test2GameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest2GameMode(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2GameMode(); \
+	friend struct Z_Construct_UClass_ATest2GameMode_Statics; \
 public: \
-	DECLARE_CLASS(ATest2GameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), 0, TEXT("/Script/Test2"), TEST2_API) \
-	DECLARE_SERIALIZER(ATest2GameMode) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ATest2GameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), TEST2_API) \
+	DECLARE_SERIALIZER(ATest2GameMode)
 
 
 #define Test2_Source_Test2_Test2GameMode_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesATest2GameMode(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2GameMode(); \
+	friend struct Z_Construct_UClass_ATest2GameMode_Statics; \
 public: \
-	DECLARE_CLASS(ATest2GameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient), 0, TEXT("/Script/Test2"), TEST2_API) \
-	DECLARE_SERIALIZER(ATest2GameMode) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ATest2GameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), TEST2_API) \
+	DECLARE_SERIALIZER(ATest2GameMode)
 
 
 #define Test2_Source_Test2_Test2GameMode_h_12_STANDARD_CONSTRUCTORS \
@@ -65,6 +64,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2GameMode); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2GameMode_h_12_SPARSE_DATA \
 	Test2_Source_Test2_Test2GameMode_h_12_RPC_WRAPPERS \
 	Test2_Source_Test2_Test2GameMode_h_12_INCLASS \
 	Test2_Source_Test2_Test2GameMode_h_12_STANDARD_CONSTRUCTORS \
@@ -76,12 +76,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2GameMode_h_12_SPARSE_DATA \
 	Test2_Source_Test2_Test2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2GameMode_h_12_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2GameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class ATest2GameMode>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_Test2GameMode_h

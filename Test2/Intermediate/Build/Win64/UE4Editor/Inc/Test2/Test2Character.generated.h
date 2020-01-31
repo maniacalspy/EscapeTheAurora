@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef TEST2_Test2Character_generated_h
@@ -13,26 +13,25 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_Test2Character_generated_h
 
+#define Test2_Source_Test2_Test2Character_h_14_SPARSE_DATA
 #define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS
 #define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS_NO_PURE_DECLS
 #define Test2_Source_Test2_Test2Character_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest2Character(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2Character(); \
+	friend struct Z_Construct_UClass_ATest2Character_Statics; \
 public: \
-	DECLARE_CLASS(ATest2Character, ACharacter, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(ATest2Character) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ATest2Character, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(ATest2Character)
 
 
 #define Test2_Source_Test2_Test2Character_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesATest2Character(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2Character(); \
+	friend struct Z_Construct_UClass_ATest2Character_Statics; \
 public: \
-	DECLARE_CLASS(ATest2Character, ACharacter, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
-	DECLARE_SERIALIZER(ATest2Character) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
+	DECLARE_CLASS(ATest2Character, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_SERIALIZER(ATest2Character)
 
 
 #define Test2_Source_Test2_Test2Character_h_14_STANDARD_CONSTRUCTORS \
@@ -67,7 +66,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__VR_MuzzleLocation() { return STRUCT_OFFSET(ATest2Character, VR_MuzzleLocation); } \
 	FORCEINLINE static uint32 __PPO__FirstPersonCameraComponent() { return STRUCT_OFFSET(ATest2Character, FirstPersonCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(ATest2Character, R_MotionController); } \
-	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); }
+	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); } \
+	FORCEINLINE static uint32 __PPO__PauseHudClass() { return STRUCT_OFFSET(ATest2Character, PauseHudClass); } \
+	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); }
 
 
 #define Test2_Source_Test2_Test2Character_h_11_PROLOG
@@ -75,6 +76,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2Character_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2Character_h_14_SPARSE_DATA \
 	Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS \
 	Test2_Source_Test2_Test2Character_h_14_INCLASS \
 	Test2_Source_Test2_Test2Character_h_14_STANDARD_CONSTRUCTORS \
@@ -86,12 +88,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2Character_h_14_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2Character_h_14_SPARSE_DATA \
 	Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2Character_h_14_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2Character_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class ATest2Character>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_Test2Character_h

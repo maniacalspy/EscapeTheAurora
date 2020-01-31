@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "EndLevelDoor.h"
+#include "EndLevelTriggers.h"
 #include "GridTile.h"
 #include "PuzzleBlock.h"
 #include "EngineUtils.h"
@@ -35,9 +35,13 @@ public:
 private:
 
 	bool puzzleIsSolved;
+	FQuat LastValidRotation;
+	FVector LastValidLocation; 
+
+	bool IsInvalidTip;
 
 	class APuzzleBlock* _pPuzzleActor;
-	class AEndLevelDoor* _pDoorActor;
+	class AEndLevelTriggers* _pTriggerActor;
 
 	void createGrid();
 	void SetBlockStartPosition();
@@ -47,7 +51,7 @@ private:
 
 	virtual void PostInitializeComponents() override;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	UPROPERTY(EditAnywhere, Category = Mesh)
 	class UStaticMeshComponent* pTileGridMesh;
 
 	UPROPERTY(EditAnywhere)

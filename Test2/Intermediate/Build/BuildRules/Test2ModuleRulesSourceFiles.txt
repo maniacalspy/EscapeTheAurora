@@ -1,3 +1,0 @@
-C:\workspace\Nudge\Test2\Source\Test2\Test2.Build.cs
-C:\workspace\Nudge\Test2\Source\Test2.Target.cs
-C:\workspace\Nudge\Test2\Source\Test2Editor.Target.cs

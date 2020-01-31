@@ -1,11 +1,11 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 /*===========================================================================
 	Generated code exported from UnrealHeaderTool.
 	DO NOT modify this manually! Edit the corresponding .h files instead!
 ===========================================================================*/
 
-#include "ObjectMacros.h"
-#include "ScriptMacros.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UPrimitiveComponent;
@@ -17,6 +17,7 @@ struct FHitResult;
 #endif
 #define TEST2_Test2Projectile_generated_h
 
+#define Test2_Source_Test2_Test2Projectile_h_12_SPARSE_DATA
 #define Test2_Source_Test2_Test2Projectile_h_12_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnHit) \
@@ -52,11 +53,10 @@ struct FHitResult;
 #define Test2_Source_Test2_Test2Projectile_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest2Projectile(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2Projectile(); \
+	friend struct Z_Construct_UClass_ATest2Projectile_Statics; \
 public: \
-	DECLARE_CLASS(ATest2Projectile, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(ATest2Projectile, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(ATest2Projectile) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
 	static const TCHAR* StaticConfigName() {return TEXT("Game");} \
 
 
@@ -64,11 +64,10 @@ public: \
 #define Test2_Source_Test2_Test2Projectile_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesATest2Projectile(); \
-	friend TEST2_API class UClass* Z_Construct_UClass_ATest2Projectile(); \
+	friend struct Z_Construct_UClass_ATest2Projectile_Statics; \
 public: \
-	DECLARE_CLASS(ATest2Projectile, AActor, COMPILED_IN_FLAGS(0), 0, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(ATest2Projectile, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(ATest2Projectile) \
-	enum {IsIntrinsic=COMPILED_IN_INTRINSIC}; \
 	static const TCHAR* StaticConfigName() {return TEXT("Game");} \
 
 
@@ -107,6 +106,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Projectile); \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2Projectile_h_12_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2Projectile_h_12_SPARSE_DATA \
 	Test2_Source_Test2_Test2Projectile_h_12_RPC_WRAPPERS \
 	Test2_Source_Test2_Test2Projectile_h_12_INCLASS \
 	Test2_Source_Test2_Test2Projectile_h_12_STANDARD_CONSTRUCTORS \
@@ -118,12 +118,15 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_Test2Projectile_h_12_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_Test2Projectile_h_12_SPARSE_DATA \
 	Test2_Source_Test2_Test2Projectile_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2Projectile_h_12_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_Test2Projectile_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
+
+template<> TEST2_API UClass* StaticClass<class ATest2Projectile>();
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID Test2_Source_Test2_Test2Projectile_h
