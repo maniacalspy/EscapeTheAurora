@@ -2,7 +2,6 @@
 
 #include "EndLevelDoor.h"
 #include "Engine/Engine.h"
-#include "ConstructorHelpers.h"
 // Sets default values
 AEndLevelDoor::AEndLevelDoor()
 {
@@ -14,10 +13,7 @@ AEndLevelDoor::AEndLevelDoor()
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
 	
-	static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
-	if (PanelOnMaterialAsset.Succeeded()) {
-		pPanelOnMaterial = PanelOnMaterialAsset.Object;
-	}
+	
 
 }
 
@@ -40,10 +36,15 @@ void AEndLevelDoor::Tick(float DeltaTime)
 
 }
 
+void AEndLevelDoor::PowerOn() {
+	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+	OpenDoor();
+}
+
 //Changes the material and plays the door's opening animation
 void AEndLevelDoor::OpenDoor()
 {
-	if(pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+	
 	if (pOpenSound) pOpenSound->Play();
 	DoorPanelSkeleton->Play(false);
 }

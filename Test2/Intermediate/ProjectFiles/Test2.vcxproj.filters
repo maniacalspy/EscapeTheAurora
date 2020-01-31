@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Test2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3DFB727D-E888-4366-AF1C-4AE0B7B84403}</UniqueIdentifier>
+      <UniqueIdentifier>{76FBB8BD-AA14-4816-B779-0DB03A21C3D6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Test2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{7DB3B3C6-D7B1-4ED4-911C-303E74B59668}</UniqueIdentifier>
+      <UniqueIdentifier>{1A99B601-178C-48B0-8C46-BF5A5EDCE474}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,8 +33,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Test2">
-      <UniqueIdentifier>{E1E3F8DF-7B04-43B9-B6BE-A63F578B85F4}</UniqueIdentifier>
+      <UniqueIdentifier>{B8805102-5C6F-4A7F-B2BC-06F2CB3027A2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Test2\DoorBase.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\DoorBase.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Test2\EndLevelDoor.cpp">
       <Filter>Source\Test2</Filter>
     </ClCompile>

@@ -64,7 +64,7 @@ void AEndLevelTriggers::PlayNextSound() {
 		}
 	}
 
-	else OpenDoors();
+	else PowerOnDoors();
 }
 
 // Called every frame
@@ -74,10 +74,10 @@ void AEndLevelTriggers::Tick(float DeltaTime)
 
 }
 
-void AEndLevelTriggers::OpenDoors() {
+void AEndLevelTriggers::PowerOnDoors() {
 
 	for (auto Door : DoorsToTrigger) {
-		Door->OpenDoor();
+		Door->PowerOn();
 	}
 }
 
@@ -98,6 +98,6 @@ void AEndLevelTriggers::TriggerAll()
 		SoundsToTrigger[0]->Play();
 	}
 
-	else OpenDoors();
+	else PowerOnDoors();
 }
 
