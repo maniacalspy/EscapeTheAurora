@@ -37,7 +37,7 @@ protected:
 	UFUNCTION()
 		void PlayNextSound();
 
-	void OpenDoors();
+	void PowerOnDoors();
 
 public:	
 	// Called every frame
