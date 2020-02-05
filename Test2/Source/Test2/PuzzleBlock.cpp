@@ -107,7 +107,7 @@ void APuzzleBlock::SetAllCallBacks(VoidFunctionPtr pTippedCB, InVectorFunctionPt
 //Moves the block to DestLocation and DestRotation
 void APuzzleBlock::PushBlockOver() {
 
-	float Alpha = .1f;
+	float Alpha = GetWorld()->GetDeltaSeconds() * 8;
 	bool needsTranslation = false;
 	bool needsRotation = false;
 	FVector CurrentLocation = GetActorLocation();

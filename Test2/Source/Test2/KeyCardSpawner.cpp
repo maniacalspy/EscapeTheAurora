@@ -26,17 +26,8 @@ void AKeyCardSpawner::Tick(float DeltaTime)
 }
 
 void AKeyCardSpawner::SpawnKey() {
-	UObject* SpawnActor = Cast<UObject>(StaticLoadObject(UObject::StaticClass(), NULL, TEXT("/Game/FirstPersonCPP/Blueprints/Keycard_BP.Keycard_BP")));
-
-	UBlueprint* GeneratedBP = Cast<UBlueprint>(SpawnActor);
-	if (!SpawnActor)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CANT FIND OBJECT TO SPAWN")));
-		return;
-	}
-
-	UClass* SpawnClass = SpawnActor->StaticClass();
-	if (SpawnClass == NULL)
+	
+	if (KeyCardClass == NULL)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("CLASS == NULL")));
 		return;
@@ -46,6 +37,6 @@ void AKeyCardSpawner::SpawnKey() {
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.Owner = this;
 	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-	World->SpawnActor<AActor>(GeneratedBP->GeneratedClass, GetActorLocation(), GetActorRotation(), SpawnParams);
+	World->SpawnActor<AActor>(KeyCardClass, GetActorLocation(), GetActorRotation(), SpawnParams);
 }
 

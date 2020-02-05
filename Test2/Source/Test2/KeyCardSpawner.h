@@ -23,5 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category = SpawnInfo)
+		TSubclassOf<AActor> KeyCardClass;
+
 	void SpawnKey();
 };
