@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Test2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A94AFEA8-BB03-494D-A5AA-81641964A198}</UniqueIdentifier>
+      <UniqueIdentifier>{09BC048B-F31E-4C60-9490-E4AD088D39A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Test2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{7CCA16A9-A96C-464A-B492-7D16A3A13164}</UniqueIdentifier>
+      <UniqueIdentifier>{3B67907C-ABBB-47B9-9CB0-460CAF33337A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Test2">
-      <UniqueIdentifier>{01EEE283-1B15-499B-99E8-B7539B764F0D}</UniqueIdentifier>
+      <UniqueIdentifier>{DFD11FA3-7E47-48F4-9DFC-AB050FB442B2}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Test2\EndLevelDoor.cpp">
       <Filter>Source\Test2</Filter>
@@ -93,6 +93,12 @@
       <Filter>Source\Test2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Test2\PuzzleGridComponent.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\StartHUD.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\StartHUD.h">
       <Filter>Source\Test2</Filter>
     </ClInclude>
     <None Include="..\..\Source\Test2\Test2.Build.cs">
