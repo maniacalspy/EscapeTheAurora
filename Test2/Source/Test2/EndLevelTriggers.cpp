@@ -28,8 +28,9 @@ void AEndLevelTriggers::PostInitializeComponents() {
 
 
 	for (auto Child : Children) {
-		AEndLevelDoor* TheDoor = Cast<AEndLevelDoor>(Child);
+		ADoorBase* TheDoor = Cast<ADoorBase>(Child);
 		if (TheDoor) DoorsToTrigger.Add(TheDoor);
+		else if (Cast<AKeyCardSpawner>(Child)) KeySpawners.Add(Cast<AKeyCardSpawner>(Child));
 		else {
 			Child->GetComponents<ULightComponent>(LightsToAdd, true);
 			Child->GetComponents<UAudioComponent>(SoundsToAdd, true);
@@ -77,7 +78,10 @@ void AEndLevelTriggers::Tick(float DeltaTime)
 void AEndLevelTriggers::PowerOnDoors() {
 
 	for (auto Door : DoorsToTrigger) {
-		Door->PowerOn();
+		
+		AEndLevelDoor* OpenDoor = Cast<AEndLevelDoor>(Door);
+		if (OpenDoor) OpenDoor->PowerOn();
+		else Door->PowerOn();
 	}
 }
 
@@ -85,6 +89,10 @@ void AEndLevelTriggers::TriggerAll()
 {
 	for (auto Light : LightsToTrigger) {
 		Light->SetIntensity(8);
+	}
+
+	for (auto Key : KeySpawners) {
+		Key->SpawnKey();
 	}
 
 	/*

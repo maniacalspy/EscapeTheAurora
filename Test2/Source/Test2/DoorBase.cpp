@@ -2,6 +2,7 @@
 
 
 #include "DoorBase.h"
+#include "Materials/Material.h"
 #include "ConstructorHelpers.h"
 // Sets default values
 ADoorBase::ADoorBase()
@@ -12,7 +13,10 @@ ADoorBase::ADoorBase()
 	if (PanelOnMaterialAsset.Succeeded()) {
 		pPanelOnMaterial = PanelOnMaterialAsset.Object;
 	}
-
+	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
+	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
+	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
+	pOpenSound->bAutoActivate = false;
 }
 
 // Called when the game starts or when spawned
@@ -29,3 +33,6 @@ void ADoorBase::Tick(float DeltaTime)
 
 }
 
+void ADoorBase::PowerOn() {
+	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+}

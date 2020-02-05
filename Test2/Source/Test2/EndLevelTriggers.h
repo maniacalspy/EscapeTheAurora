@@ -6,6 +6,7 @@
 #include "EndLevelDoor.h"
 #include "EngineUtils.h"
 #include "GameFramework/Actor.h"
+#include "KeyCardSpawner.h"
 #include "Components/LightComponent.h"
 #include "Components/AudioComponent.h"
 #include "EndLevelTriggers.generated.h"
@@ -25,11 +26,13 @@ protected:
 
 	virtual void PostInitializeComponents() override;
 
-	TArray<AEndLevelDoor*> DoorsToTrigger;
+	TArray<ADoorBase*> DoorsToTrigger;
 
 	TArray<ULightComponent*> LightsToTrigger;
 
 	TArray<UAudioComponent*> SoundsToTrigger;
+
+	TArray<AKeyCardSpawner*> KeySpawners;
 
 	UFUNCTION()
 		void DebugPing();

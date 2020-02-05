@@ -65,7 +65,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 		{ "ModuleRelativePath", "DoorBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoorBase_PowerOn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoorBase, nullptr, "PowerOn", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoorBase_PowerOn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoorBase_PowerOn_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoorBase_PowerOn_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoorBase, nullptr, "PowerOn", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoorBase_PowerOn_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoorBase_PowerOn_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_ADoorBase_PowerOn()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -108,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADoorBase_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ADoorBase_OpenDoor, "OpenDoor" }, // 3310868369
-		{ &Z_Construct_UFunction_ADoorBase_PowerOn, "PowerOn" }, // 3566861661
+		{ &Z_Construct_UFunction_ADoorBase_PowerOn, "PowerOn" }, // 2225237077
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::Class_MetaDataParams[] = {
@@ -131,7 +131,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 		{ "ModuleRelativePath", "DoorBase.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton = { "DoorPanelSkeleton", nullptr, (EPropertyFlags)0x00200800000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoorBase, DoorPanelSkeleton), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton = { "DoorPanelSkeleton", nullptr, (EPropertyFlags)0x00200800000a000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoorBase, DoorPanelSkeleton), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorFrameSkeleton_MetaData[] = {
 		{ "Category", "SkeletalMesh" },
@@ -172,7 +172,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoorBase, 2292715719);
+	IMPLEMENT_CLASS(ADoorBase, 1537395233);
 	template<> TEST2_API UClass* StaticClass<ADoorBase>()
 	{
 		return ADoorBase::StaticClass();

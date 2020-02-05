@@ -135,4 +135,14 @@
       <Filter>Source\Test2</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Test2\KeyCardSpawner.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Test2\KeyCardSpawner.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -7,12 +7,12 @@ AEndLevelDoor::AEndLevelDoor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	/*
 	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
-	
+	*/
 	
 
 }
@@ -37,7 +37,7 @@ void AEndLevelDoor::Tick(float DeltaTime)
 }
 
 void AEndLevelDoor::PowerOn() {
-	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+	Super::PowerOn();
 	OpenDoor();
 }
 

@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Components/AudioComponent.h"
 #include "GameFramework/Actor.h"
 #include "DoorBase.generated.h"
 
@@ -15,19 +17,20 @@ public:
 	// Sets default values for this actor's properties
 	ADoorBase();
 
+	UFUNCTION()
+		virtual void PowerOn();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UFUNCTION()
-		virtual void PowerOn() { check(0 && "You must override this"); };
+
 	UFUNCTION()
 		virtual void OpenDoor() { check(0 && "You must override this"); };
 
 	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorFrameSkeleton;
 
-	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorPanelSkeleton;
 
 	UPROPERTY(EditAnywhere, Category = Audio)
@@ -39,5 +42,6 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
 
 };
