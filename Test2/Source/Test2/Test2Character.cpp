@@ -12,6 +12,7 @@
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "UObject/ConstructorHelpers.h"
+#include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -34,6 +35,12 @@ ATest2Character::ATest2Character()
 	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
 
 	PauseHudClass = MenuClassFinder.Class;
+
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
+
+	StartHUD = StartMenuFinder.Class;
+
+	///*WidgetBlueprint'/Game/FirstPersonCPP/Blueprints/Start_HUD.Start_HUD'*/
 
 
 	//FStringClassReference MyWidgetClassRef(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
@@ -93,6 +100,28 @@ void ATest2Character::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (mycontroller) 
+	{
+			if (StartHUD) 
+			{
+				 auto StartHUDinstance = CreateWidget<UPauseHudWidget>(mycontroller, StartHUD);
+					StartHUDinstance->Setup();
+					StartHUDinstance->OpenMenu();
+					mycontroller->SetPause(true);
+			}
+
+			else 
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
+			} 
+				
+	}
+		
+		
+	
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));

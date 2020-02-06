@@ -1,15 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "Components/SkeletalMeshComponent.h"
-#include "Components/AudioComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Materials/Material.h"
+#include "DoorBase.h"
 #include "EndLevelDoor.generated.h"
 
 UCLASS()
-class TEST2_API AEndLevelDoor : public AActor
+class TEST2_API AEndLevelDoor : public ADoorBase
 {
 	GENERATED_BODY()
 	
@@ -27,20 +26,22 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UFUNCTION()
-		void OpenDoor();
+	void OpenDoor() override;
+
+	void PowerOn() override;
+
 
 private:
-	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
-		class USkeletalMeshComponent* DoorFrameSkeleton;
+	//UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+	//	class USkeletalMeshComponent* DoorFrameSkeleton;
 
-	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
-		class USkeletalMeshComponent* DoorPanelSkeleton;
+	//UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+	//	class USkeletalMeshComponent* DoorPanelSkeleton;
 
-	UPROPERTY(EditAnywhere, Category = Audio)
-		class UAudioComponent* pOpenSound;
+	//UPROPERTY(EditAnywhere, Category = Audio)
+	//	class UAudioComponent* pOpenSound;
 
-		class UMaterial* pPanelOffMaterial;
+	//	class UMaterial* pPanelOffMaterial;
 
-		class UMaterial* pPanelOnMaterial;
+	//	class UMaterial* pPanelOnMaterial;
 };

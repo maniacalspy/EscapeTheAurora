@@ -17,9 +17,37 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 	TEST2_API UClass* Z_Construct_UClass_UPauseHudWidget();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	TEST2_API UFunction* Z_Construct_UFunction_UPauseHudWidget_CloseMenu();
 // End Cross Module References
 	void UPauseHudWidget::StaticRegisterNativesUPauseHudWidget()
 	{
+		UClass* Class = UPauseHudWidget::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "CloseMenu", &UPauseHudWidget::execCloseMenu },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PauseHudWidget.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPauseHudWidget, nullptr, "CloseMenu", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPauseHudWidget_CloseMenu()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPauseHudWidget_CloseMenu_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UPauseHudWidget_NoRegister()
 	{
@@ -28,6 +56,7 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 	struct Z_Construct_UClass_UPauseHudWidget_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +66,9 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 	UObject* (*const Z_Construct_UClass_UPauseHudWidget_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UUserWidget,
 		(UObject* (*)())Z_Construct_UPackage__Script_Test2,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UPauseHudWidget_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UPauseHudWidget_CloseMenu, "CloseMenu" }, // 4086122690
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPauseHudWidget_Statics::Class_MetaDataParams[] = {
@@ -53,11 +85,11 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x00B010A0u,
@@ -72,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPauseHudWidget, 3535564212);
+	IMPLEMENT_CLASS(UPauseHudWidget, 3910976068);
 	template<> TEST2_API UClass* StaticClass<UPauseHudWidget>()
 	{
 		return UPauseHudWidget::StaticClass();

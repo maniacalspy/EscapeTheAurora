@@ -15,3 +15,4 @@ class TEST2_API AStartHUD : public AHUD
 	GENERATED_BODY()
 	
 };
+

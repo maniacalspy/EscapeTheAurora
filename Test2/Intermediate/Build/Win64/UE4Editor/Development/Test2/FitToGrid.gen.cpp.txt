@@ -1,5 +1,5 @@
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Source\Test2/FitToGrid.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.generated.h
+C:\workspace\Github\Nudge\Test2\Source\Test2/FitToGrid.h
+C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.generated.h

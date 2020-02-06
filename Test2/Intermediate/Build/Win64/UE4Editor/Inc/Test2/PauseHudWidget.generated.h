@@ -14,8 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TEST2_PauseHudWidget_generated_h
 
 #define Test2_Source_Test2_PauseHudWidget_h_15_SPARSE_DATA
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execCloseMenu) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CloseMenu(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCloseMenu) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CloseMenu(); \
+		P_NATIVE_END; \
+	}
+
+
 #define Test2_Source_Test2_PauseHudWidget_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPauseHudWidget(); \
