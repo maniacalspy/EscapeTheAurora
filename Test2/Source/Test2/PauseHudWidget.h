@@ -19,7 +19,8 @@ public:
 
 	void OpenMenu();
 	
-	void CloseMenu();
+	UFUNCTION(BlueprintCallable)
+		void CloseMenu();
 
 private:
 	UWorld* World;

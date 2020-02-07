@@ -68,7 +68,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__R_MotionController() { return STRUCT_OFFSET(ATest2Character, R_MotionController); } \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); } \
 	FORCEINLINE static uint32 __PPO__PauseHudClass() { return STRUCT_OFFSET(ATest2Character, PauseHudClass); } \
-	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); }
+	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); } \
+	FORCEINLINE static uint32 __PPO__StartHUD() { return STRUCT_OFFSET(ATest2Character, StartHUD); }
 
 
 #define Test2_Source_Test2_Test2Character_h_11_PROLOG

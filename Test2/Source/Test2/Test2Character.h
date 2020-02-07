@@ -156,5 +156,10 @@ private:
 
 	UPROPERTY()
 	class UPauseHudWidget* PauseHudInstance;
+
+	UPROPERTY()
+	TSubclassOf<class UPauseHudWidget> StartHUD;
+
+	
 };
 
