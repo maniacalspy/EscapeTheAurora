@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Test2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{257D723B-43EE-4A98-B021-6DFABAD28BE8}</UniqueIdentifier>
+      <UniqueIdentifier>{8C9CEE98-E47B-49BA-B03F-A871E215F5BB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Test2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{DD30BBCF-9238-45CB-B1F6-3DEAB17747B9}</UniqueIdentifier>
+      <UniqueIdentifier>{503C28A4-E1D0-4F47-99A7-7EAD05C830B2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Test2">
-      <UniqueIdentifier>{EA801C58-F0BD-4644-A848-CCC428E67669}</UniqueIdentifier>
+      <UniqueIdentifier>{82F1EA66-8090-4571-9BE1-D21795636AB4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Test2\DoorBase.cpp">
       <Filter>Source\Test2</Filter>
@@ -63,6 +63,12 @@
       <Filter>Source\Test2</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Test2\GridTile.h">
+      <Filter>Source\Test2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Test2\KeyCardSpawner.cpp">
+      <Filter>Source\Test2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Test2\KeyCardSpawner.h">
       <Filter>Source\Test2</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Test2\LevelGridStruct.cpp">
@@ -134,15 +140,5 @@
     <ClInclude Include="..\..\Source\Test2\Test2Projectile.h">
       <Filter>Source\Test2</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\Test2\KeyCardSpawner.h">
-      <Filter>Source\Test2</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\Test2\KeyCardSpawner.cpp">
-      <Filter>Source\Test2</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

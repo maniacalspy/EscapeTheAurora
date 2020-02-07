@@ -28,7 +28,7 @@ ATest2Character::ATest2Character()
 	BaseLookUpRate = 45.f;
 
 	//Set up walking speed
-	BaseMoveSpeed = 15.f;
+	BaseMoveSpeed = 30.f;
 
 
 	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
