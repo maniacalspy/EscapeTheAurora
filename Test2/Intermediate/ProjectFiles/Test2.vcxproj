@@ -298,6 +298,8 @@
     <ClInclude Include="..\..\Source\Test2\PuzzleGrid.h"/>
     <ClCompile Include="..\..\Source\Test2\PuzzleGridComponent.cpp"/>
     <ClInclude Include="..\..\Source\Test2\PuzzleGridComponent.h"/>
+    <ClCompile Include="..\..\Source\Test2\StartHUD.cpp"/>
+    <ClInclude Include="..\..\Source\Test2\StartHUD.h"/>
     <None Include="..\..\Source\Test2\Test2.Build.cs"/>
     <ClCompile Include="..\..\Source\Test2\Test2.cpp"/>
     <ClInclude Include="..\..\Source\Test2\Test2.h"/>
