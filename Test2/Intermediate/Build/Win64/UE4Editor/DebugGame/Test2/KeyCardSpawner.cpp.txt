@@ -1,3 +1,0 @@
-C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\DebugGame\Test2\Definitions.Test2.h
-C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
-C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
