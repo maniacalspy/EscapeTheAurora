@@ -1,0 +1,59 @@
+﻿  Cleaning Test2Editor and UnrealHeaderTool binaries...
+  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\daisu\Documents\GitHub\Nudge).
+  Creating makefile for Test2Editor (no existing makefile)
+  Parsing headers for Test2Editor
+    Running UnrealHeaderTool "C:\Users\daisu\Documents\GitHub\Nudge\Test2\Test2.uproject" "C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\DebugGame\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for Test2Editor in 5.5206631 seconds
+  Building Test2Editor...
+  Using Visual Studio 2019 14.24.28315 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  [Upgrade]
+  [Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+  [Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+  [Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+  [Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+  [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+  [Upgrade]
+  Building 39 actions with 12 processes...
+    [1/39] Default.rc2
+    [2/39] SharedPCH.Engine.NonOptimized.cpp
+    [3/39] GridTile.cpp
+    [4/39] LevelGridStruct.cpp
+    [5/39] FitToGrid.cpp
+    [6/39] Test2.cpp
+    [7/39] KeyCardSpawner.cpp
+    [8/39] PuzzleGridComponent.cpp
+    [9/39] EndLevelDoor.cpp
+    [10/39] StartHUD.cpp
+    [11/39] Test2HUD.cpp
+    [12/39] PuzzleBlockComponent.cpp
+    [13/39] Test2Projectile.cpp
+    [14/39] DoorBase.cpp
+    [15/39] FitToGrid.gen.cpp
+    [16/39] KeyCardSpawner.gen.cpp
+    [17/39] PuzzleBlock.cpp
+    [18/39] EndLevelTriggers.gen.cpp
+    [19/39] PuzzleGrid.cpp
+    [20/39] PuzzleBlockComponent.gen.cpp
+    [21/39] DoorBase.gen.cpp
+    [22/39] Test2.init.gen.cpp
+    [23/39] PuzzleBlock.gen.cpp
+    [24/39] EndLevelDoor.gen.cpp
+    [25/39] Test2GameMode.gen.cpp
+    [26/39] PuzzleGrid.gen.cpp
+    [27/39] PuzzleGridComponent.gen.cpp
+    [28/39] Test2Projectile.gen.cpp
+    [29/39] Test2HUD.gen.cpp
+    [30/39] StartHUD.gen.cpp
+    [31/39] EndLevelTriggers.cpp
+    [32/39] PauseHudWidget.cpp
+    [33/39] Test2GameMode.cpp
+    [34/39] PauseHudWidget.gen.cpp
+    [35/39] Test2Character.cpp
+    [36/39] Test2Character.gen.cpp
+    [37/39] UE4Editor-Test2-Win64-DebugGame.lib
+       Creating library C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\DebugGame\Test2\UE4Editor-Test2-Win64-DebugGame.lib and object C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\DebugGame\Test2\UE4Editor-Test2-Win64-DebugGame.exp
+    [38/39] UE4Editor-Test2-Win64-DebugGame.dll
+       Creating library C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\DebugGame\Test2\UE4Editor-Test2-Win64-DebugGame.suppressed.lib and object C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\DebugGame\Test2\UE4Editor-Test2-Win64-DebugGame.suppressed.exp
+    [39/39] Test2Editor-Win64-DebugGame.target
+  Total time in Parallel executor: 26.57 seconds
+  Total execution time: 34.17 seconds
