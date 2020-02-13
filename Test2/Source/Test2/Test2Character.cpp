@@ -12,6 +12,7 @@
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "UObject/ConstructorHelpers.h"
+#include "Interactable.h"
 #include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -40,17 +41,7 @@ ATest2Character::ATest2Character()
 
 	StartHUD = StartMenuFinder.Class;
 
-	///*WidgetBlueprint'/Game/FirstPersonCPP/Blueprints/Start_HUD.Start_HUD'*/
-
-
-	//FStringClassReference MyWidgetClassRef(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
-	//if (UClass* MyWidgetClass = MyWidgetClassRef.TryLoadClass<UUserWidget>())
-	//{
-	//	UUserWidget* MyWidget = CreateWidget<UUserWidget>(GetWorld(), MyWidgetClass);
-	//	// Do stuff with MyWidget
-	//}
-	//PauseHud = CreateWidget<UPauseHudWidget>(GetWorld(), MenuClass);
-	//PauseHud->Setup();
+	TraceParams = FCollisionQueryParams(FName(TEXT("Trace")), true, this);
 	
 	// Create a CameraComponent	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
@@ -153,6 +144,7 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &ATest2Character::ResetLevel);
 	PlayerInputComponent->BindAction("Quit", IE_Pressed, this, &ATest2Character::QuitGame);
+	PlayerInputComponent->BindAction("InterAct", IE_Pressed, this, &ATest2Character::Interact);
 
 
 	// Bind fire event
@@ -238,44 +230,6 @@ void ATest2Character::EndTouch(const ETouchIndex::Type FingerIndex, const FVecto
 	TouchItem.bIsPressed = false;
 }
 
-//Commenting this section out to be consistent with FPS BP template.
-//This allows the user to turn without using the right virtual joystick
-
-//void ATest2Character::TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location)
-//{
-//	if ((TouchItem.bIsPressed == true) && (TouchItem.FingerIndex == FingerIndex))
-//	{
-//		if (TouchItem.bIsPressed)
-//		{
-//			if (GetWorld() != nullptr)
-//			{
-//				UGameViewportClient* ViewportClient = GetWorld()->GetGameViewport();
-//				if (ViewportClient != nullptr)
-//				{
-//					FVector MoveDelta = Location - TouchItem.Location;
-//					FVector2D ScreenSize;
-//					ViewportClient->GetViewportSize(ScreenSize);
-//					FVector2D ScaledDelta = FVector2D(MoveDelta.X, MoveDelta.Y) / ScreenSize;
-//					if (FMath::Abs(ScaledDelta.X) >= 4.0 / ScreenSize.X)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.X * BaseTurnRate;
-//						AddControllerYawInput(Value);
-//					}
-//					if (FMath::Abs(ScaledDelta.Y) >= 4.0 / ScreenSize.Y)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.Y * BaseTurnRate;
-//						AddControllerPitchInput(Value);
-//					}
-//					TouchItem.Location = Location;
-//				}
-//				TouchItem.Location = Location;
-//			}
-//		}
-//	}
-//}
-
 void ATest2Character::MoveForward(float Value)
 {
 	if (Value != 0.0f)
@@ -320,4 +274,75 @@ bool ATest2Character::EnableTouchscreenMovement(class UInputComponent* PlayerInp
 	}
 	
 	return false;
+}
+
+void ATest2Character::Tick(float DeltaSeconds) {
+	Super::Tick(DeltaSeconds);
+	HandleFocus();
+}
+
+void ATest2Character::Interact() {
+	if (FocusedInteractable) {
+		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
+		if (interactinterface == NULL) GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
+		interactinterface->Execute_OnInteract(FocusedInteractable, this);
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("No Interactable"));
+}
+
+AActor* ATest2Character::FindActorInLOS() {
+	if (!Controller)
+	{
+		return nullptr;
+	}
+
+	FVector Loc;
+	FRotator Rot;
+	FHitResult Hit(ForceInit);
+	GetController()->GetPlayerViewPoint(Loc, Rot);
+
+	FVector Start = Loc;
+	FVector End = Start + (Rot.Vector() * InteractionDistance);
+
+	GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, TraceParams);
+
+	return Hit.GetActor();
+}
+
+void ATest2Character::HandleFocus() {
+	AActor* interactable = FindActorInLOS();
+
+	if (interactable)
+	{
+		if (interactable != FocusedInteractable)
+		{
+			if (FocusedInteractable)
+			{
+				IInteractable* interface = Cast<IInteractable> (FocusedInteractable);
+				if (interface)
+				{
+					interface->Execute_EndFocus(FocusedInteractable);
+				}
+			}
+			IInteractable* interface = Cast<IInteractable>(interactable);
+			if (interface)
+			{
+				interface->Execute_StartFocus(interactable);
+			}
+			FocusedInteractable = interactable;
+		}
+	}
+	else
+	{
+		if (FocusedInteractable)
+		{
+			IInteractable* interface = Cast<IInteractable>(FocusedInteractable);
+			if (interface)
+			{
+				interface->Execute_EndFocus(FocusedInteractable);
+			}
+		}
+		FocusedInteractable = nullptr;
+	}
+
 }

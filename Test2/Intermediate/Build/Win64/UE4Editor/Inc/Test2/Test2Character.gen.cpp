@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	TEST2_API UClass* Z_Construct_UClass_ATest2Character();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_Interact();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TEST2_API UClass* Z_Construct_UClass_UPauseHudWidget_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
@@ -30,6 +31,33 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 // End Cross Module References
 	void ATest2Character::StaticRegisterNativesATest2Character()
 	{
+		UClass* Class = ATest2Character::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "Interact", &ATest2Character::execInteract },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ATest2Character_Interact_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATest2Character_Interact_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Test2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATest2Character_Interact_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATest2Character, nullptr, "Interact", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATest2Character_Interact_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATest2Character_Interact_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATest2Character_Interact()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATest2Character_Interact_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_ATest2Character_NoRegister()
 	{
@@ -38,9 +66,14 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	struct Z_Construct_UClass_ATest2Character_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractionDistance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_InteractionDistance;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StartHUD_MetaData[];
 #endif
@@ -122,6 +155,9 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		(UObject* (*)())Z_Construct_UClass_ACharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_Test2,
 	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_ATest2Character_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ATest2Character_Interact, "Interact" }, // 717337324
+	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
@@ -129,6 +165,13 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData[] = {
+		{ "Category", "Interaction" },
+		{ "ModuleRelativePath", "Test2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance = { "InteractionDistance", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, InteractionDistance), METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHUD_MetaData[] = {
 		{ "ModuleRelativePath", "Test2Character.h" },
@@ -299,6 +342,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATest2Character_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHUD,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_PauseHudInstance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_PauseHudClass,
@@ -326,11 +370,11 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		"Game",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_ATest2Character_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::PropPointers),
 		0,
 		0x008000A4u,
@@ -345,7 +389,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 3323285256);
+	IMPLEMENT_CLASS(ATest2Character, 1852678143);
 	template<> TEST2_API UClass* StaticClass<ATest2Character>()
 	{
 		return ATest2Character::StaticClass();

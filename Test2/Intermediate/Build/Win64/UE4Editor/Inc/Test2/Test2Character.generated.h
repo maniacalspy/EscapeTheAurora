@@ -14,8 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TEST2_Test2Character_generated_h
 
 #define Test2_Source_Test2_Test2Character_h_14_SPARSE_DATA
-#define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS
-#define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execInteract) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_Test2Character_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execInteract) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	}
+
+
 #define Test2_Source_Test2_Test2Character_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest2Character(); \
@@ -69,7 +89,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); } \
 	FORCEINLINE static uint32 __PPO__PauseHudClass() { return STRUCT_OFFSET(ATest2Character, PauseHudClass); } \
 	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); } \
-	FORCEINLINE static uint32 __PPO__StartHUD() { return STRUCT_OFFSET(ATest2Character, StartHUD); }
+	FORCEINLINE static uint32 __PPO__StartHUD() { return STRUCT_OFFSET(ATest2Character, StartHUD); } \
+	FORCEINLINE static uint32 __PPO__InteractionDistance() { return STRUCT_OFFSET(ATest2Character, InteractionDistance); }
 
 
 #define Test2_Source_Test2_Test2Character_h_11_PROLOG

@@ -51,6 +51,8 @@ public:
 protected:
 	virtual void BeginPlay();
 
+	virtual void Tick(float DeltaSeconds) override;
+
 public:
 
 	float BaseMoveSpeed;
@@ -151,6 +153,13 @@ public:
 
 private:
 
+	void HandleFocus();
+
+	AActor* FindActorInLOS();
+
+	UFUNCTION()
+		void Interact();
+
 	UPROPERTY()
 	TSubclassOf<class UPauseHudWidget> PauseHudClass;
 
@@ -160,6 +169,11 @@ private:
 	UPROPERTY()
 	TSubclassOf<class UPauseHudWidget> StartHUD;
 
-	
+	class AActor* FocusedInteractable;
+
+	UPROPERTY(VisibleAnywhere, Category = "Interaction")
+		float InteractionDistance = 400.f;
+
+	FCollisionQueryParams TraceParams;
 };
 
