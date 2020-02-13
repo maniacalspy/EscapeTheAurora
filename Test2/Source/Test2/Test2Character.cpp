@@ -142,6 +142,11 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
+
+#if WITH_EDITOR
+	PlayerInputComponent->BindKey(EKeys::P, IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
+#endif
+
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &ATest2Character::ResetLevel);
 	PlayerInputComponent->BindAction("Quit", IE_Pressed, this, &ATest2Character::QuitGame);
 	PlayerInputComponent->BindAction("InterAct", IE_Pressed, this, &ATest2Character::Interact);
@@ -284,7 +289,10 @@ void ATest2Character::Tick(float DeltaSeconds) {
 void ATest2Character::Interact() {
 	if (FocusedInteractable) {
 		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
-		if (interactinterface == NULL) GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
+		if (interactinterface == NULL) {
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
+			return;
+		}
 		interactinterface->Execute_OnInteract(FocusedInteractable, this);
 	}
 	else GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("No Interactable"));

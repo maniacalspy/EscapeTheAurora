@@ -32,4 +32,6 @@ void UPauseHudWidget::CloseMenu() {
 	PlayerController->SetInputMode(InputModeData);
 
 	PlayerController->bShowMouseCursor = false;
+
+	PlayerController->SetPause(false);
 }
