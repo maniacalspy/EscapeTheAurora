@@ -15,12 +15,23 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Test2_Source_Test2_DoorBase_h_14_SPARSE_DATA
 #define Test2_Source_Test2_DoorBase_h_14_RPC_WRAPPERS \
+	virtual void OpenDoor_Implementation(); \
+	virtual void CloseDoor_Implementation(); \
+	virtual void PowerOn_Implementation(); \
  \
 	DECLARE_FUNCTION(execOpenDoor) \
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OpenDoor(); \
+		P_THIS->OpenDoor_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCloseDoor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CloseDoor_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -28,7 +39,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PowerOn(); \
+		P_THIS->PowerOn_Implementation(); \
 		P_NATIVE_END; \
 	}
 
@@ -39,7 +50,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->OpenDoor(); \
+		P_THIS->OpenDoor_Implementation(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCloseDoor) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->CloseDoor_Implementation(); \
 		P_NATIVE_END; \
 	} \
  \
@@ -47,11 +66,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	{ \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->PowerOn(); \
+		P_THIS->PowerOn_Implementation(); \
 		P_NATIVE_END; \
 	}
 
 
+#define Test2_Source_Test2_DoorBase_h_14_EVENT_PARMS
+#define Test2_Source_Test2_DoorBase_h_14_CALLBACK_WRAPPERS
 #define Test2_Source_Test2_DoorBase_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADoorBase(); \
@@ -100,13 +121,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoorBase); \
 	FORCEINLINE static uint32 __PPO__pOpenSound() { return STRUCT_OFFSET(ADoorBase, pOpenSound); }
 
 
-#define Test2_Source_Test2_DoorBase_h_11_PROLOG
+#define Test2_Source_Test2_DoorBase_h_11_PROLOG \
+	Test2_Source_Test2_DoorBase_h_14_EVENT_PARMS
+
+
 #define Test2_Source_Test2_DoorBase_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_DoorBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Test2_Source_Test2_DoorBase_h_14_SPARSE_DATA \
 	Test2_Source_Test2_DoorBase_h_14_RPC_WRAPPERS \
+	Test2_Source_Test2_DoorBase_h_14_CALLBACK_WRAPPERS \
 	Test2_Source_Test2_DoorBase_h_14_INCLASS \
 	Test2_Source_Test2_DoorBase_h_14_STANDARD_CONSTRUCTORS \
 public: \
@@ -119,6 +144,7 @@ public: \
 	Test2_Source_Test2_DoorBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	Test2_Source_Test2_DoorBase_h_14_SPARSE_DATA \
 	Test2_Source_Test2_DoorBase_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test2_Source_Test2_DoorBase_h_14_CALLBACK_WRAPPERS \
 	Test2_Source_Test2_DoorBase_h_14_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_DoorBase_h_14_ENHANCED_CONSTRUCTORS \
 private: \

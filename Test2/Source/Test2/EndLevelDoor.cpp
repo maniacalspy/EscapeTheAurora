@@ -6,7 +6,6 @@
 AEndLevelDoor::AEndLevelDoor()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
 	/*
 	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
@@ -36,15 +35,13 @@ void AEndLevelDoor::Tick(float DeltaTime)
 
 }
 
-void AEndLevelDoor::PowerOn() {
-	Super::PowerOn();
-	OpenDoor();
+void AEndLevelDoor::PowerOn_Implementation() {
+	Super::PowerOn_Implementation();
+	OpenDoor_Implementation();
 }
 
 //Changes the material and plays the door's opening animation
-void AEndLevelDoor::OpenDoor()
+void AEndLevelDoor::OpenDoor_Implementation()
 {
-	
-	if (pOpenSound) pOpenSound->Play();
-	DoorPanelSkeleton->Play(false);
+	Super::OpenDoor_Implementation();
 }
