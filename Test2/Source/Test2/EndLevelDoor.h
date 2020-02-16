@@ -26,9 +26,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void OpenDoor() override;
+	virtual void OpenDoor_Implementation() override;
 
-	void PowerOn() override;
+	void PowerOn_Implementation() override;
 
 
 private:

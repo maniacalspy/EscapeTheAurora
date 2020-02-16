@@ -8,7 +8,6 @@
 ADoorBase::ADoorBase()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
 	static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
 	if (PanelOnMaterialAsset.Succeeded()) {
 		pPanelOnMaterial = PanelOnMaterialAsset.Object;
@@ -17,6 +16,7 @@ ADoorBase::ADoorBase()
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
+	bIsPowered = false;
 }
 
 // Called when the game starts or when spawned
@@ -33,6 +33,24 @@ void ADoorBase::Tick(float DeltaTime)
 
 }
 
-void ADoorBase::PowerOn() {
+void ADoorBase::PowerOn_Implementation() {
+	SwapDoorMaterial();
+	bIsPowered = true;
+}
+
+void ADoorBase::OpenDoor_Implementation() {
+	if (bIsPowered) {
+		if (pOpenSound) pOpenSound->Play();
+		DoorPanelSkeleton->SetPlayRate(1.f);
+		DoorPanelSkeleton->Play(false);
+	}
+}
+
+void ADoorBase::CloseDoor_Implementation() {
+	DoorPanelSkeleton->SetPlayRate(-2.f);
+	DoorPanelSkeleton->Play(false);
+}
+
+void ADoorBase::SwapDoorMaterial() {
 	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
 }
