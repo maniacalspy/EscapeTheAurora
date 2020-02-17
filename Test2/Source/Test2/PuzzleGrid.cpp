@@ -22,6 +22,7 @@ APuzzleGrid::APuzzleGrid()
 
 	puzzleIsSolved = false;
 	IsInvalidTip = false;
+
 }
 
 void APuzzleGrid::PostInitializeComponents() {
@@ -32,8 +33,6 @@ void APuzzleGrid::PostInitializeComponents() {
 	_tileHeight = 30.f * _XScale;
 	//SetActorScale3D(*new FVector(_XScale, _YScale, 1.f));
 
-	MyLevelGrid = GetLevelByNumber(LevelGridNumber);
-	if(MyLevelGrid != nullptr) createGrid();
 }
 
 
@@ -44,7 +43,15 @@ void APuzzleGrid::BeginPlay()
 {
 	Super::BeginPlay();
 
-	_pPuzzleActor = (APuzzleBlock*) GetWorld()->SpawnActor(APuzzleBlock::StaticClass());
+	MyLevelGrid = GetLevelByNumber(LevelGridNumber);
+	if (MyLevelGrid != nullptr) createGrid();
+
+	UWorld* World = GetWorld();
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+	_pPuzzleActor = (APuzzleBlock*) GetWorld()->SpawnActor<APuzzleBlock>(APuzzleBlock::StaticClass(), GetActorLocation(), GetActorRotation(), SpawnParams);
 	_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
 
 
