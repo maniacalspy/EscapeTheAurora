@@ -37,8 +37,22 @@ LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_ti
 	StartSpots = startspots;
 	GoalSpots = goalspots;
 	thisGrid = grid;
+	thisState = nullptr;
 }
 
+LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid, LevelGridState* state) : LevelGrid(rows, columns, startspots, goalspots, grid) {
+	thisState = state;
+}
+
+LevelGridState::LevelGridState(float xonepos, float yonepos, float xtwopos, float ytwopos, bool solved) {
+	LastTileOneXCoordinate = xonepos;
+	LastTileOneYCoordinate = yonepos;
+
+	LastTileTwoXCoordinate = xtwopos;
+	LastTileTwoYCoordinate = ytwopos;
+
+	isSolved = solved;
+}
 LevelGrid *Levels[Level_Count] = { Level_One, Level_Two };
 
 LevelGrid* GetLevelByNumber(int levelnumber) {

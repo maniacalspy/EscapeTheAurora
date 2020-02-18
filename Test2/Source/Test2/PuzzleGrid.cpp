@@ -94,7 +94,20 @@ void APuzzleGrid::OnBlockDoneTipping()
 		_pPuzzleActor->_isTipping = true;
 		_pPuzzleActor->_canBePushed = false;
 	}
-	else if(!puzzleIsSolved) CheckPuzzleSolved();
+	else if (!puzzleIsSolved) {
+		CheckPuzzleSolved();
+		MyLevelGrid->thisState->LastTileOneXCoordinate = TilesBlockIsOn[0]->GetXPosition();
+		MyLevelGrid->thisState->LastTileOneYCoordinate = TilesBlockIsOn[0]->GetYPosition();
+
+		if (TilesBlockIsOn.Num() > 1) {
+			MyLevelGrid->thisState->LastTileTwoXCoordinate = TilesBlockIsOn[1]->GetXPosition();
+			MyLevelGrid->thisState->LastTileTwoYCoordinate = TilesBlockIsOn[1]->GetYPosition();
+		}
+		else {
+			MyLevelGrid->thisState->LastTileTwoXCoordinate = -1.f;
+			MyLevelGrid->thisState->LastTileTwoYCoordinate = -1.f;
+		}
+	}
 }
 
 
@@ -116,6 +129,7 @@ void APuzzleGrid::CheckPuzzleSolved() {
 //lowers the block into the hole and triggers the events
 void APuzzleGrid::OnPuzzleSolved() {
 	puzzleIsSolved = true;
+	MyLevelGrid->thisState->isSolved = true;
 	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0,0,_pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
 	if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
 }
@@ -123,16 +137,24 @@ void APuzzleGrid::OnPuzzleSolved() {
 //create the puzzle grid based on MyLevelGrid
 void APuzzleGrid::createGrid() {
 	if (MyLevelGrid != nullptr) {
+		
 		float initialXpos = GetActorLocation().X  + ((MyLevelGrid->RowCount -1) /2.0f) * _tileHeight;
 		float initialYpos = GetActorLocation().Y - ((MyLevelGrid->ColumnCount - 1) / 2.0f) * _tileWidth;
-		
+		TArray<GridTile*> fallbacktiles = *new TArray<GridTile*>;
 		for (int i = 0; i < MyLevelGrid->RowCount; i++) {
 			for (int j = 0; j < MyLevelGrid->ColumnCount; j++) {
 				
 
 				TT_tileTypes thisTileType = MyLevelGrid->thisGrid[i*MyLevelGrid->ColumnCount + j];
 				GridTile* CurrentTile = new GridTile(thisTileType, TT_tileStates::Empty, initialXpos - i * _tileHeight, initialYpos + j * _tileWidth);
-				if (thisTileType == TT_tileTypes::Start) MyStartPoints.Add(CurrentTile);
+				if (MyLevelGrid->thisState) {
+					//COMPARE COORDINATES TO THE LAST TILE COORDINATES AND IF THEY MATCH ADD THEM TO THE LIST
+					if ((CurrentTile->GetXPosition() == MyLevelGrid->thisState->LastTileOneXCoordinate && CurrentTile->GetYPosition() == MyLevelGrid->thisState->LastTileOneYCoordinate)
+						|| (CurrentTile->GetXPosition() == MyLevelGrid->thisState->LastTileTwoXCoordinate && CurrentTile->GetYPosition() == MyLevelGrid->thisState->LastTileTwoYCoordinate)) {
+						MyStartPoints.Add(CurrentTile);
+					}
+				}
+				if (thisTileType == TT_tileTypes::Start) fallbacktiles.Add(CurrentTile);
 				if (thisTileType == TT_tileTypes::Goal) MyGoalPoints.Add(CurrentTile);
 				if (j > 0) CurrentTile->setNeighbor(_puzzleGrid[(i*MyLevelGrid->ColumnCount + j) - 1], _tileDirections::West);
 				if (i > 0) CurrentTile->setNeighbor(_puzzleGrid[((i - 1)*MyLevelGrid->ColumnCount + j)], _tileDirections::North);
@@ -140,7 +162,7 @@ void APuzzleGrid::createGrid() {
 			
 			}
 		}
-		
+		if (MyStartPoints.Num() == 0) MyStartPoints.Append(fallbacktiles);
 	}
 }
 
@@ -153,6 +175,22 @@ void APuzzleGrid::SetBlockStartPosition() {
 		_pPuzzleActor->SetActorRotation(*new FQuat(_pPuzzleActor->GetActorUpVector(), M_PI));
 		TilesBlockIsOn.Add(StartTile);
 		_pPuzzleActor->SetActorLocation(StartPosition);
+
+		int xone, yone, xtwo, ytwo;
+		xone = MyStartPoints[0]->GetXPosition();
+		yone = MyStartPoints[0]->GetYPosition();
+		if (MyStartPoints.Num() == 1) {
+			xtwo = ytwo = -1;
+		}
+		else {
+			xtwo = MyStartPoints[1]->GetXPosition();
+			ytwo = MyStartPoints[1]->GetYPosition();
+		}
+
+		if (MyLevelGrid->thisState == nullptr) {
+			MyLevelGrid->thisState = new LevelGridState(xone, yone, xtwo, ytwo, false);
+		}
+		else if (MyLevelGrid->thisState->isSolved) OnPuzzleSolved();
 	}
 }
 
