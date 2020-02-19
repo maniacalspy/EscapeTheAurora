@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEndLevelDoor, 3083208072);
+	IMPLEMENT_CLASS(AEndLevelDoor, 982174335);
 	template<> TEST2_API UClass* StaticClass<AEndLevelDoor>()
 	{
 		return AEndLevelDoor::StaticClass();
