@@ -65,6 +65,10 @@ private:
 
 	TArray<GridTile*> TilesBlockIsOn;
 
+	GridTile* GetTileFromPosition(float Xpos, float Ypos);
+
+	void LoadGrid();
+
 	void MoveBlock(FVector impactNormal);
 
 	void CheckPuzzleSolved();
