@@ -28,8 +28,9 @@ void AEndLevelTriggers::PostInitializeComponents() {
 
 
 	for (auto Child : Children) {
-		AEndLevelDoor* TheDoor = Cast<AEndLevelDoor>(Child);
+		ADoorBase* TheDoor = Cast<ADoorBase>(Child);
 		if (TheDoor) DoorsToTrigger.Add(TheDoor);
+		else if (Cast<AKeyCardSpawner>(Child)) KeySpawners.Add(Cast<AKeyCardSpawner>(Child));
 		else {
 			Child->GetComponents<ULightComponent>(LightsToAdd, true);
 			Child->GetComponents<UAudioComponent>(SoundsToAdd, true);
@@ -56,7 +57,7 @@ void AEndLevelTriggers::DebugPing() {
 
 void AEndLevelTriggers::PlayNextSound() {
 	SoundsToTrigger.RemoveAt(0);
-	//SoundsToTrigger.Shrink();
+
 	if (SoundsToTrigger.Num() > 0) {
 		if (SoundsToTrigger[0]) {
 			(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
@@ -64,7 +65,7 @@ void AEndLevelTriggers::PlayNextSound() {
 		}
 	}
 
-	else OpenDoors();
+	else PowerOnDoors();
 }
 
 // Called every frame
@@ -74,10 +75,13 @@ void AEndLevelTriggers::Tick(float DeltaTime)
 
 }
 
-void AEndLevelTriggers::OpenDoors() {
+void AEndLevelTriggers::PowerOnDoors() {
 
 	for (auto Door : DoorsToTrigger) {
-		Door->OpenDoor();
+		
+		AEndLevelDoor* OpenDoor = Cast<AEndLevelDoor>(Door);
+		if (OpenDoor) OpenDoor->PowerOn();
+		else Door->PowerOn();
 	}
 }
 
@@ -87,17 +91,21 @@ void AEndLevelTriggers::TriggerAll()
 		Light->SetIntensity(8);
 	}
 
+	for (auto Key : KeySpawners) {
+		Key->SpawnKey();
+	}
+
 	/*
 	for (auto Sound : SoundsToTrigger) {
 		Sound->Play();
 	}
 	*/
 
-	if (SoundsToTrigger[0]) {
+	if (SoundsToTrigger.Num() > 0) {
 		(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
 		SoundsToTrigger[0]->Play();
 	}
 
-	else OpenDoors();
+	else PowerOnDoors();
 }
 

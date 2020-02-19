@@ -26,6 +26,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -61,15 +63,22 @@ private:
 	
 	TArray<GridTile*> MyStartPoints;
 
+	TArray<GridTile*> BaseStartPoints;
+
 	TArray<GridTile*> MyGoalPoints;
 
 	TArray<GridTile*> TilesBlockIsOn;
+
+	FVector FindRotateAxis(FVector impactNormal);
 
 	void MoveBlock(FVector impactNormal);
 
 	void CheckPuzzleSolved();
 
 	void OnPuzzleSolved();
+
+	UFUNCTION()
+		void ResetPuzzle();
 
 	float _tileWidth, _tileHeight;
 

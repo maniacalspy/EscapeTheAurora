@@ -12,6 +12,8 @@
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "UObject/ConstructorHelpers.h"
+#include "Interactable.h"
+#include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -28,27 +30,23 @@ ATest2Character::ATest2Character()
 	BaseLookUpRate = 45.f;
 
 	//Set up walking speed
-	BaseMoveSpeed = 45.f;
+	BaseMoveSpeed = 30.f;
 
 
 	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
 
 	PauseHudClass = MenuClassFinder.Class;
 
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
 
-	//FStringClassReference MyWidgetClassRef(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
-	//if (UClass* MyWidgetClass = MyWidgetClassRef.TryLoadClass<UUserWidget>())
-	//{
-	//	UUserWidget* MyWidget = CreateWidget<UUserWidget>(GetWorld(), MyWidgetClass);
-	//	// Do stuff with MyWidget
-	//}
-	//PauseHud = CreateWidget<UPauseHudWidget>(GetWorld(), MenuClass);
-	//PauseHud->Setup();
+	StartHUD = StartMenuFinder.Class;
+
+	TraceParams = FCollisionQueryParams(FName(TEXT("Trace")), true, this);
 	
 	// Create a CameraComponent	
 	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
-	FirstPersonCameraComponent->RelativeLocation = FVector(-39.56f, 1.75f, 64.f); // Position the camera
+	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
 
 	// Create a mesh component that will be used when being viewed from a '1st person' view (when controlling this pawn)
@@ -57,8 +55,8 @@ ATest2Character::ATest2Character()
 	Mesh1P->SetupAttachment(FirstPersonCameraComponent);
 	Mesh1P->bCastDynamicShadow = false;
 	Mesh1P->CastShadow = false;
-	Mesh1P->RelativeRotation = FRotator(1.9f, -19.19f, 5.2f);
-	Mesh1P->RelativeLocation = FVector(-0.5f, -4.4f, -155.7f);
+	Mesh1P->SetRelativeRotation(FRotator(1.9f, -19.19f, 5.2f));
+	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
 	
 	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
@@ -94,6 +92,28 @@ void ATest2Character::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (mycontroller) 
+	{
+			if (StartHUD) 
+			{
+				 auto StartHUDinstance = CreateWidget<UPauseHudWidget>(mycontroller, StartHUD);
+					StartHUDinstance->Setup();
+					StartHUDinstance->OpenMenu();
+					mycontroller->SetPause(true);
+			}
+
+			else 
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
+			} 
+				
+	}
+		
+		
+	
+
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 
@@ -122,8 +142,14 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
+
+#if WITH_EDITOR
+	PlayerInputComponent->BindKey(EKeys::P, IE_Pressed, this, &ATest2Character::TogglePause).bExecuteWhenPaused = true;
+#endif
+
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &ATest2Character::ResetLevel);
 	PlayerInputComponent->BindAction("Quit", IE_Pressed, this, &ATest2Character::QuitGame);
+	PlayerInputComponent->BindAction("InterAct", IE_Pressed, this, &ATest2Character::Interact);
 
 
 	// Bind fire event
@@ -209,44 +235,6 @@ void ATest2Character::EndTouch(const ETouchIndex::Type FingerIndex, const FVecto
 	TouchItem.bIsPressed = false;
 }
 
-//Commenting this section out to be consistent with FPS BP template.
-//This allows the user to turn without using the right virtual joystick
-
-//void ATest2Character::TouchUpdate(const ETouchIndex::Type FingerIndex, const FVector Location)
-//{
-//	if ((TouchItem.bIsPressed == true) && (TouchItem.FingerIndex == FingerIndex))
-//	{
-//		if (TouchItem.bIsPressed)
-//		{
-//			if (GetWorld() != nullptr)
-//			{
-//				UGameViewportClient* ViewportClient = GetWorld()->GetGameViewport();
-//				if (ViewportClient != nullptr)
-//				{
-//					FVector MoveDelta = Location - TouchItem.Location;
-//					FVector2D ScreenSize;
-//					ViewportClient->GetViewportSize(ScreenSize);
-//					FVector2D ScaledDelta = FVector2D(MoveDelta.X, MoveDelta.Y) / ScreenSize;
-//					if (FMath::Abs(ScaledDelta.X) >= 4.0 / ScreenSize.X)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.X * BaseTurnRate;
-//						AddControllerYawInput(Value);
-//					}
-//					if (FMath::Abs(ScaledDelta.Y) >= 4.0 / ScreenSize.Y)
-//					{
-//						TouchItem.bMoved = true;
-//						float Value = ScaledDelta.Y * BaseTurnRate;
-//						AddControllerPitchInput(Value);
-//					}
-//					TouchItem.Location = Location;
-//				}
-//				TouchItem.Location = Location;
-//			}
-//		}
-//	}
-//}
-
 void ATest2Character::MoveForward(float Value)
 {
 	if (Value != 0.0f)
@@ -291,4 +279,78 @@ bool ATest2Character::EnableTouchscreenMovement(class UInputComponent* PlayerInp
 	}
 	
 	return false;
+}
+
+void ATest2Character::Tick(float DeltaSeconds) {
+	Super::Tick(DeltaSeconds);
+	HandleFocus();
+}
+
+void ATest2Character::Interact() {
+	if (FocusedInteractable) {
+		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
+		if (interactinterface == NULL) {
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
+			return;
+		}
+		interactinterface->Execute_OnInteract(FocusedInteractable, this);
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("No Interactable"));
+}
+
+AActor* ATest2Character::FindActorInLOS() {
+	if (!Controller)
+	{
+		return nullptr;
+	}
+
+	FVector Loc;
+	FRotator Rot;
+	FHitResult Hit(ForceInit);
+	GetController()->GetPlayerViewPoint(Loc, Rot);
+
+	FVector Start = Loc;
+	FVector End = Start + (Rot.Vector() * InteractionDistance);
+
+	GetWorld()->LineTraceSingleByChannel(Hit, Start, End, ECC_Visibility, TraceParams);
+
+	return Hit.GetActor();
+}
+
+void ATest2Character::HandleFocus() {
+	AActor* interactable = FindActorInLOS();
+
+	if (interactable)
+	{
+		if (interactable != FocusedInteractable)
+		{
+			if (FocusedInteractable)
+			{
+				IInteractable* interface = Cast<IInteractable> (FocusedInteractable);
+				if (interface)
+				{
+					interface->Execute_EndFocus(FocusedInteractable);
+				}
+			}
+			IInteractable* interface = Cast<IInteractable>(interactable);
+			if (interface)
+			{
+				interface->Execute_StartFocus(interactable);
+			}
+			FocusedInteractable = interactable;
+		}
+	}
+	else
+	{
+		if (FocusedInteractable)
+		{
+			IInteractable* interface = Cast<IInteractable>(FocusedInteractable);
+			if (interface)
+			{
+				interface->Execute_EndFocus(FocusedInteractable);
+			}
+		}
+		FocusedInteractable = nullptr;
+	}
+
 }
