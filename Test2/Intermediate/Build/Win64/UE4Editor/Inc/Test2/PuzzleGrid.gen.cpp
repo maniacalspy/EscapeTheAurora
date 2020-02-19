@@ -17,10 +17,38 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	TEST2_API UClass* Z_Construct_UClass_APuzzleGrid();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	TEST2_API UFunction* Z_Construct_UFunction_APuzzleGrid_ResetPuzzle();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void APuzzleGrid::StaticRegisterNativesAPuzzleGrid()
 	{
+		UClass* Class = APuzzleGrid::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "ResetPuzzle", &APuzzleGrid::execResetPuzzle },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PuzzleGrid.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APuzzleGrid, nullptr, "ResetPuzzle", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APuzzleGrid_ResetPuzzle()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APuzzleGrid_ResetPuzzle_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_APuzzleGrid_NoRegister()
 	{
@@ -29,6 +57,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	struct Z_Construct_UClass_APuzzleGrid_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -47,6 +76,9 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	UObject* (*const Z_Construct_UClass_APuzzleGrid_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_AActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_Test2,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_APuzzleGrid_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APuzzleGrid_ResetPuzzle, "ResetPuzzle" }, // 3186974619
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleGrid_Statics::Class_MetaDataParams[] = {
@@ -81,11 +113,11 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 		"Engine",
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		Z_Construct_UClass_APuzzleGrid_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleGrid_Statics::PropPointers),
 		0,
 		0x009000A4u,
@@ -100,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleGrid, 1289703602);
+	IMPLEMENT_CLASS(APuzzleGrid, 3454770366);
 	template<> TEST2_API UClass* StaticClass<APuzzleGrid>()
 	{
 		return APuzzleGrid::StaticClass();
