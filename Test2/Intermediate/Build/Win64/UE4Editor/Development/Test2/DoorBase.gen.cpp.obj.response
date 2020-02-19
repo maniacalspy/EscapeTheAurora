@@ -524,9 +524,9 @@
 /I Runtime\ClothingSystemRuntimeInterface
 /I Runtime\AudioMixerCore\Public
 /I Runtime\AudioMixerCore
-/I C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
-/I C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source
-/I C:\Users\daisu\Documents\GitHub\Nudge\Test2\Source\Test2
+/I D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
+/I D:\GitHub\Nudge\Test2\Source
+/I D:\GitHub\Nudge\Test2\Source\Test2
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I Runtime\AugmentedReality
@@ -559,12 +559,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.gen.cpp"
-/FI"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
-/Fo"C:\Users\daisu\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.gen.cpp.obj"
+/FI"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
+/Yu"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.gen.cpp"
+/FI"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
+/Fo"D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.gen.cpp.obj"
 /TP
 /GR-
 /W4
