@@ -17,6 +17,7 @@ ADoorBase::ADoorBase()
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
 	bIsPowered = false;
+	bIsOpen = false;
 }
 
 // Called when the game starts or when spawned
@@ -39,16 +40,18 @@ void ADoorBase::PowerOn_Implementation() {
 }
 
 void ADoorBase::OpenDoor_Implementation() {
-	if (bIsPowered) {
+	if (bIsPowered && !bIsOpen) {
 		if (pOpenSound) pOpenSound->Play();
 		DoorPanelSkeleton->SetPlayRate(1.f);
 		DoorPanelSkeleton->Play(false);
+		bIsOpen = true;
 	}
 }
 
 void ADoorBase::CloseDoor_Implementation() {
 	DoorPanelSkeleton->SetPlayRate(-2.f);
 	DoorPanelSkeleton->Play(false);
+	bIsOpen = false;
 }
 
 void ADoorBase::SwapDoorMaterial() {

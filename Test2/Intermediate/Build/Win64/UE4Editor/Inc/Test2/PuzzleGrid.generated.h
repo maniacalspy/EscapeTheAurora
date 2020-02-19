@@ -14,8 +14,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TEST2_PuzzleGrid_generated_h
 
 #define Test2_Source_Test2_PuzzleGrid_h_19_SPARSE_DATA
-#define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS
-#define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execResetPuzzle) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetPuzzle(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_PuzzleGrid_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execResetPuzzle) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ResetPuzzle(); \
+		P_NATIVE_END; \
+	}
+
+
 #define Test2_Source_Test2_PuzzleGrid_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPuzzleGrid(); \
