@@ -32,7 +32,6 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 
 
 	MyComp->BodyInstance.SetCollisionProfileName("BlockAllDynamic");
-	MyComp->OnComponentHit.AddDynamic(this, &APuzzleBlock::OnBlockHit);
 	RootComponent = MyComp;
 
 	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
@@ -88,6 +87,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 //Tells the puzzle grid the block tipped through the GridTippedCallBack function pointer
 void APuzzleBlock::TellGridBlockTipped() {
 	if (GridTippedCallBack != nullptr) {
+		//play the block tipping sound here       SOUND!!!!!!!!!
 		GridTippedCallBack();
 	}
 }
@@ -141,11 +141,30 @@ void APuzzleBlock::PushBlockOver() {
 
 }
 
+void APuzzleBlock::StartFocus_Implementation() {
+	GEngine->AddOnScreenDebugMessage(1, 2.f, FColor::White, TEXT("Press E to Interact"));
+}
+
+void APuzzleBlock::EndFocus_Implementation() {
+	GEngine->ClearOnScreenDebugMessages();
+}
+
+void APuzzleBlock::OnInteract_Implementation(AActor* Caller) {
+	if (Caller->ActorHasTag("Player")) {
+		if (!_isTipping && _canBePushed)
+		{
+
+			FVector PushVector = Caller->GetActorForwardVector();
+			GridMoveBlockCallBack(PushVector);
+		}
+	}
+}
 
 void APuzzleBlock::SetDestLocation(FVector destLocation) {
 	DestLocation = destLocation;
 	_isTipping = true;
 }
+
 void APuzzleBlock::SetDestRotation(FQuat destRotation) {
 	DestRotation = destRotation;
 	_isTipping = true;

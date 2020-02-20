@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 // Cross Module References
 	TEST2_API UClass* Z_Construct_UClass_APuzzleBlock_NoRegister();
 	TEST2_API UClass* Z_Construct_UClass_APuzzleBlock();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	TEST2_API UClass* Z_Construct_UClass_AInteractableActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_APuzzleBlock_OnBlockHit();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
@@ -129,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_APuzzleBlock_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_AInteractableActor,
 		(UObject* (*)())Z_Construct_UPackage__Script_Test2,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APuzzleBlock_Statics::FuncInfo[] = {
@@ -188,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleBlock, 3686305290);
+	IMPLEMENT_CLASS(APuzzleBlock, 3097803303);
 	template<> TEST2_API UClass* StaticClass<APuzzleBlock>()
 	{
 		return APuzzleBlock::StaticClass();
