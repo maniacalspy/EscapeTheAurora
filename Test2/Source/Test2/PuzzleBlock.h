@@ -26,6 +26,7 @@ protected:
 
 
 private:
+
 	bool _isTipping;
 	bool _canBePushed;
 	const FVector BoxExtents;
@@ -51,7 +52,8 @@ private:
 
 	void SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB);
 
-public:	
+public:
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -69,4 +71,9 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
 
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* pTipEdgeSound;
+
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* pTipSideSound;
 };
