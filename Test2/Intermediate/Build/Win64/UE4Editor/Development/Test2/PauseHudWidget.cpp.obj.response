@@ -524,9 +524,9 @@
 /I Runtime\ClothingSystemRuntimeInterface
 /I Runtime\AudioMixerCore\Public
 /I Runtime\AudioMixerCore
-/I C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
-/I C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source
-/I C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2
+/I C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2
+/I C:\workspace\Github\Nudge\Test2\Source
+/I C:\workspace\Github\Nudge\Test2\Source\Test2
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I Runtime\AugmentedReality
@@ -554,17 +554,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.cpp"
-/FI"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
-/Fo"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PauseHudWidget.cpp.obj"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
+/FI"C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\workspace\Github\Nudge\Test2\Source\Test2\PauseHudWidget.cpp"
+/FI"C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h"
+/Fo"C:\workspace\Github\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PauseHudWidget.cpp.obj"
 /TP
 /GR-
 /W4
