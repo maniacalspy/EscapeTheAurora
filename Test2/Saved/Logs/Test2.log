@@ -1659,3 +1659,5 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.02.21-17.48.01:906][959]AssetCheck: New page: Asset Save: multiple assets
 [2020.02.21-17.48.01:906][959]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
 [2020.02.21-17.48.01:906][959]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2020.02.21-17.49.57:004][500]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2020.02.21-17.49.57:005][500]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.033
