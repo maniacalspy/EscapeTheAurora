@@ -177,8 +177,8 @@ private:
 
 	class AActor* FocusedInteractable;
 
-	UPROPERTY(VisibleAnywhere, Category = "Interaction")
-		float InteractionDistance = 400.f;
+	UPROPERTY(EditAnywhere, Category = "Interaction")
+		float InteractionDistance = 200.f;
 
 	FCollisionQueryParams TraceParams;
 };
