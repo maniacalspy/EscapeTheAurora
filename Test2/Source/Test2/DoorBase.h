@@ -51,7 +51,12 @@ protected:
 
 	class UMaterial* pPanelOnMaterial;
 
-	bool bIsPowered;
+	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
+		bool bIsPowered;
+
+	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
+		bool bIsOpen;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -6,11 +6,12 @@
 #include <functional>
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "InteractableActor.h"
 #include "PuzzleBlock.generated.h"
 
 class APuzzleGrid;
 UCLASS()
-class TEST2_API APuzzleBlock : public AActor
+class TEST2_API APuzzleBlock : public AInteractableActor
 {
 	GENERATED_BODY()
 	
@@ -25,6 +26,7 @@ protected:
 
 
 private:
+
 	bool _isTipping;
 	bool _canBePushed;
 	const FVector BoxExtents;
@@ -50,9 +52,16 @@ private:
 
 	void SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB);
 
-public:	
+public:
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void StartFocus_Implementation() override;
+
+	virtual void EndFocus_Implementation() override;
+
+	virtual void OnInteract_Implementation(AActor* Caller) override;
 
 	UFUNCTION()
 	void OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
@@ -62,4 +71,9 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		class UBoxComponent* MyComp;
 
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* pTipEdgeSound;
+
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* pTipSideSound;
 };

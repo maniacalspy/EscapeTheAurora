@@ -1,6 +1,6 @@
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+C:\workspace\Nudge\Test2\Source\Test2\Test2Character.h
+C:\workspace\Nudge\Test2\Source\Test2\PauseHudWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -116,14 +116,14 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Projectile.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile.generated.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+C:\workspace\Nudge\Test2\Source\Test2\Test2Projectile.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
@@ -158,5 +158,5 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Pub
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Interactable.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+C:\workspace\Nudge\Test2\Source\Test2\Interactable.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h

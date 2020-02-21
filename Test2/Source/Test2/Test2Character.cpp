@@ -39,7 +39,11 @@ ATest2Character::ATest2Character()
 
 	ConstructorHelpers::FClassFinder<UPauseHudWidget> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
 
-	StartHUD = StartMenuFinder.Class;
+	StartHud = StartMenuFinder.Class;
+
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
+
+	ControlsHUD = ControlsHUDFinder.Class;
 
 	TraceParams = FCollisionQueryParams(FName(TEXT("Trace")), true, this);
 	
@@ -96,11 +100,11 @@ void ATest2Character::BeginPlay()
 
 	if (mycontroller) 
 	{
-			if (StartHUD) 
+			if (StartHud) 
 			{
-				 auto StartHUDinstance = CreateWidget<UPauseHudWidget>(mycontroller, StartHUD);
-					StartHUDinstance->Setup();
-					StartHUDinstance->OpenMenu();
+					StartHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, StartHud);
+					StartHudInstance->Setup();
+					StartHudInstance->OpenMenu();
 					mycontroller->SetPause(true);
 			}
 
@@ -108,10 +112,16 @@ void ATest2Character::BeginPlay()
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
 			} 
-				
+			
+
+			if (ControlsHUD) {
+				auto ControlsHUDInstance = CreateWidget<UPauseHudWidget>(mycontroller, ControlsHUD);
+				ControlsHUDInstance->AddToViewport();
+			}
 	}
 		
-		
+	
+	
 	
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
@@ -199,7 +209,8 @@ void ATest2Character::TogglePause() {
 			}
 		}
 		else {
-			PauseHudInstance->CloseMenu();
+			if (StartHudInstance->IsVisible()) StartHudInstance->CloseMenu();
+			if(PauseHudInstance) PauseHudInstance->CloseMenu();
 		}
 		mycontroller->SetPause(!isPaused);
 	}
