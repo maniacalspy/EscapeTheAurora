@@ -11,24 +11,20 @@ const auto Start = TT_tileTypes::Start;
 const auto NT = TT_tileTypes::NonTraversable;
 
 
-extern TT_tileTypes Level_One_Grid[12] = {
-	Basic, Goal, Basic,
-	Basic, Basic, Basic,
-	Basic, Basic, Basic,
-	Basic, Start, Basic
+extern TT_tileTypes Level_One_Grid[4] = {
+	Goal,
+	Basic,
+	Basic,
+	Start
 };
 
-LevelGrid* Level_One = new LevelGrid(4, 3, 1, 1, Level_One_Grid);
+LevelGrid* Level_One = new LevelGrid(4, 1, 1, 1, Level_One_Grid);
 
-extern TT_tileTypes Level_Two_Grid[36] = {
-	NT, NT, Basic, Basic, Basic, Start,
-	NT, Goal, Basic, Basic, Basic, NT,
-	Basic, Basic, Basic, Basic, NT, NT,
-	Basic, Basic, Basic, NT, NT, NT,
-	Basic, Basic, NT, NT, NT, NT,
-	Basic, NT, NT, NT, NT, NT
+extern TT_tileTypes Level_Two_Grid[6] = {
+	Basic, Basic, Goal,
+	Basic, Basic, Start
 };
-LevelGrid* Level_Two = new LevelGrid(6, 6, 1, 1, Level_Two_Grid);
+LevelGrid* Level_Two = new LevelGrid(2, 3, 1, 1, Level_Two_Grid);
 
 LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid)
 {
