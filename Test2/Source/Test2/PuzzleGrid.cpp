@@ -31,7 +31,6 @@ void APuzzleGrid::PostInitializeComponents() {
 	_YScale = GetActorScale().Y;
 	_tileWidth = 30.f * _YScale;
 	_tileHeight = 30.f * _XScale;
-	//SetActorScale3D(*new FVector(_XScale, _YScale, 1.f));
 
 }
 
@@ -190,10 +189,6 @@ void APuzzleGrid::SetBlockStartPosition() {
 			StartTileTwo = MyStartPoints[1];
 			TilesBlockIsOn.Add(StartTileTwo);
 			StartPosition = *new FVector((TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2, (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2, _pPuzzleActor->GetActorLocation().Z);
-
-			//FVector BlockDirection = ;
-			//BlockDirection.Normalize();
-			//FVector RotatingAxis = ;
 			StartRotation = *new FQuat(FindRotateAxis(
 				(*new FVector(StartTileTwo->GetXPosition() - StartTileOne->GetXPosition(), StartTileTwo->GetYPosition() - StartTileOne->GetYPosition(), 0)).GetSafeNormal()), M_PI_2) * StartRotation;
 			break;
@@ -279,7 +274,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		FVector DestLocation = FVector::OneVector;
 		FQuat DestRotation = FQuat::Identity;
 
-		
+		//APuzzleBlock::TipType tiptype;
 
 		//assume we rotate along the right axis (tip forward/backwards), and assume we move north
 		FVector RotatingAxis = FindRotateAxis(impactNormal);
@@ -289,27 +284,6 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		if (RotatingAxis == -GetActorRightVector()) TileDirection = _tileDirections::South;
 		else if (RotatingAxis == GetActorForwardVector()) TileDirection = _tileDirections::West;
 		else if (RotatingAxis == -GetActorForwardVector()) TileDirection = _tileDirections::East;
-		
-		//the direction to rotate, positive means North/West, and negative means South/East
-		//int RotationDirection = 1;
-
-		//the hit came from the north side of the block, move south
-		
-	//		TileDirection = _tileDirections::South;
-
-		//if the cosine of the angle between the right axis and the impact is greater than the cosine of the angle between the forward axis and the impact, the block was hit from the side
-		//if (FMath::Abs(CosRightAngle) > FMath::Abs(CosForwardAngle)) {
-		//	//assume we move east
-		//	RotatingAxis = GetActorForwardVector();
-		//	RotationDirection = -1;
-
-		//	//if the impact came from the east side, move west
-		//	if (CosRightAngle < 0) {
-		//		RotationDirection = 1;
-		//		TileDirection = _tileDirections::West;
-		//	}
-		//	else TileDirection = _tileDirections::East;
-		//}
 
 		//the block is on at least one tile at all times
 		GridTile* FirstCurrentTile = TilesBlockIsOn[0];
@@ -340,6 +314,8 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							TilesBlockIsOn.Add(SecondOtherTile);
 							DestLocation = *new FVector(SecondOtherTile->xPos, SecondOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
 							DestRotation = *new FQuat(RotatingAxis, M_PI_2) * _pPuzzleActor->GetActorQuat();
+							//tiptype = APuzzleBlock::TipType::Invalid;
+							if (_pPuzzleActor->pTipEdgeSound) _pPuzzleActor->pTipEdgeSound->Play();
 						}
 
 						//Stand Block on edge other direction
@@ -348,7 +324,8 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							TilesBlockIsOn.Add(FirstOtherTile);
 							DestLocation = *new FVector(FirstOtherTile->xPos, FirstOtherTile->yPos, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
 							DestRotation = *new FQuat(RotatingAxis, M_PI_2) * _pPuzzleActor->GetActorQuat();
-
+							//tiptype = APuzzleBlock::TipType::Invalid;
+							if (_pPuzzleActor->pTipEdgeSound) _pPuzzleActor->pTipEdgeSound->Play();
 						}
 
 						//Block Stays on side
@@ -359,7 +336,8 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
 							DestLocation = *new FVector(XMidPoint, YMidPoint, _pPuzzleActor->GetActorLocation().Z);
 							DestRotation = *new FQuat(RotatingAxis, M_PI_2) * _pPuzzleActor->GetActorQuat();
-
+							//tiptype = APuzzleBlock::TipType::Side;
+							if (_pPuzzleActor->pTipSideSound) _pPuzzleActor->pTipSideSound->Play();
 						} //end of else
 					} //end of nontraversable if
 					else if (SecondOtherTile->type == TT_tileTypes::NonTraversable || FirstOtherTile->type == TT_tileTypes::NonTraversable) // flip but not fully 
@@ -388,9 +366,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 
 						} //end of else
 
-					
-
-					}
+					} //end of secondothertile else if
 
 
 				}//end of verify Secondother if
@@ -421,7 +397,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							
 							DestLocation = *new FVector(XMidPoint, YMidPoint, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.X * _pPuzzleActor->GetActorScale().X));
 							DestRotation = *new FQuat(RotatingAxis, M_PI_2) * _pPuzzleActor->GetActorQuat();
-						
+							if (_pPuzzleActor->pTipSideSound) _pPuzzleActor->pTipSideSound->Play();
 						}//end of secondOtherTile nontraversable if
 					}//end of verifying second other tile
 				}//end of firstOtherTile NonTraversable if
@@ -431,6 +407,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		//if the block is attempting to be pushed out of the puzzle grid area
 		if (!FirstOtherTile || !SecondOtherTile)
 		{
+			/*tiptype = APuzzleBlock::TipType::Invalid;*/
 			float Xoffset = _tileHeight;
 			Xoffset *= (FVector::DotProduct(RotatingAxis, GetActorRightVector()) / (RotatingAxis.Size() * GetActorRightVector().Size()));
 			float Yoffset = _tileWidth;
@@ -474,6 +451,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 			_pPuzzleActor->_isTipping = true;
 			_pPuzzleActor->_canBePushed = false;
 
+			//_pPuzzleActor->curTipType = tiptype;
 		}//end of checking DestLocation and DestRotation
 	}//end of checking if the puzzle is solved
 }//end of method

@@ -161,13 +161,19 @@ private:
 		void Interact();
 
 	UPROPERTY()
-	TSubclassOf<class UPauseHudWidget> PauseHudClass;
+		TSubclassOf<class UPauseHudWidget> PauseHudClass;
 
 	UPROPERTY()
-	class UPauseHudWidget* PauseHudInstance;
+		class UPauseHudWidget* PauseHudInstance;
 
 	UPROPERTY()
-	TSubclassOf<class UPauseHudWidget> StartHUD;
+		TSubclassOf<class UPauseHudWidget> StartHud;
+
+	UPROPERTY()
+		class UPauseHudWidget* StartHudInstance;
+
+	UPROPERTY()
+		TSubclassOf<class UPauseHudWidget> ControlsHUD;
 
 	class AActor* FocusedInteractable;
 

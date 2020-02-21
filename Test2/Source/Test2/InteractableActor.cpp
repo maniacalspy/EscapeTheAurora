@@ -30,10 +30,10 @@ void  AInteractableActor::OnInteract_Implementation(AActor* Caller) {
 }
 
 void AInteractableActor::StartFocus_Implementation() {
-	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("Start Focus"));
+	//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("Start Focus"));
 }
 
 
 void AInteractableActor::EndFocus_Implementation() {
-	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("End Focus"));
+	//GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Red, TEXT("End Focus"));
 }

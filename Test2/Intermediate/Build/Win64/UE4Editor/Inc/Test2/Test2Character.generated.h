@@ -89,7 +89,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); } \
 	FORCEINLINE static uint32 __PPO__PauseHudClass() { return STRUCT_OFFSET(ATest2Character, PauseHudClass); } \
 	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); } \
-	FORCEINLINE static uint32 __PPO__StartHUD() { return STRUCT_OFFSET(ATest2Character, StartHUD); } \
+	FORCEINLINE static uint32 __PPO__StartHud() { return STRUCT_OFFSET(ATest2Character, StartHud); } \
+	FORCEINLINE static uint32 __PPO__StartHudInstance() { return STRUCT_OFFSET(ATest2Character, StartHudInstance); } \
+	FORCEINLINE static uint32 __PPO__ControlsHUD() { return STRUCT_OFFSET(ATest2Character, ControlsHUD); } \
 	FORCEINLINE static uint32 __PPO__InteractionDistance() { return STRUCT_OFFSET(ATest2Character, InteractionDistance); }
 
 
