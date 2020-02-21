@@ -77,6 +77,8 @@ private:
 
 	void OnPuzzleSolved();
 
+	void UpdateLastCoordinates();
+
 	UFUNCTION()
 		void ResetPuzzle();
 

@@ -100,20 +100,23 @@ void APuzzleGrid::OnBlockDoneTipping()
 	}
 	else if (!puzzleIsSolved) {
 		CheckPuzzleSolved();
-		MyLevelGrid->thisState->LastTileOneXCoordinate = TilesBlockIsOn[0]->GetXPosition();
-		MyLevelGrid->thisState->LastTileOneYCoordinate = TilesBlockIsOn[0]->GetYPosition();
-
-		if (TilesBlockIsOn.Num() > 1) {
-			MyLevelGrid->thisState->LastTileTwoXCoordinate = TilesBlockIsOn[1]->GetXPosition();
-			MyLevelGrid->thisState->LastTileTwoYCoordinate = TilesBlockIsOn[1]->GetYPosition();
-		}
-		else {
-			MyLevelGrid->thisState->LastTileTwoXCoordinate = -1.f;
-			MyLevelGrid->thisState->LastTileTwoYCoordinate = -1.f;
-		}
+		UpdateLastCoordinates();
 	}
 }
 
+void APuzzleGrid::UpdateLastCoordinates() {
+	MyLevelGrid->thisState->LastTileOneXCoordinate = TilesBlockIsOn[0]->GetXPosition();
+	MyLevelGrid->thisState->LastTileOneYCoordinate = TilesBlockIsOn[0]->GetYPosition();
+
+	if (TilesBlockIsOn.Num() > 1) {
+		MyLevelGrid->thisState->LastTileTwoXCoordinate = TilesBlockIsOn[1]->GetXPosition();
+		MyLevelGrid->thisState->LastTileTwoYCoordinate = TilesBlockIsOn[1]->GetYPosition();
+	}
+	else {
+		MyLevelGrid->thisState->LastTileTwoXCoordinate = -1.f;
+		MyLevelGrid->thisState->LastTileTwoYCoordinate = -1.f;
+	}
+}
 
 //Checks if the puzzle is solved, and if so, calls OnPuzzleSolved
 void APuzzleGrid::CheckPuzzleSolved() {
@@ -133,9 +136,13 @@ void APuzzleGrid::CheckPuzzleSolved() {
 //lowers the block into the hole and triggers the events
 void APuzzleGrid::OnPuzzleSolved() {
 	puzzleIsSolved = true;
-	MyLevelGrid->thisState->isSolved = true;
-	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0,0,_pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
-	if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
+	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0, 0, _pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
+	if (!MyLevelGrid->thisState->isSolved) {
+		MyLevelGrid->thisState->isSolved = true;
+		//UpdateLastCoordinates();
+		if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
+	}
+	
 }
 
 //create the puzzle grid based on MyLevelGrid
