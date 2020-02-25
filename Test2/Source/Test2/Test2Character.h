@@ -150,6 +150,9 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	FORCEINLINE class TSubclassOf<class UPauseHudWidget>* GetPauseHudClass() { return &PauseHudClass; }
+
+	class UPauseHudWidget* GetPauseMenuInstance() { return PauseHudInstance; }
 
 private:
 
@@ -167,13 +170,13 @@ private:
 		class UPauseHudWidget* PauseHudInstance;
 
 	UPROPERTY()
-		TSubclassOf<class UPauseHudWidget> StartHud;
+		TSubclassOf<class UHUDWidgetBase> StartHud;
 
 	UPROPERTY()
-		class UPauseHudWidget* StartHudInstance;
+		class UHUDWidgetBase* StartHudInstance;
 
 	UPROPERTY()
-		TSubclassOf<class UPauseHudWidget> ControlsHUD;
+		TSubclassOf<class UHUDWidgetBase> ControlsHUD;
 
 	class AActor* FocusedInteractable;
 

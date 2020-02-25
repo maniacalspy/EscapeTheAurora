@@ -3,6 +3,7 @@
 
 #include "InteractableConsole.h"
 #include "Engine/Engine.h"
+#include "Test2Character.h"
 #include "Components/StaticMeshComponent.h"
 
 AInteractableConsole::AInteractableConsole() {
@@ -13,5 +14,19 @@ AInteractableConsole::AInteractableConsole() {
 
 
 void AInteractableConsole::OnInteract_Implementation(AActor* caller) {
-	GEngine->AddOnScreenDebugMessage(2, 1.f, FColor::Green, TEXT("This is where the map download would occur"));
+	GEngine->AddOnScreenDebugMessage(2, 1.f, FColor::Green, TEXT("Map Downloaded!"));
+
+	UPauseHudWidget* PauseMenu = nullptr;
+
+	ATest2Character* Player = Cast<ATest2Character>(GetWorld()->GetFirstPlayerController()->GetPawn());
+
+	if (Player) {
+		PauseMenu = Player->GetPauseMenuInstance();
+	}
+
+	else {
+	}
+
+	if (PauseMenu) PauseMenu->EnableMap();
+
 }

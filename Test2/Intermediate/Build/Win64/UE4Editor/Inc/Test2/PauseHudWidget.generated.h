@@ -14,34 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TEST2_PauseHudWidget_generated_h
 
 #define Test2_Source_Test2_PauseHudWidget_h_15_SPARSE_DATA
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS \
- \
-	DECLARE_FUNCTION(execCloseMenu) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CloseMenu(); \
-		P_NATIVE_END; \
-	}
-
-
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execCloseMenu) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->CloseMenu(); \
-		P_NATIVE_END; \
-	}
-
-
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_PauseHudWidget_h_15_EVENT_PARMS
+#define Test2_Source_Test2_PauseHudWidget_h_15_CALLBACK_WRAPPERS
 #define Test2_Source_Test2_PauseHudWidget_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPauseHudWidget(); \
 	friend struct Z_Construct_UClass_UPauseHudWidget_Statics; \
 public: \
-	DECLARE_CLASS(UPauseHudWidget, UUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(UPauseHudWidget, UHUDWidgetBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(UPauseHudWidget)
 
 
@@ -50,7 +32,7 @@ private: \
 	static void StaticRegisterNativesUPauseHudWidget(); \
 	friend struct Z_Construct_UClass_UPauseHudWidget_Statics; \
 public: \
-	DECLARE_CLASS(UPauseHudWidget, UUserWidget, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(UPauseHudWidget, UHUDWidgetBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(UPauseHudWidget)
 
 
@@ -81,13 +63,17 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPauseHudWidget); \
 
 
 #define Test2_Source_Test2_PauseHudWidget_h_15_PRIVATE_PROPERTY_OFFSET
-#define Test2_Source_Test2_PauseHudWidget_h_12_PROLOG
+#define Test2_Source_Test2_PauseHudWidget_h_12_PROLOG \
+	Test2_Source_Test2_PauseHudWidget_h_15_EVENT_PARMS
+
+
 #define Test2_Source_Test2_PauseHudWidget_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	Test2_Source_Test2_PauseHudWidget_h_15_PRIVATE_PROPERTY_OFFSET \
 	Test2_Source_Test2_PauseHudWidget_h_15_SPARSE_DATA \
 	Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS \
+	Test2_Source_Test2_PauseHudWidget_h_15_CALLBACK_WRAPPERS \
 	Test2_Source_Test2_PauseHudWidget_h_15_INCLASS \
 	Test2_Source_Test2_PauseHudWidget_h_15_STANDARD_CONSTRUCTORS \
 public: \
@@ -100,6 +86,7 @@ public: \
 	Test2_Source_Test2_PauseHudWidget_h_15_PRIVATE_PROPERTY_OFFSET \
 	Test2_Source_Test2_PauseHudWidget_h_15_SPARSE_DATA \
 	Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test2_Source_Test2_PauseHudWidget_h_15_CALLBACK_WRAPPERS \
 	Test2_Source_Test2_PauseHudWidget_h_15_INCLASS_NO_PURE_DECLS \
 	Test2_Source_Test2_PauseHudWidget_h_15_ENHANCED_CONSTRUCTORS \
 private: \

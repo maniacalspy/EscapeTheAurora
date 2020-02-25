@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_Interact();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	TEST2_API UClass* Z_Construct_UClass_UHUDWidgetBase_NoRegister();
 	TEST2_API UClass* Z_Construct_UClass_UPauseHudWidget_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
@@ -185,20 +186,20 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD = { "ControlsHUD", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, ControlsHUD), Z_Construct_UClass_UPauseHudWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD = { "ControlsHUD", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, ControlsHUD), Z_Construct_UClass_UHUDWidgetBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance = { "StartHudInstance", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, StartHudInstance), Z_Construct_UClass_UPauseHudWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance = { "StartHudInstance", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, StartHudInstance), Z_Construct_UClass_UHUDWidgetBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud_MetaData[] = {
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud = { "StartHud", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, StartHud), Z_Construct_UClass_UPauseHudWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud = { "StartHud", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, StartHud), Z_Construct_UClass_UHUDWidgetBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHud_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_PauseHudInstance_MetaData[] = {
 		{ "EditInline", "true" },
@@ -412,7 +413,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 2929931523);
+	IMPLEMENT_CLASS(ATest2Character, 4202583052);
 	template<> TEST2_API UClass* StaticClass<ATest2Character>()
 	{
 		return ATest2Character::StaticClass();
