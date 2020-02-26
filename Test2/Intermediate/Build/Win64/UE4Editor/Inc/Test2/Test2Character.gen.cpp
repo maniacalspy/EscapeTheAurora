@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance = { "InteractionDistance", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, InteractionDistance), METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance = { "InteractionDistance", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, InteractionDistance), METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD_MetaData[] = {
 		{ "ModuleRelativePath", "Test2Character.h" },
@@ -412,7 +412,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 2354222867);
+	IMPLEMENT_CLASS(ATest2Character, 2929931523);
 	template<> TEST2_API UClass* StaticClass<ATest2Character>()
 	{
 		return ATest2Character::StaticClass();
