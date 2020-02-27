@@ -51,11 +51,11 @@ protected:
 
 	class UMaterial* pPanelOnMaterial;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
-		bool bIsPowered;
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
+		uint32 bIsPowered : 1;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
-		bool bIsOpen;
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
+		uint32 bIsOpen : 1;
 
 public:	
 	// Called every frame

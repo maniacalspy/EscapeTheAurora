@@ -76,7 +76,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractableDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AInteractableDoor, 1121703327);
+	IMPLEMENT_CLASS(AInteractableDoor, 1442617676);
 	template<> TEST2_API UClass* StaticClass<AInteractableDoor>()
 	{
 		return AInteractableDoor::StaticClass();

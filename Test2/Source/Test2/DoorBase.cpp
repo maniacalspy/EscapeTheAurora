@@ -16,8 +16,7 @@ ADoorBase::ADoorBase()
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
-	bIsPowered = false;
-	bIsOpen = false;
+
 }
 
 // Called when the game starts or when spawned
@@ -25,6 +24,9 @@ void ADoorBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if (bIsPowered) {
+		SwapDoorMaterial();
+	}
 }
 
 // Called every frame

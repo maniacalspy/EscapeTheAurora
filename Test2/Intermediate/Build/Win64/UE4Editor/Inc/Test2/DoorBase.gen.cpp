@@ -179,7 +179,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 	{
 		((ADoorBase*)Obj)->bIsOpen = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen = { "bIsOpen", nullptr, (EPropertyFlags)0x0020080000020005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoorBase), &Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen = { "bIsOpen", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(ADoorBase), &Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_MetaData[] = {
 		{ "Category", "Door" },
@@ -190,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 	{
 		((ADoorBase*)Obj)->bIsPowered = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered = { "bIsPowered", nullptr, (EPropertyFlags)0x0020080000020005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ADoorBase), &Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered = { "bIsPowered", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(uint8), sizeof(ADoorBase), &Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsPowered_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::NewProp_pOpenSound_MetaData[] = {
 		{ "Category", "Audio" },
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoorBase, 1696099740);
+	IMPLEMENT_CLASS(ADoorBase, 3779439048);
 	template<> TEST2_API UClass* StaticClass<ADoorBase>()
 	{
 		return ADoorBase::StaticClass();
