@@ -4,11 +4,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Materials/Material.h"
-#include "DoorBase.h"
+#include "PoweredDoor.h"
 #include "EndLevelDoor.generated.h"
 
 UCLASS()
-class TEST2_API AEndLevelDoor : public ADoorBase
+class TEST2_API AEndLevelDoor : public APoweredDoor
 {
 	GENERATED_BODY()
 	

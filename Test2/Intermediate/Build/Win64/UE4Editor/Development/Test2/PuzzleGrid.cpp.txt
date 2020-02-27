@@ -2,10 +2,12 @@ C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\D
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleGrid.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelTriggers.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelDoor.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PoweredDoor.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\DoorBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h

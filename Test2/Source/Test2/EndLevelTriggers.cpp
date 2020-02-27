@@ -79,9 +79,8 @@ void AEndLevelTriggers::PowerOnDoors() {
 
 	for (auto Door : DoorsToTrigger) {
 		
-		AEndLevelDoor* OpenDoor = Cast<AEndLevelDoor>(Door);
-		if (OpenDoor) OpenDoor->PowerOn();
-		else Door->PowerOn();
+		APoweredDoor* PoweredDoor = Cast<APoweredDoor>(Door);
+		if (PoweredDoor) PoweredDoor->PowerOn();
 	}
 }
 

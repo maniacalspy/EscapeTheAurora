@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAInteractableDoor(); \
 	friend struct Z_Construct_UClass_AInteractableDoor_Statics; \
 public: \
-	DECLARE_CLASS(AInteractableDoor, ADoorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(AInteractableDoor, APoweredDoor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(AInteractableDoor) \
 	virtual UObject* _getUObject() const override { return const_cast<AInteractableDoor*>(this); }
 
@@ -31,7 +31,7 @@ private: \
 	static void StaticRegisterNativesAInteractableDoor(); \
 	friend struct Z_Construct_UClass_AInteractableDoor_Statics; \
 public: \
-	DECLARE_CLASS(AInteractableDoor, ADoorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(AInteractableDoor, APoweredDoor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(AInteractableDoor) \
 	virtual UObject* _getUObject() const override { return const_cast<AInteractableDoor*>(this); }
 

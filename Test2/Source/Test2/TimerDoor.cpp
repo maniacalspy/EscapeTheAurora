@@ -12,7 +12,7 @@ void ATimerDoor::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
 
 	if (!bIsOpen) {
-		if (bIsPowered) {
+		if (bTimerIsRunning) {
 			OpenDelayTimeSeconds -= DeltaTime;
 		}
 

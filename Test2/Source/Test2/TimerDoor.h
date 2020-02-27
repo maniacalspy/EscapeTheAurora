@@ -22,4 +22,7 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Door")
 		float OpenDelayTimeSeconds;
+
+	UPROPERTY(EditAnywhere, Category = "Door")
+		uint32 bTimerIsRunning : 1;
 };
