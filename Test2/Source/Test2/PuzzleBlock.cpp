@@ -29,7 +29,7 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 
 
 	MyComp->SetSimulatePhysics(false);
-	MyComp->SetNotifyRigidBodyCollision(true);
+	//MyComp->SetNotifyRigidBodyCollision(true);
 	MyComp->CanCharacterStepUpOn = ECB_No;
 
 
@@ -154,7 +154,7 @@ void APuzzleBlock::PushBlockOver() {
 			SetActorLocation(IntermediateVector);
 		}
 		if (needsRotation) {
-			SetActorRotation(FQuat::Slerp(CurrentRot, DestRotation, Alpha));
+			SetActorRotation(FQuat::Slerp(CurrentRot, DestRotation, Alpha), ETeleportType::ResetPhysics);
 		}
 	}
 

@@ -12,8 +12,14 @@ ADoorBase::ADoorBase()
 	if (PanelOnMaterialAsset.Succeeded()) {
 		pPanelOnMaterial = PanelOnMaterialAsset.Object;
 	}
+
 	DoorFrameSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Frame_Skeleton"));
+
+
 	DoorPanelSkeleton = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Door_Panel_Skeleton"));
+
+	DoorPanelSkeleton->AnimationData.bSavedPlaying = false;
+
 	pOpenSound = CreateDefaultSubobject<UAudioComponent>(TEXT("Door_Open_Sound"));
 	pOpenSound->bAutoActivate = false;
 

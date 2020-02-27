@@ -26,6 +26,7 @@ void AInteractableDoor::Tick(float DeltaTime)
 
 void AInteractableDoor::OnInteract_Implementation(AActor* Caller) {
 	if (bIsPowered) {
-		OpenDoor();
+		if (!bIsOpen) OpenDoor();
+		else CloseDoor();
 	}
 }

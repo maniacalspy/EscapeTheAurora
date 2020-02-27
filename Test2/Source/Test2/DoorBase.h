@@ -36,10 +36,10 @@ protected:
 
 	virtual void OpenDoor_Implementation();
 
-	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+	UPROPERTY(EditAnywhere, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorFrameSkeleton;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = SkeletalMesh)
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorPanelSkeleton;
 
 	UPROPERTY(EditAnywhere, Category = Audio)
