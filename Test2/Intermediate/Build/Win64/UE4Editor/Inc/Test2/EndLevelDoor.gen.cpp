@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 // Cross Module References
 	TEST2_API UClass* Z_Construct_UClass_AEndLevelDoor_NoRegister();
 	TEST2_API UClass* Z_Construct_UClass_AEndLevelDoor();
-	TEST2_API UClass* Z_Construct_UClass_ADoorBase();
+	TEST2_API UClass* Z_Construct_UClass_APoweredDoor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
 // End Cross Module References
 	void AEndLevelDoor::StaticRegisterNativesAEndLevelDoor()
@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AEndLevelDoor_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ADoorBase,
+		(UObject* (*)())Z_Construct_UClass_APoweredDoor,
 		(UObject* (*)())Z_Construct_UPackage__Script_Test2,
 	};
 #if WITH_METADATA
@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeEndLevelDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEndLevelDoor, 982174335);
+	IMPLEMENT_CLASS(AEndLevelDoor, 2707128216);
 	template<> TEST2_API UClass* StaticClass<AEndLevelDoor>()
 	{
 		return AEndLevelDoor::StaticClass();

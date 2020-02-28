@@ -17,7 +17,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define Test2_Source_Test2_DoorBase_h_14_RPC_WRAPPERS \
 	virtual void OpenDoor_Implementation(); \
 	virtual void CloseDoor_Implementation(); \
-	virtual void PowerOn_Implementation(); \
  \
 	DECLARE_FUNCTION(execOpenDoor) \
 	{ \
@@ -32,14 +31,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CloseDoor_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPowerOn) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->PowerOn_Implementation(); \
 		P_NATIVE_END; \
 	}
 
@@ -59,14 +50,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->CloseDoor_Implementation(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execPowerOn) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->PowerOn_Implementation(); \
 		P_NATIVE_END; \
 	}
 
@@ -118,9 +101,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoorBase); \
 #define Test2_Source_Test2_DoorBase_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__DoorFrameSkeleton() { return STRUCT_OFFSET(ADoorBase, DoorFrameSkeleton); } \
 	FORCEINLINE static uint32 __PPO__DoorPanelSkeleton() { return STRUCT_OFFSET(ADoorBase, DoorPanelSkeleton); } \
-	FORCEINLINE static uint32 __PPO__pOpenSound() { return STRUCT_OFFSET(ADoorBase, pOpenSound); } \
-	FORCEINLINE static uint32 __PPO__bIsPowered() { return STRUCT_OFFSET(ADoorBase, bIsPowered); } \
-	FORCEINLINE static uint32 __PPO__bIsOpen() { return STRUCT_OFFSET(ADoorBase, bIsOpen); }
+	FORCEINLINE static uint32 __PPO__pOpenSound() { return STRUCT_OFFSET(ADoorBase, pOpenSound); }
 
 
 #define Test2_Source_Test2_DoorBase_h_11_PROLOG \

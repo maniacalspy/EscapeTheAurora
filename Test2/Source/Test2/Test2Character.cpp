@@ -37,11 +37,11 @@ ATest2Character::ATest2Character()
 
 	PauseHudClass = MenuClassFinder.Class;
 
-	ConstructorHelpers::FClassFinder<UPauseHudWidget> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
+	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
 
 	StartHud = StartMenuFinder.Class;
 
-	ConstructorHelpers::FClassFinder<UPauseHudWidget> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
+	ConstructorHelpers::FClassFinder<UHUDWidgetBase> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
 
 	ControlsHUD = ControlsHUDFinder.Class;
 
@@ -102,7 +102,7 @@ void ATest2Character::BeginPlay()
 	{
 			if (StartHud) 
 			{
-					StartHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, StartHud);
+					StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
 					StartHudInstance->Setup();
 					StartHudInstance->OpenMenu();
 					mycontroller->SetPause(true);
@@ -115,8 +115,13 @@ void ATest2Character::BeginPlay()
 			
 
 			if (ControlsHUD) {
-				auto ControlsHUDInstance = CreateWidget<UPauseHudWidget>(mycontroller, ControlsHUD);
+				auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
 				ControlsHUDInstance->AddToViewport();
+			}
+
+			if (PauseHudClass) {
+				PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
+				PauseHudInstance->Setup();
 			}
 	}
 		
@@ -147,6 +152,8 @@ void ATest2Character::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 {
 	// set up gameplay key bindings
 	check(PlayerInputComponent);
+
+
 
 	// Bind jump events
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);

@@ -4,12 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "DoorBase.h"
+#include "PoweredDoor.h"
 #include "Interactable.h"
 #include "InteractableDoor.generated.h"
 
 UCLASS()
-class TEST2_API AInteractableDoor : public ADoorBase, public IInteractable
+class TEST2_API AInteractableDoor : public APoweredDoor, public IInteractable
 {
 	GENERATED_BODY()
 	

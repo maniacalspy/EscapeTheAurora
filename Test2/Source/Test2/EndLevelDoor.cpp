@@ -30,7 +30,7 @@ void AEndLevelDoor::Tick(float DeltaTime)
 }
 
 void AEndLevelDoor::PowerOn_Implementation() {
-	Super::PowerOn_Implementation();
+	APoweredDoor::PowerOn_Implementation();
 	OpenDoor_Implementation();
 }
 

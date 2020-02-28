@@ -17,10 +17,10 @@ public:
 	// Sets default values for this actor's properties
 	ADoorBase();
 
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Door")
+	/*UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Door")
 		void PowerOn();
 
-	virtual void PowerOn_Implementation();
+	virtual void PowerOn_Implementation();*/
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -36,26 +36,26 @@ protected:
 
 	virtual void OpenDoor_Implementation();
 
-	UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
+	UPROPERTY(EditAnywhere, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorFrameSkeleton;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = SkeletalMesh)
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = SkeletalMesh)
 		class USkeletalMeshComponent* DoorPanelSkeleton;
 
 	UPROPERTY(EditAnywhere, Category = Audio)
 		class UAudioComponent* pOpenSound;
 
-	void SwapDoorMaterial();
+	//void SwapDoorMaterial();
 
-	class UMaterial* pPanelOffMaterial;
+	//class UMaterial* pPanelOffMaterial;
 
-	class UMaterial* pPanelOnMaterial;
+	//class UMaterial* pPanelOnMaterial;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
-		bool bIsPowered;
+	//UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
+	//	uint32 bIsPowered : 1;
 
-	UPROPERTY(VisibleAnywhere, BluePrintReadWrite, Category = "Door")
-		bool bIsOpen;
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
+		uint32 bIsOpen : 1;
 
 public:	
 	// Called every frame

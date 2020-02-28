@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
 	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, ADoorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(AEndLevelDoor, APoweredDoor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
@@ -30,7 +30,7 @@ private: \
 	static void StaticRegisterNativesAEndLevelDoor(); \
 	friend struct Z_Construct_UClass_AEndLevelDoor_Statics; \
 public: \
-	DECLARE_CLASS(AEndLevelDoor, ADoorBase, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
+	DECLARE_CLASS(AEndLevelDoor, APoweredDoor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Test2"), NO_API) \
 	DECLARE_SERIALIZER(AEndLevelDoor)
 
 
