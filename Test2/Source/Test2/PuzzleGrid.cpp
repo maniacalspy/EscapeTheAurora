@@ -199,7 +199,7 @@ void APuzzleGrid::SetBlockStartPosition() {
 		TilesBlockIsOn.Add(StartTileOne);
 		FVector StartPosition;
 
-		FQuat StartRotation = *new FQuat(_pPuzzleActor->GetActorUpVector(), M_PI);
+		FQuat StartRotation = GetActorQuat() * FQuat(_pPuzzleActor->GetActorUpVector(), M_PI);
 		switch (MyStartPoints.Num())
 		{
 		case 1:
