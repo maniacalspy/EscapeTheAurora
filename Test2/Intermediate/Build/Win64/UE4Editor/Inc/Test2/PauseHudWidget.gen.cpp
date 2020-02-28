@@ -107,7 +107,7 @@ void EmptyLinkFunctionForGeneratedCodePauseHudWidget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPauseHudWidget, 1494444400);
+	IMPLEMENT_CLASS(UPauseHudWidget, 344228424);
 	template<> TEST2_API UClass* StaticClass<UPauseHudWidget>()
 	{
 		return UPauseHudWidget::StaticClass();

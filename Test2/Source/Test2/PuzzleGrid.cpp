@@ -149,14 +149,27 @@ void APuzzleGrid::OnPuzzleSolved() {
 void APuzzleGrid::createGrid() {
 	if (MyLevelGrid != nullptr) {
 		
-		float initialXpos = GetActorLocation().X  + ((MyLevelGrid->RowCount -1) /2.0f) * _tileHeight;
-		float initialYpos = GetActorLocation().Y - ((MyLevelGrid->ColumnCount - 1) / 2.0f) * _tileWidth;
-		for (int i = 0; i < MyLevelGrid->RowCount; i++) {
-			for (int j = 0; j < MyLevelGrid->ColumnCount; j++) {
+		int RowCount = MyLevelGrid->RowCount;
+		int ColumnCount = MyLevelGrid->ColumnCount;
+
+		float rotationAngleDegrees = -GetActorRotation().Yaw;
+
+		float AngleRadians = (rotationAngleDegrees * M_PI / 180.0);
+
+		float CosAngle = cos(AngleRadians);
+		float SinAngle = sin(AngleRadians);
+
+		float initialXpos = GetActorLocation().X  + ((((RowCount -1) /2.0f) * _tileHeight) * CosAngle - (((ColumnCount - 1) / 2.0f) * _tileWidth) * SinAngle);
+		float initialYpos = GetActorLocation().Y - ((((ColumnCount - 1) / 2.0f) * _tileWidth) * CosAngle + (((RowCount - 1) / 2.0f) * _tileHeight) * SinAngle);
+
+		
+		for (int i = 0; i < RowCount; i++) {
+			for (int j = 0; j < ColumnCount; j++) {
 				
 
-				TT_tileTypes thisTileType = MyLevelGrid->thisGrid[i*MyLevelGrid->ColumnCount + j];
-				GridTile* CurrentTile = new GridTile(thisTileType, TT_tileStates::Empty, initialXpos - i * _tileHeight, initialYpos + j * _tileWidth);
+				TT_tileTypes thisTileType = MyLevelGrid->thisGrid[i*ColumnCount + j];
+				GridTile* CurrentTile = new GridTile(thisTileType, TT_tileStates::Empty, initialXpos -  ( (i * _tileHeight) * CosAngle - (j * _tileWidth) * SinAngle )
+					, initialYpos + ( (j * _tileWidth) * CosAngle + (i * _tileHeight) * SinAngle ) );
 				if (MyLevelGrid->thisState) {
 					//COMPARE COORDINATES TO THE LAST TILE COORDINATES AND IF THEY MATCH ADD THEM TO THE LIST
 					if ((CurrentTile->GetXPosition() == MyLevelGrid->thisState->LastTileOneXCoordinate && CurrentTile->GetYPosition() == MyLevelGrid->thisState->LastTileOneYCoordinate)
@@ -166,8 +179,8 @@ void APuzzleGrid::createGrid() {
 				}
 				if (thisTileType == TT_tileTypes::Start && BaseStartPoints.Num() < MyLevelGrid->StartSpots) BaseStartPoints.Add(CurrentTile);
 				if (thisTileType == TT_tileTypes::Goal) MyGoalPoints.Add(CurrentTile);
-				if (j > 0) CurrentTile->setNeighbor(_puzzleGrid[(i*MyLevelGrid->ColumnCount + j) - 1], _tileDirections::West);
-				if (i > 0) CurrentTile->setNeighbor(_puzzleGrid[((i - 1)*MyLevelGrid->ColumnCount + j)], _tileDirections::North);
+				if (j > 0) CurrentTile->setNeighbor(_puzzleGrid[(i*ColumnCount + j) - 1], _tileDirections::West);
+				if (i > 0) CurrentTile->setNeighbor(_puzzleGrid[((i - 1)*ColumnCount + j)], _tileDirections::North);
 				_puzzleGrid.Add(CurrentTile);
 			
 			}
@@ -415,6 +428,13 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		if (!FirstOtherTile || !SecondOtherTile)
 		{
 			/*tiptype = APuzzleBlock::TipType::Invalid;*/
+			float AngleDegrees =  GetActorRotation().Yaw;
+
+			float AngleRadians = (AngleDegrees * M_PI / 180.0);
+
+			float CosAngle = cos(AngleRadians);
+			float SinAngle = sin(AngleRadians);
+
 			float Xoffset = _tileHeight;
 			Xoffset *= (FVector::DotProduct(RotatingAxis, GetActorRightVector()) / (RotatingAxis.Size() * GetActorRightVector().Size()));
 			float Yoffset = _tileWidth;
@@ -436,14 +456,14 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 					LastValidLocation = _pPuzzleActor->GetActorLocation();
 					float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
 					float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
-					DestLocation = *new FVector(XMidPoint + Xoffset, YMidPoint + Yoffset, _pPuzzleActor->GetActorLocation().Z);
+					DestLocation = *new FVector(XMidPoint + (Xoffset * CosAngle  - Yoffset * SinAngle), YMidPoint + (Yoffset * CosAngle + Xoffset * SinAngle), _pPuzzleActor->GetActorLocation().Z);
 					DestRotation = *new FQuat(RotatingAxis, M_PI_4) * _pPuzzleActor->GetActorQuat();
 				}
 				else {
 					IsInvalidTip = true;
 					LastValidRotation = _pPuzzleActor->GetActorQuat();
 					LastValidLocation = _pPuzzleActor->GetActorLocation();
-					DestLocation = *new FVector(TilesBlockIsOn[0]->xPos + Xoffset, TilesBlockIsOn[0]->yPos + Yoffset, (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+					DestLocation = *new FVector(TilesBlockIsOn[0]->xPos + (Xoffset * CosAngle - Yoffset * SinAngle), TilesBlockIsOn[0]->yPos + (Yoffset * CosAngle + Xoffset * SinAngle), (GetActorLocation().Z + _pPuzzleActor->BoxExtents.Z * _pPuzzleActor->GetActorScale().Z));
 					DestRotation = *new FQuat(RotatingAxis,  M_PI_4) * _pPuzzleActor->GetActorQuat();
 				}
 			}
