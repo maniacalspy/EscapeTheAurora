@@ -18,6 +18,7 @@ class TEST2_API UHUDWidgetBase : public UUserWidget
 public:
 	void Setup();
 
+	UFUNCTION(BlueprintCallable)
 	void OpenMenu();
 
 	UFUNCTION(BlueprintCallable)
