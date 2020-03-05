@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_Interact();
+	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_SetInteractionPromptText();
+	TEST2_API UClass* Z_Construct_UClass_UEditableTextWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TEST2_API UClass* Z_Construct_UClass_UHUDWidgetBase_NoRegister();
 	TEST2_API UClass* Z_Construct_UClass_UPauseHudWidget_NoRegister();
@@ -35,6 +37,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		UClass* Class = ATest2Character::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Interact", &ATest2Character::execInteract },
+			{ "SetInteractionPromptText", &ATest2Character::execSetInteractionPromptText },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -60,6 +63,50 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics
+	{
+		struct Test2Character_eventSetInteractionPromptText_Parms
+		{
+			FString Intext;
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Intext;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((Test2Character_eventSetInteractionPromptText_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Test2Character_eventSetInteractionPromptText_Parms), &Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_Intext = { "Intext", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Test2Character_eventSetInteractionPromptText_Parms, Intext), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::NewProp_Intext,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Interaction" },
+		{ "Comment", "//sets the text prompt for player interaction, will always start with \"Push E to \", so Intext should be the text that comes after, returns true if succeeded\n" },
+		{ "ModuleRelativePath", "Test2Character.h" },
+		{ "ToolTip", "sets the text prompt for player interaction, will always start with \"Push E to \", so Intext should be the text that comes after, returns true if succeeded" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATest2Character, nullptr, "SetInteractionPromptText", nullptr, nullptr, sizeof(Test2Character_eventSetInteractionPromptText_Parms), Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATest2Character_SetInteractionPromptText()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ATest2Character_NoRegister()
 	{
 		return ATest2Character::StaticClass();
@@ -71,6 +118,14 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractionPromptInstance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractionPromptInstance;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractionPromptClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_InteractionPromptClass;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractionDistance_MetaData[];
 #endif
@@ -166,6 +221,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATest2Character_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATest2Character_Interact, "Interact" }, // 717337324
+		{ &Z_Construct_UFunction_ATest2Character_SetInteractionPromptText, "SetInteractionPromptText" }, // 3163781537
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::Class_MetaDataParams[] = {
@@ -174,6 +230,20 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		{ "ModuleRelativePath", "Test2Character.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptInstance_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Test2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptInstance = { "InteractionPromptInstance", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, InteractionPromptInstance), Z_Construct_UClass_UEditableTextWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptInstance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptInstance_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptClass_MetaData[] = {
+		{ "Category", "Interaction" },
+		{ "ModuleRelativePath", "Test2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptClass = { "InteractionPromptClass", nullptr, (EPropertyFlags)0x0044000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, InteractionPromptClass), Z_Construct_UClass_UHUDWidgetBase_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance_MetaData[] = {
 		{ "Category", "Interaction" },
@@ -364,6 +434,8 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest2Character, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest2Character_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATest2Character_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptInstance,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionPromptClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_InteractionDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_ControlsHUD,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest2Character_Statics::NewProp_StartHudInstance,
@@ -413,7 +485,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 4202583052);
+	IMPLEMENT_CLASS(ATest2Character, 1968721442);
 	template<> TEST2_API UClass* StaticClass<ATest2Character>()
 	{
 		return ATest2Character::StaticClass();

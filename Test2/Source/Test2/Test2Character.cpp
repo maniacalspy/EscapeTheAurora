@@ -13,6 +13,7 @@
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "UObject/ConstructorHelpers.h"
 #include "Interactable.h"
+#include "EditableTextWidget.h"
 #include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -304,6 +305,16 @@ void ATest2Character::Tick(float DeltaSeconds) {
 	HandleFocus();
 }
 
+#pragma region Interaction
+
+bool ATest2Character::SetInteractionPromptText(FString Intext) {
+	if (InteractionPromptInstance) {
+		return (InteractionPromptInstance->SetText(Intext));
+	}
+	return true;
+}
+
+
 void ATest2Character::Interact() {
 	if (FocusedInteractable) {
 		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
@@ -348,12 +359,18 @@ void ATest2Character::HandleFocus() {
 				if (interface)
 				{
 					interface->Execute_EndFocus(FocusedInteractable);
+					if (InteractionPromptInstance) InteractionPromptInstance->RemoveFromViewport();
 				}
 			}
 			IInteractable* interface = Cast<IInteractable>(interactable);
 			if (interface)
 			{
-				interface->Execute_StartFocus(interactable);
+				if (InteractionPromptClass != nullptr && InteractionPromptInstance == nullptr) {
+					InteractionPromptInstance = CreateWidget<UEditableTextWidget>(GetWorld()->GetFirstPlayerController(), InteractionPromptClass);
+				}
+				if ((interface->Execute_StartFocus(interactable, this))) {
+					InteractionPromptInstance->AddToViewport();
+				}
 			}
 			FocusedInteractable = interactable;
 		}
@@ -366,9 +383,12 @@ void ATest2Character::HandleFocus() {
 			if (interface)
 			{
 				interface->Execute_EndFocus(FocusedInteractable);
+				if (InteractionPromptInstance != nullptr) InteractionPromptInstance->RemoveFromViewport();
 			}
 		}
 		FocusedInteractable = nullptr;
 	}
 
 }
+
+#pragma endregion

@@ -26,7 +26,8 @@ public:
 
 
 	virtual void OnInteract_Implementation(AActor* Caller) override;
-	virtual void StartFocus_Implementation() override;
+	//Called when the actor becomes focused by the player, returns true if the interaction prompt needs to be opened
+	virtual bool StartFocus_Implementation(AActor* Caller) override;
 	virtual void EndFocus_Implementation() override;
 
 };

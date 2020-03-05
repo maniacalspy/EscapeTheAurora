@@ -17,7 +17,7 @@ class AActor;
 #define Test2_Source_Test2_Interactable_h_13_SPARSE_DATA
 #define Test2_Source_Test2_Interactable_h_13_RPC_WRAPPERS \
 	virtual void EndFocus_Implementation() {}; \
-	virtual void StartFocus_Implementation() {}; \
+	virtual bool StartFocus_Implementation(AActor* Caller) { return false; }; \
 	virtual void OnInteract_Implementation(AActor* Caller) {}; \
  \
 	DECLARE_FUNCTION(execEndFocus) \
@@ -30,9 +30,10 @@ class AActor;
  \
 	DECLARE_FUNCTION(execStartFocus) \
 	{ \
+		P_GET_OBJECT(AActor,Z_Param_Caller); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->StartFocus_Implementation(); \
+		*(bool*)Z_Param__Result=P_THIS->StartFocus_Implementation(Z_Param_Caller); \
 		P_NATIVE_END; \
 	} \
  \
@@ -48,7 +49,7 @@ class AActor;
 
 #define Test2_Source_Test2_Interactable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void EndFocus_Implementation() {}; \
-	virtual void StartFocus_Implementation() {}; \
+	virtual bool StartFocus_Implementation(AActor* Caller) { return false; }; \
 	virtual void OnInteract_Implementation(AActor* Caller) {}; \
  \
 	DECLARE_FUNCTION(execEndFocus) \
@@ -61,9 +62,10 @@ class AActor;
  \
 	DECLARE_FUNCTION(execStartFocus) \
 	{ \
+		P_GET_OBJECT(AActor,Z_Param_Caller); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->StartFocus_Implementation(); \
+		*(bool*)Z_Param__Result=P_THIS->StartFocus_Implementation(Z_Param_Caller); \
 		P_NATIVE_END; \
 	} \
  \
@@ -81,6 +83,17 @@ class AActor;
 	struct Interactable_eventOnInteract_Parms \
 	{ \
 		AActor* Caller; \
+	}; \
+	struct Interactable_eventStartFocus_Parms \
+	{ \
+		AActor* Caller; \
+		bool ReturnValue; \
+ \
+		/** Constructor, initializes return property only **/ \
+		Interactable_eventStartFocus_Parms() \
+			: ReturnValue(false) \
+		{ \
+		} \
 	};
 
 
@@ -143,7 +156,7 @@ public: \
 	typedef IInteractable ThisClass; \
 	static void Execute_EndFocus(UObject* O); \
 	static void Execute_OnInteract(UObject* O, AActor* Caller); \
-	static void Execute_StartFocus(UObject* O); \
+	static bool Execute_StartFocus(UObject* O, AActor* Caller); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
@@ -155,7 +168,7 @@ public: \
 	typedef IInteractable ThisClass; \
 	static void Execute_EndFocus(UObject* O); \
 	static void Execute_OnInteract(UObject* O, AActor* Caller); \
-	static void Execute_StartFocus(UObject* O); \
+	static bool Execute_StartFocus(UObject* O, AActor* Caller); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 

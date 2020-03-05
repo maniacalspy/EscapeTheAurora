@@ -6,6 +6,8 @@
 #include "Components/AudioComponent.h"
 #include "Components/MeshComponent.h"
 #include "ConstructorHelpers.h"
+#include "Test2Character.h"
+
 // Sets default values
 APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 {
@@ -160,8 +162,14 @@ void APuzzleBlock::PushBlockOver() {
 
 }
 
-void APuzzleBlock::StartFocus_Implementation() {
-	GEngine->AddOnScreenDebugMessage(1, 2.f, FColor::White, TEXT("Press E to Interact"));
+bool APuzzleBlock::StartFocus_Implementation(AActor* Caller) {
+	ATest2Character* Player = Cast<ATest2Character>(Caller);
+
+	if (Player && _canBePushed) {
+		Player->SetInteractionPromptText("push block");
+		return true;
+	}
+	return false;
 }
 
 void APuzzleBlock::EndFocus_Implementation() {

@@ -8,6 +8,7 @@
 /NODEFAULTLIB
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.cpp.obj"
+"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EditableTextWidget.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EndLevelDoor.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EndLevelTriggers.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\FitToGrid.cpp.obj"
@@ -34,6 +35,7 @@
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Projectile.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\TimerDoor.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.gen.cpp.obj"
+"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EditableTextWidget.gen.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EndLevelDoor.gen.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EndLevelTriggers.gen.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\FitToGrid.gen.cpp.obj"

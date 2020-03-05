@@ -29,5 +29,6 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Suit Pod Mesh")
 		TArray<class UMaterial*> MeshMaterials;
 	
+	virtual bool StartFocus_Implementation(AActor* Caller) override;
 	virtual void OnInteract_Implementation(AActor* Caller) override;
 };
