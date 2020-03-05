@@ -275,13 +275,13 @@ void ATest2Character::MoveRight(float Value)
 void ATest2Character::TurnAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	if (!(FMath::IsNearlyZero((double)Rate, .1))) AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
 void ATest2Character::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	if (!(FMath::IsNearlyZero((double)Rate, .1))) AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
 bool ATest2Character::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
