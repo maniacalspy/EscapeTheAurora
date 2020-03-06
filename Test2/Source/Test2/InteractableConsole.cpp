@@ -12,14 +12,8 @@ AInteractableConsole::AInteractableConsole() {
 	pConsoleMesh->SetupAttachment(RootComponent);
 }
 
-bool AInteractableConsole::StartFocus_Implementation(AActor* caller) {
-	ATest2Character* Player = Cast<ATest2Character>(caller);
-
-	if (Player) {
-		Player->SetInteractionPromptText("download map");
-		return true;
-	}
-	return false;
+bool AInteractableConsole::StartFocus_Implementation(AActor* Caller) {
+	return SetPromptText(Caller, "download map");
 }
 
 void AInteractableConsole::OnInteract_Implementation(AActor* caller) {

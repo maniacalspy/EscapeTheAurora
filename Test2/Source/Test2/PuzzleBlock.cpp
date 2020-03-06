@@ -163,11 +163,8 @@ void APuzzleBlock::PushBlockOver() {
 }
 
 bool APuzzleBlock::StartFocus_Implementation(AActor* Caller) {
-	ATest2Character* Player = Cast<ATest2Character>(Caller);
-
-	if (Player && _canBePushed) {
-		Player->SetInteractionPromptText("push block");
-		return true;
+	if (_canBePushed) {
+		return SetPromptText(Caller, "push block");
 	}
 	return false;
 }

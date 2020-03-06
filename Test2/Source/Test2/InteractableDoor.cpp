@@ -2,7 +2,7 @@
 
 
 #include "InteractableDoor.h"
-#include "Test2Character.h"
+
 // Sets default values
 AInteractableDoor::AInteractableDoor()
 {
@@ -26,12 +26,8 @@ void AInteractableDoor::Tick(float DeltaTime)
 
 bool AInteractableDoor::StartFocus_Implementation(AActor* Caller) {
 	if (bIsPowered) {
-		ATest2Character* Player = Cast<ATest2Character>(Caller);
-		if (Player) {
-			if(!bIsOpen) Player->SetInteractionPromptText("open door");
-			else Player->SetInteractionPromptText("close door");
-			return true;
-		}
+			if(!bIsOpen) return SetPromptText(Caller, "open door");
+			else return SetPromptText(Caller, "close door");
 	}
 	return false;
 }

@@ -24,6 +24,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	
 
 	virtual void OnInteract_Implementation(AActor* Caller) override;
 	//Called when the actor becomes focused by the player, returns true if the interaction prompt needs to be opened

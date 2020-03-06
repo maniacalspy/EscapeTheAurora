@@ -28,7 +28,7 @@ void  AInteractableActor::OnInteract_Implementation(AActor* Caller) {
 }
 
 bool AInteractableActor::StartFocus_Implementation(AActor* Caller) {
-	return true;
+	return SetPromptText(Caller, "interact");
 }
 
 

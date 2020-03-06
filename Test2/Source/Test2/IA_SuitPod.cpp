@@ -41,13 +41,5 @@ void AIA_SuitPod::OnInteract_Implementation(AActor* Caller) {
 }
 
 bool AIA_SuitPod::StartFocus_Implementation(AActor* Caller) {
-	
-	ATest2Character* Player = Cast<ATest2Character>(Caller);
-
-	if (Player) {
-		Player->SetInteractionPromptText("remove suit");
-		return true;
-	}
-
-	return false;
+	return SetPromptText(Caller, "remove suit");
 }
