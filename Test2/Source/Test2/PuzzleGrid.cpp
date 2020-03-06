@@ -19,6 +19,7 @@ APuzzleGrid::APuzzleGrid()
 
 	TilesBlockIsOn = *new TArray<GridTile*>();
 	MyStartPoints = *new TArray<GridTile*>();
+	ValidDirections = *new TArray<_tileDirections>();
 
 	puzzleIsSolved = false;
 	IsInvalidTip = false;
@@ -32,6 +33,19 @@ void APuzzleGrid::PostInitializeComponents() {
 	_tileWidth = 30.f * _YScale;
 	_tileHeight = 30.f * _XScale;
 
+
+	if (_pPuzzleActor == nullptr) {
+		UWorld* World = GetWorld();
+		FActorSpawnParameters SpawnParams;
+		SpawnParams.Owner = this;
+		SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+
+		_pPuzzleActor = (APuzzleBlock*)GetWorld()->SpawnActor<APuzzleBlock>(APuzzleBlock::StaticClass(), GetActorLocation(), GetActorRotation(), SpawnParams);
+		_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
+
+		//_pPuzzleActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+	}
+
 }
 
 
@@ -41,18 +55,11 @@ void APuzzleGrid::PostInitializeComponents() {
 void APuzzleGrid::BeginPlay()
 {
 	Super::BeginPlay();
-
 	MyLevelGrid = GetLevelByNumber(LevelGridNumber);
 	BaseStartPoints = *new TArray<GridTile*>;
 	if (MyLevelGrid != nullptr) createGrid();
 
-	UWorld* World = GetWorld();
-	FActorSpawnParameters SpawnParams;
-	SpawnParams.Owner = this;
-	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-
-	_pPuzzleActor = (APuzzleBlock*) GetWorld()->SpawnActor<APuzzleBlock>(APuzzleBlock::StaticClass(), GetActorLocation(), GetActorRotation(), SpawnParams);
-	_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
+	
 
 
 	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelTriggers WITH THE LEVEL NUMBER APPENDED AT THE END
@@ -76,6 +83,7 @@ void APuzzleGrid::BeginPlay()
 
 void APuzzleGrid::EndPlay(const EEndPlayReason::Type EndPlayReason) {
 	if (EndPlayReason == EEndPlayReason::Type::EndPlayInEditor || EndPlayReason == EEndPlayReason::Type::LevelTransition) ResetPuzzle();
+	//else if (EndPlayReason == EEndPlayReason::Type::RemovedFromWorld && !GetWorld()->bBegunPlay) ResetPuzzle();
 }
 
 // Called every frame
@@ -101,6 +109,7 @@ void APuzzleGrid::OnBlockDoneTipping()
 	else if (!puzzleIsSolved) {
 		CheckPuzzleSolved();
 		UpdateLastCoordinates();
+		FindValidTipDirections();
 	}
 	else _pPuzzleActor->_canBePushed = false;
 }
@@ -237,6 +246,8 @@ void APuzzleGrid::SetBlockStartPosition() {
 			MyLevelGrid->thisState = new LevelGridState(xone, yone, xtwo, ytwo, false);
 		}
 		else if (MyLevelGrid->thisState->isSolved) OnPuzzleSolved();
+
+		FindValidTipDirections();
 	}
 }
 
@@ -292,6 +303,7 @@ FVector APuzzleGrid::FindRotateAxis(FVector impactNormal) {
 void APuzzleGrid::MoveBlock(FVector impactNormal) {
 	if (!puzzleIsSolved)
 	{
+		ValidDirections.Empty();
 		//Set Placeholder values for DestLocation and DestRotation
 		FVector DestLocation = FVector::OneVector;
 		FQuat DestRotation = FQuat::Identity;
@@ -485,3 +497,31 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 	}//end of checking if the puzzle is solved
 }//end of method
 
+void APuzzleGrid::FindValidTipDirections() {
+	for (auto direction : allTileDirections) {
+		GridTile* FirstOtherTile = TilesBlockIsOn[0]->GetNeighbor(direction);
+		GridTile* SecondOtherTile = nullptr;
+		switch (TilesBlockIsOn.Num())
+		{
+		case 1:
+			if (FirstOtherTile) {
+				if (FirstOtherTile->type != TT_tileTypes::NonTraversable) {
+					SecondOtherTile = FirstOtherTile->GetNeighbor(direction);
+					if (SecondOtherTile) {
+						if (SecondOtherTile->type != TT_tileTypes::NonTraversable) ValidDirections.Add(direction);
+					}
+				}
+			}
+			break;
+		case 2:
+			SecondOtherTile = TilesBlockIsOn[1]->GetNeighbor(direction);
+			if (FirstOtherTile && SecondOtherTile) {
+				if (FirstOtherTile->type != TT_tileTypes::NonTraversable && SecondOtherTile->type != TT_tileTypes::NonTraversable) ValidDirections.Add(direction);
+			}
+			break;
+
+		default:
+			break;
+		}
+	}
+}

@@ -39,7 +39,7 @@ private:
 	VoidFunctionPtr GridTippedCallBack;
 	InVectorFunctionPtr GridMoveBlockCallBack;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	UPROPERTY(EditAnywhere, Category = Mesh)
 		class UStaticMeshComponent* pBlockMesh;
 
 
@@ -68,7 +68,7 @@ public:
 
 	void PushBlockOver();
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere)
 		class UBoxComponent* MyComp;
 
 	UPROPERTY(EditAnywhere, Category = Audio)

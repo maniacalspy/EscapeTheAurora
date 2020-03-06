@@ -40,9 +40,14 @@ private:
 	FQuat LastValidRotation;
 	FVector LastValidLocation; 
 
+	void FindValidTipDirections();
+	TArray<_tileDirections> ValidDirections;
+
 	bool IsInvalidTip;
 
-	class APuzzleBlock* _pPuzzleActor;
+	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
+		class APuzzleBlock* _pPuzzleActor;
+
 	class AEndLevelTriggers* _pTriggerActor;
 
 	void createGrid();

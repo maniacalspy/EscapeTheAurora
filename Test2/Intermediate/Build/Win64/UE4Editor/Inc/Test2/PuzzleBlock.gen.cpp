@@ -173,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		{ "ModuleRelativePath", "PuzzleBlock.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp = { "MyComp", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, MyComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp = { "MyComp", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, MyComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -181,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		{ "ModuleRelativePath", "PuzzleBlock.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh = { "pBlockMesh", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, pBlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh = { "pBlockMesh", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, pBlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APuzzleBlock_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipSideSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipEdgeSound,
@@ -215,7 +215,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleBlock, 4053794412);
+	IMPLEMENT_CLASS(APuzzleBlock, 74950192);
 	template<> TEST2_API UClass* StaticClass<APuzzleBlock>()
 	{
 		return APuzzleBlock::StaticClass();
