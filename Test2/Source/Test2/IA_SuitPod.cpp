@@ -31,6 +31,7 @@ void AIA_SuitPod::OnInteract_Implementation(AActor* Caller) {
 		MeshActor->SetActorScale3D(GetActorScale3D());
 		UStaticMeshComponent* ActorMeshComponent = MeshActor->GetStaticMeshComponent();
 		ActorMeshComponent->SetStaticMesh(FullMesh);
+		ActorMeshComponent->LightmapType = ELightmapType::ForceVolumetric;
 
 		for (int i = 0; i < ActorMeshComponent->GetNumMaterials(); i++) {
 			if (MeshMaterials[i]) ActorMeshComponent->SetMaterial(i, MeshMaterials[i]);
