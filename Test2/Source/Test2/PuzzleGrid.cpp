@@ -102,6 +102,7 @@ void APuzzleGrid::OnBlockDoneTipping()
 		CheckPuzzleSolved();
 		UpdateLastCoordinates();
 	}
+	else _pPuzzleActor->_canBePushed = false;
 }
 
 void APuzzleGrid::UpdateLastCoordinates() {
@@ -139,6 +140,7 @@ void APuzzleGrid::OnPuzzleSolved() {
 	_pPuzzleActor->SetDestLocation(_pPuzzleActor->GetActorLocation() - *new FVector(0, 0, _pPuzzleActor->BoxExtents.Z * 2 * _pPuzzleActor->GetActorScale().Z));
 	if (!MyLevelGrid->thisState->isSolved) {
 		MyLevelGrid->thisState->isSolved = true;
+		_pPuzzleActor->_canBePushed = false;
 		//UpdateLastCoordinates();
 		if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
 	}

@@ -30,9 +30,11 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_OnInteract instead.");
 	}
-	void IInteractable::StartFocus()
+	bool IInteractable::StartFocus(AActor* Caller)
 	{
 		check(0 && "Do not directly call Event functions in Interfaces. Call Execute_StartFocus instead.");
+		Interactable_eventStartFocus_Parms Parms;
+		return Parms.ReturnValue;
 	}
 	void UInteractable::StaticRegisterNativesUInteractable()
 	{
@@ -98,10 +100,24 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	}
 	struct Z_Construct_UFunction_UInteractable_StartFocus_Statics
 	{
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Caller;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((Interactable_eventStartFocus_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Interactable_eventStartFocus_Parms), &Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_Caller = { "Caller", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Interactable_eventStartFocus_Parms, Caller), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UInteractable_StartFocus_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_ReturnValue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UInteractable_StartFocus_Statics::NewProp_Caller,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInteractable_StartFocus_Statics::Function_MetaDataParams[] = {
@@ -109,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		{ "ModuleRelativePath", "Interactable.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_StartFocus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "StartFocus", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_StartFocus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_StartFocus_Statics::Function_MetaDataParams)) };
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_StartFocus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "StartFocus", nullptr, nullptr, sizeof(Interactable_eventStartFocus_Parms), Z_Construct_UFunction_UInteractable_StartFocus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_StartFocus_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_StartFocus_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_StartFocus_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UInteractable_StartFocus()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -140,7 +156,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UInteractable_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UInteractable_EndFocus, "EndFocus" }, // 225027781
 		{ &Z_Construct_UFunction_UInteractable_OnInteract, "OnInteract" }, // 3762464597
-		{ &Z_Construct_UFunction_UInteractable_StartFocus, "StartFocus" }, // 1276318286
+		{ &Z_Construct_UFunction_UInteractable_StartFocus, "StartFocus" }, // 1713625729
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractable_Statics::Class_MetaDataParams[] = {
@@ -174,7 +190,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInteractable, 4293728539);
+	IMPLEMENT_CLASS(UInteractable, 906816596);
 	template<> TEST2_API UClass* StaticClass<UInteractable>()
 	{
 		return UInteractable::StaticClass();
@@ -214,19 +230,22 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 	}
 	static FName NAME_UInteractable_StartFocus = FName(TEXT("StartFocus"));
-	void IInteractable::Execute_StartFocus(UObject* O)
+	bool IInteractable::Execute_StartFocus(UObject* O, AActor* Caller)
 	{
 		check(O != NULL);
 		check(O->GetClass()->ImplementsInterface(UInteractable::StaticClass()));
+		Interactable_eventStartFocus_Parms Parms;
 		UFunction* const Func = O->FindFunction(NAME_UInteractable_StartFocus);
 		if (Func)
 		{
-			O->ProcessEvent(Func, NULL);
+			Parms.Caller=Caller;
+			O->ProcessEvent(Func, &Parms);
 		}
 		else if (auto I = (IInteractable*)(O->GetNativeInterfaceAddress(UInteractable::StaticClass())))
 		{
-			I->StartFocus_Implementation();
+			Parms.ReturnValue = I->StartFocus_Implementation(Caller);
 		}
+		return Parms.ReturnValue;
 	}
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER

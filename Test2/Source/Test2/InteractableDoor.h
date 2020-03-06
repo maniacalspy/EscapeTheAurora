@@ -21,6 +21,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual bool StartFocus_Implementation(AActor* Caller) override;
+
 	virtual void OnInteract_Implementation(AActor* Caller) override;
 
 
