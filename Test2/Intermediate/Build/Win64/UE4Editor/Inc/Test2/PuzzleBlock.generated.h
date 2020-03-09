@@ -93,6 +93,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APuzzleBlock); \
 
 
 #define Test2_Source_Test2_PuzzleBlock_h_16_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO___hologramMeshes() { return STRUCT_OFFSET(APuzzleBlock, _hologramMeshes); } \
+	FORCEINLINE static uint32 __PPO___hologramComponents() { return STRUCT_OFFSET(APuzzleBlock, _hologramComponents); } \
 	FORCEINLINE static uint32 __PPO__pBlockMesh() { return STRUCT_OFFSET(APuzzleBlock, pBlockMesh); }
 
 

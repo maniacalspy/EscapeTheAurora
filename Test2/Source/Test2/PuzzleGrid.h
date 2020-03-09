@@ -43,6 +43,8 @@ private:
 	void FindValidTipDirections();
 	TArray<_tileDirections> ValidDirections;
 
+	FVector ConvertDirectionToVector(_tileDirections Direction);
+
 	bool IsInvalidTip;
 
 	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
