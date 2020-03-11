@@ -83,8 +83,7 @@ void APuzzleGrid::BeginPlay()
 }
 
 void APuzzleGrid::EndPlay(const EEndPlayReason::Type EndPlayReason) {
-	if (EndPlayReason == EEndPlayReason::Type::EndPlayInEditor || EndPlayReason == EEndPlayReason::Type::LevelTransition) ResetPuzzle();
-	//else if (EndPlayReason == EEndPlayReason::Type::RemovedFromWorld && !GetWorld()->bBegunPlay) ResetPuzzle();
+	ResetPuzzle();
 }
 
 // Called every frame
@@ -314,6 +313,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 	if (!puzzleIsSolved)
 	{
 		ValidDirections.Empty();
+		_pPuzzleActor->DisableAllHolograms();
 		//Set Placeholder values for DestLocation and DestRotation
 		FVector DestLocation = FVector::OneVector;
 		FQuat DestRotation = FQuat::Identity;
