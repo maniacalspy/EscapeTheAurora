@@ -1,2 +1,0 @@
-D:\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-D:\GitHub\Nudge\Test2\Source\Test2\GridTile.h
