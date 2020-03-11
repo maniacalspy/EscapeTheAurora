@@ -22,6 +22,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_BEGIN; \
 		P_THIS->Interact(); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetInteractionPromptText) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Intext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
+		P_NATIVE_END; \
 	}
 
 
@@ -32,6 +41,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->Interact(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSetInteractionPromptText) \
+	{ \
+		P_GET_PROPERTY(UStrProperty,Z_Param_Intext); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
 		P_NATIVE_END; \
 	}
 
@@ -92,7 +110,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__StartHud() { return STRUCT_OFFSET(ATest2Character, StartHud); } \
 	FORCEINLINE static uint32 __PPO__StartHudInstance() { return STRUCT_OFFSET(ATest2Character, StartHudInstance); } \
 	FORCEINLINE static uint32 __PPO__ControlsHUD() { return STRUCT_OFFSET(ATest2Character, ControlsHUD); } \
-	FORCEINLINE static uint32 __PPO__InteractionDistance() { return STRUCT_OFFSET(ATest2Character, InteractionDistance); }
+	FORCEINLINE static uint32 __PPO__InteractionDistance() { return STRUCT_OFFSET(ATest2Character, InteractionDistance); } \
+	FORCEINLINE static uint32 __PPO__InteractionPromptClass() { return STRUCT_OFFSET(ATest2Character, InteractionPromptClass); } \
+	FORCEINLINE static uint32 __PPO__InteractionPromptInstance() { return STRUCT_OFFSET(ATest2Character, InteractionPromptInstance); }
 
 
 #define Test2_Source_Test2_Test2Character_h_11_PROLOG

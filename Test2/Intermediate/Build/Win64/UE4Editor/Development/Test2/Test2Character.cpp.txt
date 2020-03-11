@@ -162,3 +162,5 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
 C:\workspace\Nudge\Test2\Source\Test2\Interactable.h
 C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+C:\workspace\Nudge\Test2\Source\Test2\EditableTextWidget.h
+C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EditableTextWidget.generated.h

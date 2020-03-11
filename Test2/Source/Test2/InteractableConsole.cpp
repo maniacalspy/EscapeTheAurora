@@ -12,6 +12,9 @@ AInteractableConsole::AInteractableConsole() {
 	pConsoleMesh->SetupAttachment(RootComponent);
 }
 
+bool AInteractableConsole::StartFocus_Implementation(AActor* Caller) {
+	return SetPromptText(Caller, "download map");
+}
 
 void AInteractableConsole::OnInteract_Implementation(AActor* caller) {
 	GEngine->AddOnScreenDebugMessage(2, 1.f, FColor::Green, TEXT("Map Downloaded!"));

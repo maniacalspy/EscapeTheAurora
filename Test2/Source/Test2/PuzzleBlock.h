@@ -57,7 +57,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void StartFocus_Implementation() override;
+	virtual bool StartFocus_Implementation(AActor* Caller) override;
 
 	virtual void EndFocus_Implementation() override;
 
