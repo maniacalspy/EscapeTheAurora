@@ -1,24 +1,24 @@
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-C:\workspace\Nudge\Test2\Source\Test2\PuzzleGrid.h
-C:\workspace\Nudge\Test2\Source\Test2\EndLevelTriggers.h
-C:\workspace\Nudge\Test2\Source\Test2\EndLevelDoor.h
-C:\workspace\Nudge\Test2\Source\Test2\PoweredDoor.h
-C:\workspace\Nudge\Test2\Source\Test2\DoorBase.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleGrid.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelTriggers.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelDoor.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PoweredDoor.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\DoorBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
-C:\workspace\Nudge\Test2\Source\Test2\KeyCardSpawner.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
-C:\workspace\Nudge\Test2\Source\Test2\GridTile.h
-C:\workspace\Nudge\Test2\Source\Test2\PuzzleBlock.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\GridTile.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleBlock.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
@@ -38,11 +38,11 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\cwchar
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\cstdio
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xatomic.h
-C:\workspace\Nudge\Test2\Source\Test2\InteractableActor.h
-C:\workspace\Nudge\Test2\Source\Test2\Interactable.h
-C:\workspace\Nudge\Test2\Source\Test2\Test2Character.h
-C:\workspace\Nudge\Test2\Source\Test2\PauseHudWidget.h
-C:\workspace\Nudge\Test2\Source\Test2\HUDWidgetBase.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableActor.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Interactable.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\HUDWidgetBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -158,18 +158,18 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlock.generated.h
-C:\workspace\Nudge\Test2\Source\Test2\LevelGridStruct.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGrid.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlock.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\LevelGridStruct.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGrid.generated.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\iostream
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\istream
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\ostream
@@ -179,7 +179,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xtgmath.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\streambuf
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xiosbase
-C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\share.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\share.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\system_error
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\cerrno
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\stdexcept
@@ -192,6 +192,6 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xfacet
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xlocinfo
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\INCLUDE\xlocinfo.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\locale.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\math.h
-C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt\corecrt_math_defines.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\locale.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\math.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_math_defines.h

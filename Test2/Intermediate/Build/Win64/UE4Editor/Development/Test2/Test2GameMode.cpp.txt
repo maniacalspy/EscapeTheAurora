@@ -1,20 +1,20 @@
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-C:\workspace\Nudge\Test2\Source\Test2\Test2GameMode.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2GameMode.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2GameMode.generated.h
-C:\workspace\Nudge\Test2\Source\Test2\Test2HUD.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2GameMode.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2HUD.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2HUD.generated.h
-C:\workspace\Nudge\Test2\Source\Test2\Test2Character.h
-C:\workspace\Nudge\Test2\Source\Test2\PauseHudWidget.h
-C:\workspace\Nudge\Test2\Source\Test2\HUDWidgetBase.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2HUD.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\HUDWidgetBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -130,10 +130,10 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\workspace\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
