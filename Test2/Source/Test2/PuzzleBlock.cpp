@@ -96,7 +96,7 @@ void APuzzleBlock::PostInitializeComponents() {
 			Component->InitializeComponent();
 			Component->AttachToComponent(pBlockMesh, FAttachmentTransformRules::SnapToTargetIncludingScale);
 			Component->SetStaticMesh(mesh);
-			Component->SetRelativeLocation(*new FVector(-32, 0, 30));
+			//Component->SetRelativeLocation(*new FVector(-32, 0, 30));
 			_hologramComponents.Add(Component);
 		}
 	}
