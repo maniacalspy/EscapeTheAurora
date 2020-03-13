@@ -2,7 +2,7 @@
 
 #include "LevelGridStruct.h"
 
-const int Level_Count = 2;
+const int Level_Count = 4;
 
 //for shortening array lengths
 const auto Basic = TT_tileTypes::Basic;
@@ -17,7 +17,6 @@ extern TT_tileTypes Level_One_Grid[4] = {
 	Basic,
 	Start
 };
-
 LevelGrid* Level_One = new LevelGrid(4, 1, 1, 1, Level_One_Grid);
 
 extern TT_tileTypes Level_Two_Grid[6] = {
@@ -25,6 +24,36 @@ extern TT_tileTypes Level_Two_Grid[6] = {
 	Basic, Basic, Start
 };
 LevelGrid* Level_Two = new LevelGrid(2, 3, 1, 1, Level_Two_Grid);
+
+extern TT_tileTypes Level_Three_Grid[15] =
+{
+	NT, NT, Goal, Basic, Basic,
+	Basic, Basic, Basic, Basic, Basic,
+	Basic, Basic, Start, NT, NT
+};
+LevelGrid* LevelThree = new LevelGrid(5, 3, 1, 1, Level_Three_Grid);
+
+extern TT_tileTypes Level_Four_Grid[63] =
+{
+	/*Basic, Basic, Basic, Goal, Basic, Basic, NT, Basic, Basic, 
+	Basic, NT, NT, NT, Basic, Basic, Basic, Basic, Basic, 
+	Basic, NT, NT, NT, Basic, NT, Basic, NT, NT, 
+	Basic, Basic, Basic, Basic, Basic, Basic, Basic, NT, Basic, 
+	Basic, NT, NT, Basic, NT, NT, Basic, Basic, Basic, 
+	Basic, NT, NT, Basic, Basic, Basic, NT, Basic, Basic, 
+	Basic, Basic, Start, Basic, Basic, Basic, Basic, Basic*/
+
+	Basic, Basic, Basic, Basic, Basic, Goal, Basic, Basic, Basic, 
+	Basic, Basic, NT, Basic, Basic, Basic, NT, NT, Basic, 
+	Basic, Basic, Basic, NT, NT, Basic, NT, NT, Basic, 
+	Basic, NT, Basic, Basic, Basic, Basic, Basic, Basic, Basic, 
+	NT, NT, Basic, NT, Basic, NT, NT, NT, Basic, 
+	Basic, Basic, Basic, Basic, Basic,NT, NT, NT, Basic, 
+	Basic, Basic, NT, Basic, Basic, Start, Basic, Basic, Basic
+
+};
+LevelGrid* LevelFour = new LevelGrid(9, 7, 1, 1, Level_Four_Grid);
+
 
 LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid)
 {
@@ -49,7 +78,7 @@ LevelGridState::LevelGridState(float xonepos, float yonepos, float xtwopos, floa
 
 	isSolved = solved;
 }
-LevelGrid *Levels[Level_Count] = { Level_One, Level_Two };
+LevelGrid *Levels[Level_Count] = { Level_One, Level_Two/*, Level_Three, Level_Four */};
 
 LevelGrid* GetLevelByNumber(int levelnumber) {
 	if (levelnumber > 0 && levelnumber <= Level_Count) return (Levels[levelnumber - 1]);
