@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeIA_SuitPod() {}
 	TEST2_API UClass* Z_Construct_UClass_AIA_SuitPod();
 	TEST2_API UClass* Z_Construct_UClass_AInteractableActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterial_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
@@ -34,6 +35,10 @@ void EmptyLinkFunctionForGeneratedCodeIA_SuitPod() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Suitoff_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Suitoff;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshMaterials_MetaData[];
 #endif
@@ -63,6 +68,14 @@ void EmptyLinkFunctionForGeneratedCodeIA_SuitPod() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_Suitoff_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "IA_SuitPod.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_Suitoff = { "Suitoff", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIA_SuitPod, Suitoff), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_Suitoff_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_Suitoff_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshMaterials_MetaData[] = {
 		{ "Category", "Suit Pod Mesh" },
 		{ "ModuleRelativePath", "IA_SuitPod.h" },
@@ -86,6 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeIA_SuitPod() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIA_SuitPod, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIA_SuitPod_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_Suitoff,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshMaterials,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_MeshMaterials_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_SuitPod_Statics::NewProp_FullMesh,
@@ -118,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeIA_SuitPod() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AIA_SuitPod, 1799385209);
+	IMPLEMENT_CLASS(AIA_SuitPod, 2868084446);
 	template<> TEST2_API UClass* StaticClass<AIA_SuitPod>()
 	{
 		return AIA_SuitPod::StaticClass();
