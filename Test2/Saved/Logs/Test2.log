@@ -1,4 +1,4 @@
-﻿Log file open, 03/11/20 15:28:11
+﻿Log file open, 03/11/20 20:33:27
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -8,8 +8,8 @@ LogWindows: File 'VtuneApi32e.dll' does not exist
 LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
 LogInit: Display: Running engine for game: Test2
 LogPlatformFile: Not using cached read wrapper
-LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.083873
+LogTaskGraph: Started task graph with 5 named threads and 20 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.062738
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -101,6 +101,54 @@ LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: Test2
+Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="C:/Users/Nolan/Documents/GitHub/Nudge/Test2/Test2.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\Nolan\Documents\GitHub\Nudge).
+Creating makefile for Test2Editor (no existing makefile)
+@progress push 5%
+Parsing headers for Test2Editor
+  Running UnrealHeaderTool "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Test2.uproject" "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for Test2Editor in 5.7123071 seconds
+@progress pop
+Building Test2Editor...
+Using Visual Studio 2019 14.24.28315 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+Building 12 actions with 6 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 8%
+  [1/12] PoweredDoor.gen.cpp
+  @progress 'Compiling C++ source code...' 17%
+  [2/12] TimerDoor.gen.cpp
+  @progress 'Compiling C++ source code...' 25%
+  [3/12] HUDWidgetBase.gen.cpp
+  @progress 'Compiling C++ source code...' 33%
+  [4/12] EditableTextWidget.gen.cpp
+  @progress 'Compiling C++ source code...' 42%
+  [5/12] InteractableConsole.gen.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [6/12] IA_SuitPod.gen.cpp
+  @progress 'Compiling C++ source code...' 58%
+  [7/12] EditableTextWidget.cpp
+  @progress 'Compiling C++ source code...' 67%
+  [8/12] IA_SuitPod.cpp
+  @progress 'Compiling C++ source code...' 75%
+  [9/12] InteractableConsole.cpp
+  @progress 'Compiling C++ source code...' 83%
+  [10/12] UE4Editor-Test2.lib
+     Creating library C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib and object C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.exp
+  @progress 'Compiling C++ source code...' 92%
+  [11/12] UE4Editor-Test2.dll
+     Creating library C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib and object C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [12/12] Test2Editor.target
+Total time in Parallel executor: 7.91 seconds
+Total execution time: 15.80 seconds
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1

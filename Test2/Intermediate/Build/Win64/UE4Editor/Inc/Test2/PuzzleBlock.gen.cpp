@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 // End Cross Module References
 	void APuzzleBlock::StaticRegisterNativesAPuzzleBlock()
 	{
@@ -133,6 +134,16 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_pBlockMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pBlockMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__hologramComponents_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp__hologramComponents;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__hologramComponents_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__hologramMeshes_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp__hologramMeshes;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__hologramMeshes_Inner;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -168,12 +179,12 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipEdgeSound = { "pTipEdgeSound", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, pTipEdgeSound), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipEdgeSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipEdgeSound_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData[] = {
-		{ "Category", "PuzzleBlock" },
+		{ "Category", "Puzzle Block" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "PuzzleBlock.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp = { "MyComp", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, MyComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp = { "MyComp", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, MyComp), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -181,12 +192,35 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		{ "ModuleRelativePath", "PuzzleBlock.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh = { "pBlockMesh", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, pBlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh = { "pBlockMesh", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, pBlockMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents_MetaData[] = {
+		{ "Category", "PuzzleBlock" },
+		{ "Comment", "//the order here ends up being Top, Bottom, Front, Back, Left, Right\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "PuzzleBlock.h" },
+		{ "ToolTip", "the order here ends up being Top, Bottom, Front, Back, Left, Right" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents = { "_hologramComponents", nullptr, (EPropertyFlags)0x0040008000000009, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, _hologramComponents), METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents_Inner = { "_hologramComponents", nullptr, (EPropertyFlags)0x0000000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes_MetaData[] = {
+		{ "Category", "Puzzle Block" },
+		{ "ModuleRelativePath", "PuzzleBlock.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes = { "_hologramMeshes", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleBlock, _hologramMeshes), METADATA_PARAMS(Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes_Inner = { "_hologramMeshes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APuzzleBlock_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipSideSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pTipEdgeSound,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_MyComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp_pBlockMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramComponents_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleBlock_Statics::NewProp__hologramMeshes_Inner,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APuzzleBlock_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APuzzleBlock>::IsAbstract,
@@ -215,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleBlock() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleBlock, 4053794412);
+	IMPLEMENT_CLASS(APuzzleBlock, 1795296665);
 	template<> TEST2_API UClass* StaticClass<APuzzleBlock>()
 	{
 		return APuzzleBlock::StaticClass();
