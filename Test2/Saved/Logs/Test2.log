@@ -1521,3 +1521,175 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.03.13-16.04.43:452][421]AssetCheck: New page: Asset Save: multiple assets
 [2020.03.13-16.04.43:452][421]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
 [2020.03.13-16.04.43:452][421]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2020.03.13-16.09.05:842][541]LogTemp: Repeating last play command: Selected Viewport
+[2020.03.13-16.09.05:871][541]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.03.13-16.09.05:871][541]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.03.13-16.09.05:871][541]PIE: New page: PIE session: FirstPersonExampleMap (Mar 13, 2020, 6:09:05 AM)
+[2020.03.13-16.09.05:871][541]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.03.13-16.09.05:919][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.047678s)
+[2020.03.13-16.09.05:921][541]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.03.13-16.09.05:922][541]LogPlayLevel: PIE: World Init took: (0.002739s)
+[2020.03.13-16.09.05:922][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.050941s)
+[2020.03.13-16.09.05:959][541]LogUObjectHash: Compacting FUObjectHashTables data took   3.57ms
+[2020.03.13-16.09.05:961][541]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.03.13-16.09.05:961][541]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.03.13-16.09.05:961][541]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.03.13-16.09.05:961][541]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.03.13-16.09.05:961][541]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.03.13-16.09.05:962][541]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.03.13-16.09.05:962][541]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.03.13-16.09.05:962][541]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.03.13-16.09.05:963][541]LogAudio: Display: Using built-in audio occlusion.
+[2020.03.13-16.09.05:963][541]LogAudioMixer: Display: Initializing audio mixer.
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Is Default: Yes
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Sample Rate: 48000
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Channel Count Used: 2
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Device Channel Count: 2
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: Channel Order:
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: 0: FrontLeft
+[2020.03.13-16.09.06:061][541]LogAudioMixer: Display: 1: FrontRight
+[2020.03.13-16.09.06:092][541]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.03.13-16.09.06:094][541]LogInit: FAudioDevice initialized.
+[2020.03.13-16.09.06:105][541]LogLoad: Game class is 'GameModeBase'
+[2020.03.13-16.09.06:188][541]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.03.13-11.09.06
+[2020.03.13-16.09.06:191][541]LogWorld: Bringing up level for play took: 0.024975
+[2020.03.13-16.09.06:191][541]LogOnline: OSS: Creating online subsystem instance for: :Context_8
+[2020.03.13-16.09.06:199][541]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.155
+[2020.03.13-16.09.06:199][541]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.03.13-16.09.15:549][399]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.03.13-16.09.15:552][399]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.03.13-16.09.15:571][399]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.03.13-16.09.15:571][399]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.03.13-16.09.15:572][399]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.13-16.09.15:572][399]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.03.13-16.09.15:572][399]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.03.13-16.09.15:573][399]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.09.15:575][399]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.09.15:587][399]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.03.13-16.09.15:587][399]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.03.13-16.09.15:592][399]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.09.15:620][399]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.03.13-16.09.15:626][399]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.03.13-16.09.15:633][399]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2020.03.13-16.09.15:652][400]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2020.03.13-16.09.15:682][400]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2020.03.13-16.12.06:114][380]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Med_Bay)
+[2020.03.13-16.12.07:001][433]LogEditorViewport: Clicking on Actor (LMB): SkeletalMeshActor (NecroMorphFinalRigged)
+[2020.03.13-16.14.32:936][511]LogSlate: Window 'Select Path' being destroyed
+[2020.03.13-16.14.32:997][511]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
+[2020.03.13-16.14.33:058][511]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.14.33:357][511]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 121 classes and 0 folders.
+[2020.03.13-16.14.34:717][512]LogRenderer: Reallocating scene render targets to support 852x524 Format 10 NumSamples 1 (Frame:1).
+[2020.03.13-16.14.42:851][230]LogUObjectHash: Compacting FUObjectHashTables data took   4.20ms
+[2020.03.13-16.14.43:471][230]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/FirstPersonExampleMapDFDC74734934BD0354D1F5A1240117CB.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
+[2020.03.13-16.14.43:890][230]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/FirstPersonExampleMap_BuiltDataB1D8464B462F3347612756A3FB8D0613.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2020.03.13-16.14.43:916][230]AssetCheck: New page: Asset Save: multiple assets
+[2020.03.13-16.14.43:916][230]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2020.03.13-16.14.43:916][230]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2020.03.13-16.16.28:527][356]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/BeginningVO.BeginningVO
+[2020.03.13-16.16.28:990][356]LogSlate: Took 0.006211 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.03.13-16.16.42:649][370]LogSlate: Window 'BeginningVO' being destroyed
+[2020.03.13-16.16.42:664][370]LogSlate: Window 'BeginningVO' being destroyed
+[2020.03.13-16.16.42:698][370]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.16.42:698][370]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.16.42:762][370]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.03.13-16.16.42:762][370]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.16.42:762][370]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.16.45:087][562]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Airlock_Audio_Trigger_BlueprintE36E518A4AEE7AC5698686A5A00FF806.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.uasset'
+[2020.03.13-16.16.45:118][562]AssetCheck: New page: Asset Save: Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.16.45:118][562]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.18.05:898][440]LogEditorViewport: Clicking on Actor (LMB): Airlock_Audio_Trigger_Blueprint_C (Airlock_Audio_Trigger)
+[2020.03.13-16.18.10:468][896]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.18.20:228][800]LogSlate: Window 'Airlock_Audio_Trigger_Blueprint' being destroyed
+[2020.03.13-16.18.20:282][800]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.18.20:282][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.18.20:383][800]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.18.47:653][942]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/BeginningVO.BeginningVO
+[2020.03.13-16.19.23:736][139]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/AudioBlueprints/BeginningVO" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/BeginningVO.uasset" SILENT=true
+[2020.03.13-16.19.23:769][139]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/BeginningVO9596F4374EC74F7A6BE233B5066A3E5F.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/BeginningVO.uasset'
+[2020.03.13-16.19.23:789][139]AssetCheck: New page: Asset Save: BeginningVO
+[2020.03.13-16.19.23:791][139]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/BeginningVO.BeginningVO
+[2020.03.13-16.19.37:037][975]LogAssetEditorSubsystem: Opening Asset editor for SoundCue /Game/Audio/Cues/BeginningVO.BeginningVO
+[2020.03.13-16.20.07:779][152]LogAssetEditorSubsystem: Opening Asset editor for SoundCue /Game/Audio/Cues/TutorialVO.TutorialVO
+[2020.03.13-16.20.13:556][534]LogMetaData: Removing '/Game/Audio/Cues/TutorialVO_Cue.TutorialVO_Cue:SoundCueGraph_0.SoundCueGraphNode_Root_0' ref from Metadata '/Game/Audio/Cues/TutorialVO.PackageMetaData'
+[2020.03.13-16.20.13:621][534]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/Cues/TutorialVO_Cue" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/TutorialVO_Cue.uasset" SILENT=true
+[2020.03.13-16.20.13:632][534]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/TutorialVO_Cue9910C90C44CC6FE1BD18C383D46D2186.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/TutorialVO_Cue.uasset'
+[2020.03.13-16.20.13:917][534]LogUObjectHash: Compacting FUObjectHashTables data took   5.06ms
+[2020.03.13-16.20.13:972][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2020.03.13-16.20.14:011][534]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2020.03.13-16.20.14:069][534]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/TutorialVOTriggerFA9F8773409AC64F0DDA36A2F22BC57F.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/TutorialVOTrigger.uasset'
+[2020.03.13-16.20.14:427][534]AssetCheck: New page: Asset Save: multiple assets
+[2020.03.13-16.20.14:427][534]LogContentValidation: Display: Validating SoundCue /Game/Audio/Cues/TutorialVO_Cue.TutorialVO_Cue
+[2020.03.13-16.20.14:427][534]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/TutorialVOTrigger.TutorialVOTrigger
+[2020.03.13-16.20.21:838][108]LogMetaData: Removing '/Game/Audio/Cues/Footsteps_Cue.Footsteps_Cue:SoundCueGraph_0.SoundCueGraphNode_Root_0' ref from Metadata '/Game/Audio/Cues/Footsteps.PackageMetaData'
+[2020.03.13-16.20.21:906][108]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/Cues/Footsteps_Cue" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/Footsteps_Cue.uasset" SILENT=true
+[2020.03.13-16.20.21:919][108]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Footsteps_Cue8B881F8B445812E486B49D84A0D54EB8.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/Footsteps_Cue.uasset'
+[2020.03.13-16.20.22:189][108]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2020.03.13-16.20.22:244][108]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.03.13-16.20.22:282][108]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2020.03.13-16.20.22:428][108]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/FirstPersonCharacter6B9118ED4E24207BBCEBBAA6F6293186.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Blueprints/FirstPersonCharacter.uasset'
+[2020.03.13-16.20.22:738][108]AssetCheck: New page: Asset Save: multiple assets
+[2020.03.13-16.20.22:738][108]LogContentValidation: Display: Validating SoundCue /Game/Audio/Cues/Footsteps_Cue.Footsteps_Cue
+[2020.03.13-16.20.22:738][108]LogContentValidation: Display: Validating Blueprint /Game/FirstPersonCPP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2020.03.13-16.20.31:420][779]LogMetaData: Removing '/Game/Audio/Cues/BeginningVO_Cue.BeginningVO_Cue:SoundCueGraph_0.SoundCueGraphNode_Root_0' ref from Metadata '/Game/Audio/Cues/BeginningVO.PackageMetaData'
+[2020.03.13-16.20.31:469][779]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/Cues/BeginningVO_Cue" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/BeginningVO_Cue.uasset" SILENT=true
+[2020.03.13-16.20.31:481][779]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/BeginningVO_Cue7A68F3EB46D9ADAD3D85C292E9872F34.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/BeginningVO_Cue.uasset'
+[2020.03.13-16.20.31:741][779]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
+[2020.03.13-16.20.31:797][779]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
+[2020.03.13-16.20.31:837][779]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2020.03.13-16.20.31:866][779]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/AudioBlueprints/BeginningVO" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/BeginningVO.uasset" SILENT=true
+[2020.03.13-16.20.31:888][779]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/BeginningVO5925EEA84B0895428879459AE5DCD1A7.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/BeginningVO.uasset'
+[2020.03.13-16.20.32:195][779]AssetCheck: New page: Asset Save: multiple assets
+[2020.03.13-16.20.32:195][779]LogContentValidation: Display: Validating SoundCue /Game/Audio/Cues/BeginningVO_Cue.BeginningVO_Cue
+[2020.03.13-16.20.32:195][779]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/BeginningVO.BeginningVO
+[2020.03.13-16.20.39:319][294]LogMetaData: Removing '/Game/Audio/Cues/AIPowerLevels_Cue.AIPowerLevels_Cue:SoundCueGraph_0.SoundCueGraphNode_Root_0' ref from Metadata '/Game/Audio/Cues/AIPowerLevels.PackageMetaData'
+[2020.03.13-16.20.39:383][294]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/Cues/AIPowerLevels_Cue" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/AIPowerLevels_Cue.uasset" SILENT=true
+[2020.03.13-16.20.39:394][294]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/AIPowerLevels_Cue983C574D442E0C711C88D2A1575DD507.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/AIPowerLevels_Cue.uasset'
+[2020.03.13-16.20.39:673][294]LogUObjectHash: Compacting FUObjectHashTables data took   3.61ms
+[2020.03.13-16.20.39:730][294]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2020.03.13-16.20.39:769][294]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2020.03.13-16.20.39:828][294]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/AIPowerLevelsVOTriggerBox_Bluepr748F659145AED28E2B1C499A9EA13855.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/AIPowerLevelsVOTriggerBox_Blueprint.uasset'
+[2020.03.13-16.20.40:143][294]AssetCheck: New page: Asset Save: multiple assets
+[2020.03.13-16.20.40:143][294]LogContentValidation: Display: Validating SoundCue /Game/Audio/Cues/AIPowerLevels_Cue.AIPowerLevels_Cue
+[2020.03.13-16.20.40:143][294]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/AIPowerLevelsVOTriggerBox_Blueprint.AIPowerLevelsVOTriggerBox_Blueprint
+[2020.03.13-16.20.42:962][484]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Audio/Cues/Airlock_Cue" FILE="../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/Airlock_Cue.uasset" SILENT=true
+[2020.03.13-16.20.42:972][484]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Airlock_Cue653A6BBC4C4F1A3848EFF386AC6096DE.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/Cues/Airlock_Cue.uasset'
+[2020.03.13-16.20.42:995][484]AssetCheck: New page: Asset Save: Airlock_Cue
+[2020.03.13-16.20.42:995][484]LogContentValidation: Display: Validating SoundCue /Game/Audio/Cues/Airlock_Cue.Airlock_Cue
+[2020.03.13-16.21.03:089][712]LogAssetEditorSubsystem: Opening Asset editor for SoundCue /Game/Audio/Cues/Airlock_Cue.Airlock_Cue
+[2020.03.13-16.22.24:240][ 21]LogUObjectHash: Compacting FUObjectHashTables data took   3.80ms
+[2020.03.13-16.22.24:938][ 21]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/FirstPersonExampleMap_Auto17035FFD74E6EF9F81045EB82FF9668D5.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/FirstPersonExampleMap_Auto1.umap'
+[2020.03.13-16.22.25:007][ 21]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/HubRoom_Map_Auto16F700ED44BD840B46A07DA99FA21340D.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/HubRoom_Map_Auto1.umap'
+[2020.03.13-16.22.25:041][ 21]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/SuitRoom_Map_Auto10CFDFC8045556CA6609F4C8277439927.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/SuitRoom_Map_Auto1.umap'
+[2020.03.13-16.22.25:105][ 21]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Level2_Map_Auto15601DB234E5E1EAA49A368AD51D3EA42.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Autosaves/Game/FirstPersonCPP/Maps/Level2_Map_Auto1.umap'
+[2020.03.13-16.22.25:107][ 21]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap' took 0.915
+[2020.03.13-16.22.25:107][ 21]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.915
+[2020.03.13-16.22.25:107][ 21]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint] ([1] browsable assets)...
+[2020.03.13-16.22.25:108][ 21]OBJ SavePackage: Finished generating thumbnails for package [/Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint]
+[2020.03.13-16.22.25:137][ 21]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Airlock_Audio_Trigger_Blueprint_309D28FD43576C762E76038A622FF362.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Autosaves/Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint_Auto1.uasset'
+[2020.03.13-16.22.25:139][ 21]LogFileHelpers: Auto-saving content packages took 0.032
+[2020.03.13-16.26.52:552][131]LogEditorViewport: Clicking on Actor (LMB): TimerDoor (TimerDoor1)
+[2020.03.13-16.27.49:972][943]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/Airlock_Audio_Trigger_Blueprint761EC0504D911DAC75E2209EF50806AE.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.uasset'
+[2020.03.13-16.27.50:007][943]AssetCheck: New page: Asset Save: Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.27.50:008][943]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/Airlock_Audio_Trigger_Blueprint.Airlock_Audio_Trigger_Blueprint
+[2020.03.13-16.27.53:064][203]LogSlate: Window 'Airlock_Cue' being destroyed
+[2020.03.13-16.27.53:076][203]LogSlate: Window 'Airlock_Cue' being destroyed
+[2020.03.13-16.27.53:102][203]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.27.53:102][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.27.53:177][203]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2020.03.13-16.27.53:177][203]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2020.03.13-16.27.53:177][203]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.03.13-16.27.56:515][512]LogEditorViewport: Clicking on Actor (LMB): Airlock_Audio_Trigger_Blueprint_C (Airlock_Audio_Trigger)
+[2020.03.13-16.27.57:955][652]Cmd: DELETE
+[2020.03.13-16.27.57:955][652]Cmd: ACTOR DELETE
+[2020.03.13-16.27.57:978][652]LogEditorActor: Deleted Actor: Airlock_Audio_Trigger_Blueprint_C
+[2020.03.13-16.27.58:022][652]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.03.13-16.27.58:027][652]LogEditorActor: Deleted 1 Actors (0.070 secs)
+[2020.03.13-16.27.58:930][741]LogEditorViewport: Clicking on Actor (LMB): BeginningVO_C (BeginningVO)
+[2020.03.13-16.27.59:600][803]Cmd: DELETE
+[2020.03.13-16.27.59:600][803]Cmd: ACTOR DELETE
+[2020.03.13-16.27.59:619][803]LogEditorActor: Deleted Actor: BeginningVO_C
+[2020.03.13-16.27.59:656][803]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2020.03.13-16.27.59:658][803]LogEditorActor: Deleted 1 Actors (0.057 secs)
