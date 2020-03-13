@@ -3,20 +3,21 @@
 #include "PuzzleBlock.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
+#include "engine/StaticMesh.h"
 #include "Components/AudioComponent.h"
 #include "Components/MeshComponent.h"
 #include "ConstructorHelpers.h"
 #include "Test2Character.h"
 
 // Sets default values
-APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
+APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 {
 	_isTipping = false;
 	_canBePushed = true;
 
-	RotatingAxis = GetActorRightVector();
-	DestLocation = GetActorLocation();
-	DestRotation = GetActorQuat();
+	_rotatingAxis = GetActorRightVector();
+	_destLocation = GetActorLocation();
+	_destRotation = GetActorQuat();
 
 	//curTipType = TipType::Invalid;
 
@@ -26,7 +27,7 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	MyComp->SetupAttachment(RootComponent);
 	MyComp->SetRelativeLocation(*new FVector(0, 0, 31.f));
-	MyComp->SetBoxExtent(BoxExtents);
+	MyComp->SetBoxExtent(_boxExtents);
 	//MyComp->SetRelativeScale3D(*new FVector(.45f, .45f, .9f));
 
 
@@ -67,10 +68,8 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 		if (BatteryMaterialAsset.Succeeded()) {
 			pBlockMesh->SetMaterial(0, BatteryMaterialAsset.Object);
 		}
-		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(BoxExtents.Z / 2) * 2));
+		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(_boxExtents.Z / 2) * 2));
 	}
-
-
 	
 }
 
@@ -78,7 +77,30 @@ APuzzleBlock::APuzzleBlock() : BoxExtents(*new FVector(16,16,31))
 void APuzzleBlock::BeginPlay()
 {
 	Super::BeginPlay();
+}
+
+void APuzzleBlock::PostInitializeComponents() {
+	Super::PostInitializeComponents();
 	
+	/*for (int i = 0; i < pBlockMesh->GetNumChildrenComponents(); i++) {
+		UStaticMeshComponent* temp = Cast<UStaticMeshComponent>(pBlockMesh->GetChildComponent(i));
+		if (temp) {
+			_hologramComponents.Add(temp);
+		}
+	}*/
+
+	if (_hologramMeshes.Num() > 0) {
+		for (auto mesh : _hologramMeshes) {
+			UStaticMeshComponent* Component = NewObject<UStaticMeshComponent>(pBlockMesh, mesh->GetFName());
+			Component->RegisterComponent();
+			Component->InitializeComponent();
+			Component->AttachToComponent(pBlockMesh, FAttachmentTransformRules::SnapToTargetIncludingScale);
+			Component->SetStaticMesh(mesh);
+			//Component->SetRelativeLocation(*new FVector(-32, 0, 30));
+			_hologramComponents.Add(Component);
+		}
+	}
+
 }
 
 // Called every frame
@@ -109,6 +131,7 @@ void APuzzleBlock::OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, 
 void APuzzleBlock::TellGridBlockTipped() {
 	if (GridTippedCallBack != nullptr) {
 		//playing the tipping sound here gave it a delay that felt wrong, so the puzzle grid tells the block to play the sound through this class' properties
+		DisableAllHolograms();
 		GridTippedCallBack();
 	}
 }
@@ -132,18 +155,18 @@ void APuzzleBlock::PushBlockOver() {
 	bool needsTranslation = false;
 	bool needsRotation = false;
 	FVector CurrentLocation = GetActorLocation();
-	FVector Distance = DestLocation - CurrentLocation;
+	FVector Distance = _destLocation - CurrentLocation;
 	needsTranslation = (!FMath::IsNearlyZero(Distance.Size(), .01f)) ;
 
 	FQuat CurrentRot;
 	CurrentRot = GetActorQuat();
 
-	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(DestRotation), .005f));
+	needsRotation = !(FMath::IsNearlyZero(CurrentRot.AngularDistance(_destRotation), .005f));
 
 
 	if (!needsTranslation && !needsRotation) {
 		_isTipping = false;
-		if (!needsRotation) SetActorRotation(DestRotation);
+		if (!needsRotation) SetActorRotation(_destRotation);
 		if (GridTippedCallBack != nullptr) {
 			_canBePushed = true;
 			TellGridBlockTipped();
@@ -152,11 +175,11 @@ void APuzzleBlock::PushBlockOver() {
 	else {
 		if (needsTranslation)
 		{
-			FVector IntermediateVector = FMath::Lerp(CurrentLocation, DestLocation, Alpha);
+			FVector IntermediateVector = FMath::Lerp(CurrentLocation, _destLocation, Alpha);
 			SetActorLocation(IntermediateVector);
 		}
 		if (needsRotation) {
-			SetActorRotation(FQuat::Slerp(CurrentRot, DestRotation, Alpha), ETeleportType::ResetPhysics);
+			SetActorRotation(FQuat::Slerp(CurrentRot, _destRotation, Alpha), ETeleportType::ResetPhysics);
 		}
 	}
 
@@ -185,11 +208,31 @@ void APuzzleBlock::OnInteract_Implementation(AActor* Caller) {
 }
 
 void APuzzleBlock::SetDestLocation(FVector destLocation) {
-	DestLocation = destLocation;
+	_destLocation = destLocation;
 	_isTipping = true;
 }
 
 void APuzzleBlock::SetDestRotation(FQuat destRotation) {
-	DestRotation = destRotation;
+	_destRotation = destRotation;
 	_isTipping = true;
+}
+
+void APuzzleBlock::EnableHologram(FVector PushSide) {
+	if (_hologramComponents.Num() > 0) {
+		FVector Axis[] = { GetActorUpVector().GetSafeNormal(), -GetActorUpVector().GetSafeNormal(), GetActorForwardVector().GetSafeNormal(),
+		-GetActorForwardVector().GetSafeNormal() ,  GetActorRightVector().GetSafeNormal() , -GetActorRightVector().GetSafeNormal() };
+
+		for (int i = 0; i < 6; i++) {
+			if (Axis[i].Equals(PushSide, .05)) {
+				_hologramComponents[i]->SetVisibility(true);
+				break;
+			}
+		}
+	}
+}
+
+void APuzzleBlock::DisableAllHolograms() {
+	for (auto Component : _hologramComponents) {
+		Component->SetVisibility(false);
+	}
 }
