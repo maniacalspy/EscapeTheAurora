@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "InteractableActor.h"
+#include "Components/AudioComponent.h"
 #include "IA_SuitPod.generated.h"
 
 /**
@@ -28,6 +29,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Suit Pod Mesh")
 		TArray<class UMaterial*> MeshMaterials;
+
+	UPROPERTY(EditAnywhere, Category = Audio)
+		class UAudioComponent* Suitoff;
 	
 	virtual bool StartFocus_Implementation(AActor* Caller) override;
 	virtual void OnInteract_Implementation(AActor* Caller) override;

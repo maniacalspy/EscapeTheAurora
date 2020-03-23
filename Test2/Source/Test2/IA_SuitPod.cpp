@@ -15,6 +15,8 @@ AIA_SuitPod::AIA_SuitPod() {
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Component"));
 
+	Suitoff = CreateDefaultSubobject<UAudioComponent>(TEXT("Suit_Hangup"));
+
 	MeshComponent->SetupAttachment(RootComponent);
 }
 
@@ -37,7 +39,10 @@ void AIA_SuitPod::OnInteract_Implementation(AActor* Caller) {
 			if (MeshMaterials[i]) ActorMeshComponent->SetMaterial(i, MeshMaterials[i]);
 		}
 
-		Destroy();
+		if (Suitoff != nullptr) {
+			Destroy();
+			Suitoff->Play();
+		}
 	}
 }
 
