@@ -2,8 +2,8 @@
 
 
 #include "IA_SuitPod.h"
-#include "components/StaticMeshComponent.h"
-#include "engine/StaticMesh.h"
+#include "Components/StaticMeshComponent.h"
+#include "Engine/StaticMesh.h"
 #include "Engine/StaticMeshActor.h"
 #include "Engine/Engine.h"
 #include "Test2Character.h"
