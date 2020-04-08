@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"H:\\Unreal\\Aurora\\Nudge\\Test2\\Source\\Test2\\Test2.Build.cs",
+		"H:\\Unreal\\Aurora\\Nudge\\Test2\\Source\\Test2.Target.cs",
+		"H:\\Unreal\\Aurora\\Nudge\\Test2\\Source\\Test2Editor.Target.cs"
+	],
+	"EngineVersion": "4.24.3"
+}
