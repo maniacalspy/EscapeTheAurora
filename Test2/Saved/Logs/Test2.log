@@ -1915,3 +1915,187 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2020.04.08-21.47.11:586][598]AssetCheck: New page: Asset Save: multiple assets
 [2020.04.08-21.47.11:587][598]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/SuitRoom_Map.SuitRoom_Map
 [2020.04.08-21.47.11:587][598]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/SuitRoom_Map_BuiltData.SuitRoom_Map_BuiltData
+[2020.04.08-21.50.40:570][853]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.08-21.50.40:608][853]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.50.40:608][853]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.08-21.50.40:608][853]PIE: New page: PIE session: FirstPersonExampleMap (Apr 8, 2020, 11:50:40 AM)
+[2020.04.08-21.50.40:608][853]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.50.40:642][853]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033877s)
+[2020.04.08-21.50.40:644][853]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.08-21.50.40:644][853]LogPlayLevel: PIE: World Init took: (0.001908s)
+[2020.04.08-21.50.40:644][853]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.036195s)
+[2020.04.08-21.50.40:700][853]LogUObjectHash: Compacting FUObjectHashTables data took   4.39ms
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.08-21.50.40:707][853]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.08-21.50.40:707][853]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.08-21.50.40:708][853]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.08-21.50.40:708][853]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Is Default: Yes
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: Channel Order:
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.08-21.50.40:787][853]LogAudioMixer: Display: 1: FrontRight
+[2020.04.08-21.50.40:810][853]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.08-21.50.40:812][853]LogInit: FAudioDevice initialized.
+[2020.04.08-21.50.40:821][853]LogLoad: Game class is 'GameModeBase'
+[2020.04.08-21.50.40:882][853]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.08-16.50.40
+[2020.04.08-21.50.40:883][853]LogWorld: Bringing up level for play took: 0.012834
+[2020.04.08-21.50.40:884][853]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2020.04.08-21.50.40:889][853]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0.837
+[2020.04.08-21.50.40:889][853]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.51.12:136][ 82]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.51.12:148][ 82]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.04.08-21.51.12:168][ 82]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.04.08-21.51.12:169][ 82]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.51.12:169][ 82]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.51.12:169][ 82]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.51.12:169][ 82]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.51.12:170][ 82]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.08-21.51.12:172][ 82]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.51.12:182][ 82]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.08-21.51.12:182][ 82]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.51.12:190][ 82]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.51.12:240][ 82]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.51.12:246][ 82]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.51.12:254][ 82]LogUObjectHash: Compacting FUObjectHashTables data took   3.89ms
+[2020.04.08-21.51.12:274][ 83]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2020.04.08-21.51.12:322][ 83]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2020.04.08-21.51.20:129][970]LogEditorViewport: Clicking on Actor (LMB): AIPowerLevelsVOTriggerBox_Blueprint_C (AIPowerLevelsVOTriggerBox_Blueprint)
+[2020.04.08-21.51.37:320][878]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/AIPowerLevelsVOTriggerBox_Bluepr4DE8BD234B9A7528658629923DD00964.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/Audio/AudioBlueprints/AIPowerLevelsVOTriggerBox_Blueprint.uasset'
+[2020.04.08-21.51.37:347][878]AssetCheck: New page: Asset Save: AIPowerLevelsVOTriggerBox_Blueprint
+[2020.04.08-21.51.37:347][878]LogContentValidation: Display: Validating Blueprint /Game/Audio/AudioBlueprints/AIPowerLevelsVOTriggerBox_Blueprint.AIPowerLevelsVOTriggerBox_Blueprint
+[2020.04.08-21.51.49:202][177]LogEditorViewport: Clicking on Actor (LMB): TutorialVOTrigger_C (TutorialVOTrigger)
+[2020.04.08-21.51.58:548][ 52]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Audio/AudioBlueprints/TutorialVOTrigger.TutorialVOTrigger
+[2020.04.08-21.52.11:199][331]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.08-21.52.11:225][331]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.52.11:225][331]BlueprintLog: New page: Pre-Play auto-recompile
+[2020.04.08-21.52.11:226][331]LogPlayLevel: [PlayLevel] Compiling AIPowerLevelsVOTriggerBox_Blueprint before play...
+[2020.04.08-21.52.11:835][331]LogUObjectHash: Compacting FUObjectHashTables data took   6.39ms
+[2020.04.08-21.52.11:837][331]LogPlayLevel: PlayLevel: Blueprint regeneration took 611 ms (1 blueprints)
+[2020.04.08-21.52.11:837][331]PIE: New page: PIE session: FirstPersonExampleMap (Apr 8, 2020, 11:52:11 AM)
+[2020.04.08-21.52.11:839][331]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.52.11:872][331]LogPlayLevel: PIE: StaticDuplicateObject took: (0.032632s)
+[2020.04.08-21.52.11:874][331]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.08-21.52.11:874][331]LogPlayLevel: PIE: World Init took: (0.002312s)
+[2020.04.08-21.52.11:874][331]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.035301s)
+[2020.04.08-21.52.11:931][331]LogUObjectHash: Compacting FUObjectHashTables data took   4.24ms
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.08-21.52.11:933][331]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.08-21.52.11:934][331]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.08-21.52.11:934][331]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.08-21.52.11:934][331]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.08-21.52.11:934][331]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Is Default: Yes
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: Channel Order:
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.08-21.52.12:011][331]LogAudioMixer: Display: 1: FrontRight
+[2020.04.08-21.52.12:035][331]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.08-21.52.12:036][331]LogInit: FAudioDevice initialized.
+[2020.04.08-21.52.12:049][331]LogLoad: Game class is 'GameModeBase'
+[2020.04.08-21.52.12:110][331]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.08-16.52.12
+[2020.04.08-21.52.12:112][331]LogWorld: Bringing up level for play took: 0.014709
+[2020.04.08-21.52.12:112][331]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2020.04.08-21.52.12:118][331]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 0.067
+[2020.04.08-21.52.12:136][331]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.52.36:829][788]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.52.36:849][788]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.04.08-21.52.36:868][788]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.04.08-21.52.36:868][788]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.52.36:869][788]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.52.36:869][788]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.52.36:869][788]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.52.36:870][788]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.08-21.52.36:871][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.52.36:882][788]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.08-21.52.36:883][788]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.52.36:889][788]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.52.36:939][788]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.52.36:945][788]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.52.36:954][788]LogUObjectHash: Compacting FUObjectHashTables data took   4.03ms
+[2020.04.08-21.52.36:973][789]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2020.04.08-21.52.37:024][789]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2020.04.08-21.52.50:712][286]LogEditorViewport: Clicking on Actor (LMB): AIPowerLevelsVOTriggerBox_Blueprint_C (AIPowerLevelsVOTriggerBox_Blueprint)
+[2020.04.08-21.53.39:294][462]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.08-21.53.39:344][462]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.53.39:344][462]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.08-21.53.39:344][462]PIE: New page: PIE session: FirstPersonExampleMap (Apr 8, 2020, 11:53:39 AM)
+[2020.04.08-21.53.39:344][462]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.53.39:377][462]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033492s)
+[2020.04.08-21.53.39:379][462]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.08-21.53.39:379][462]LogPlayLevel: PIE: World Init took: (0.002091s)
+[2020.04.08-21.53.39:379][462]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.035859s)
+[2020.04.08-21.53.39:436][462]LogUObjectHash: Compacting FUObjectHashTables data took   4.57ms
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.08-21.53.39:439][462]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.08-21.53.39:439][462]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.08-21.53.39:439][462]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.08-21.53.39:440][462]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Is Default: Yes
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: Channel Order:
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.08-21.53.39:520][462]LogAudioMixer: Display: 1: FrontRight
+[2020.04.08-21.53.39:544][462]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.08-21.53.39:545][462]LogInit: FAudioDevice initialized.
+[2020.04.08-21.53.39:556][462]LogLoad: Game class is 'GameModeBase'
+[2020.04.08-21.53.39:616][462]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.08-16.53.39
+[2020.04.08-21.53.39:618][462]LogWorld: Bringing up level for play took: 0.013670
+[2020.04.08-21.53.39:618][462]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2020.04.08-21.53.39:624][462]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.428
+[2020.04.08-21.53.39:638][462]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.54.23:755][483]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.54.23:768][483]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.04.08-21.54.23:788][483]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.04.08-21.54.23:788][483]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.54.23:789][483]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.54.23:789][483]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.08-21.54.23:789][483]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.54.23:790][483]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.08-21.54.23:791][483]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.54.23:804][483]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.08-21.54.23:804][483]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.08-21.54.23:813][483]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.08-21.54.23:866][483]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.08-21.54.23:872][483]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.08-21.54.23:880][483]LogUObjectHash: Compacting FUObjectHashTables data took   4.88ms
+[2020.04.08-21.54.23:903][484]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2020.04.08-21.54.23:955][484]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2020.04.08-21.54.26:197][670]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2020.04.08-21.54.26:228][670]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/SuitRoom_Map6D9BC0744A5FE877BC94A688FCDA7BD7.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/SuitRoom_Map.umap'
+[2020.04.08-21.54.26:261][670]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/SuitRoom_Map_BuiltData4F47DE504E0807DDE3E7FF8068223860.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/SuitRoom_Map_BuiltData.uasset'
+[2020.04.08-21.54.26:289][670]AssetCheck: New page: Asset Save: multiple assets
+[2020.04.08-21.54.26:289][670]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/SuitRoom_Map.SuitRoom_Map
+[2020.04.08-21.54.26:289][670]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/SuitRoom_Map_BuiltData.SuitRoom_Map_BuiltData
+[2020.04.08-21.54.32:243][247]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2020.04.08-21.54.32:268][247]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/SuitRoom_MapEC40B16A4019AEEB3E3E549983EE5538.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/SuitRoom_Map.umap'
+[2020.04.08-21.54.32:292][247]LogSavePackage: Moving '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Saved/SuitRoom_Map_BuiltData7663599340ACE74DE650259D32C43FDB.tmp' to '../../../../../../Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Content/FirstPersonCPP/Maps/SuitRoom_Map_BuiltData.uasset'
+[2020.04.08-21.54.32:324][247]AssetCheck: New page: Asset Save: multiple assets
+[2020.04.08-21.54.32:324][247]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/SuitRoom_Map.SuitRoom_Map
+[2020.04.08-21.54.32:324][247]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/SuitRoom_Map_BuiltData.SuitRoom_Map_BuiltData
