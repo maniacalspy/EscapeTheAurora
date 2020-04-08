@@ -24,14 +24,22 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void PostInitializeComponents() override;
 
 private:
 
+	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
+		TArray<UStaticMesh*> _hologramMeshes;
+	
+	UPROPERTY(EditAnywhere)
+		//the order here ends up being Top, Bottom, Front, Back, Left, Right
+		TArray<UStaticMeshComponent*> _hologramComponents;
+
 	bool _isTipping;
 	bool _canBePushed;
-	const FVector BoxExtents;
-	FVector RotatingAxis, DestLocation;
-	FQuat DestRotation;
+	const FVector _boxExtents;
+	FVector _rotatingAxis, _destLocation;
+	FQuat _destRotation;
 
 	typedef std::function<void()> VoidFunctionPtr;
 	typedef std::function<void(FVector)> InVectorFunctionPtr;
@@ -39,7 +47,7 @@ private:
 	VoidFunctionPtr GridTippedCallBack;
 	InVectorFunctionPtr GridMoveBlockCallBack;
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
+	UPROPERTY(EditAnywhere, Category = Mesh)
 		class UStaticMeshComponent* pBlockMesh;
 
 
@@ -48,9 +56,13 @@ private:
 	void SetDestLocation(FVector destLocation);
 	void SetDestRotation(FQuat destRotation);
 
-	
+	void PushBlockOver();
 
 	void SetAllCallBacks(VoidFunctionPtr ptippedCB, InVectorFunctionPtr pMoveCB);
+
+	void EnableHologram(FVector PushSide);
+
+	void DisableAllHolograms();
 
 public:
 
@@ -66,9 +78,9 @@ public:
 	UFUNCTION()
 	void OnBlockHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
-	void PushBlockOver();
 
-	UPROPERTY(VisibleAnywhere)
+
+	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
 		class UBoxComponent* MyComp;
 
 	UPROPERTY(EditAnywhere, Category = Audio)
