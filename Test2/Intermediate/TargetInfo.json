@@ -1,0 +1,22 @@
+{
+	"Targets": [
+		{
+			"Name": "Test2",
+<<<<<<< HEAD
+			"Path": "C:\\Users\\aiden.bonnick\\Desktop\\Aurora\\Nudge\\Test2\\Source\\Test2.Target.cs",
+=======
+			"Path": "C:\\Users\\Nolan\\Documents\\GitHub\\Nudge\\Test2\\Source\\Test2.Target.cs",
+>>>>>>> master
+			"Type": "Game"
+		},
+		{
+			"Name": "Test2Editor",
+<<<<<<< HEAD
+			"Path": "C:\\Users\\aiden.bonnick\\Desktop\\Aurora\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
+=======
+			"Path": "C:\\Users\\Nolan\\Documents\\GitHub\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
+>>>>>>> master
+			"Type": "Editor"
+		}
+	]
+}
