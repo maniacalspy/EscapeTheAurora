@@ -29,10 +29,6 @@
 			"Type": "Executable"
 		},
 		{
-			"Path": "$(EngineDir)/Plugins/Experimental/RawInput/Binaries/Win64/UE4Editor-RawInput.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -1949,15 +1945,15 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-InputDevice.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-TreeMap.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-QuadricMeshReduction.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-InputDevice.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2026,10 +2022,6 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor.version",
-			"Type": "RequiredResource"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/RawInput/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -2352,10 +2344,6 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/Test2.uproject",
-			"Type": "UFS"
-		},
-		{
-			"Path": "$(EngineDir)/Plugins/Experimental/RawInput/RawInput.uplugin",
 			"Type": "UFS"
 		},
 		{
