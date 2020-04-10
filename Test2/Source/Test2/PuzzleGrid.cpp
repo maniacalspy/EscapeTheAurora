@@ -10,8 +10,6 @@
 // Sets default values
 APuzzleGrid::APuzzleGrid()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	//PrimaryActorTick.bCanEverTick = true;
 	
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene component"));
 
@@ -42,7 +40,6 @@ void APuzzleGrid::PostInitializeComponents() {
 
 		_pPuzzleActor = (APuzzleBlock*)GetWorld()->SpawnActor<APuzzleBlock>(APuzzleBlock::StaticClass(), GetActorLocation(), GetActorRotation(), SpawnParams);
 
-		//_pPuzzleActor->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
 	}
 
 	_pPuzzleActor->SetActorScale3D(*new FVector(_XScale, _YScale, _XScale));
@@ -318,7 +315,6 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		FVector DestLocation = FVector::OneVector;
 		FQuat DestRotation = FQuat::Identity;
 
-		//APuzzleBlock::TipType tiptype;
 
 		//assume we rotate along the right axis (tip forward/backwards), and assume we move north
 		FVector RotatingAxis = FindRotateAxis(impactNormal);
@@ -451,7 +447,6 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 		//if the block is attempting to be pushed out of the puzzle grid area
 		if (!FirstOtherTile || !SecondOtherTile)
 		{
-			/*tiptype = APuzzleBlock::TipType::Invalid;*/
 			float AngleDegrees =  GetActorRotation().Yaw;
 
 			float AngleRadians = (AngleDegrees * M_PI / 180.0);
