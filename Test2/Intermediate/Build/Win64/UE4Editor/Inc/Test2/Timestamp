@@ -4,13 +4,9 @@ C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelDoor.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelTriggers.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\FitToGrid.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\HUDWidgetBase.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\IA_MedBayMonster.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\IA_SuitPod.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Interactable.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableActor.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableConsole.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableDoor.h
-C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PoweredDoor.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleBlock.h
@@ -24,3 +20,7 @@ C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Test2HUD.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Projectile.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\TimerDoor.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\TriggeredMonster.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableDoor.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\IA_SuitPod.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\IA_MedBayMonster.h
