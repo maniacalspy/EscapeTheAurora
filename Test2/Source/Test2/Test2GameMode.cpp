@@ -15,3 +15,21 @@ ATest2GameMode::ATest2GameMode()
 	// use our custom HUD class
 	HUDClass = ATest2HUD::StaticClass();
 }
+
+void ATest2GameMode::EnableMap() {
+	//GEngine->AddOnScreenDebugMessage(2, 1.f, FColor::Green, TEXT("Map Downloaded!"));
+
+	UPauseHudWidget* PauseMenu = nullptr;
+
+	ATest2Character* Player = Cast<ATest2Character>(GetWorld()->GetFirstPlayerController()->GetPawn());
+
+	if (Player) {
+		PauseMenu = Player->GetPauseMenuInstance();
+	}
+
+	else {
+	}
+
+	if (PauseMenu) PauseMenu->EnableMap();
+
+}
