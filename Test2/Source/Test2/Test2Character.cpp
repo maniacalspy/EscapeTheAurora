@@ -102,46 +102,6 @@ void ATest2Character::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-
-	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
-
-	if (mycontroller) 
-	{
-			if (StartHud) 
-			{
-					StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
-					StartHudInstance->Setup();
-					StartHudInstance->OpenMenu();
-					mycontroller->SetPause(true);
-			}
-
-			else 
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
-			} 
-			
-
-			if (ControlsHUD) {
-				auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
-				ControlsHUDInstance->AddToViewport();
-			}
-
-			if (PauseHudClass) {
-				PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
-				PauseHudInstance->Setup();
-			}
-
-			if (GameHud) {
-				GameHudInstance = CreateWidget<UETAHUD>(mycontroller, GameHud);
-				GameHudInstance->Setup();
-				GameHudInstance->AddToViewport();
-			}
-	}
-		
-	
-	
-	
-
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 
@@ -156,6 +116,46 @@ void ATest2Character::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (mycontroller)
+	{
+		if (StartHud)
+		{
+			StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
+			StartHudInstance->Setup();
+			StartHudInstance->OpenMenu();
+			mycontroller->SetPause(true);
+		}
+
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
+		}
+
+
+		if (ControlsHUD) {
+			auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
+			ControlsHUDInstance->AddToViewport();
+		}
+
+		if (PauseHudClass) {
+			PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
+			PauseHudInstance->Setup();
+		}
+
+		if (GameHud) {
+			GameHudInstance = CreateWidget<UETAHUD>(mycontroller, GameHud);
+			GameHudInstance->Setup();
+			GameHudInstance->AddToViewport();
+		}
+	}
+
+
+
+
+
 }
 
 //////////////////////////////////////////////////////////////////////////
