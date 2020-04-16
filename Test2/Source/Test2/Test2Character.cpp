@@ -2,6 +2,7 @@
 
 #include "Test2Character.h"
 #include "Test2Projectile.h"
+#include "ETAHUD.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -34,13 +35,18 @@ ATest2Character::ATest2Character()
 	BaseMoveSpeed = 30.f;
 
 
-	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPerson/UItesting/UI"));
 
 	PauseHudClass = MenuClassFinder.Class;
 
 	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
 
 	StartHud = StartMenuFinder.Class;
+
+	ConstructorHelpers::FClassFinder<UETAHUD> GameHUDClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD"));
+
+	GameHud = GameHUDClassFinder.Class;
+
 
 	ConstructorHelpers::FClassFinder<UHUDWidgetBase> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
 
@@ -123,6 +129,12 @@ void ATest2Character::BeginPlay()
 			if (PauseHudClass) {
 				PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
 				PauseHudInstance->Setup();
+			}
+
+			if (GameHud) {
+				GameHudInstance = CreateWidget<UETAHUD>(mycontroller, GameHud);
+				GameHudInstance->Setup();
+				GameHudInstance->AddToViewport();
 			}
 	}
 		
@@ -209,10 +221,10 @@ void ATest2Character::TogglePause() {
 				if (!PauseHudInstance) {
 						PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
 						PauseHudInstance->Setup();
-						PauseHudInstance->OpenMenu();
+						PauseHudInstance->OpenPauseMenu();
 				}
 				else if (!(PauseHudInstance->IsInViewport())) {
-					PauseHudInstance->OpenMenu();
+					PauseHudInstance->OpenPauseMenu();
 				}
 			}
 		}

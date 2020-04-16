@@ -1,0 +1,1419 @@
+﻿Log file open, 04/10/20 21:36:47
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: Test2
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 83 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.123394
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin RawInput
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+Launching UnrealBuildTool... [D:/Program Files (x86)/Unreal/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe -Mode=QueryTargets -Project="H:/Unreal/Aurora/Nudge/Test2/Test2.uproject" -Output="H:/Unreal/Aurora/Nudge/Test2/Intermediate/TargetInfo.json"]
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.24-CL-11590370
+LogInit: Engine Version: 4.24.3-11590370+++UE4+Release-4.24
+LogInit: Compatible Engine Version: 4.24.0-10570792+++UE4+Release-4.24
+LogInit: Net CL: 10570792
+LogInit: OS: Windows 10 (Release 1909) (), CPU: AMD Ryzen Threadripper 2990WX 32-Core Processor, GPU: NVIDIA TITAN RTX
+LogInit: Compiled (64-bit): Feb 24 2020 15:39:18
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.24
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Program Files (x86)/Unreal/UE_4.24/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 25
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 3
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 37
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 36
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 2
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 36
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 11
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 2
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 8
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 8
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:432][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.04.11-02.36.48:432][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.04.11-02.36.48:433][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:433][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:436][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.11-02.36.48:436][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.11-02.36.48:437][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.11-02.36.48:438][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.11-02.36.48:438][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.11-02.36.48:438][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.11-02.36.48:441][  0]LogHAL: Display: Platform has ~ 64 GB [68603445248 / 68719476736 / 64], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.04.11-02.36.48:441][  0]LogInit: Going up to parent DeviceProfile []
+[2020.04.11-02.36.48:441][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:441][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.11-02.36.48:441][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.11-02.36.48:441][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:441][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.11-02.36.48:441][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:441][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.11-02.36.48:441][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.11-02.36.48:442][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.04.11-02.36.48:443][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [H:/Unreal/Aurora/Nudge/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.11-02.36.48:443][  0]LogInit: Computer: AIDENB-PC
+[2020.04.11-02.36.48:443][  0]LogInit: User: AidenB
+[2020.04.11-02.36.48:443][  0]LogInit: CPU Page size=4096, Cores=32
+[2020.04.11-02.36.48:443][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.11-02.36.48:444][  0]LogMemory: Memory total: Physical=63.9GB (64GB approx)
+[2020.04.11-02.36.48:444][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.11-02.36.48:444][  0]LogMemory: Process Physical Memory: 109.04 MB used, 109.04 MB peak
+[2020.04.11-02.36.48:444][  0]LogMemory: Process Virtual Memory: 106.72 MB used, 106.72 MB peak
+[2020.04.11-02.36.48:444][  0]LogMemory: Physical Memory: 11437.64 MB used,  53987.70 MB free, 65425.34 MB total
+[2020.04.11-02.36.48:444][  0]LogMemory: Virtual Memory: 5280.85 MB used,  134212448.00 MB free, 134217728.00 MB total
+[2020.04.11-02.36.48:449][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.04.11-02.36.48:499][  0]LogInit: Using OS detected language (en-US).
+[2020.04.11-02.36.48:499][  0]LogInit: Using OS detected locale (en-US).
+[2020.04.11-02.36.48:500][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.04.11-02.36.48:674][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.11-02.36.48:740][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.11-02.36.48:740][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.11-02.36.49:008][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2020.04.11-02.36.49:008][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.04.11-02.36.49:008][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.04.11-02.36.49:008][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.11-02.36.49:124][  0]LogD3D11RHI:    0. 'NVIDIA TITAN RTX' (Feature Level 11_0)
+[2020.04.11-02.36.49:124][  0]LogD3D11RHI:       24276/0/32712 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.04.11-02.36.49:128][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.11-02.36.49:128][  0]LogD3D11RHI:       0/0/32712 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.11-02.36.49:128][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.04.11-02.36.49:145][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.11-02.36.49:145][  0]LogD3D11RHI:     GPU DeviceId: 0x1e02 (for the marketing name, search the web for "GPU Device Id")
+[2020.04.11-02.36.49:145][  0]LogWindows: EnumDisplayDevices:
+[2020.04.11-02.36.49:145][  0]LogWindows:    0. 'NVIDIA TITAN RTX' (P:1 D:1)
+[2020.04.11-02.36.49:146][  0]LogWindows:    1. 'NVIDIA TITAN RTX' (P:0 D:0)
+[2020.04.11-02.36.49:146][  0]LogWindows:    2. 'NVIDIA TITAN RTX' (P:0 D:0)
+[2020.04.11-02.36.49:147][  0]LogWindows:    3. 'NVIDIA TITAN RTX' (P:0 D:0)
+[2020.04.11-02.36.49:147][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.04.11-02.36.49:147][  0]LogD3D11RHI:     Adapter Name: NVIDIA TITAN RTX
+[2020.04.11-02.36.49:147][  0]LogD3D11RHI:   Driver Version: 442.19 (internal:26.21.14.4219, unified:442.19)
+[2020.04.11-02.36.49:147][  0]LogD3D11RHI:      Driver Date: 1-29-2020
+[2020.04.11-02.36.49:147][  0]LogRHI: Texture pool is 16993 MB (70% of 24276 MB)
+[2020.04.11-02.36.49:215][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.04.11-02.36.49:215][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.11-02.36.49:237][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.04.11-02.36.49:593][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.04.11-02.36.49:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.04.11-02.36.49:660][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.04.11-02.36.49:660][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.04.11-02.36.49:670][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.04.11-02.36.49:681][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.04.11-02.36.49:692][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.04.11-02.36.49:702][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.04.11-02.36.49:713][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.04.11-02.36.49:724][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.04.11-02.36.49:759][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.04.11-02.36.49:759][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.04.11-02.36.49:780][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.04.11-02.36.49:780][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.04.11-02.36.49:794][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.04.11-02.36.49:806][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.04.11-02.36.49:818][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.04.11-02.36.49:830][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.04.11-02.36.49:830][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.11-02.36.49:842][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.04.11-02.36.49:919][  0]LogShaderCompilers: Guid format shader working directory is 18 characters bigger than the processId version (H:/Unreal/Aurora/Nudge/Test2/Intermediate/Shaders/WorkingDirectory/24268/).
+[2020.04.11-02.36.49:919][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/AidenB/AppData/Local/Temp/UnrealShaderWorkingDir/2BC792104AB101B4DFB4B6AEE0BD446D/'.
+[2020.04.11-02.36.49:920][  0]LogXGEController: Cleaning working directory: C:/Users/AidenB/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.04.11-02.36.49:920][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.11-02.36.49:920][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.11-02.36.49:920][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.11-02.36.50:782][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.11-02.36.50:841][  0]LogDerivedDataCache: Loaded boot cache 0.06s 88MB C:/Users/AidenB/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.11-02.36.50:841][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/AidenB/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.04.11-02.36.50:842][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file H:/Unreal/Aurora/Nudge/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.11-02.36.50:842][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.11-02.36.50:842][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file H:/Unreal/Aurora/Nudge/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.11-02.36.50:842][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.11-02.36.50:854][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.11-02.36.50:854][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.11-02.36.50:854][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.04.11-02.36.50:855][  0]LogDerivedDataCache: Using Local data cache path C:/Users/AidenB/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.11-02.36.50:856][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.11-02.36.50:856][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.11-02.36.50:887][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.11-02.36.50:890][  0]LogSlate: Using FreeType 2.10.0
+[2020.04.11-02.36.50:891][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.11-02.36.50:962][  0]LogAssetRegistry: FAssetRegistry took 0.0028 seconds to start up
+[2020.04.11-02.36.51:296][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.11-02.36.51:485][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.11-02.36.51:485][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.04.11-02.36.51:485][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.04.11-02.36.51:485][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.04.11-02.36.51:485][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.04.11-02.36.51:500][  0]LogNetVersion: Test2 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 123441186)
+[2020.04.11-02.36.51:556][  0]LogInput: Warning: Action Jump uses deprecated key MotionController_Left_Trigger.
+[2020.04.11-02.36.51:556][  0]LogInput: Warning: Action Fire uses deprecated key MotionController_Right_Trigger.
+[2020.04.11-02.36.51:556][  0]LogInput: Warning: Action ResetVR uses deprecated key MotionController_Left_Grip1.
+[2020.04.11-02.36.51:556][  0]LogInput: Warning: Axis MoveForward uses deprecated key MotionController_Left_Thumbstick_Y.
+[2020.04.11-02.36.51:556][  0]LogInput: Warning: Axis MoveRight uses deprecated key MotionController_Left_Thumbstick_X.
+[2020.04.11-02.36.53:134][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.401442 seconds
+[2020.04.11-02.36.53:143][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.04.11-02.36.53:143][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.04.11-02.36.53:143][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.11-02.36.53:736][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.11-02.36.54:116][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.54:116][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.54:119][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.54:121][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.54:124][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.54:295][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.11-02.36.54:317][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.11-02.36.54:317][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.11-02.36.54:436][  0]LogOcInput: OculusInput pre-init called
+[2020.04.11-02.36.54:454][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.04.11-02.36.54:454][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.04.11-02.36.54:539][  0]LogEngine: Initializing Engine...
+[2020.04.11-02.36.54:579][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2020.04.11-02.36.54:580][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.04.11-02.36.54:944][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.04.11-02.36.54:955][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.11-02.36.54:964][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.11-02.36.54:964][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.11-02.36.54:964][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: Channel Order:
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.11-02.36.55:048][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.04.11-02.36.55:093][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.11-02.36.55:096][  0]LogInit: FAudioDevice initialized.
+[2020.04.11-02.36.55:096][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.04.11-02.36.55:296][  0]LogDerivedDataCache: Saved boot cache 0.20s 88MB C:/Users/AidenB/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.11-02.36.55:297][  0]LogInit: Texture streaming: Enabled
+[2020.04.11-02.36.55:316][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.11-02.36.55:317][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.04.11-02.36.55:319][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.04.11-02.36.56:019][  0]LogInit: Transaction tracking system initialized
+[2020.04.11-02.36.56:041][  0]BlueprintLog: New page: Editor Load
+[2020.04.11-02.36.56:107][  0]LocalizationService: Localization service is disabled
+[2020.04.11-02.36.56:489][  0]LogFileCache: Scanning file cache for directory 'H:/Unreal/Aurora/Nudge/Test2/Content/' took 0.01s
+[2020.04.11-02.36.56:489][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.11-02.36.56:489][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.11-02.36.57:364][  0]SourceControl: Source control is disabled
+[2020.04.11-02.36.57:364][  0]Cmd: MAP LOAD FILE="H:/Unreal/Aurora/Nudge/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.11-02.36.57:365][  0]LightingResults: New page: Lighting Build
+[2020.04.11-02.36.57:366][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.36.57:366][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.36.57:366][  0]MapCheck: New page: Map Check
+[2020.04.11-02.36.57:366][  0]LightingResults: New page: Lighting Build
+[2020.04.11-02.36.57:436][  0]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2020.04.11-02.36.57:663][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:663][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:664][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:664][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:879][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:879][  0]LoadErrors: Failed to load /Game/Practices/vfx/Hologram_map/lambert1.lambert1 Referenced by MR_Hologram_Map
+[2020.04.11-02.36.57:879][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:879][  0]LoadErrors: Failed to load /Game/Practices/vfx/Hologram_map/lambert1.lambert1 Referenced by MR_Hologram_Map
+[2020.04.11-02.36.57:880][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:880][  0]LoadErrors: Failed to load /Game/Practices/vfx/Hologram_map/lambert1.lambert1 Referenced by MR_Hologram_Map
+[2020.04.11-02.36.57:880][  0]LogLinker: Warning: While loading 'H:/Unreal/Aurora/Nudge/Test2/Content/FirstPerson/Environments/Hub_Room/Map_Hologram/MR_Hologram_Map.uasset' failed to load '/Game/Practices/vfx/Hologram_map/lambert1': Can't find file.
+[2020.04.11-02.36.57:880][  0]LoadErrors: Failed to load /Game/Practices/vfx/Hologram_map/lambert1.lambert1 Referenced by MR_Hologram_Map
+[2020.04.11-02.37.00:064][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.11-02.37.00:107][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/HubRoom_Map) is flushing async loading
+[2020.04.11-02.37.00:107][  0]LogStreaming: Display: Flushing async loaders.
+[2020.04.11-02.37.00:221][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/SuitRoom_Map) is flushing async loading
+[2020.04.11-02.37.00:306][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/Level2_Map) is flushing async loading
+[2020.04.11-02.37.00:621][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.11-02.37.00:703][  0]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2020.04.11-02.37.00:703][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.11-02.37.00:704][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.298ms to complete.
+[2020.04.11-02.37.00:704][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 3.340
+[2020.04.11-02.37.00:882][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.37.00:889][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.37.00:896][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.37.00:903][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.37.00:912][  0]LogCollectionManager: Loaded 0 collections in 0.002525 seconds
+[2020.04.11-02.37.00:929][  0]LogFileCache: Scanning file cache for directory 'H:/Unreal/Aurora/Nudge/Test2/Saved/Collections/' took 0.00s
+[2020.04.11-02.37.00:929][  0]LogFileCache: Scanning file cache for directory 'H:/Unreal/Aurora/Nudge/Test2/Content/Developers/AidenB/Collections/' took 0.00s
+[2020.04.11-02.37.00:929][  0]LogFileCache: Scanning file cache for directory 'H:/Unreal/Aurora/Nudge/Test2/Content/Collections/' took 0.00s
+[2020.04.11-02.37.00:929][  0]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 3041 classes and 722 folders.
+[2020.04.11-02.37.00:932][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.04.11-02.37.01:040][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.04.11-02.37.01:047][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 2 classes and 3 folders.
+[2020.04.11-02.37.01:059][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0004 seconds. Added 2 classes and 3 folders.
+[2020.04.11-02.37.01:099][  0]LogSlate: Took 0.000321 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.11-02.37.01:101][  0]LogSlate: Took 0.000190 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.11-02.37.01:106][  0]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.11-02.37.01:199][  0]LogRenderer: Reallocating scene render targets to support 1192x688 Format 10 NumSamples 1 (Frame:1).
+[2020.04.11-02.37.01:325][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2020.04.11-02.37.01:325][  0]LogLoad: (Engine Initialization) Total time: 16.62 seconds
+[2020.04.11-02.37.01:325][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.11-02.37.01:337][  0]LogRawInputWindows: Warning: Found device 17 devices
+[2020.04.11-02.37.01:337][  0]LogRawInputWindows: Warning: Found device 17 devices
+[2020.04.11-02.37.01:337][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:4 UsagePage:1)
+[2020.04.11-02.37.01:338][  0]LogRawInputWindows: Warning: Found device 17 devices
+[2020.04.11-02.37.01:338][  0]LogRawInputWindows: Warning: Device was registered succesfully but not connected (Usage:5 UsagePage:1)
+[2020.04.11-02.37.01:449][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.04.11-02.37.01:528][  0]LogSlate: Took 0.000233 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.11-02.37.01:537][  1]LogFileCache: Retrieving MD5 hashes for directory 'H:/Unreal/Aurora/Nudge/Test2/Content/' took 0.20s
+[2020.04.11-02.37.01:559][  1]LogAssetRegistry: Asset discovery search completed in 10.5976 seconds
+[2020.04.11-02.37.01:562][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000010 seconds (updated 0 objects)
+[2020.04.11-02.37.03:973][276]LogSlate: Window 'Message Log' being destroyed
+[2020.04.11-02.37.03:980][276]LogSlate: Window 'Message Log' being destroyed
+[2020.04.11-02.38.49:308][330]LogEditorViewport: Clicking on Actor (LMB): InteractableConsole (InteractableConsole1)
+[2020.04.11-02.38.51:493][581]LogEditorViewport: Clicking on Actor (LMB): InteractableConsole (InteractableConsole1)
+[2020.04.11-02.39.36:065][789]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.11-02.39.36:079][789]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.39.36:079][789]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.11-02.39.36:081][789]PIE: New page: PIE session: FirstPersonExampleMap (Apr 10, 2020, 4:39:36 PM)
+[2020.04.11-02.39.36:082][789]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.04.11-02.39.36:083][789]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.04.11-02.39.36:083][789]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.39.36:118][789]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034051s)
+[2020.04.11-02.39.36:119][789]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.11-02.39.36:119][789]LogPlayLevel: PIE: World Init took: (0.001324s)
+[2020.04.11-02.39.36:119][789]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.035739s)
+[2020.04.11-02.39.36:186][789]LogUObjectHash: Compacting FUObjectHashTables data took   1.83ms
+[2020.04.11-02.39.36:187][789]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.11-02.39.36:187][789]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.11-02.39.36:187][789]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.11-02.39.36:187][789]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.11-02.39.36:187][789]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.11-02.39.36:188][789]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.11-02.39.36:188][789]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.11-02.39.36:188][789]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.11-02.39.36:188][789]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.11-02.39.36:188][789]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Is Default: Yes
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: Channel Order:
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.11-02.39.36:263][789]LogAudioMixer: Display: 1: FrontRight
+[2020.04.11-02.39.36:287][789]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.11-02.39.36:289][789]LogInit: FAudioDevice initialized.
+[2020.04.11-02.39.36:302][789]LogLoad: Game class is 'GameModeBase'
+[2020.04.11-02.39.36:366][789]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.10-21.39.36
+[2020.04.11-02.39.36:368][789]LogWorld: Bringing up level for play took: 0.013415
+[2020.04.11-02.39.36:369][789]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.04.11-02.39.36:375][789]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.04.11-02.39.36:545][789]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.143
+[2020.04.11-02.39.36:557][789]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.39.38:577][ 18]LogRenderer: Reallocating scene render targets to support 1192x692 Format 10 NumSamples 1 (Frame:223).
+[2020.04.11-02.39.38:604][ 19]LogRenderer: Reallocating scene render targets to support 1192x696 Format 10 NumSamples 1 (Frame:224).
+[2020.04.11-02.39.38:629][ 20]LogRenderer: Reallocating scene render targets to support 1192x704 Format 10 NumSamples 1 (Frame:225).
+[2020.04.11-02.39.38:657][ 21]LogRenderer: Reallocating scene render targets to support 1192x708 Format 10 NumSamples 1 (Frame:226).
+[2020.04.11-02.39.38:681][ 22]LogRenderer: Reallocating scene render targets to support 1192x716 Format 10 NumSamples 1 (Frame:227).
+[2020.04.11-02.39.38:706][ 23]LogRenderer: Reallocating scene render targets to support 1192x724 Format 10 NumSamples 1 (Frame:228).
+[2020.04.11-02.39.38:730][ 24]LogRenderer: Reallocating scene render targets to support 1192x732 Format 10 NumSamples 1 (Frame:229).
+[2020.04.11-02.39.38:756][ 25]LogRenderer: Reallocating scene render targets to support 1192x736 Format 10 NumSamples 1 (Frame:230).
+[2020.04.11-02.39.38:780][ 26]LogRenderer: Reallocating scene render targets to support 1192x748 Format 10 NumSamples 1 (Frame:231).
+[2020.04.11-02.39.38:807][ 27]LogRenderer: Reallocating scene render targets to support 1192x752 Format 10 NumSamples 1 (Frame:232).
+[2020.04.11-02.39.38:836][ 28]LogRenderer: Reallocating scene render targets to support 1192x756 Format 10 NumSamples 1 (Frame:233).
+[2020.04.11-02.39.38:863][ 29]LogRenderer: Reallocating scene render targets to support 1192x764 Format 10 NumSamples 1 (Frame:234).
+[2020.04.11-02.39.38:893][ 30]LogRenderer: Reallocating scene render targets to support 1192x772 Format 10 NumSamples 1 (Frame:235).
+[2020.04.11-02.39.38:922][ 31]LogRenderer: Reallocating scene render targets to support 1192x776 Format 10 NumSamples 1 (Frame:236).
+[2020.04.11-02.39.38:971][ 33]LogRenderer: Reallocating scene render targets to support 1192x780 Format 10 NumSamples 1 (Frame:238).
+[2020.04.11-02.39.40:460][206]LogRenderer: Reallocating scene render targets to support 1196x780 Format 10 NumSamples 1 (Frame:384).
+[2020.04.11-02.39.40:504][208]LogRenderer: Reallocating scene render targets to support 1204x780 Format 10 NumSamples 1 (Frame:386).
+[2020.04.11-02.39.40:530][209]LogRenderer: Reallocating scene render targets to support 1208x780 Format 10 NumSamples 1 (Frame:387).
+[2020.04.11-02.39.40:580][209]LogRenderer: Reallocating scene render targets to support 1220x780 Format 10 NumSamples 1 (Frame:388).
+[2020.04.11-02.39.40:616][211]LogRenderer: Reallocating scene render targets to support 1228x780 Format 10 NumSamples 1 (Frame:389).
+[2020.04.11-02.39.40:681][214]LogRenderer: Reallocating scene render targets to support 1232x780 Format 10 NumSamples 1 (Frame:392).
+[2020.04.11-02.39.40:833][230]LogRenderer: Reallocating scene render targets to support 1236x780 Format 10 NumSamples 1 (Frame:394).
+[2020.04.11-02.39.40:883][232]LogRenderer: Reallocating scene render targets to support 1252x780 Format 10 NumSamples 1 (Frame:396).
+[2020.04.11-02.39.40:908][233]LogRenderer: Reallocating scene render targets to support 1264x780 Format 10 NumSamples 1 (Frame:397).
+[2020.04.11-02.39.40:935][234]LogRenderer: Reallocating scene render targets to support 1284x780 Format 10 NumSamples 1 (Frame:398).
+[2020.04.11-02.39.40:962][235]LogRenderer: Reallocating scene render targets to support 1292x780 Format 10 NumSamples 1 (Frame:399).
+[2020.04.11-02.39.47:558][986]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.39.47:558][986]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.39.47:558][986]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.39.47:559][986]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.39.47:559][986]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.39.47:559][986]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.39.47:560][986]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.39.47:562][986]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.39.47:579][986]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.11-02.39.47:579][986]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.39.47:583][986]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.39.47:648][986]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.39.47:652][986]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.39.47:658][986]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2020.04.11-02.39.47:670][987]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.04.11-02.39.47:735][987]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2020.04.11-02.40.08:563][446]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.40.08:563][446]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.11-02.40.08:563][446]PIE: New page: PIE session: FirstPersonExampleMap (Apr 10, 2020, 4:40:08 PM)
+[2020.04.11-02.40.08:563][446]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.40.08:593][446]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029863s)
+[2020.04.11-02.40.08:594][446]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.11-02.40.08:594][446]LogPlayLevel: PIE: World Init took: (0.001042s)
+[2020.04.11-02.40.08:594][446]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.031120s)
+[2020.04.11-02.40.08:675][446]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.11-02.40.08:676][446]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.11-02.40.08:676][446]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.11-02.40.08:677][446]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.11-02.40.08:677][446]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Is Default: Yes
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: Channel Order:
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.11-02.40.08:755][446]LogAudioMixer: Display: 1: FrontRight
+[2020.04.11-02.40.08:777][446]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.11-02.40.08:779][446]LogInit: FAudioDevice initialized.
+[2020.04.11-02.40.08:834][446]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.40.08:835][446]LogLoad: Game class is 'GameModeBase'
+[2020.04.11-02.40.08:901][446]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.10-21.40.08
+[2020.04.11-02.40.08:903][446]LogWorld: Bringing up level for play took: 0.013846
+[2020.04.11-02.40.08:903][446]LogOnline: OSS: Creating online subsystem instance for: :Context_2
+[2020.04.11-02.40.08:910][446]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.492
+[2020.04.11-02.40.08:911][446]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.40.10:841][639]LogRenderer: Reallocating scene render targets to support 1920x1016 Format 10 NumSamples 1 (Frame:194).
+[2020.04.11-02.40.28:999][809]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.40.28:999][809]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.40.28:999][809]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.40.28:999][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.40.28:999][809]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.40.29:011][809]LogSlate: Window 'Test2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2020.04.11-02.40.29:016][809]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.40.29:018][809]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.40.29:019][809]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.40.29:024][809]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.11-02.40.29:025][809]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.40.29:029][809]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.40.29:105][809]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.40.29:116][809]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2020.04.11-02.40.29:129][810]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2020.04.11-02.40.29:205][810]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2020.04.11-02.40.38:155][851]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2020.04.11-02.40.38:592][851]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.40.38:593][851]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.11-02.40.38:593][851]PIE: New page: PIE session: FirstPersonExampleMap (Apr 10, 2020, 4:40:38 PM)
+[2020.04.11-02.40.38:593][851]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.40.38:621][851]LogPlayLevel: PIE: StaticDuplicateObject took: (0.028523s)
+[2020.04.11-02.40.38:622][851]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.11-02.40.38:623][851]LogPlayLevel: PIE: World Init took: (0.001179s)
+[2020.04.11-02.40.38:623][851]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.029969s)
+[2020.04.11-02.40.38:706][851]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.11-02.40.38:707][851]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.11-02.40.38:708][851]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.11-02.40.38:708][851]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.11-02.40.38:708][851]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.11-02.40.38:708][851]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Is Default: Yes
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: Channel Order:
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.11-02.40.38:788][851]LogAudioMixer: Display: 1: FrontRight
+[2020.04.11-02.40.38:810][851]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.11-02.40.38:813][851]LogInit: FAudioDevice initialized.
+[2020.04.11-02.40.38:866][851]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.40.38:867][851]LogLoad: Game class is 'GameModeBase'
+[2020.04.11-02.40.38:932][851]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.10-21.40.38
+[2020.04.11-02.40.38:934][851]LogWorld: Bringing up level for play took: 0.013047
+[2020.04.11-02.40.38:934][851]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2020.04.11-02.40.38:941][851]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap -0.461
+[2020.04.11-02.40.38:941][851]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.41.46:645][943]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.41.46:645][943]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.41.46:645][943]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.41.46:646][943]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.41.46:646][943]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.41.46:660][943]LogSlate: Window 'Test2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2020.04.11-02.41.46:665][943]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.41.46:667][943]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.41.46:669][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.41.46:680][943]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.11-02.41.46:680][943]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.41.46:684][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.41.46:756][943]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.41.46:766][943]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.04.11-02.41.46:777][944]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2020.04.11-02.41.46:852][944]LogUObjectHash: Compacting FUObjectHashTables data took   0.97ms
+[2020.04.11-02.41.48:028][ 76]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2020.04.11-02.41.48:039][ 76]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.41.48:039][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.11-02.41.48:039][ 76]PIE: New page: PIE session: FirstPersonExampleMap (Apr 10, 2020, 4:41:48 PM)
+[2020.04.11-02.41.48:039][ 76]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.41.48:070][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.030667s)
+[2020.04.11-02.41.48:071][ 76]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.11-02.41.48:071][ 76]LogPlayLevel: PIE: World Init took: (0.001105s)
+[2020.04.11-02.41.48:071][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.032011s)
+[2020.04.11-02.41.48:155][ 76]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.11-02.41.48:156][ 76]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.11-02.41.48:156][ 76]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.11-02.41.48:157][ 76]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.11-02.41.48:157][ 76]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Is Default: Yes
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: Channel Order:
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.11-02.41.48:262][ 76]LogAudioMixer: Display: 1: FrontRight
+[2020.04.11-02.41.48:290][ 76]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.11-02.41.48:291][ 76]LogInit: FAudioDevice initialized.
+[2020.04.11-02.41.48:349][ 76]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.41.48:350][ 76]LogLoad: Game class is 'GameModeBase'
+[2020.04.11-02.41.48:414][ 76]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2020.04.10-21.41.48
+[2020.04.11-02.41.48:416][ 76]LogWorld: Bringing up level for play took: 0.014402
+[2020.04.11-02.41.48:416][ 76]LogOnline: OSS: Creating online subsystem instance for: :Context_4
+[2020.04.11-02.41.48:423][ 76]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 1.021
+[2020.04.11-02.41.48:423][ 76]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.43.38:161][303]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.43.38:175][303]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.04.11-02.43.38:195][303]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.04.11-02.43.38:195][303]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.43.38:195][303]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.43.38:196][303]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.11-02.43.38:209][303]LogSlate: Window 'Test2 Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2020.04.11-02.43.38:215][303]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.43.38:217][303]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.43.38:219][303]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.43.38:230][303]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.11-02.43.38:230][303]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.11-02.43.38:234][303]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.43.38:296][303]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.11-02.43.38:307][303]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2020.04.11-02.43.38:321][304]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2020.04.11-02.43.38:391][304]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2020.04.11-02.44.45:976][750]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Air_Lock_Room)
+[2020.04.11-02.44.56:587][950]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Hallway_Divider)
+[2020.04.11-02.44.57:696][ 66]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SciFi_Hallway_Module_Intersection)
+[2020.04.11-02.45.07:654][201]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Suit_Up_Room3)
+[2020.04.11-02.45.11:476][636]LogEditorViewport: Clicking Background
+[2020.04.11-02.45.12:024][695]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Med_Bay)
+[2020.04.11-02.45.13:962][909]LogEditorViewport: Clicking Background
+[2020.04.11-02.45.15:698][112]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Stair_Room_pPlane20)
+[2020.04.11-02.45.25:638][247]LogEditorViewport: Clicking Background
+[2020.04.11-02.45.26:310][322]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_pCylinder1)
+[2020.04.11-02.45.29:150][595]LogEditorViewport: Clicking Background
+[2020.04.11-02.45.30:029][694]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Aurora_Engine_Room_ER_Engine_Glass)
+[2020.04.11-02.45.31:330][836]LogEditorViewport: Clicking Background
+[2020.04.11-02.49.10:830][379]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.10:835][379]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.10:845][379]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.10:852][379]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.14:866][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.14:872][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.14:879][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.49.14:885][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.11-02.53.17:813][315]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.19:326][462]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.21:075][626]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.23:163][824]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.23:413][846]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.23:893][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.24:535][952]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.24:888][987]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.25:381][ 33]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.25:757][ 69]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.28:869][288]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.45:709][742]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.53.49:442][ 81]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.06:119][644]Cmd: ACTOR SELECT ALL
+[2020.04.11-02.54.15:282][ 14]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface256)
+[2020.04.11-02.54.16:901][127]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2020.04.11-02.54.22:609][626]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.23:189][678]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.23:463][702]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.48:941][120]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.54:978][649]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.55:449][692]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.55:571][701]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.56:358][777]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.57:046][842]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.57:663][899]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.54.58:348][964]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.55.08:256][911]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.55.19:486][998]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.55.41:122][171]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface115)
+[2020.04.11-02.55.48:960][909]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2020.04.11-02.55.56:078][515]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface235)
+[2020.04.11-02.56.27:482][383]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface215)
+[2020.04.11-02.56.28:001][418]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface49)
+[2020.04.11-02.56.28:423][450]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface216)
+[2020.04.11-02.56.28:801][478]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface259)
+[2020.04.11-02.56.29:206][510]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface215)
+[2020.04.11-02.56.56:753][889]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface259)
+[2020.04.11-02.56.57:343][934]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Deck_polySurface259)
+[2020.04.11-02.56.57:850][973]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Deck_polySurface259)
+[2020.04.11-02.57.28:791][738]LogSlate: Took 0.000272 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.11-02.57.28:803][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface99.Deck_polySurface99
+[2020.04.11-02.57.29:333][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_Deck_B_Wall.Deck_Deck_B_Wall
+[2020.04.11-02.57.29:567][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_pCylinder1.Deck_pCylinder1
+[2020.04.11-02.57.29:867][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface100.Deck_polySurface100
+[2020.04.11-02.57.30:134][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface101.Deck_polySurface101
+[2020.04.11-02.57.30:368][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface102.Deck_polySurface102
+[2020.04.11-02.57.30:651][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface103.Deck_polySurface103
+[2020.04.11-02.57.30:884][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface104.Deck_polySurface104
+[2020.04.11-02.57.31:167][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface105.Deck_polySurface105
+[2020.04.11-02.57.31:421][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface106.Deck_polySurface106
+[2020.04.11-02.57.31:701][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface107.Deck_polySurface107
+[2020.04.11-02.57.31:967][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface108.Deck_polySurface108
+[2020.04.11-02.57.32:234][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface109.Deck_polySurface109
+[2020.04.11-02.57.32:519][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface110.Deck_polySurface110
+[2020.04.11-02.57.32:784][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface111.Deck_polySurface111
+[2020.04.11-02.57.33:000][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface112.Deck_polySurface112
+[2020.04.11-02.57.33:251][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface113.Deck_polySurface113
+[2020.04.11-02.57.33:500][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface114.Deck_polySurface114
+[2020.04.11-02.57.33:751][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface115.Deck_polySurface115
+[2020.04.11-02.57.33:951][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface116.Deck_polySurface116
+[2020.04.11-02.57.34:151][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface149.Deck_polySurface149
+[2020.04.11-02.57.34:352][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface195.Deck_polySurface195
+[2020.04.11-02.57.34:567][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface196.Deck_polySurface196
+[2020.04.11-02.57.34:801][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface197.Deck_polySurface197
+[2020.04.11-02.57.35:051][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface198.Deck_polySurface198
+[2020.04.11-02.57.35:284][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface199.Deck_polySurface199
+[2020.04.11-02.57.35:487][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface200.Deck_polySurface200
+[2020.04.11-02.57.35:685][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface201.Deck_polySurface201
+[2020.04.11-02.57.35:884][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface202.Deck_polySurface202
+[2020.04.11-02.57.36:118][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface203.Deck_polySurface203
+[2020.04.11-02.57.36:368][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface204.Deck_polySurface204
+[2020.04.11-02.57.36:634][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface205.Deck_polySurface205
+[2020.04.11-02.57.36:834][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface206.Deck_polySurface206
+[2020.04.11-02.57.37:033][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface207.Deck_polySurface207
+[2020.04.11-02.57.37:251][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface208.Deck_polySurface208
+[2020.04.11-02.57.37:501][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface209.Deck_polySurface209
+[2020.04.11-02.57.37:835][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface210.Deck_polySurface210
+[2020.04.11-02.57.38:051][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface211.Deck_polySurface211
+[2020.04.11-02.57.38:301][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface212.Deck_polySurface212
+[2020.04.11-02.57.38:568][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface213.Deck_polySurface213
+[2020.04.11-02.57.38:835][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface214.Deck_polySurface214
+[2020.04.11-02.57.39:102][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface215.Deck_polySurface215
+[2020.04.11-02.57.39:369][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface216.Deck_polySurface216
+[2020.04.11-02.57.39:668][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface217.Deck_polySurface217
+[2020.04.11-02.57.39:934][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface218.Deck_polySurface218
+[2020.04.11-02.57.40:135][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface219.Deck_polySurface219
+[2020.04.11-02.57.40:357][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface220.Deck_polySurface220
+[2020.04.11-02.57.40:568][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface221.Deck_polySurface221
+[2020.04.11-02.57.40:852][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface222.Deck_polySurface222
+[2020.04.11-02.57.41:103][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface223.Deck_polySurface223
+[2020.04.11-02.57.41:355][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface224.Deck_polySurface224
+[2020.04.11-02.57.41:602][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface225.Deck_polySurface225
+[2020.04.11-02.57.41:853][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface226.Deck_polySurface226
+[2020.04.11-02.57.42:068][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface227.Deck_polySurface227
+[2020.04.11-02.57.42:286][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface228.Deck_polySurface228
+[2020.04.11-02.57.42:502][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface229.Deck_polySurface229
+[2020.04.11-02.57.42:702][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface230.Deck_polySurface230
+[2020.04.11-02.57.42:919][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface231.Deck_polySurface231
+[2020.04.11-02.57.43:169][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface232.Deck_polySurface232
+[2020.04.11-02.57.43:502][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface233.Deck_polySurface233
+[2020.04.11-02.57.43:786][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface234.Deck_polySurface234
+[2020.04.11-02.57.44:036][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface235.Deck_polySurface235
+[2020.04.11-02.57.44:286][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface236.Deck_polySurface236
+[2020.04.11-02.57.44:568][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface237.Deck_polySurface237
+[2020.04.11-02.57.44:819][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface238.Deck_polySurface238
+[2020.04.11-02.57.45:086][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface239.Deck_polySurface239
+[2020.04.11-02.57.45:353][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface240.Deck_polySurface240
+[2020.04.11-02.57.45:619][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface241.Deck_polySurface241
+[2020.04.11-02.57.45:920][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface242.Deck_polySurface242
+[2020.04.11-02.57.46:186][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface243.Deck_polySurface243
+[2020.04.11-02.57.46:453][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface244.Deck_polySurface244
+[2020.04.11-02.57.46:735][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface245.Deck_polySurface245
+[2020.04.11-02.57.47:019][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface246.Deck_polySurface246
+[2020.04.11-02.57.47:319][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface247.Deck_polySurface247
+[2020.04.11-02.57.47:603][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface248.Deck_polySurface248
+[2020.04.11-02.57.47:887][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface249.Deck_polySurface249
+[2020.04.11-02.57.48:187][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface250.Deck_polySurface250
+[2020.04.11-02.57.48:474][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface251.Deck_polySurface251
+[2020.04.11-02.57.48:753][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface252.Deck_polySurface252
+[2020.04.11-02.57.49:103][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface253.Deck_polySurface253
+[2020.04.11-02.57.49:387][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface254.Deck_polySurface254
+[2020.04.11-02.57.49:703][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface255.Deck_polySurface255
+[2020.04.11-02.57.50:170][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface256.Deck_polySurface256
+[2020.04.11-02.57.50:437][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface257.Deck_polySurface257
+[2020.04.11-02.57.50:720][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface258.Deck_polySurface258
+[2020.04.11-02.57.51:003][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface259.Deck_polySurface259
+[2020.04.11-02.57.51:269][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface260.Deck_polySurface260
+[2020.04.11-02.57.51:553][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface262.Deck_polySurface262
+[2020.04.11-02.57.51:853][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface274.Deck_polySurface274
+[2020.04.11-02.57.52:154][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface30.Deck_polySurface30
+[2020.04.11-02.57.52:440][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface31.Deck_polySurface31
+[2020.04.11-02.57.52:753][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface32.Deck_polySurface32
+[2020.04.11-02.57.53:036][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface33.Deck_polySurface33
+[2020.04.11-02.57.53:303][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface34.Deck_polySurface34
+[2020.04.11-02.57.53:586][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface35.Deck_polySurface35
+[2020.04.11-02.57.53:870][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface36.Deck_polySurface36
+[2020.04.11-02.57.54:137][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface37.Deck_polySurface37
+[2020.04.11-02.57.54:423][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface38.Deck_polySurface38
+[2020.04.11-02.57.54:703][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface39.Deck_polySurface39
+[2020.04.11-02.57.54:970][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface40.Deck_polySurface40
+[2020.04.11-02.57.55:254][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface41.Deck_polySurface41
+[2020.04.11-02.57.55:569][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface42.Deck_polySurface42
+[2020.04.11-02.57.55:836][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface43.Deck_polySurface43
+[2020.04.11-02.57.56:121][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface44.Deck_polySurface44
+[2020.04.11-02.57.56:386][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface45.Deck_polySurface45
+[2020.04.11-02.57.56:671][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface46.Deck_polySurface46
+[2020.04.11-02.57.56:955][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface47.Deck_polySurface47
+[2020.04.11-02.57.57:221][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface48.Deck_polySurface48
+[2020.04.11-02.57.57:554][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface49.Deck_polySurface49
+[2020.04.11-02.57.57:837][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface50.Deck_polySurface50
+[2020.04.11-02.57.58:087][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface51.Deck_polySurface51
+[2020.04.11-02.57.58:372][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface52.Deck_polySurface52
+[2020.04.11-02.57.58:856][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface53.Deck_polySurface53
+[2020.04.11-02.57.59:121][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface54.Deck_polySurface54
+[2020.04.11-02.57.59:405][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface55.Deck_polySurface55
+[2020.04.11-02.57.59:770][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface56.Deck_polySurface56
+[2020.04.11-02.58.00:004][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface57.Deck_polySurface57
+[2020.04.11-02.58.00:255][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface58.Deck_polySurface58
+[2020.04.11-02.58.00:554][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface59.Deck_polySurface59
+[2020.04.11-02.58.00:840][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface60.Deck_polySurface60
+[2020.04.11-02.58.01:122][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface61.Deck_polySurface61
+[2020.04.11-02.58.01:405][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface62.Deck_polySurface62
+[2020.04.11-02.58.01:688][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface63.Deck_polySurface63
+[2020.04.11-02.58.01:971][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface64.Deck_polySurface64
+[2020.04.11-02.58.02:254][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface65.Deck_polySurface65
+[2020.04.11-02.58.02:529][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface66.Deck_polySurface66
+[2020.04.11-02.58.02:804][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface67.Deck_polySurface67
+[2020.04.11-02.58.03:070][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface68.Deck_polySurface68
+[2020.04.11-02.58.03:356][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface69.Deck_polySurface69
+[2020.04.11-02.58.03:671][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface70.Deck_polySurface70
+[2020.04.11-02.58.03:955][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface71.Deck_polySurface71
+[2020.04.11-02.58.04:254][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface72.Deck_polySurface72
+[2020.04.11-02.58.04:522][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface73.Deck_polySurface73
+[2020.04.11-02.58.04:822][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface74.Deck_polySurface74
+[2020.04.11-02.58.05:122][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface75.Deck_polySurface75
+[2020.04.11-02.58.05:388][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface76.Deck_polySurface76
+[2020.04.11-02.58.05:657][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface77.Deck_polySurface77
+[2020.04.11-02.58.05:955][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface78.Deck_polySurface78
+[2020.04.11-02.58.06:455][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface79.Deck_polySurface79
+[2020.04.11-02.58.06:739][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface80.Deck_polySurface80
+[2020.04.11-02.58.07:004][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface81.Deck_polySurface81
+[2020.04.11-02.58.07:289][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface82.Deck_polySurface82
+[2020.04.11-02.58.07:572][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface83.Deck_polySurface83
+[2020.04.11-02.58.07:857][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface84.Deck_polySurface84
+[2020.04.11-02.58.08:139][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface85.Deck_polySurface85
+[2020.04.11-02.58.08:424][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface86.Deck_polySurface86
+[2020.04.11-02.58.08:688][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface87.Deck_polySurface87
+[2020.04.11-02.58.08:956][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface88.Deck_polySurface88
+[2020.04.11-02.58.09:224][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface89.Deck_polySurface89
+[2020.04.11-02.58.09:492][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface90.Deck_polySurface90
+[2020.04.11-02.58.09:788][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface91.Deck_polySurface91
+[2020.04.11-02.58.10:072][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface92.Deck_polySurface92
+[2020.04.11-02.58.10:357][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface93.Deck_polySurface93
+[2020.04.11-02.58.10:656][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface94.Deck_polySurface94
+[2020.04.11-02.58.11:005][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface95.Deck_polySurface95
+[2020.04.11-02.58.11:254][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface96.Deck_polySurface96
+[2020.04.11-02.58.11:538][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface97.Deck_polySurface97
+[2020.04.11-02.58.11:822][738]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/FirstPerson/Environments/Bridge/Deck_polySurface98.Deck_polySurface98
+[2020.04.11-02.58.13:491][738]LogSlate: Took 0.000606 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.04.11-02.58.38:465][334]LogSlate: Window 'Deck_polySurface98' being destroyed
+[2020.04.11-02.58.38:473][334]LogSlate: Window 'Deck_polySurface98' being destroyed
+[2020.04.11-02.58.38:486][334]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.38:486][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.39:735][334]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.39:735][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.39:818][334]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.39:818][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.39:996][334]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.39:996][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:073][334]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:073][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:214][334]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:214][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:311][334]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:311][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:474][334]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:474][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:590][334]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:590][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:771][334]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:771][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.40:872][334]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.40:872][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:050][334]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:050][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:156][334]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:156][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:327][334]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:327][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:485][334]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:485][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:603][334]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:603][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:735][334]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:735][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.41:853][334]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.41:853][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:017][334]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:017][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:167][334]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:167][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:305][334]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:305][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:437][334]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:437][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:662][334]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:662][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.42:836][334]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.42:836][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:014][334]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:014][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:316][334]LogWorld: UWorld::CleanupWorld for World_27, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:316][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:468][334]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:469][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:623][334]LogWorld: UWorld::CleanupWorld for World_29, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:623][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:775][334]LogWorld: UWorld::CleanupWorld for World_30, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:775][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.43:994][334]LogWorld: UWorld::CleanupWorld for World_31, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.43:994][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.44:282][334]LogWorld: UWorld::CleanupWorld for World_32, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.44:282][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.44:474][334]LogWorld: UWorld::CleanupWorld for World_33, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.44:474][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.44:899][334]LogWorld: UWorld::CleanupWorld for World_34, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.44:899][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.45:104][334]LogWorld: UWorld::CleanupWorld for World_35, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.45:104][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.45:366][334]LogWorld: UWorld::CleanupWorld for World_36, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.45:366][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.45:679][334]LogWorld: UWorld::CleanupWorld for World_37, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.45:679][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.45:941][334]LogWorld: UWorld::CleanupWorld for World_38, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.45:941][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.46:241][334]LogWorld: UWorld::CleanupWorld for World_39, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.46:241][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.46:446][334]LogWorld: UWorld::CleanupWorld for World_40, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.46:446][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.46:708][334]LogWorld: UWorld::CleanupWorld for World_41, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.46:708][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.47:009][334]LogWorld: UWorld::CleanupWorld for World_42, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.47:009][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.47:339][334]LogWorld: UWorld::CleanupWorld for World_43, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.47:339][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.47:588][334]LogWorld: UWorld::CleanupWorld for World_44, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.47:588][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.47:867][334]LogWorld: UWorld::CleanupWorld for World_45, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.47:868][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.48:156][334]LogWorld: UWorld::CleanupWorld for World_46, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.48:156][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.48:446][334]LogWorld: UWorld::CleanupWorld for World_47, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.48:446][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.48:725][334]LogWorld: UWorld::CleanupWorld for World_48, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.48:725][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.49:316][334]LogWorld: UWorld::CleanupWorld for World_49, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.49:316][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.49:617][334]LogWorld: UWorld::CleanupWorld for World_50, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.49:617][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.49:901][334]LogWorld: UWorld::CleanupWorld for World_51, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.49:901][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.50:245][334]LogWorld: UWorld::CleanupWorld for World_52, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.50:246][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.50:637][334]LogWorld: UWorld::CleanupWorld for World_53, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.50:637][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.50:982][334]LogWorld: UWorld::CleanupWorld for World_54, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.50:982][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.51:438][334]LogWorld: UWorld::CleanupWorld for World_55, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.51:438][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.51:806][334]LogWorld: UWorld::CleanupWorld for World_56, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.51:806][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.52:216][334]LogWorld: UWorld::CleanupWorld for World_57, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.52:216][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.52:672][334]LogWorld: UWorld::CleanupWorld for World_58, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.52:672][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.53:101][334]LogWorld: UWorld::CleanupWorld for World_59, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.53:101][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.53:573][334]LogWorld: UWorld::CleanupWorld for World_60, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.53:573][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.54:035][334]LogWorld: UWorld::CleanupWorld for World_61, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.54:035][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.54:625][334]LogWorld: UWorld::CleanupWorld for World_62, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.54:625][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.55:384][334]LogWorld: UWorld::CleanupWorld for World_63, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.55:384][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.56:049][334]LogWorld: UWorld::CleanupWorld for World_64, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.56:049][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.56:664][334]LogWorld: UWorld::CleanupWorld for World_65, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.56:664][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.57:273][334]LogWorld: UWorld::CleanupWorld for World_66, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.57:273][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.58:001][334]LogWorld: UWorld::CleanupWorld for World_67, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.58:001][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.58:755][334]LogWorld: UWorld::CleanupWorld for World_68, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.58:755][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.58.59:479][334]LogWorld: UWorld::CleanupWorld for World_69, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.58.59:479][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.00:375][334]LogWorld: UWorld::CleanupWorld for World_70, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.00:375][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.01:115][334]LogWorld: UWorld::CleanupWorld for World_71, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.01:116][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.01:926][334]LogWorld: UWorld::CleanupWorld for World_72, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.01:926][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.02:711][334]LogWorld: UWorld::CleanupWorld for World_73, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.02:711][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.03:539][334]LogWorld: UWorld::CleanupWorld for World_74, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.03:540][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.04:347][334]LogWorld: UWorld::CleanupWorld for World_75, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.04:347][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.05:216][334]LogWorld: UWorld::CleanupWorld for World_76, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.05:216][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.06:182][334]LogWorld: UWorld::CleanupWorld for World_77, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.06:182][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.07:105][334]LogWorld: UWorld::CleanupWorld for World_78, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.07:105][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.08:070][334]LogWorld: UWorld::CleanupWorld for World_79, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.08:070][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.09:052][334]LogWorld: UWorld::CleanupWorld for World_80, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.09:052][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.10:127][334]LogWorld: UWorld::CleanupWorld for World_81, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.10:127][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.11:143][334]LogWorld: UWorld::CleanupWorld for World_82, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.11:143][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.12:125][334]LogWorld: UWorld::CleanupWorld for World_83, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.12:125][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.13:086][334]LogWorld: UWorld::CleanupWorld for World_84, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.13:087][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.14:012][334]LogWorld: UWorld::CleanupWorld for World_85, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.14:012][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.14:939][334]LogWorld: UWorld::CleanupWorld for World_86, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.14:939][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.15:858][334]LogWorld: UWorld::CleanupWorld for World_87, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.15:858][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.16:716][334]LogWorld: UWorld::CleanupWorld for World_88, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.16:716][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.17:554][334]LogWorld: UWorld::CleanupWorld for World_89, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.17:554][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.18:330][334]LogWorld: UWorld::CleanupWorld for World_90, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.18:330][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.19:046][334]LogWorld: UWorld::CleanupWorld for World_91, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.19:047][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.19:765][334]LogWorld: UWorld::CleanupWorld for World_92, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.19:765][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.20:443][334]LogWorld: UWorld::CleanupWorld for World_93, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.20:443][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.21:095][334]LogWorld: UWorld::CleanupWorld for World_94, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.21:095][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.21:680][334]LogWorld: UWorld::CleanupWorld for World_95, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.21:680][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.22:290][334]LogWorld: UWorld::CleanupWorld for World_96, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.22:290][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.22:837][334]LogWorld: UWorld::CleanupWorld for World_97, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.22:837][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.23:500][334]LogWorld: UWorld::CleanupWorld for World_98, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.23:500][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.24:051][334]LogWorld: UWorld::CleanupWorld for World_99, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.24:051][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.24:890][334]LogWorld: UWorld::CleanupWorld for World_100, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.24:890][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.25:422][334]LogWorld: UWorld::CleanupWorld for World_101, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.25:422][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.25:897][334]LogWorld: UWorld::CleanupWorld for World_102, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.25:897][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.26:383][334]LogWorld: UWorld::CleanupWorld for World_103, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.26:384][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.26:858][334]LogWorld: UWorld::CleanupWorld for World_104, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.26:859][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.27:234][334]LogWorld: UWorld::CleanupWorld for World_105, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.27:234][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.27:610][334]LogWorld: UWorld::CleanupWorld for World_106, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.27:610][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.28:014][334]LogWorld: UWorld::CleanupWorld for World_107, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.28:014][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.28:341][334]LogWorld: UWorld::CleanupWorld for World_108, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.28:341][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.28:666][334]LogWorld: UWorld::CleanupWorld for World_109, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.28:666][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.29:038][334]LogWorld: UWorld::CleanupWorld for World_110, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.29:038][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.29:372][334]LogWorld: UWorld::CleanupWorld for World_111, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.29:372][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.29:684][334]LogWorld: UWorld::CleanupWorld for World_112, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.29:684][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.29:945][334]LogWorld: UWorld::CleanupWorld for World_113, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.29:946][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.30:193][334]LogWorld: UWorld::CleanupWorld for World_114, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.30:193][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.30:458][334]LogWorld: UWorld::CleanupWorld for World_115, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.30:458][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.30:754][334]LogWorld: UWorld::CleanupWorld for World_116, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.30:754][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.31:045][334]LogWorld: UWorld::CleanupWorld for World_117, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.31:045][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.31:335][334]LogWorld: UWorld::CleanupWorld for World_118, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.31:335][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.31:539][334]LogWorld: UWorld::CleanupWorld for World_119, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.31:539][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.31:829][334]LogWorld: UWorld::CleanupWorld for World_120, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.31:829][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.32:122][334]LogWorld: UWorld::CleanupWorld for World_121, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.32:123][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.32:489][334]LogWorld: UWorld::CleanupWorld for World_122, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.32:489][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.32:757][334]LogWorld: UWorld::CleanupWorld for World_123, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.32:757][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.32:963][334]LogWorld: UWorld::CleanupWorld for World_124, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.32:963][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.33:427][334]LogWorld: UWorld::CleanupWorld for World_125, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.33:427][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.33:708][334]LogWorld: UWorld::CleanupWorld for World_126, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.33:708][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.33:900][334]LogWorld: UWorld::CleanupWorld for World_127, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.33:900][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.34:087][334]LogWorld: UWorld::CleanupWorld for World_128, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.34:087][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.34:373][334]LogWorld: UWorld::CleanupWorld for World_129, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.34:373][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.34:535][334]LogWorld: UWorld::CleanupWorld for World_130, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.34:535][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.34:718][334]LogWorld: UWorld::CleanupWorld for World_131, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.34:718][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.34:981][334]LogWorld: UWorld::CleanupWorld for World_132, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.34:981][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.35:237][334]LogWorld: UWorld::CleanupWorld for World_133, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.35:237][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.35:425][334]LogWorld: UWorld::CleanupWorld for World_134, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.35:425][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.35:570][334]LogWorld: UWorld::CleanupWorld for World_135, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.35:570][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.35:731][334]LogWorld: UWorld::CleanupWorld for World_136, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.35:731][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.35:887][334]LogWorld: UWorld::CleanupWorld for World_137, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.35:887][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:056][334]LogWorld: UWorld::CleanupWorld for World_138, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:056][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:201][334]LogWorld: UWorld::CleanupWorld for World_139, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:201][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:379][334]LogWorld: UWorld::CleanupWorld for World_140, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:379][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:523][334]LogWorld: UWorld::CleanupWorld for World_141, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:523][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:708][334]LogWorld: UWorld::CleanupWorld for World_142, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:709][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.36:838][334]LogWorld: UWorld::CleanupWorld for World_143, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.36:838][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:022][334]LogWorld: UWorld::CleanupWorld for World_144, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:022][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:134][334]LogWorld: UWorld::CleanupWorld for World_145, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:134][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:336][334]LogWorld: UWorld::CleanupWorld for World_146, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:336][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:457][334]LogWorld: UWorld::CleanupWorld for World_147, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:457][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:675][334]LogWorld: UWorld::CleanupWorld for World_148, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:676][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:781][334]LogWorld: UWorld::CleanupWorld for World_149, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:781][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.37:995][334]LogWorld: UWorld::CleanupWorld for World_150, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.37:995][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.38:485][334]LogWorld: UWorld::CleanupWorld for World_151, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.38:486][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.38:642][334]LogWorld: UWorld::CleanupWorld for World_152, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.38:642][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.38:739][334]LogWorld: UWorld::CleanupWorld for World_153, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.38:739][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.38:837][334]LogWorld: UWorld::CleanupWorld for World_154, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.38:837][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.39:234][334]LogWorld: UWorld::CleanupWorld for World_155, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.39:234][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.11-02.59.39:312][334]LogWorld: UWorld::CleanupWorld for World_156, bSessionEnded=true, bCleanupResources=true
+[2020.04.11-02.59.39:312][334]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated

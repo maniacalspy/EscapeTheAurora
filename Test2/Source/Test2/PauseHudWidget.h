@@ -25,6 +25,13 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Map")
 		void EnableMap();
 
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Map")
+		void OpenPauseMenu();
+
+	virtual void OpenPauseMenu_Implementation();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Animations)
+		class UWidgetAnimation* MenuOpenAnimation;
 //protected:
 //	UWorld* World;
 //	APlayerController* PlayerController;
