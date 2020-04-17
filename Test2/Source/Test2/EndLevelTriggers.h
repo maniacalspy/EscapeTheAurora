@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EndLevelDoor.h"
 #include "EngineUtils.h"
+#include "DoorBase.h"
 #include "GameFramework/Actor.h"
 #include "KeyCardSpawner.h"
 #include "Components/LightComponent.h"
