@@ -1,9 +1,9 @@
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Source\Test2/PoweredDoor.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Source\Test2\DoorBase.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
-C:\Users\bullet1520\Documents\GitHub\Large-Team-Unreal-Game\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
+E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+D:\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\Nudge\Test2\Source\Test2/PoweredDoor.h
+E:\Nudge\Test2\Source\Test2\DoorBase.h
+D:\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
