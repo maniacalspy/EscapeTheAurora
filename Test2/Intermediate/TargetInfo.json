@@ -1,5 +1,6 @@
 {
 	"Targets": [
+<<<<<<< Updated upstream
 		{
 			"Name": "Test2",
 			"Path": "C:\\Users\\student\\Desktop\\Nudge\\Test2\\Source\\Test2.Target.cs",
@@ -10,5 +11,7 @@
 			"Path": "C:\\Users\\student\\Desktop\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
 			"Type": "Editor"
 		}
+=======
+>>>>>>> Stashed changes
 	]
 }

@@ -1,8 +1,14 @@
 {
 	"SourceFiles": [
+<<<<<<< Updated upstream
 		"C:\\Users\\student\\Desktop\\Nudge\\Test2\\Source\\Test2\\Test2.Build.cs",
 		"C:\\Users\\student\\Desktop\\Nudge\\Test2\\Source\\Test2.Target.cs",
 		"C:\\Users\\student\\Desktop\\Nudge\\Test2\\Source\\Test2Editor.Target.cs"
+=======
+		"C:\\Users\\Austi\\Documents\\GitHub\\EscapeTheAurora\\Test2\\Source\\Test2\\Test2.Build.cs",
+		"C:\\Users\\Austi\\Documents\\GitHub\\EscapeTheAurora\\Test2\\Source\\Test2.Target.cs",
+		"C:\\Users\\Austi\\Documents\\GitHub\\EscapeTheAurora\\Test2\\Source\\Test2Editor.Target.cs"
+>>>>>>> Stashed changes
 	],
 	"EngineVersion": "4.24.3"
 }

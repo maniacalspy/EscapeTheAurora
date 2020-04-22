@@ -1,0 +1,62 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK has no valid SDK
+IOSPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.IOSPlatformSDK using manually installed SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+ProjectFileGenerator.GenerateProjectFiles: Discovering modules, targets and source code for project...
+WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community (Product=Microsoft.VisualStudio.Product.Community, Version=16.4.29728.190, Sort=0)
+WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314 (Version=14.24.28316)
+WindowsPlatform.FindVSInstallDirs: Found Visual Studio installation: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community (Product=Microsoft.VisualStudio.Product.Community, Version=15.9.28307.1000, Sort=0)
+WindowsPlatform.FindToolChainDirs: Found Visual Studio toolchain: C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023 (Version=14.16.27035)
+WindowsPlatform.EnumerateSdkRootDirs: Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+WindowsPlatform.EnumerateSdkRootDirs: Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+WindowsPlatform.UpdateCachedWindowsSdks: Found Windows 10 SDK version 10.0.17763.0 at C:\Program Files (x86)\Windows Kits\10
+WindowsPlatform.UpdateCachedWindowsSdks: Found Universal CRT version 10.0.17763.0 at C:\Program Files (x86)\Windows Kits\10
+WindowsPlatform.UpdateCachedWindowsSdks: Found Windows 10 SDK version 10.0.18362.0 at C:\Program Files (x86)\Windows Kits\10
+WindowsPlatform.UpdateCachedWindowsSdks: Found Universal CRT version 10.0.18362.0 at C:\Program Files (x86)\Windows Kits\10
+UnrealBuildTool.Main: ERROR: Unhandled exception: Tools.DotNETCommon.JsonParseException: Unable to parse C:\Users\Austi\Documents\GitHub\EscapeTheAurora\Test2\Intermediate\Build\BuildRules\Test2ModuleRulesManifest.json: Could not find token at index 22
+UnrealBuildTool.Main:           at Tools.DotNETCommon.JsonObject.Read(FileReference File) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\DotNETCommon\DotNETUtilities\JsonObject.cs:line 57
+UnrealBuildTool.Main:           at UnrealBuildTool.DynamicCompilation.RequiresCompilation(HashSet`1 SourceFiles, FileReference AssemblyManifestFilePath, FileReference OutputAssemblyPath) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 67
+UnrealBuildTool.Main:           at UnrealBuildTool.DynamicCompilation.CompileAndLoadAssembly(FileReference OutputAssemblyPath, HashSet`1 SourceFileNames, List`1 ReferencedAssembies, List`1 PreprocessorDefines, Boolean DoNotCompile, Boolean TreatWarningsAsErrors) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 405
+UnrealBuildTool.Main:           at UnrealBuildTool.RulesAssembly..ctor(RulesScope Scope, DirectoryReference BaseDir, IReadOnlyList`1 Plugins, Dictionary`2 ModuleFileToContext, List`1 TargetFiles, FileReference AssemblyFileName, Boolean bContainsEngineModules, Nullable`1 DefaultBuildSettings, Boolean bReadOnly, Boolean bSkipCompile, RulesAssembly Parent) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:line 115
+UnrealBuildTool.Main:           at UnrealBuildTool.RulesCompiler.CreateProjectRulesAssembly(FileReference ProjectFileName, Boolean bUsePrecompiled, Boolean bSkipCompile) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 592
+UnrealBuildTool.Main:           at UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, ProjectFile& EngineProject, ProjectFile& EnterpriseProject, List`1& GameProjects, Dictionary`2& ProgramProjects) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 2219
+UnrealBuildTool.Main:           at UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 720
+UnrealBuildTool.Main:           at UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:line 176
+UnrealBuildTool.Main:           at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 517
+UnrealBuildTool.Main: JsonParseException: Unable to parse C:\Users\Austi\Documents\GitHub\EscapeTheAurora\Test2\Intermediate\Build\BuildRules\Test2ModuleRulesManifest.json: Could not find token at index 22
+UnrealBuildTool.Main:    at Tools.DotNETCommon.JsonObject.Read(FileReference File) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\DotNETCommon\DotNETUtilities\JsonObject.cs:line 57
+UnrealBuildTool.Main:    at UnrealBuildTool.DynamicCompilation.RequiresCompilation(HashSet`1 SourceFiles, FileReference AssemblyManifestFilePath, FileReference OutputAssemblyPath) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 67
+UnrealBuildTool.Main:    at UnrealBuildTool.DynamicCompilation.CompileAndLoadAssembly(FileReference OutputAssemblyPath, HashSet`1 SourceFileNames, List`1 ReferencedAssembies, List`1 PreprocessorDefines, Boolean DoNotCompile, Boolean TreatWarningsAsErrors) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\DynamicCompilation.cs:line 405
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesAssembly..ctor(RulesScope Scope, DirectoryReference BaseDir, IReadOnlyList`1 Plugins, Dictionary`2 ModuleFileToContext, List`1 TargetFiles, FileReference AssemblyFileName, Boolean bContainsEngineModules, Nullable`1 DefaultBuildSettings, Boolean bReadOnly, Boolean bSkipCompile, RulesAssembly Parent) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesAssembly.cs:line 115
+UnrealBuildTool.Main:    at UnrealBuildTool.RulesCompiler.CreateProjectRulesAssembly(FileReference ProjectFileName, Boolean bUsePrecompiled, Boolean bSkipCompile) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\System\RulesCompiler.cs:line 592
+UnrealBuildTool.Main:    at UnrealBuildTool.ProjectFileGenerator.AddProjectsForAllTargets(PlatformProjectGeneratorCollection PlatformProjectGenerators, List`1 AllGames, List`1 AllTargetFiles, ProjectFile& EngineProject, ProjectFile& EnterpriseProject, List`1& GameProjects, Dictionary`2& ProgramProjects) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 2219
+UnrealBuildTool.Main:    at UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:line 720
+UnrealBuildTool.Main:    at UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:line 176
+UnrealBuildTool.Main:    at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 517
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+2.976) <unknown>
+Timeline.Print: [ 2.976](+9.979) XmlConfig.ReadConfigFiles()
+Timeline.Print: [12.955](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [12.955](+7.917) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:  12.958          [ 0.002](+4.978) Initializing InstalledPlatformInfo
+Timeline.Print:  17.937          [ 4.981](+0.000) Querying types
+Timeline.Print:  17.937          [ 4.981](+0.391) <unknown>
+Timeline.Print:  18.329          [ 5.373](+0.006) MacPlatformFactory
+Timeline.Print:  18.335          [ 5.379](+0.000) TVOSPlatformFactory
+Timeline.Print:  18.336          [ 5.380](+1.480) AndroidPlatformFactory
+Timeline.Print:  19.817          [ 6.861](+0.000) HoloLensPlatformFactory
+Timeline.Print:  19.818          [ 6.862](+0.741) IOSPlatformFactory
+Timeline.Print:  20.560          [ 7.604](+0.301) LinuxPlatformFactory
+Timeline.Print:  20.863          [ 7.907](+0.001) LuminPlatformFactory
+Timeline.Print:  20.865          [ 7.909](+0.007) WindowsPlatformFactory
+Timeline.Print: [20.872](+107.078) <unknown>
+Timeline.Print: [127.951](+0.005) Finding engine modules
+Timeline.Print: [127.956](+0.007) Finding plugin modules
+Timeline.Print: [127.963](+1.390) <unknown>
+Timeline.Print: [129.354](+0.000) Finding program modules
+Timeline.Print: [129.355](+0.000) Finding program targets
+Timeline.Print: [129.355](+6.996) <unknown>
+Timeline.Print: [136.351](+0.001) FileMetadataPrefetch.Stop()
+Timeline.Print: [136.361]
