@@ -152,7 +152,7 @@ void APuzzleGrid::OnPuzzleSolved() {
 		MyLevelGrid->thisState->isSolved = true;
 		_pPuzzleActor->_canBePushed = false;
 		//UpdateLastCoordinates();
-		if (_pTriggerActor != nullptr) _pTriggerActor->TriggerAll();
+		if (_pTriggerActor != nullptr) _pTriggerActor->OnLevelEnded();
 	}
 	
 }

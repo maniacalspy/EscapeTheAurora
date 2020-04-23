@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "DoorBase.h"
+#include "Triggerable.h"
 #include "PoweredDoor.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class TEST2_API APoweredDoor : public ADoorBase
+class TEST2_API APoweredDoor : public ADoorBase, public ITriggerable
 {
 	GENERATED_BODY()
 	

@@ -39,3 +39,7 @@ void AEndLevelDoor::OpenDoor_Implementation()
 {
 	Super::OpenDoor_Implementation();
 }
+
+void AEndLevelDoor::OnTriggered_Implementation() {
+	PowerOn_Implementation();
+}

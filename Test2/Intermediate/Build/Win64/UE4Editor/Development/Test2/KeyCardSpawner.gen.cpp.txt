@@ -2,4 +2,6 @@ C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\D
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2/KeyCardSpawner.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Source\Test2\Triggerable.h
+C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Triggerable.generated.h
 C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h

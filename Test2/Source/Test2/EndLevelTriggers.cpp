@@ -3,14 +3,12 @@
 #include "EndLevelTriggers.h"
 #include "EndLevelDoor.h"
 #include "TimerDoor.h"
+#include "Triggerable.h"
 #include "Engine/Engine.h"
 
 // Sets default values
 AEndLevelTriggers::AEndLevelTriggers()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	//PrimaryActorTick.bCanEverTick = true;
-	//RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root_Component"));
 }
 
 
@@ -30,9 +28,11 @@ void AEndLevelTriggers::PostInitializeComponents() {
 
 
 	for (auto Child : Children) {
-		ADoorBase* TheDoor = Cast<ADoorBase>(Child);
-		if (TheDoor) DoorsToTrigger.Add(TheDoor);
-		else if (Cast<AKeyCardSpawner>(Child)) KeySpawners.Add(Cast<AKeyCardSpawner>(Child));
+		ITriggerable* TriggerInterface = Cast<ITriggerable>(Child);
+		if (Child->GetClass()->ImplementsInterface(UTriggerable::StaticClass())) {
+			ObjectsToTrigger.Add(Child);
+		}
+
 		else {
 			Child->GetComponents<ULightComponent>(LightsToAdd, true);
 			Child->GetComponents<UAudioComponent>(SoundsToAdd, true);
@@ -47,10 +47,6 @@ void AEndLevelTriggers::PostInitializeComponents() {
 void AEndLevelTriggers::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	//TriggerAll();
-
-
 }
 
 void AEndLevelTriggers::DebugPing() {
@@ -67,7 +63,7 @@ void AEndLevelTriggers::PlayNextSound() {
 		}
 	}
 
-	else PowerOnDoors();
+	else TriggerAll();
 }
 
 // Called every frame
@@ -76,18 +72,15 @@ void AEndLevelTriggers::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-void AEndLevelTriggers::PowerOnDoors() {
-
-	for (auto Door : DoorsToTrigger) {
-		
-		APoweredDoor* PoweredDoor = Cast<APoweredDoor>(Door);
-		if (PoweredDoor) PoweredDoor->PowerOn();
-
-		ATimerDoor* TimerDoor = Cast<ATimerDoor>(Door);
-		if (TimerDoor) TimerDoor->bTimerIsRunning = true;
+void AEndLevelTriggers::OnLevelEnded() {
+	if (SoundsToTrigger.Num() > 0) {
+		(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
+		SoundsToTrigger[0]->Play();
 	}
+
+	else TriggerAll();
 }
+
 
 void AEndLevelTriggers::TriggerAll()
 {
@@ -95,21 +88,8 @@ void AEndLevelTriggers::TriggerAll()
 		Light->SetIntensity(8);
 	}
 
-	for (auto Key : KeySpawners) {
-		Key->SpawnKey();
+	for (auto TriggerObject : ObjectsToTrigger) {
+		ITriggerable::Execute_OnTriggered(TriggerObject);
 	}
-
-	/*
-	for (auto Sound : SoundsToTrigger) {
-		Sound->Play();
-	}
-	*/
-
-	if (SoundsToTrigger.Num() > 0) {
-		(SoundsToTrigger[0])->OnAudioFinished.AddDynamic(this, &AEndLevelTriggers::PlayNextSound);
-		SoundsToTrigger[0]->Play();
-	}
-
-	else PowerOnDoors();
 }
 

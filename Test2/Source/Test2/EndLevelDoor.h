@@ -5,6 +5,7 @@
 #include "GameFramework/Actor.h"
 #include "Materials/Material.h"
 #include "PoweredDoor.h"
+#include "Triggerable.h"
 #include "EndLevelDoor.generated.h"
 
 UCLASS()
@@ -25,23 +26,11 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+	virtual void OnTriggered_Implementation() override;
 
+protected:
 	virtual void OpenDoor_Implementation() override;
 
 	void PowerOn_Implementation() override;
-
-
-private:
-	//UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
-	//	class USkeletalMeshComponent* DoorFrameSkeleton;
-
-	//UPROPERTY(VisibleAnywhere, Category = SkeletalMesh)
-	//	class USkeletalMeshComponent* DoorPanelSkeleton;
-
-	//UPROPERTY(EditAnywhere, Category = Audio)
-	//	class UAudioComponent* pOpenSound;
-
-	//	class UMaterial* pPanelOffMaterial;
-
-	//	class UMaterial* pPanelOnMaterial;
 };
