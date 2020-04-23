@@ -28,11 +28,11 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	void SwapDoorMaterial();
+	/*void SwapDoorMaterial();*/
 
 	class UMaterial* pPanelOffMaterial;
 
-	class UMaterial* pPanelOnMaterial;
+	//class UMaterial* pPanelOnMaterial;
 
 	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
 		uint32 bIsPowered : 1;

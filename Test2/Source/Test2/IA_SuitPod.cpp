@@ -35,9 +35,9 @@ void AIA_SuitPod::OnInteract_Implementation(AActor* Caller) {
 		ActorMeshComponent->SetStaticMesh(FullMesh);
 		ActorMeshComponent->LightmapType = ELightmapType::ForceVolumetric;
 
-		for (int i = 0; i < ActorMeshComponent->GetNumMaterials(); i++) {
+		/*for (int i = 0; i < ActorMeshComponent->GetNumMaterials(); i++) {
 			if (MeshMaterials[i]) ActorMeshComponent->SetMaterial(i, MeshMaterials[i]);
-		}
+		}*/
 
 		if (Suitoff != nullptr) {
 			Destroy();

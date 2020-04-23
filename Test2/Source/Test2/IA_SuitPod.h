@@ -27,8 +27,8 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Suit Pod Mesh")
 		class UStaticMesh* FullMesh;
 
-	UPROPERTY(EditAnywhere, Category = "Suit Pod Mesh")
-		TArray<class UMaterial*> MeshMaterials;
+	/*UPROPERTY(EditAnywhere, Category = "Suit Pod Mesh")
+		TArray<class UMaterial*> MeshMaterials;*/
 
 	UPROPERTY(EditAnywhere, Category = Audio)
 		class UAudioComponent* Suitoff;

@@ -92,7 +92,9 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APoweredDoor_Statics::NewProp_bIsPowered_MetaData[] = {
 		{ "Category", "Door" },
+		{ "Comment", "//class UMaterial* pPanelOnMaterial;\n" },
 		{ "ModuleRelativePath", "PoweredDoor.h" },
+		{ "ToolTip", "class UMaterial* pPanelOnMaterial;" },
 	};
 #endif
 	void Z_Construct_UClass_APoweredDoor_Statics::NewProp_bIsPowered_SetBit(void* Obj)
@@ -130,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APoweredDoor, 2169085080);
+	IMPLEMENT_CLASS(APoweredDoor, 802638138);
 	template<> TEST2_API UClass* StaticClass<APoweredDoor>()
 	{
 		return APoweredDoor::StaticClass();
