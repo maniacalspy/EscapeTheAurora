@@ -2,8 +2,8 @@
 
 
 #include "IA_SuitPod.h"
-#include "components/StaticMeshComponent.h"
-#include "engine/StaticMesh.h"
+#include "Components/StaticMeshComponent.h"
+#include "Engine/StaticMesh.h"
 #include "Engine/StaticMeshActor.h"
 #include "Engine/Engine.h"
 #include "Test2Character.h"
@@ -14,6 +14,8 @@ AIA_SuitPod::AIA_SuitPod() {
 	RootComponent = CreateDefaultSubobject<USceneComponent>("Scene Component");
 
 	MeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh Component"));
+
+	Suitoff = CreateDefaultSubobject<UAudioComponent>(TEXT("Suit_Hangup"));
 
 	MeshComponent->SetupAttachment(RootComponent);
 }
@@ -37,7 +39,10 @@ void AIA_SuitPod::OnInteract_Implementation(AActor* Caller) {
 			if (MeshMaterials[i]) ActorMeshComponent->SetMaterial(i, MeshMaterials[i]);
 		}
 
-		Destroy();
+		if (Suitoff != nullptr) {
+			Destroy();
+			Suitoff->Play();
+		}
 	}
 }
 

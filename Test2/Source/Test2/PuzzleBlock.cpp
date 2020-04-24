@@ -1,9 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PuzzleBlock.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
-#include "engine/StaticMesh.h"
+#include "Engine/StaticMesh.h"
 #include "Components/AudioComponent.h"
 #include "Components/MeshComponent.h"
 #include "ConstructorHelpers.h"
@@ -19,8 +19,6 @@ APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 	_destLocation = GetActorLocation();
 	_destRotation = GetActorQuat();
 
-	//curTipType = TipType::Invalid;
-
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
@@ -28,11 +26,9 @@ APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 	MyComp->SetupAttachment(RootComponent);
 	MyComp->SetRelativeLocation(*new FVector(0, 0, 31.f));
 	MyComp->SetBoxExtent(_boxExtents);
-	//MyComp->SetRelativeScale3D(*new FVector(.45f, .45f, .9f));
 
 
 	MyComp->SetSimulatePhysics(false);
-	//MyComp->SetNotifyRigidBodyCollision(true);
 	MyComp->CanCharacterStepUpOn = ECB_No;
 
 
