@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 	TEST2_API UClass* Z_Construct_UClass_ADoorBase();
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_APoweredDoor_PowerOn();
+	TEST2_API UClass* Z_Construct_UClass_UTriggerable_NoRegister();
 // End Cross Module References
 	static FName NAME_APoweredDoor_PowerOn = FName(TEXT("PowerOn"));
 	void APoweredDoor::PowerOn()
@@ -72,6 +73,7 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 		static void NewProp_bIsPowered_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsPowered;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -92,7 +94,9 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APoweredDoor_Statics::NewProp_bIsPowered_MetaData[] = {
 		{ "Category", "Door" },
+		{ "Comment", "//class UMaterial* pPanelOnMaterial;\n" },
 		{ "ModuleRelativePath", "PoweredDoor.h" },
+		{ "ToolTip", "class UMaterial* pPanelOnMaterial;" },
 	};
 #endif
 	void Z_Construct_UClass_APoweredDoor_Statics::NewProp_bIsPowered_SetBit(void* Obj)
@@ -103,6 +107,9 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APoweredDoor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APoweredDoor_Statics::NewProp_bIsPowered,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_APoweredDoor_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UTriggerable_NoRegister, (int32)VTABLE_OFFSET(APoweredDoor, ITriggerable), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APoweredDoor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APoweredDoor>::IsAbstract,
 	};
@@ -113,11 +120,11 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_APoweredDoor_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_APoweredDoor_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_APoweredDoor_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_APoweredDoor_Statics::Class_MetaDataParams))
 	};
@@ -130,7 +137,7 @@ void EmptyLinkFunctionForGeneratedCodePoweredDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APoweredDoor, 2169085080);
+	IMPLEMENT_CLASS(APoweredDoor, 2900911868);
 	template<> TEST2_API UClass* StaticClass<APoweredDoor>()
 	{
 		return APoweredDoor::StaticClass();

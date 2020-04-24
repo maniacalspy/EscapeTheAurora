@@ -2,12 +2,20 @@
 	"Targets": [
 		{
 			"Name": "Test2",
+<<<<<<< HEAD
 			"Path": "D:\\GitHub\\EscapeTheAurora\\Test2\\Source\\Test2.Target.cs",
+=======
+			"Path": "D:\\Code\\Nudge\\Test2\\Source\\Test2.Target.cs",
+>>>>>>> master
 			"Type": "Game"
 		},
 		{
 			"Name": "Test2Editor",
+<<<<<<< HEAD
 			"Path": "D:\\GitHub\\EscapeTheAurora\\Test2\\Source\\Test2Editor.Target.cs",
+=======
+			"Path": "D:\\Code\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
+>>>>>>> master
 			"Type": "Editor"
 		}
 	]

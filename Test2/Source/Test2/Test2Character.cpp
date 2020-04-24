@@ -39,9 +39,9 @@ ATest2Character::ATest2Character()
 
 	PauseHudClass = MenuClassFinder.Class;
 
-	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
+	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPerson/UItesting/MainMenu"));
 
-	StartHud = StartMenuFinder.Class;
+	MainMenu = StartMenuFinder.Class;
 
 	ConstructorHelpers::FClassFinder<UETAHUD> GameHUDClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD"));
 
@@ -121,11 +121,11 @@ void ATest2Character::BeginPlay()
 
 	if (mycontroller)
 	{
-		if (StartHud)
+		if (MainMenu)
 		{
-			StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
-			StartHudInstance->Setup();
-			StartHudInstance->OpenMenu();
+			MainMenuInstance = CreateWidget<UHUDWidgetBase>(mycontroller, MainMenu);
+			MainMenuInstance->Setup();
+			MainMenuInstance->OpenMenu();
 			mycontroller->SetPause(true);
 		}
 
@@ -229,7 +229,7 @@ void ATest2Character::TogglePause() {
 			}
 		}
 		else {
-			if (StartHudInstance->IsVisible()) StartHudInstance->CloseMenu();
+			if (MainMenuInstance->IsVisible()) MainMenuInstance->CloseMenu();
 			if(PauseHudInstance) PauseHudInstance->CloseMenu();
 		}
 		mycontroller->SetPause(!isPaused);

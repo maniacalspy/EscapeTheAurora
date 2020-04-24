@@ -17,8 +17,13 @@
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
+<<<<<<< HEAD
 /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.24.28314\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64"
+=======
+/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\lib\um\x64"
+>>>>>>> master
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -32,6 +37,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
+<<<<<<< HEAD
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EditableTextWidget.cpp.obj"
@@ -92,6 +98,20 @@
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\TimerDoor.gen.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\TriggeredMonster.gen.cpp.obj"
 "C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
+=======
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EndLevelDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\InteractableDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PoweredDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PoweredInteractableDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2.init.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\TimerDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Triggerable.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
+>>>>>>> master
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -124,8 +144,14 @@
 "C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 "C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Development\HeadMountedDisplay\UE4Editor-HeadMountedDisplay.lib"
+<<<<<<< HEAD
 /OUT:"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2.dll"
 /IMPLIB:"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib"
 /PDB:"C:\Users\Nolan\Documents\GitHub\Nudge\Test2\Binaries\Win64\UE4Editor-Test2.pdb"
+=======
+/OUT:"D:\Code\Nudge\Test2\Binaries\Win64\UE4Editor-Test2.dll"
+/IMPLIB:"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib"
+/PDB:"D:\Code\Nudge\Test2\Binaries\Win64\UE4Editor-Test2.pdb"
+>>>>>>> master
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_Test2

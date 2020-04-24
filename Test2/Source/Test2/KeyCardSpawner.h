@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Triggerable.h"
 #include "KeyCardSpawner.generated.h"
 
 UCLASS()
-class TEST2_API AKeyCardSpawner : public AActor
+class TEST2_API AKeyCardSpawner : public AActor, public ITriggerable
 {
 	GENERATED_BODY()
 	
@@ -19,6 +20,7 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void SpawnKey();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -26,5 +28,5 @@ public:
 	UPROPERTY(EditAnywhere, Category = SpawnInfo)
 		TSubclassOf<AActor> KeyCardClass;
 
-	void SpawnKey();
+	virtual void OnTriggered_Implementation() override;
 };

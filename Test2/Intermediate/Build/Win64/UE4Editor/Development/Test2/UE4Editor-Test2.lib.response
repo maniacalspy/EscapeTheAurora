@@ -6,6 +6,7 @@
 /NAME:"UE4Editor-Test2.dll"
 /IGNORE:4221
 /NODEFAULTLIB
+<<<<<<< HEAD
 "D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
 "D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\DoorBase.cpp.obj"
 "D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\EditableTextWidget.cpp.obj"
@@ -67,4 +68,15 @@
 "D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\TriggeredMonster.gen.cpp.obj"
 "D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
 /OUT:"D:\GitHub\EscapeTheAurora\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib"
+=======
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Character.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PoweredInteractableDoor.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Test2Character.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Triggerable.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.gen.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
+/OUT:"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib"
+>>>>>>> master
 /INCLUDE:IMPLEMENT_MODULE_Test2

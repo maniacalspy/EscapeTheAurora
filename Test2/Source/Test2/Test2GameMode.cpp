@@ -16,7 +16,7 @@ ATest2GameMode::ATest2GameMode()
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/FirstPersonCharacter"));
 	DefaultPawnClass = PlayerPawnClassFinder.Class;
 	
-	ConstructorHelpers::FClassFinder<UHUDWidgetBase> MenuClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD.HUD"));
+	ConstructorHelpers::FClassFinder<UHUDWidgetBase> MenuClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD"));
 
 	//HUDClass = MenuClassFinder.Class;
 
@@ -37,7 +37,6 @@ void ATest2GameMode::EnableMap() {
 		PauseMenu = Player->GetPauseMenuInstance();
 		HUD = Player->GetGameHUDInstance();
 		if (HUD) {
-			//GEngine->AddOnScreenDebugMessage(2, 1.f, FColor::Green, TEXT("Map Downloaded!"));
 			HUD->PlayDownload();
 		}
 	}
