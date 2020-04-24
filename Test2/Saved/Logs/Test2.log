@@ -1,4 +1,4 @@
-﻿Log file open, 04/22/20 08:31:49
+﻿Log file open, 04/24/20 11:33:08
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: Test2
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 2.691878
+LogStats: Stats thread started at 0.320445
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -100,9 +100,6 @@ LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
-Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe -Mode=QueryTargets -Project="C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Test2.uproject" -Output="C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Intermediate/TargetInfo.json"]
-Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe -Mode=QueryTargets -Project="C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Test2.uproject" -Output="C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Intermediate/TargetInfo.json"]
-LogDesktopPlatform: Warning: Unable to read target info for ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Test2.uproject
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1
@@ -133,7 +130,7 @@ LogInit: Compiled (64-bit): Feb 24 2020 15:39:18
 LogInit: Compiled with Visual C++: 19.16.27032.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.24
-LogInit: Command Line:  -EpicPortal -epicusername=AustinDerrick -epicuserid=51fc2d0edb9e4d21a8e563046960f4e3 -epiclocale=en
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogDevObjectVersion: Number of dev versions registered: 25
@@ -162,1113 +159,531 @@ LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
 LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 9
 LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 8
 LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogFileManager: Warning: Error deleting file: ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Logs/Test2-backup-2020.04.17-05.01.30.log (Error Code 5)
 LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:059][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2020.04.22-13.32.05:059][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2020.04.22-13.32.05:060][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:060][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:069][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.22-13.32.05:069][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.22-13.32.05:070][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.22-13.32.05:071][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.22-13.32.05:072][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.22-13.32.05:072][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.22-13.32.05:072][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2020.04.22-13.32.05:153][  0]LogHAL: Display: Platform has ~ 8 GB [8009211904 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2020.04.22-13.32.05:154][  0]LogInit: Going up to parent DeviceProfile []
-[2020.04.22-13.32.05:154][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2020.04.22-13.32.05:154][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2020.04.22-13.32.05:155][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2020.04.22-13.32.05:156][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:157][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2020.04.22-13.32.05:157][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2020.04.22-13.32.05:157][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
-[2020.04.22-13.32.05:157][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2020.04.22-13.32.05:157][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2020.04.22-13.32.05:157][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2020.04.22-13.32.05:157][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2020.04.22-13.32.05:178][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2020.04.22-13.32.05:178][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2020.04.22-13.32.05:178][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
-[2020.04.22-13.32.05:178][  0]LogInit: Computer: LAPTOP-EMDP0E89
-[2020.04.22-13.32.05:178][  0]LogInit: User: Austi
-[2020.04.22-13.32.05:178][  0]LogInit: CPU Page size=4096, Cores=2
-[2020.04.22-13.32.05:178][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2020.04.22-13.32.05:179][  0]LogMemory: Memory total: Physical=7.5GB (8GB approx)
-[2020.04.22-13.32.05:179][  0]LogMemory: Platform Memory Stats for Windows
-[2020.04.22-13.32.05:179][  0]LogMemory: Process Physical Memory: 104.88 MB used, 104.88 MB peak
-[2020.04.22-13.32.05:179][  0]LogMemory: Process Virtual Memory: 99.68 MB used, 99.68 MB peak
-[2020.04.22-13.32.05:179][  0]LogMemory: Physical Memory: 7151.64 MB used,  486.54 MB free, 7638.18 MB total
-[2020.04.22-13.32.05:179][  0]LogMemory: Virtual Memory: 5131.64 MB used,  134212600.00 MB free, 134217728.00 MB total
-[2020.04.22-13.32.05:242][  0]LogWindows: WindowsPlatformFeatures enabled
-[2020.04.22-13.32.05:706][  0]LogInit: Using OS detected language (en-US).
-[2020.04.22-13.32.05:706][  0]LogInit: Using OS detected locale (en-US).
-[2020.04.22-13.32.05:772][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2020.04.22-13.32.07:428][  0]LogInit: Setting process to per monitor DPI aware
-[2020.04.22-13.32.08:175][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2020.04.22-13.32.08:175][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2020.04.22-13.32.17:062][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.22-13.32.17:062][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2020.04.22-13.32.17:062][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2020.04.22-13.32.17:062][  0]LogD3D11RHI: D3D11 adapters:
-[2020.04.22-13.32.17:169][  0]LogD3D11RHI:    0. 'AMD Radeon(TM) R6' (Feature Level 11_0)
-[2020.04.22-13.32.17:169][  0]LogD3D11RHI:       500/0/3819 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
-[2020.04.22-13.32.17:192][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2020.04.22-13.32.17:192][  0]LogD3D11RHI:       0/0/3819 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2020.04.22-13.32.17:192][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2020.04.22-13.32.17:217][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2020.04.22-13.32.17:218][  0]LogD3D11RHI:     GPU DeviceId: 0x9874 (for the marketing name, search the web for "GPU Device Id")
-[2020.04.22-13.32.17:218][  0]LogWindows: EnumDisplayDevices:
-[2020.04.22-13.32.17:218][  0]LogWindows:    0. 'AMD Radeon(TM) R6' (P:1 D:1)
-[2020.04.22-13.32.17:219][  0]LogWindows:    1. 'AMD Radeon(TM) R6' (P:0 D:0)
-[2020.04.22-13.32.17:220][  0]LogWindows:    2. 'AMD Radeon(TM) R6' (P:0 D:0)
-[2020.04.22-13.32.17:221][  0]LogWindows: DebugString: FoundDriverCount:3 
-[2020.04.22-13.32.17:221][  0]LogD3D11RHI:     Adapter Name: AMD Radeon(TM) R6
-[2020.04.22-13.32.17:221][  0]LogD3D11RHI:   Driver Version: 15.200.1065.0 (internal:15.200.1065.0, unified:15.200.1065.0)
-[2020.04.22-13.32.17:221][  0]LogD3D11RHI:      Driver Date: 7-21-2015
-[2020.04.22-13.32.17:221][  0]LogRHI: Texture pool is 350 MB (70% of 500 MB)
-[2020.04.22-13.32.17:504][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
-[2020.04.22-13.32.17:504][  0]LogD3D11RHI: Async texture creation enabled
-[2020.04.22-13.32.17:526][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
-[2020.04.22-13.32.25:236][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2020.04.22-13.32.28:179][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2020.04.22-13.32.28:376][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2020.04.22-13.32.28:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2020.04.22-13.32.28:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2020.04.22-13.32.28:536][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2020.04.22-13.32.28:618][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2020.04.22-13.32.28:665][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2020.04.22-13.32.28:722][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2020.04.22-13.32.28:866][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2020.04.22-13.32.28:937][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2020.04.22-13.32.29:048][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2020.04.22-13.32.29:048][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2020.04.22-13.32.29:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2020.04.22-13.32.29:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2020.04.22-13.32.29:204][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2020.04.22-13.32.29:311][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2020.04.22-13.32.29:367][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2020.04.22-13.32.29:421][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2020.04.22-13.32.29:421][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2020.04.22-13.32.29:576][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2020.04.22-13.32.30:217][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Intermediate/Shaders/WorkingDirectory/31316/).
-[2020.04.22-13.32.30:218][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Austi/AppData/Local/Temp/UnrealShaderWorkingDir/F558525B42759F10405D129CA634E6DD/'.
-[2020.04.22-13.32.30:239][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2020.04.22-13.32.30:239][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2020.04.22-13.32.30:239][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2020.04.22-13.32.47:431][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2020.04.22-13.32.49:702][  0]LogDerivedDataCache: Loaded boot cache 2.26s 99MB C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.22-13.32.49:703][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
-[2020.04.22-13.32.49:703][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2020.04.22-13.32.49:703][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2020.04.22-13.32.49:703][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.22-13.32.49:703][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2020.04.22-13.32.49:815][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2020.04.22-13.32.49:815][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2020.04.22-13.32.49:815][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2020.04.22-13.32.49:822][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Austi/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2020.04.22-13.32.49:822][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2020.04.22-13.32.49:822][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2020.04.22-13.32.49:899][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2020.04.22-13.32.49:904][  0]LogSlate: Using FreeType 2.10.0
-[2020.04.22-13.32.50:086][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2020.04.22-13.32.57:358][  0]LogAssetRegistry: FAssetRegistry took 0.0074 seconds to start up
-[2020.04.22-13.32.58:326][  0]LogInit: Selected Device Profile: [Windows]
-[2020.04.22-13.33.00:855][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2020.04.22-13.33.00:855][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2020.04.22-13.33.00:855][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2020.04.22-13.33.00:855][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2020.04.22-13.33.00:855][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2020.04.22-13.33.01:830][  0]LogNetVersion: Test2 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 123441186)
-[2020.04.22-13.33.01:996][  0]LogInput: Warning: Action Jump uses deprecated key MotionController_Left_Trigger.
-[2020.04.22-13.33.01:996][  0]LogInput: Warning: Action Fire uses deprecated key MotionController_Right_Trigger.
-[2020.04.22-13.33.01:996][  0]LogInput: Warning: Action ResetVR uses deprecated key MotionController_Left_Grip1.
-[2020.04.22-13.33.01:996][  0]LogInput: Warning: Axis MoveForward uses deprecated key MotionController_Left_Thumbstick_Y.
-[2020.04.22-13.33.01:996][  0]LogInput: Warning: Axis MoveRight uses deprecated key MotionController_Left_Thumbstick_X.
-[2020.04.22-13.34.21:919][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.370835 seconds
-[2020.04.22-13.34.21:937][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
-[2020.04.22-13.34.21:937][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
-[2020.04.22-13.34.21:937][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2020.04.22-13.34.30:854][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2020.04.22-13.34.37:449][  0]LogTexture: Display: Building textures: Door_Unwrapped_Door_Emissive (AutoDXT, 1024X1024)
-[2020.04.22-13.34.37:449][  0]LogTexture: Display: Building textures: Door_Unwrapped_Door_BaseColor (AutoDXT, 1024X1024)
-[2020.04.22-13.34.37:449][  0]LogTexture: Display: Building textures: Door_Unwrapped_Door_OcclusionRoughnessMetallic (AutoDXT, 1024X1024)
-[2020.04.22-13.34.37:449][  0]LogTexture: Display: Building textures: Door_Unwrapped_Door_Normal (BC5, 1024X1024)
-[2020.04.22-13.34.37:449][  0]LogMaterial: Display: Missing cached shader map for material DoorMaterial, compiling. 
-[2020.04.22-13.34.38:472][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 39
-[2020.04.22-13.34.38:472][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 29
-[2020.04.22-13.34.38:472][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 19
-[2020.04.22-13.34.38:500][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave TipOnEdge...
-[2020.04.22-13.34.38:508][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/TipOnEdge.TipOnEdge will be modified from 40 to 40.
-[2020.04.22-13.34.40:519][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 68976 while cooking SoundWave /Game/Audio/SFX/TipOnEdge.TipOnEdge.
-[2020.04.22-13.34.40:647][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave TipOnSide...
-[2020.04.22-13.34.40:648][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/TipOnSide.TipOnSide will be modified from 40 to 40.
-[2020.04.22-13.34.40:677][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 88196 while cooking SoundWave /Game/Audio/SFX/TipOnSide.TipOnSide.
-[2020.04.22-13.34.40:846][  0]LogMaterial: Display: Missing cached shader map for material aiStandardSurface1, compiling. 
-[2020.04.22-13.34.41:695][  0]LogStaticMesh: Building static mesh Battery_1_0...
-[2020.04.22-13.34.44:022][  0]LogStaticMesh: Built static mesh [2.27s] /Game/FirstPerson/Assets/Battery_1_0.Battery_1_0
-[2020.04.22-13.34.46:232][  0]LogTexture: Display: Building textures: Battery_1_0_Battery_Emissive (AutoDXT, 1024X1024)
-[2020.04.22-13.34.46:232][  0]LogTexture: Display: Building textures: Battery_1_0_Battery_OcclusionRoughnessMetallic (AutoDXT, 1024X1024)
-[2020.04.22-13.34.46:232][  0]LogTexture: Display: Building textures: Battery_1_0_Battery_BaseColor (AutoDXT, 1024X1024)
-[2020.04.22-13.34.46:232][  0]LogTexture: Display: Building textures: Battery_1_0_Battery_Normal (BC5, 1024X1024)
-[2020.04.22-13.34.46:232][  0]LogMaterial: Display: Missing cached shader map for material Battery, compiling. 
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: HighLightOver (BGRA8, 406X106)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: ButtonClicked (BGRA8, 406X106)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: Asset_5 (BGRA8, 406X106)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: Asset_14 (BGRA8, 943X176)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: Asset_8 (AutoDXT, 1716X876)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: Asset_6 (BGRA8, 486X448)
-[2020.04.22-13.34.50:110][  0]LogTexture: Display: Building textures: Asset_7 (AutoDXT, 1896X1056)
-[2020.04.22-13.34.51:286][  0]LogTexture: Display: Building textures: Main_Title (BGRA8, 1091X104)
-[2020.04.22-13.34.51:287][  0]LogTexture: Display: Building textures: Main_Title_0 (BGRA8, 1091X132)
-[2020.04.22-13.34.51:287][  0]LogTexture: Display: Building textures: Main_Options (BGRA8, 176X49)
-[2020.04.22-13.34.51:287][  0]LogTexture: Display: Building textures: Main_NewGame (BGRA8, 194X51)
-[2020.04.22-13.34.51:287][  0]LogTexture: Display: Building textures: Main_NewGame_0 (BGRA8, 194X51)
-[2020.04.22-13.34.51:287][  0]LogTexture: Display: Building textures: Main_Background (AutoDXT, 1920X1080)
-[2020.04.22-13.35.01:325][  0]LogSkeletalMesh: Building Skeletal Mesh SK_FPGun...
-[2020.04.22-13.35.01:655][  0]LogSkeletalMesh: Built Skeletal Mesh [0.52s] /Game/FirstPerson/FPWeapon/Mesh/SK_FPGun.SK_FPGun
-[2020.04.22-13.35.01:926][  0]LogSkeletalMesh: Building Skeletal Mesh SK_Mannequin_Arms...
-[2020.04.22-13.35.02:006][  0]LogSkeletalMesh: Built Skeletal Mesh [0.08s] /Game/FirstPerson/Character/Mesh/SK_Mannequin_Arms.SK_Mannequin_Arms
-[2020.04.22-13.35.03:428][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/FirstPerson/Animations/FirstPerson_Fire.FirstPerson_Fire
-[2020.04.22-13.35.03:512][  0]LogAnimationCompression: Compression Requested for Empty Animation FirstPerson_Fire
-[2020.04.22-13.35.03:768][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/FirstPerson/Animations/FirstPerson_Run.FirstPerson_Run
-[2020.04.22-13.35.03:768][  0]LogAnimationCompression: Compression Requested for Empty Animation FirstPerson_Run
-[2020.04.22-13.35.03:794][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave feet_concrete2...
-[2020.04.22-13.35.03:795][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/feet_concrete2.feet_concrete2 will be modified from 40 to 40.
-[2020.04.22-13.35.03:822][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 65816 while cooking SoundWave /Game/Audio/SFX/feet_concrete2.feet_concrete2.
-[2020.04.22-13.35.03:823][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave feet_concrete1...
-[2020.04.22-13.35.03:823][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/feet_concrete1.feet_concrete1 will be modified from 40 to 40.
-[2020.04.22-13.35.03:855][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 76120 while cooking SoundWave /Game/Audio/SFX/feet_concrete1.feet_concrete1.
-[2020.04.22-13.35.06:624][  0]SourceControl: Source control is disabled
-[2020.04.22-13.35.06:624][  0]SourceControl: Source control is disabled
-[2020.04.22-13.35.07:161][  0]SourceControl: Source control is disabled
-[2020.04.22-13.35.07:430][  0]SourceControl: Source control is disabled
-[2020.04.22-13.35.07:632][  0]SourceControl: Source control is disabled
-[2020.04.22-13.35.17:798][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2020.04.22-13.35.18:223][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.22-13.35.18:223][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2020.04.22-13.35.19:742][  0]LogOcInput: OculusInput pre-init called
-[2020.04.22-13.35.19:885][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2020.04.22-13.35.19:885][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2020.04.22-13.35.20:630][  0]LogEngine: Initializing Engine...
-[2020.04.22-13.35.20:635][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2020.04.22-13.35.20:638][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
-[2020.04.22-13.35.22:055][  0]LogInit: Initializing FReadOnlyCVARCache
-[2020.04.22-13.35.22:470][  0]LogAIModule: Creating AISystem for world Untitled
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2020.04.22-13.35.22:552][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2020.04.22-13.35.22:552][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2020.04.22-13.35.22:553][  0]LogAudio: Display: Using built-in audio occlusion.
-[2020.04.22-13.35.22:553][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Is Default: Yes
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Sample Rate: 48000
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Channel Count Used: 2
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Device Channel Count: 2
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: Channel Order:
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: 0: FrontLeft
-[2020.04.22-13.35.22:672][  0]LogAudioMixer: Display: 1: FrontRight
-[2020.04.22-13.35.23:040][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
-[2020.04.22-13.35.23:053][  0]LogInit: FAudioDevice initialized.
-[2020.04.22-13.35.23:054][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2020.04.22-13.35.24:941][  0]LogDerivedDataCache: Saved boot cache 1.89s 95MB C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2020.04.22-13.35.25:033][  0]LogInit: Texture streaming: Enabled
-[2020.04.22-13.35.26:437][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2020.04.22-13.35.26:438][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2020.04.22-13.35.26:636][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2020.04.22-13.35.28:088][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 39
-[2020.04.22-13.35.28:088][  0]LogInit: Transaction tracking system initialized
-[2020.04.22-13.35.29:249][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 29
-[2020.04.22-13.35.30:125][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 19
-[2020.04.22-13.35.30:125][  0]BlueprintLog: New page: Editor Load
-[2020.04.22-13.35.31:835][  0]LocalizationService: Localization service is disabled
-[2020.04.22-13.35.35:482][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2020.04.22-13.35.35:482][  0]LogCook: Display: Mobile HDR setting 1
-[2020.04.22-13.35.36:602][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/' took 0.16s
-[2020.04.22-13.35.40:396][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 12
-[2020.04.22-13.36.16:230][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 7
-[2020.04.22-13.36.16:230][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 4
-[2020.04.22-13.36.16:230][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 2
-[2020.04.22-13.36.16:230][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 1
-[2020.04.22-13.36.18:610][  0]SourceControl: Source control is disabled
-[2020.04.22-13.36.18:611][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2020.04.22-13.36.18:687][  0]LightingResults: New page: Lighting Build
-[2020.04.22-13.36.18:819][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2020.04.22-13.36.18:820][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2020.04.22-13.36.18:820][  0]MapCheck: New page: Map Check
-[2020.04.22-13.36.18:820][  0]LightingResults: New page: Lighting Build
-[2020.04.22-13.36.19:754][  0]LogUObjectHash: Compacting FUObjectHashTables data took   7.24ms
-[2020.04.22-13.36.23:386][  0]LogTexture: Display: Building textures: Tiles_Level1_Level_1_Tiles_OcclusionRoughnessMetallic (AutoDXT, 1024X1024)
-[2020.04.22-13.36.23:386][  0]LogStaticMesh: Building static mesh Deck_polySurface215...
-[2020.04.22-13.36.23:425][  0]LogTexture: Display: Building textures: Tiles_Level1_Level_1_Tiles_BaseColor (AutoDXT, 1024X1024)
-[2020.04.22-13.36.23:425][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface215.Deck_polySurface215
-[2020.04.22-13.36.23:428][  0]LogStaticMesh: Building static mesh Deck_polySurface214...
-[2020.04.22-13.36.23:461][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface214.Deck_polySurface214
-[2020.04.22-13.36.23:465][  0]LogStaticMesh: Building static mesh Deck_polySurface213...
-[2020.04.22-13.36.23:477][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface213.Deck_polySurface213
-[2020.04.22-13.36.23:480][  0]LogStaticMesh: Building static mesh Deck_polySurface212...
-[2020.04.22-13.36.23:506][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface212.Deck_polySurface212
-[2020.04.22-13.36.23:532][  0]LogStaticMesh: Building static mesh Deck_polySurface211...
-[2020.04.22-13.36.23:544][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface211.Deck_polySurface211
-[2020.04.22-13.36.23:547][  0]LogStaticMesh: Building static mesh Deck_polySurface210...
-[2020.04.22-13.36.23:592][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface210.Deck_polySurface210
-[2020.04.22-13.36.23:619][  0]LogStaticMesh: Building static mesh Deck_polySurface209...
-[2020.04.22-13.36.23:651][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface209.Deck_polySurface209
-[2020.04.22-13.36.23:655][  0]LogStaticMesh: Building static mesh Deck_polySurface208...
-[2020.04.22-13.36.23:666][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface208.Deck_polySurface208
-[2020.04.22-13.36.23:669][  0]LogStaticMesh: Building static mesh Deck_polySurface207...
-[2020.04.22-13.36.23:703][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface207.Deck_polySurface207
-[2020.04.22-13.36.23:706][  0]LogStaticMesh: Building static mesh Deck_polySurface206...
-[2020.04.22-13.36.23:719][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface206.Deck_polySurface206
-[2020.04.22-13.36.23:740][  0]LogStaticMesh: Building static mesh Deck_polySurface205...
-[2020.04.22-13.36.23:757][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface205.Deck_polySurface205
-[2020.04.22-13.36.23:782][  0]LogStaticMesh: Building static mesh Deck_polySurface204...
-[2020.04.22-13.36.23:814][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface204.Deck_polySurface204
-[2020.04.22-13.36.23:823][  0]LogStaticMesh: Building static mesh Deck_polySurface203...
-[2020.04.22-13.36.23:834][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface203.Deck_polySurface203
-[2020.04.22-13.36.23:837][  0]LogStaticMesh: Building static mesh Deck_polySurface202...
-[2020.04.22-13.36.23:870][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface202.Deck_polySurface202
-[2020.04.22-13.36.23:882][  0]LogStaticMesh: Building static mesh Deck_polySurface201...
-[2020.04.22-13.36.23:895][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface201.Deck_polySurface201
-[2020.04.22-13.36.23:898][  0]LogStaticMesh: Building static mesh Deck_polySurface200...
-[2020.04.22-13.36.23:911][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface200.Deck_polySurface200
-[2020.04.22-13.36.23:928][  0]LogMaterial: Display: Missing cached shader map for material blinn1, compiling. 
-[2020.04.22-13.36.24:022][  0]LogStaticMesh: Building static mesh Air_Lock_Room...
-[2020.04.22-13.36.27:979][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 24
-[2020.04.22-13.36.27:979][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 15
-[2020.04.22-13.36.27:979][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 6
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: Tiles_Level1_Level_1_Tiles_Normal (BC5, 1024X1024)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: AOMaterialMask0_1 (BC4, 1024X512)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: AOMaterialMask1_6 (BC4, 128X64)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: AOMaterialMask1_5 (BC4, 1024X512)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: HQ_Lightmap1_5 (AutoDXT, 1024X1024)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: HQ_Lightmap1_6 (AutoDXT, 128X128)
-[2020.04.22-13.36.27:979][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
-[2020.04.22-13.36.27:979][  0]LogStaticMesh: Built static mesh [3.96s] /Game/FirstPerson/Environments/AirLock/Air_Lock_Room.Air_Lock_Room
-[2020.04.22-13.36.29:397][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_5 (DXT1, 1024X1024)
-[2020.04.22-13.36.29:397][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_6 (DXT1, 128X128)
-[2020.04.22-13.36.29:397][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 1024X1024)
-[2020.04.22-13.36.29:397][  0]LogStaticMesh: Building static mesh Storage_Container_Wide...
-[2020.04.22-13.36.29:430][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Assets/Misc/Storage_Container_Wide.Storage_Container_Wide
-[2020.04.22-13.36.29:505][  0]LogStaticMesh: Building static mesh Storage_Container_Tall...
-[2020.04.22-13.36.29:551][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Assets/Misc/Storage_Container_Tall.Storage_Container_Tall
-[2020.04.22-13.36.29:816][  0]LogStaticMesh: Building static mesh Storage_Container_Small...
-[2020.04.22-13.36.29:847][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Assets/Misc/Storage_Container_Small.Storage_Container_Small
-[2020.04.22-13.36.29:855][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave PowerUpShortened...
-[2020.04.22-13.36.29:855][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/PowerUpShortened.PowerUpShortened will be modified from 40 to 40.
-[2020.04.22-13.36.33:171][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 137216 while cooking SoundWave /Game/Audio/SFX/PowerUpShortened.PowerUpShortened.
-[2020.04.22-13.36.33:330][  0]LogMaterial: Display: Missing cached shader map for material Ebase, compiling. 
-[2020.04.22-13.36.35:656][  0]LogMaterial: Display: Missing cached shader map for material Spark_Drop_M, compiling. 
-[2020.04.22-13.36.35:951][  0]LogMaterial: Display: Missing cached shader map for material blinn2, compiling. 
-[2020.04.22-13.36.36:019][  0]LogStaticMesh: Building static mesh Suit_Up_Room...
-[2020.04.22-13.36.36:532][  0]LogStaticMesh: Built static mesh [0.51s] /Game/FirstPerson/Environments/Suit_Up_Room/Suit_Up_Room.Suit_Up_Room
-[2020.04.22-13.36.36:624][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface9...
-[2020.04.22-13.36.36:659][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface9.Personel_Room_polySurface9
-[2020.04.22-13.36.36:665][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface8...
-[2020.04.22-13.36.36:671][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface8.Personel_Room_polySurface8
-[2020.04.22-13.36.36:674][  0]LogStaticMesh: Building static mesh Deck_polySurface115...
-[2020.04.22-13.36.36:677][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface115.Deck_polySurface115
-[2020.04.22-13.36.36:686][  0]LogStaticMesh: Building static mesh Deck_polySurface114...
-[2020.04.22-13.36.36:770][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface114.Deck_polySurface114
-[2020.04.22-13.36.36:802][  0]LogStaticMesh: Building static mesh Deck_polySurface113...
-[2020.04.22-13.36.36:873][  0]LogStaticMesh: Built static mesh [0.09s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface113.Deck_polySurface113
-[2020.04.22-13.36.36:885][  0]LogStaticMesh: Building static mesh Deck_polySurface112...
-[2020.04.22-13.36.36:988][  0]LogStaticMesh: Built static mesh [0.10s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface112.Deck_polySurface112
-[2020.04.22-13.36.37:000][  0]LogStaticMesh: Building static mesh Deck_polySurface224...
-[2020.04.22-13.36.37:006][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface224.Deck_polySurface224
-[2020.04.22-13.36.37:008][  0]LogStaticMesh: Building static mesh Deck_polySurface111...
-[2020.04.22-13.36.37:190][  0]LogStaticMesh: Built static mesh [0.18s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface111.Deck_polySurface111
-[2020.04.22-13.36.37:247][  0]LogStaticMesh: Building static mesh Deck_polySurface110...
-[2020.04.22-13.36.37:510][  0]LogStaticMesh: Built static mesh [0.26s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface110.Deck_polySurface110
-[2020.04.22-13.36.37:569][  0]LogStaticMesh: Building static mesh Deck_polySurface225...
-[2020.04.22-13.36.37:570][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface225.Deck_polySurface225
-[2020.04.22-13.36.37:625][  0]LogStaticMesh: Building static mesh Deck_polySurface226...
-[2020.04.22-13.36.37:632][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface226.Deck_polySurface226
-[2020.04.22-13.36.37:633][  0]LogStaticMesh: Building static mesh Deck_polySurface109...
-[2020.04.22-13.36.37:635][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface109.Deck_polySurface109
-[2020.04.22-13.36.37:636][  0]LogStaticMesh: Building static mesh Deck_polySurface108...
-[2020.04.22-13.36.37:641][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface108.Deck_polySurface108
-[2020.04.22-13.36.37:643][  0]LogStaticMesh: Building static mesh Deck_polySurface107...
-[2020.04.22-13.36.37:753][  0]LogStaticMesh: Built static mesh [0.11s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface107.Deck_polySurface107
-[2020.04.22-13.36.37:767][  0]LogStaticMesh: Building static mesh Deck_polySurface106...
-[2020.04.22-13.36.37:969][  0]LogStaticMesh: Built static mesh [0.20s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface106.Deck_polySurface106
-[2020.04.22-13.36.37:991][  0]LogStaticMesh: Building static mesh Deck_polySurface105...
-[2020.04.22-13.36.38:032][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface105.Deck_polySurface105
-[2020.04.22-13.36.38:045][  0]LogStaticMesh: Building static mesh Deck_polySurface104...
-[2020.04.22-13.36.38:050][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface104.Deck_polySurface104
-[2020.04.22-13.36.38:052][  0]LogStaticMesh: Building static mesh Deck_polySurface103...
-[2020.04.22-13.36.38:143][  0]LogStaticMesh: Built static mesh [0.09s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface103.Deck_polySurface103
-[2020.04.22-13.36.38:157][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface4...
-[2020.04.22-13.36.38:163][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface4.Personel_Room_polySurface4
-[2020.04.22-13.36.38:164][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface3...
-[2020.04.22-13.36.38:280][  0]LogStaticMesh: Built static mesh [0.12s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface3.Personel_Room_polySurface3
-[2020.04.22-13.36.38:284][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface2...
-[2020.04.22-13.36.38:307][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface2.Personel_Room_polySurface2
-[2020.04.22-13.36.38:326][  0]LogMaterial: Display: Missing cached shader map for material lambert2, compiling. 
-[2020.04.22-13.36.38:369][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface1...
-[2020.04.22-13.36.38:470][  0]LogStaticMesh: Built static mesh [0.10s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface1.Personel_Room_polySurface1
-[2020.04.22-13.36.38:486][  0]LogStaticMesh: Building static mesh Personel_Room_pCube13...
-[2020.04.22-13.36.38:489][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_pCube13.Personel_Room_pCube13
-[2020.04.22-13.36.38:512][  0]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.04.22-13.36.38:556][  0]LogStaticMesh: Building static mesh Personel_Room_pCube12...
-[2020.04.22-13.36.38:559][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_pCube12.Personel_Room_pCube12
-[2020.04.22-13.36.38:579][  0]LogMaterial: Display: Missing cached shader map for material Pipes1, compiling. 
-[2020.04.22-13.36.38:636][  0]LogMaterial: Display: Missing cached shader map for material lambert3, compiling. 
-[2020.04.22-13.36.38:709][  0]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.04.22-13.36.38:783][  0]LogMaterial: Display: Missing cached shader map for material Glass, compiling. 
-[2020.04.22-13.36.38:843][  0]LogMaterial: Display: Missing cached shader map for material blinn4, compiling. 
-[2020.04.22-13.36.38:919][  0]LogMaterial: Display: Missing cached shader map for material blinn1, compiling. 
-[2020.04.22-13.36.38:964][  0]LogStaticMesh: Building static mesh Med_Bay...
-[2020.04.22-13.36.46:229][  0]LogStaticMesh: Built static mesh [7.26s] /Game/FirstPerson/Environments/Med_Bay/Med_Bay.Med_Bay
-[2020.04.22-13.36.48:579][  0]LogMaterial: Display: Missing cached shader map for material lambert4, compiling. 
-[2020.04.22-13.36.48:616][  0]LogStaticMesh: Building static mesh Tile_01...
-[2020.04.22-13.36.48:628][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Level_01/Tile_01.Tile_01
-[2020.04.22-13.36.49:069][  0]LogStaticMesh: Building static mesh SciFi_Hallway_Module_Straight...
-[2020.04.22-13.36.49:104][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Hallway/SciFi_Hallway_Module_Straight.SciFi_Hallway_Module_Straight
-[2020.04.22-13.36.50:049][  0]LogStaticMesh: Building static mesh SciFi_Hallway_Module_Intersection...
-[2020.04.22-13.36.50:111][  0]LogStaticMesh: Built static mesh [0.31s] /Game/FirstPerson/Environments/Hallway/SciFi_Hallway_Module_Intersection.SciFi_Hallway_Module_Intersection
-[2020.04.22-13.36.50:122][  0]LogStaticMesh: Building static mesh HM_Intersection...
-[2020.04.22-13.36.50:456][  0]LogStaticMesh: Built static mesh [0.33s] /Game/FirstPerson/Environments/Hallway/HM_Intersection.HM_Intersection
-[2020.04.22-13.36.50:531][  0]LogStaticMesh: Building static mesh Hallway_Divider...
-[2020.04.22-13.36.50:571][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Hallway/Hallway_Divider.Hallway_Divider
-[2020.04.22-13.36.50:581][  0]LogStaticMesh: Building static mesh Hallway_Corner_OW_Corner_Wall...
-[2020.04.22-13.36.50:801][  0]LogStaticMesh: Built static mesh [0.22s] /Game/FirstPerson/Environments/Hallway/Hallway_Corner_OW_Corner_Wall.Hallway_Corner_OW_Corner_Wall
-[2020.04.22-13.36.50:806][  0]LogStaticMesh: Building static mesh Hallway_Corner_OW_Corner_Pillar...
-[2020.04.22-13.36.51:031][  0]LogStaticMesh: Built static mesh [0.23s] /Game/FirstPerson/Environments/Hallway/Hallway_Corner_OW_Corner_Pillar.Hallway_Corner_OW_Corner_Pillar
-[2020.04.22-13.36.51:035][  0]LogStaticMesh: Building static mesh Hallway_Corner_OW_Corner_Floor...
-[2020.04.22-13.36.51:081][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Hallway/Hallway_Corner_OW_Corner_Floor.Hallway_Corner_OW_Corner_Floor
-[2020.04.22-13.36.51:100][  0]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.04.22-13.36.51:146][  0]LogStaticMesh: Building static mesh Hallway_Corner_OW_Corner_Ceiling...
-[2020.04.22-13.36.51:304][  0]LogStaticMesh: Built static mesh [0.16s] /Game/FirstPerson/Environments/Hallway/Hallway_Corner_OW_Corner_Ceiling.Hallway_Corner_OW_Corner_Ceiling
-[2020.04.22-13.36.53:851][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 329
-[2020.04.22-13.36.53:851][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/FirstPerson/Animations/Door/DoorOpenFrameAnim.DoorOpenFrameAnim
-[2020.04.22-13.36.53:935][  0]LogAnimationCompression: Recompressing (AnimSequence /Game/FirstPerson/Animations/Door/DoorOpenFrameAnim.DoorOpenFrameAnim) using current/default (AnimCompress_BitwiseCompressOnly_0) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
-[2020.04.22-13.36.54:919][  0]LogStaticMesh: Building static mesh Deck_Deck_B_Wall...
-[2020.04.22-13.36.54:920][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_Deck_B_Wall.Deck_Deck_B_Wall
-[2020.04.22-13.36.54:922][  0]LogStaticMesh: Building static mesh Deck_pCylinder1...
-[2020.04.22-13.36.54:996][  0]LogStaticMesh: Built static mesh [0.07s] /Game/FirstPerson/Environments/Bridge/Deck_pCylinder1.Deck_pCylinder1
-[2020.04.22-13.36.55:003][  0]LogStaticMesh: Building static mesh Deck_polySurface100...
-[2020.04.22-13.36.55:008][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface100.Deck_polySurface100
-[2020.04.22-13.36.55:012][  0]LogStaticMesh: Building static mesh Deck_polySurface101...
-[2020.04.22-13.36.55:085][  0]LogStaticMesh: Built static mesh [0.07s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface101.Deck_polySurface101
-[2020.04.22-13.36.55:100][  0]LogStaticMesh: Building static mesh Deck_polySurface102...
-[2020.04.22-13.36.55:148][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface102.Deck_polySurface102
-[2020.04.22-13.36.55:156][  0]LogStaticMesh: Building static mesh Deck_polySurface116...
-[2020.04.22-13.36.55:238][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface116.Deck_polySurface116
-[2020.04.22-13.36.55:247][  0]LogStaticMesh: Building static mesh Deck_polySurface149...
-[2020.04.22-13.36.55:533][  0]LogStaticMesh: Built static mesh [0.29s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface149.Deck_polySurface149
-[2020.04.22-13.36.55:542][  0]LogStaticMesh: Building static mesh Deck_polySurface195...
-[2020.04.22-13.36.55:549][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface195.Deck_polySurface195
-[2020.04.22-13.36.55:551][  0]LogStaticMesh: Building static mesh Deck_polySurface196...
-[2020.04.22-13.36.55:557][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface196.Deck_polySurface196
-[2020.04.22-13.36.55:560][  0]LogStaticMesh: Building static mesh Deck_polySurface197...
-[2020.04.22-13.36.55:588][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface197.Deck_polySurface197
-[2020.04.22-13.36.55:592][  0]LogStaticMesh: Building static mesh Deck_polySurface198...
-[2020.04.22-13.36.55:622][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface198.Deck_polySurface198
-[2020.04.22-13.36.55:625][  0]LogStaticMesh: Building static mesh Deck_polySurface199...
-[2020.04.22-13.36.55:649][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface199.Deck_polySurface199
-[2020.04.22-13.36.55:658][  0]LogStaticMesh: Building static mesh Deck_polySurface216...
-[2020.04.22-13.36.55:715][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface216.Deck_polySurface216
-[2020.04.22-13.36.55:723][  0]LogStaticMesh: Building static mesh Deck_polySurface217...
-[2020.04.22-13.36.55:758][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface217.Deck_polySurface217
-[2020.04.22-13.36.55:761][  0]LogStaticMesh: Building static mesh Deck_polySurface218...
-[2020.04.22-13.36.55:889][  0]LogStaticMesh: Built static mesh [0.13s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface218.Deck_polySurface218
-[2020.04.22-13.36.55:892][  0]LogStaticMesh: Building static mesh Deck_polySurface219...
-[2020.04.22-13.36.55:921][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface219.Deck_polySurface219
-[2020.04.22-13.36.55:923][  0]LogStaticMesh: Building static mesh Deck_polySurface220...
-[2020.04.22-13.36.55:951][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface220.Deck_polySurface220
-[2020.04.22-13.36.55:957][  0]LogStaticMesh: Building static mesh Deck_polySurface221...
-[2020.04.22-13.36.55:988][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface221.Deck_polySurface221
-[2020.04.22-13.36.56:011][  0]LogStaticMesh: Building static mesh Deck_polySurface222...
-[2020.04.22-13.36.56:038][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface222.Deck_polySurface222
-[2020.04.22-13.36.56:041][  0]LogStaticMesh: Building static mesh Deck_polySurface223...
-[2020.04.22-13.36.56:042][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface223.Deck_polySurface223
-[2020.04.22-13.36.56:043][  0]LogStaticMesh: Building static mesh Deck_polySurface227...
-[2020.04.22-13.36.56:049][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface227.Deck_polySurface227
-[2020.04.22-13.36.56:051][  0]LogStaticMesh: Building static mesh Deck_polySurface228...
-[2020.04.22-13.36.56:057][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface228.Deck_polySurface228
-[2020.04.22-13.36.56:059][  0]LogStaticMesh: Building static mesh Deck_polySurface229...
-[2020.04.22-13.36.56:066][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface229.Deck_polySurface229
-[2020.04.22-13.36.56:067][  0]LogStaticMesh: Building static mesh Deck_polySurface230...
-[2020.04.22-13.36.56:074][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface230.Deck_polySurface230
-[2020.04.22-13.36.56:075][  0]LogStaticMesh: Building static mesh Deck_polySurface231...
-[2020.04.22-13.36.56:130][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface231.Deck_polySurface231
-[2020.04.22-13.36.56:224][  0]LogStaticMesh: Building static mesh Deck_polySurface232...
-[2020.04.22-13.36.56:283][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface232.Deck_polySurface232
-[2020.04.22-13.36.56:289][  0]LogStaticMesh: Building static mesh Deck_polySurface233...
-[2020.04.22-13.36.56:338][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface233.Deck_polySurface233
-[2020.04.22-13.36.56:346][  0]LogStaticMesh: Building static mesh Deck_polySurface234...
-[2020.04.22-13.36.56:406][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface234.Deck_polySurface234
-[2020.04.22-13.36.56:415][  0]LogStaticMesh: Building static mesh Deck_polySurface235...
-[2020.04.22-13.36.56:555][  0]LogStaticMesh: Built static mesh [0.14s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface235.Deck_polySurface235
-[2020.04.22-13.36.56:562][  0]LogStaticMesh: Building static mesh Deck_polySurface236...
-[2020.04.22-13.36.56:616][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface236.Deck_polySurface236
-[2020.04.22-13.36.56:624][  0]LogStaticMesh: Building static mesh Deck_polySurface237...
-[2020.04.22-13.36.56:676][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface237.Deck_polySurface237
-[2020.04.22-13.36.56:683][  0]LogStaticMesh: Building static mesh Deck_polySurface238...
-[2020.04.22-13.36.56:689][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface238.Deck_polySurface238
-[2020.04.22-13.36.56:705][  0]LogStaticMesh: Building static mesh Deck_polySurface239...
-[2020.04.22-13.36.56:712][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface239.Deck_polySurface239
-[2020.04.22-13.36.56:714][  0]LogStaticMesh: Building static mesh Deck_polySurface240...
-[2020.04.22-13.36.56:724][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface240.Deck_polySurface240
-[2020.04.22-13.36.56:726][  0]LogStaticMesh: Building static mesh Deck_polySurface241...
-[2020.04.22-13.36.56:732][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface241.Deck_polySurface241
-[2020.04.22-13.36.56:735][  0]LogStaticMesh: Building static mesh Deck_polySurface242...
-[2020.04.22-13.36.56:741][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface242.Deck_polySurface242
-[2020.04.22-13.36.56:744][  0]LogStaticMesh: Building static mesh Deck_polySurface243...
-[2020.04.22-13.36.56:750][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface243.Deck_polySurface243
-[2020.04.22-13.36.56:752][  0]LogStaticMesh: Building static mesh Deck_polySurface244...
-[2020.04.22-13.36.56:753][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface244.Deck_polySurface244
-[2020.04.22-13.36.56:755][  0]LogStaticMesh: Building static mesh Deck_polySurface245...
-[2020.04.22-13.36.56:755][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface245.Deck_polySurface245
-[2020.04.22-13.36.56:757][  0]LogStaticMesh: Building static mesh Deck_polySurface246...
-[2020.04.22-13.36.56:763][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface246.Deck_polySurface246
-[2020.04.22-13.36.56:765][  0]LogStaticMesh: Building static mesh Deck_polySurface247...
-[2020.04.22-13.36.56:771][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface247.Deck_polySurface247
-[2020.04.22-13.36.56:773][  0]LogStaticMesh: Building static mesh Deck_polySurface248...
-[2020.04.22-13.36.56:779][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface248.Deck_polySurface248
-[2020.04.22-13.36.56:781][  0]LogStaticMesh: Building static mesh Deck_polySurface249...
-[2020.04.22-13.36.56:789][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface249.Deck_polySurface249
-[2020.04.22-13.36.56:791][  0]LogStaticMesh: Building static mesh Deck_polySurface250...
-[2020.04.22-13.36.56:798][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface250.Deck_polySurface250
-[2020.04.22-13.36.56:799][  0]LogStaticMesh: Building static mesh Deck_polySurface251...
-[2020.04.22-13.36.56:805][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface251.Deck_polySurface251
-[2020.04.22-13.36.56:807][  0]LogStaticMesh: Building static mesh Deck_polySurface252...
-[2020.04.22-13.36.56:826][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface252.Deck_polySurface252
-[2020.04.22-13.36.56:829][  0]LogStaticMesh: Building static mesh Deck_polySurface253...
-[2020.04.22-13.36.56:836][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface253.Deck_polySurface253
-[2020.04.22-13.36.56:839][  0]LogStaticMesh: Building static mesh Deck_polySurface254...
-[2020.04.22-13.36.56:845][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface254.Deck_polySurface254
-[2020.04.22-13.36.56:847][  0]LogStaticMesh: Building static mesh Deck_polySurface255...
-[2020.04.22-13.36.56:854][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface255.Deck_polySurface255
-[2020.04.22-13.36.56:855][  0]LogStaticMesh: Building static mesh Deck_polySurface256...
-[2020.04.22-13.36.56:884][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface256.Deck_polySurface256
-[2020.04.22-13.36.56:889][  0]LogStaticMesh: Building static mesh Deck_polySurface257...
-[2020.04.22-13.36.56:891][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface257.Deck_polySurface257
-[2020.04.22-13.36.56:893][  0]LogStaticMesh: Building static mesh Deck_polySurface258...
-[2020.04.22-13.36.56:948][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface258.Deck_polySurface258
-[2020.04.22-13.36.56:954][  0]LogStaticMesh: Building static mesh Deck_polySurface259...
-[2020.04.22-13.36.56:957][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface259.Deck_polySurface259
-[2020.04.22-13.36.56:959][  0]LogStaticMesh: Building static mesh Deck_polySurface260...
-[2020.04.22-13.36.56:964][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface260.Deck_polySurface260
-[2020.04.22-13.36.56:966][  0]LogStaticMesh: Building static mesh Deck_polySurface262...
-[2020.04.22-13.36.56:967][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface262.Deck_polySurface262
-[2020.04.22-13.36.56:968][  0]LogStaticMesh: Building static mesh Deck_polySurface274...
-[2020.04.22-13.36.58:587][  0]LogStaticMesh: Built static mesh [1.62s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface274.Deck_polySurface274
-[2020.04.22-13.36.58:793][  0]LogStaticMesh: Building static mesh Deck_polySurface30...
-[2020.04.22-13.36.58:794][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface30.Deck_polySurface30
-[2020.04.22-13.36.58:796][  0]LogStaticMesh: Building static mesh Deck_polySurface31...
-[2020.04.22-13.36.59:124][  0]LogStaticMesh: Built static mesh [0.33s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface31.Deck_polySurface31
-[2020.04.22-13.36.59:165][  0]LogStaticMesh: Building static mesh Deck_polySurface32...
-[2020.04.22-13.36.59:169][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface32.Deck_polySurface32
-[2020.04.22-13.36.59:171][  0]LogStaticMesh: Building static mesh Deck_polySurface33...
-[2020.04.22-13.36.59:175][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface33.Deck_polySurface33
-[2020.04.22-13.36.59:178][  0]LogStaticMesh: Building static mesh Deck_polySurface34...
-[2020.04.22-13.36.59:182][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface34.Deck_polySurface34
-[2020.04.22-13.36.59:184][  0]LogStaticMesh: Building static mesh Deck_polySurface35...
-[2020.04.22-13.36.59:188][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface35.Deck_polySurface35
-[2020.04.22-13.36.59:568][  0]LogStaticMesh: Building static mesh Deck_polySurface36...
-[2020.04.22-13.36.59:572][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface36.Deck_polySurface36
-[2020.04.22-13.36.59:825][  0]LogStaticMesh: Building static mesh Deck_polySurface37...
-[2020.04.22-13.36.59:872][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface37.Deck_polySurface37
-[2020.04.22-13.36.59:875][  0]LogStaticMesh: Building static mesh Deck_polySurface38...
-[2020.04.22-13.36.59:880][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface38.Deck_polySurface38
-[2020.04.22-13.36.59:903][  0]LogStaticMesh: Building static mesh Deck_polySurface39...
-[2020.04.22-13.36.59:907][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface39.Deck_polySurface39
-[2020.04.22-13.36.59:909][  0]LogStaticMesh: Building static mesh Deck_polySurface40...
-[2020.04.22-13.36.59:915][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface40.Deck_polySurface40
-[2020.04.22-13.36.59:920][  0]LogStaticMesh: Building static mesh Deck_polySurface41...
-[2020.04.22-13.36.59:926][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface41.Deck_polySurface41
-[2020.04.22-13.36.59:928][  0]LogStaticMesh: Building static mesh Deck_polySurface42...
-[2020.04.22-13.36.59:935][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface42.Deck_polySurface42
-[2020.04.22-13.36.59:938][  0]LogStaticMesh: Building static mesh Deck_polySurface43...
-[2020.04.22-13.36.59:941][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface43.Deck_polySurface43
-[2020.04.22-13.36.59:944][  0]LogStaticMesh: Building static mesh Deck_polySurface44...
-[2020.04.22-13.36.59:952][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface44.Deck_polySurface44
-[2020.04.22-13.36.59:954][  0]LogStaticMesh: Building static mesh Deck_polySurface45...
-[2020.04.22-13.36.59:961][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface45.Deck_polySurface45
-[2020.04.22-13.36.59:990][  0]LogStaticMesh: Building static mesh Deck_polySurface46...
-[2020.04.22-13.36.59:996][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface46.Deck_polySurface46
-[2020.04.22-13.36.59:998][  0]LogStaticMesh: Building static mesh Deck_polySurface47...
-[2020.04.22-13.37.00:004][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface47.Deck_polySurface47
-[2020.04.22-13.37.00:005][  0]LogStaticMesh: Building static mesh Deck_polySurface48...
-[2020.04.22-13.37.00:010][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface48.Deck_polySurface48
-[2020.04.22-13.37.00:012][  0]LogStaticMesh: Building static mesh Deck_polySurface49...
-[2020.04.22-13.37.00:314][  0]LogStaticMesh: Built static mesh [0.30s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface49.Deck_polySurface49
-[2020.04.22-13.37.00:326][  0]LogStaticMesh: Building static mesh Deck_polySurface50...
-[2020.04.22-13.37.00:431][  0]LogStaticMesh: Built static mesh [0.11s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface50.Deck_polySurface50
-[2020.04.22-13.37.00:441][  0]LogStaticMesh: Building static mesh Deck_polySurface51...
-[2020.04.22-13.37.00:445][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface51.Deck_polySurface51
-[2020.04.22-13.37.00:447][  0]LogStaticMesh: Building static mesh Deck_polySurface52...
-[2020.04.22-13.37.00:451][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface52.Deck_polySurface52
-[2020.04.22-13.37.00:454][  0]LogStaticMesh: Building static mesh Deck_polySurface53...
-[2020.04.22-13.37.00:458][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface53.Deck_polySurface53
-[2020.04.22-13.37.00:460][  0]LogStaticMesh: Building static mesh Deck_polySurface54...
-[2020.04.22-13.37.00:464][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface54.Deck_polySurface54
-[2020.04.22-13.37.00:467][  0]LogStaticMesh: Building static mesh Deck_polySurface55...
-[2020.04.22-13.37.00:522][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface55.Deck_polySurface55
-[2020.04.22-13.37.00:524][  0]LogStaticMesh: Building static mesh Deck_polySurface56...
-[2020.04.22-13.37.00:604][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface56.Deck_polySurface56
-[2020.04.22-13.37.00:607][  0]LogStaticMesh: Building static mesh Deck_polySurface57...
-[2020.04.22-13.37.00:659][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 319
-[2020.04.22-13.37.00:659][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface57.Deck_polySurface57
-[2020.04.22-13.37.00:661][  0]LogStaticMesh: Building static mesh Deck_polySurface58...
-[2020.04.22-13.37.00:665][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface58.Deck_polySurface58
-[2020.04.22-13.37.00:667][  0]LogStaticMesh: Building static mesh Deck_polySurface59...
-[2020.04.22-13.37.00:672][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface59.Deck_polySurface59
-[2020.04.22-13.37.00:674][  0]LogStaticMesh: Building static mesh Deck_polySurface60...
-[2020.04.22-13.37.01:165][  0]LogStaticMesh: Built static mesh [0.49s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface60.Deck_polySurface60
-[2020.04.22-13.37.01:176][  0]LogStaticMesh: Building static mesh Deck_polySurface61...
-[2020.04.22-13.37.01:294][  0]LogStaticMesh: Built static mesh [0.12s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface61.Deck_polySurface61
-[2020.04.22-13.37.01:304][  0]LogStaticMesh: Building static mesh Deck_polySurface62...
-[2020.04.22-13.37.01:828][  0]LogStaticMesh: Built static mesh [0.52s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface62.Deck_polySurface62
-[2020.04.22-13.37.01:844][  0]LogStaticMesh: Building static mesh Deck_polySurface63...
-[2020.04.22-13.37.02:056][  0]LogStaticMesh: Built static mesh [0.21s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface63.Deck_polySurface63
-[2020.04.22-13.37.02:064][  0]LogStaticMesh: Building static mesh Deck_polySurface64...
-[2020.04.22-13.37.02:357][  0]LogStaticMesh: Built static mesh [0.29s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface64.Deck_polySurface64
-[2020.04.22-13.37.02:371][  0]LogStaticMesh: Building static mesh Deck_polySurface65...
-[2020.04.22-13.37.02:398][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface65.Deck_polySurface65
-[2020.04.22-13.37.02:400][  0]LogStaticMesh: Building static mesh Deck_polySurface66...
-[2020.04.22-13.37.02:450][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface66.Deck_polySurface66
-[2020.04.22-13.37.02:461][  0]LogStaticMesh: Building static mesh Deck_polySurface67...
-[2020.04.22-13.37.02:611][  0]LogStaticMesh: Built static mesh [0.15s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface67.Deck_polySurface67
-[2020.04.22-13.37.02:625][  0]LogStaticMesh: Building static mesh Deck_polySurface68...
-[2020.04.22-13.37.02:904][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 309
-[2020.04.22-13.37.02:905][  0]LogStaticMesh: Built static mesh [0.28s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface68.Deck_polySurface68
-[2020.04.22-13.37.02:919][  0]LogStaticMesh: Building static mesh Deck_polySurface69...
-[2020.04.22-13.37.02:924][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface69.Deck_polySurface69
-[2020.04.22-13.37.02:926][  0]LogStaticMesh: Building static mesh Deck_polySurface70...
-[2020.04.22-13.37.02:973][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface70.Deck_polySurface70
-[2020.04.22-13.37.02:981][  0]LogStaticMesh: Building static mesh Deck_polySurface71...
-[2020.04.22-13.37.03:331][  0]LogStaticMesh: Built static mesh [0.35s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface71.Deck_polySurface71
-[2020.04.22-13.37.03:348][  0]LogStaticMesh: Building static mesh Deck_polySurface72...
-[2020.04.22-13.37.03:423][  0]LogStaticMesh: Built static mesh [0.07s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface72.Deck_polySurface72
-[2020.04.22-13.37.03:437][  0]LogStaticMesh: Building static mesh Deck_polySurface73...
-[2020.04.22-13.37.03:442][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface73.Deck_polySurface73
-[2020.04.22-13.37.03:444][  0]LogStaticMesh: Building static mesh Deck_polySurface74...
-[2020.04.22-13.37.03:522][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface74.Deck_polySurface74
-[2020.04.22-13.37.03:529][  0]LogStaticMesh: Building static mesh Deck_polySurface75...
-[2020.04.22-13.37.03:915][  0]LogStaticMesh: Built static mesh [0.39s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface75.Deck_polySurface75
-[2020.04.22-13.37.03:929][  0]LogStaticMesh: Building static mesh Deck_polySurface76...
-[2020.04.22-13.37.04:052][  0]LogStaticMesh: Built static mesh [0.12s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface76.Deck_polySurface76
-[2020.04.22-13.37.04:067][  0]LogStaticMesh: Building static mesh Deck_polySurface77...
-[2020.04.22-13.37.04:227][  0]LogStaticMesh: Built static mesh [0.16s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface77.Deck_polySurface77
-[2020.04.22-13.37.04:242][  0]LogStaticMesh: Building static mesh Deck_polySurface78...
-[2020.04.22-13.37.04:288][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface78.Deck_polySurface78
-[2020.04.22-13.37.04:298][  0]LogStaticMesh: Building static mesh Deck_polySurface79...
-[2020.04.22-13.37.04:397][  0]LogStaticMesh: Built static mesh [0.10s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface79.Deck_polySurface79
-[2020.04.22-13.37.04:412][  0]LogStaticMesh: Building static mesh Deck_polySurface80...
-[2020.04.22-13.37.04:418][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface80.Deck_polySurface80
-[2020.04.22-13.37.04:420][  0]LogStaticMesh: Building static mesh Deck_polySurface81...
-[2020.04.22-13.37.04:535][  0]LogStaticMesh: Built static mesh [0.11s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface81.Deck_polySurface81
-[2020.04.22-13.37.04:564][  0]LogStaticMesh: Building static mesh Deck_polySurface82...
-[2020.04.22-13.37.04:673][  0]LogStaticMesh: Built static mesh [0.12s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface82.Deck_polySurface82
-[2020.04.22-13.37.04:688][  0]LogStaticMesh: Building static mesh Deck_polySurface83...
-[2020.04.22-13.37.04:769][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface83.Deck_polySurface83
-[2020.04.22-13.37.04:785][  0]LogStaticMesh: Building static mesh Deck_polySurface84...
-[2020.04.22-13.37.04:798][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface84.Deck_polySurface84
-[2020.04.22-13.37.04:800][  0]LogStaticMesh: Building static mesh Deck_polySurface85...
-[2020.04.22-13.37.04:883][  0]LogStaticMesh: Built static mesh [0.08s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface85.Deck_polySurface85
-[2020.04.22-13.37.04:899][  0]LogStaticMesh: Building static mesh Deck_polySurface86...
-[2020.04.22-13.37.04:939][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface86.Deck_polySurface86
-[2020.04.22-13.37.04:946][  0]LogStaticMesh: Building static mesh Deck_polySurface87...
-[2020.04.22-13.37.05:136][  0]LogStaticMesh: Built static mesh [0.19s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface87.Deck_polySurface87
-[2020.04.22-13.37.05:151][  0]LogStaticMesh: Building static mesh Deck_polySurface88...
-[2020.04.22-13.37.05:156][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface88.Deck_polySurface88
-[2020.04.22-13.37.05:158][  0]LogStaticMesh: Building static mesh Deck_polySurface89...
-[2020.04.22-13.37.05:299][  0]LogStaticMesh: Built static mesh [0.14s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface89.Deck_polySurface89
-[2020.04.22-13.37.05:315][  0]LogStaticMesh: Building static mesh Deck_polySurface90...
-[2020.04.22-13.37.05:357][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface90.Deck_polySurface90
-[2020.04.22-13.37.05:367][  0]LogStaticMesh: Building static mesh Deck_polySurface91...
-[2020.04.22-13.37.05:471][  0]LogStaticMesh: Built static mesh [0.10s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface91.Deck_polySurface91
-[2020.04.22-13.37.05:487][  0]LogStaticMesh: Building static mesh Deck_polySurface92...
-[2020.04.22-13.37.05:502][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface92.Deck_polySurface92
-[2020.04.22-13.37.05:523][  0]LogStaticMesh: Building static mesh Deck_polySurface93...
-[2020.04.22-13.37.05:710][  0]LogStaticMesh: Built static mesh [0.19s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface93.Deck_polySurface93
-[2020.04.22-13.37.05:728][  0]LogStaticMesh: Building static mesh Deck_polySurface94...
-[2020.04.22-13.37.05:766][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface94.Deck_polySurface94
-[2020.04.22-13.37.05:773][  0]LogStaticMesh: Building static mesh Deck_polySurface95...
-[2020.04.22-13.37.05:860][  0]LogStaticMesh: Built static mesh [0.09s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface95.Deck_polySurface95
-[2020.04.22-13.37.05:881][  0]LogStaticMesh: Building static mesh Deck_polySurface96...
-[2020.04.22-13.37.05:885][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface96.Deck_polySurface96
-[2020.04.22-13.37.05:888][  0]LogStaticMesh: Building static mesh Deck_polySurface97...
-[2020.04.22-13.37.06:008][  0]LogStaticMesh: Built static mesh [0.12s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface97.Deck_polySurface97
-[2020.04.22-13.37.06:022][  0]LogStaticMesh: Building static mesh Deck_polySurface98...
-[2020.04.22-13.37.06:065][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface98.Deck_polySurface98
-[2020.04.22-13.37.06:073][  0]LogStaticMesh: Building static mesh Deck_polySurface99...
-[2020.04.22-13.37.06:159][  0]LogStaticMesh: Built static mesh [0.09s] /Game/FirstPerson/Environments/Bridge/Deck_polySurface99.Deck_polySurface99
-[2020.04.22-13.37.06:173][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface5...
-[2020.04.22-13.37.06:177][  0]LogStaticMesh: Built static mesh [0.00s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface5.Personel_Room_polySurface5
-[2020.04.22-13.37.06:230][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface6...
-[2020.04.22-13.37.06:237][  0]LogStaticMesh: Built static mesh [0.01s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface6.Personel_Room_polySurface6
-[2020.04.22-13.37.06:239][  0]LogStaticMesh: Building static mesh Personel_Room_polySurface7...
-[2020.04.22-13.37.06:261][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Personel_Room/Personel_Room_polySurface7.Personel_Room_polySurface7
-[2020.04.22-13.37.06:284][  0]LogMaterial: Display: Missing cached shader map for material blinn1, compiling. 
-[2020.04.22-13.37.06:344][  0]LogMaterial: Display: Missing cached shader map for material lambert2, compiling. 
-[2020.04.22-13.37.06:403][  0]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.04.22-13.37.06:465][  0]LogMaterial: Display: Missing cached shader map for material Emmisive_Material_MASTER, compiling. 
-[2020.04.22-13.37.06:697][  0]LogMaterial: Display: Missing cached shader map for material lambert1, compiling. 
-[2020.04.22-13.37.06:758][  0]LogMaterial: Display: Missing cached shader map for material blinn2, compiling. 
-[2020.04.22-13.37.06:813][  0]LogMaterial: Display: Missing cached shader map for material blinn4, compiling. 
-[2020.04.22-13.37.06:870][  0]LogMaterial: Display: Missing cached shader map for material blinn3, compiling. 
-[2020.04.22-13.37.06:918][  0]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/FirstPerson/Animations/Door/DoorOpenPanelsAnim.DoorOpenPanelsAnim
-[2020.04.22-13.37.06:918][  0]LogAnimationCompression: Recompressing (AnimSequence /Game/FirstPerson/Animations/Door/DoorOpenPanelsAnim.DoorOpenPanelsAnim) using current/default (AnimCompress_BitwiseCompressOnly_0) bFirstRecompressUsingCurrentOrDefault(1) bTryAlternateCompressor(0) IsCompressedDataValid(0)
-[2020.04.22-13.37.06:942][  0]LogStaticMesh: Building static mesh KeyCard...
-[2020.04.22-13.37.07:047][  0]LogStaticMesh: Built static mesh [0.11s] /Game/FirstPerson/Animations/Door/KeyCard.KeyCard
-[2020.04.22-13.37.07:135][  0]LogMaterial: Display: Missing cached shader map for material DoorMaterialUnlit, compiling. 
-[2020.04.22-13.37.07:231][  0]LogAudioDerivedData: Display: Building compressed audio format OGG hash OGG10025600-1-1-1-1-1 wave DoorOpening...
-[2020.04.22-13.37.07:232][  0]LogAudioDerivedData: Display: Compression Quality for SoundWave /Game/Audio/SFX/DoorOpening.DoorOpening will be modified from 40 to 40.
-[2020.04.22-13.37.07:275][  0]LogAudioDerivedData: Display: Updated SoundWave->RawPCMDataSize from 0 to 154008 while cooking SoundWave /Game/Audio/SFX/DoorOpening.DoorOpening.
-[2020.04.22-13.37.07:392][  0]LogSkeletalMesh: Building Skeletal Mesh DoorOpenFrame...
-[2020.04.22-13.37.07:408][  0]LogSkeletalMesh: Built Skeletal Mesh [0.02s] /Game/FirstPerson/Animations/Door/DoorOpenFrame.DoorOpenFrame
-[2020.04.22-13.37.07:427][  0]LogMaterial: Display: Missing cached shader map for material Level1Tiles, compiling. 
-[2020.04.22-13.37.07:485][  0]LogMaterial: Display: Missing cached shader map for material Cyan_Emmisive, compiling. 
-[2020.04.22-13.37.07:559][  0]LogMaterial: Display: Missing cached shader map for material WorldGridMaterial1, compiling. 
-[2020.04.22-13.37.07:688][  0]LogMaterial: Display: Missing cached shader map for material WorldGridMaterial, compiling. 
-[2020.04.22-13.37.07:744][  0]LogSkeletalMesh: Building Skeletal Mesh DoorOpenPanels...
-[2020.04.22-13.37.07:745][  0]LogSkeletalMesh: Built Skeletal Mesh [0.00s] /Game/FirstPerson/Animations/Door/DoorOpenPanels.DoorOpenPanels
-[2020.04.22-13.37.07:768][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
-[2020.04.22-13.37.08:933][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/SuitRoom_Map) is flushing async loading
-[2020.04.22-13.37.08:934][  0]LogStreaming: Display: Flushing async loaders.
-[2020.04.22-13.37.09:201][  0]LogTexture: Display: Building textures: AOMaterialMask1_4 (BC4, 128X64)
-[2020.04.22-13.37.09:201][  0]LogTexture: Display: Building textures: HQ_Lightmap1_4 (AutoDXT, 128X128)
-[2020.04.22-13.37.09:202][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_4 (DXT1, 128X128)
-[2020.04.22-13.37.09:202][  0]LogStaticMesh: Building static mesh Lockers...
-[2020.04.22-13.37.10:472][  0]LogTexture: Display: Building textures: ShadowMapTexture2D_0 (BGRA8, 64X64)
-[2020.04.22-13.37.10:472][  0]LogStaticMesh: Built static mesh [1.27s] /Game/FirstPerson/Environments/Suit_Up_Room/Lockers.Lockers
-[2020.04.22-13.37.10:560][  0]LogStaticMesh: Building static mesh Pipes...
-[2020.04.22-13.37.19:430][  0]LogStaticMesh: Built static mesh [8.87s] /Game/FirstPerson/Environments/Suit_Up_Room/Pipes.Pipes
-[2020.04.22-13.37.20:050][  0]LogStaticMesh: Building static mesh Suit_Pod...
-[2020.04.22-13.37.25:406][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 599
-[2020.04.22-13.37.25:406][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 589
-[2020.04.22-13.37.25:406][  0]LogStaticMesh: Built static mesh [5.36s] /Game/FirstPerson/Environments/Suit_Up_Room/Suit_Pod.Suit_Pod
-[2020.04.22-13.37.26:690][  0]LogStaticMesh: Building static mesh Tool_Box...
-[2020.04.22-13.37.27:298][  0]LogStaticMesh: Built static mesh [0.61s] /Game/FirstPerson/Environments/Suit_Up_Room/Tool_Box.Tool_Box
-[2020.04.22-13.37.27:512][  0]LogMaterial: Display: Missing cached shader map for material blinn3, compiling. 
-[2020.04.22-13.37.27:882][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/HubRoom_Map) is flushing async loading
-[2020.04.22-13.37.30:860][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 627
-[2020.04.22-13.37.30:860][  0]LogTexture: Display: Building textures: AOMaterialMask1_7 (BC4, 128X64)
-[2020.04.22-13.37.30:860][  0]LogTexture: Display: Building textures: AOMaterialMask1_3 (BC4, 256X128)
-[2020.04.22-13.37.30:860][  0]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 256X256)
-[2020.04.22-13.37.30:860][  0]LogTexture: Display: Building textures: HQ_Lightmap1_7 (AutoDXT, 128X128)
-[2020.04.22-13.37.30:860][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 256X256)
-[2020.04.22-13.37.30:896][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_7 (DXT1, 128X128)
-[2020.04.22-13.37.31:104][  0]LogTexture: Display: Building textures: CenterConsole_With_Hologram_lambert1_BaseColor (AutoDXT, 1024X1024)
-[2020.04.22-13.37.31:104][  0]LogTexture: Display: Building textures: CenterConsole_With_Hologram_lambert1_Normal (BC5, 1024X1024)
-[2020.04.22-13.37.31:104][  0]LogStaticMesh: Building static mesh CenterConsole_Terminal...
-[2020.04.22-13.37.31:152][  0]LogStaticMesh: Built static mesh [0.20s] /Game/FirstPerson/Environments/Hub_Room/CenterConsole_Terminal.CenterConsole_Terminal
-[2020.04.22-13.37.31:293][  0]LogStaticMesh: Building static mesh Hub_Base...
-[2020.04.22-13.37.31:358][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Hub_Room/Hub_Base.Hub_Base
-[2020.04.22-13.37.31:404][  0]LogStaticMesh: Building static mesh Hub_Box...
-[2020.04.22-13.37.31:426][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Assets/Misc/Hub_Box.Hub_Box
-[2020.04.22-13.37.31:469][  0]LogStaticMesh: Building static mesh Hub_Locker_Closed...
-[2020.04.22-13.37.31:502][  0]LogStaticMesh: Built static mesh [0.03s] /Game/FirstPerson/Environments/Hub_Room/Hub_Locker_Closed.Hub_Locker_Closed
-[2020.04.22-13.37.31:582][  0]LogStaticMesh: Building static mesh CenterConsole_With_Hologram...
-[2020.04.22-13.37.31:644][  0]LogStaticMesh: Built static mesh [0.06s] /Game/FirstPerson/Environments/Hub_Room/CenterConsole_With_Hologram.CenterConsole_With_Hologram
-[2020.04.22-13.37.31:716][  0]LogTexture: Display: Building textures: CenterConsole_With_Hologram_lambert1_OcclusionRoughnessMetallic (AutoDXT, 1024X1024)
-[2020.04.22-13.37.31:716][  0]LogStaticMesh: Building static mesh Pillar...
-[2020.04.22-13.37.31:767][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Assets/Pillar.Pillar
-[2020.04.22-13.37.31:829][  0]LogStaticMesh: Building static mesh Showcase...
-[2020.04.22-13.37.31:881][  0]LogStaticMesh: Built static mesh [0.05s] /Game/FirstPerson/Environments/Hub_Room/Showcase.Showcase
-[2020.04.22-13.37.31:905][  0]LogStaticMesh: Building static mesh Wall_Panel...
-[2020.04.22-13.37.31:922][  0]LogStaticMesh: Built static mesh [0.02s] /Game/FirstPerson/Environments/Hub_Room/Wall_Panel.Wall_Panel
-[2020.04.22-13.37.35:742][  0]LogTexture: Display: Building textures: Hub_Locker_Closed_BaseColor (AutoDXT, 2048X2048)
-[2020.04.22-13.37.35:742][  0]LogMaterial: Display: Missing cached shader map for material Console_Material, compiling. 
-[2020.04.22-13.37.44:509][  0]LogTexture: Display: Building textures: Hub_Locker_Closed_Locker_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Hub_Locker_Closed_Normal (BC5, 2048X2048)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Pillar_1001_BaseColor (AutoDXT, 1024X1024)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Pillar_1001_Emissive (AutoDXT, 1024X1024)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Pillar_1001_OcclusionRoughnessMetallic (AutoDXT, 1024X1024)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Earth_Base_Color (AutoDXT, 512X512)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Earth_Normal (BC5, 512X512)
-[2020.04.22-13.37.44:510][  0]LogTexture: Display: Building textures: Scanlines_T (AutoDXT, 512X512)
-[2020.04.22-13.37.44:510][  0]LogMaterial: Display: Missing cached shader map for material Locker_Closed_M, compiling. 
-[2020.04.22-13.37.44:576][  0]LogMaterial: Display: Missing cached shader map for material PillarMaterial, compiling. 
-[2020.04.22-13.37.44:719][  0]LogMaterial: Display: Missing cached shader map for material globe_hologram, compiling. 
-[2020.04.22-13.37.44:826][  0]LogMaterial: Display: Missing cached shader map for material lambert3, compiling. 
-[2020.04.22-13.37.46:870][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/Level2_Map) is flushing async loading
-[2020.04.22-13.37.47:674][  0]LogTexture: Display: Building textures: AOMaterialMask1_2 (BC4, 128X64)
-[2020.04.22-13.37.47:674][  0]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 128X128)
-[2020.04.22-13.37.47:675][  0]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 128X128)
-[2020.04.22-13.37.47:675][  0]LogStaticMesh: Building static mesh Dark_Room...
-[2020.04.22-13.37.50:934][  0]LogTexture: Display: Building textures: Tiles_Level2_BaseColor (AutoDXT, 2048X2048)
-[2020.04.22-13.37.50:935][  0]LogTexture: Display: Building textures: Tiles_Level2_Normal (BC5, 2048X2048)
-[2020.04.22-13.37.50:935][  0]LogTexture: Display: Building textures: Tiles_Level2_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
-[2020.04.22-13.37.50:935][  0]LogStaticMesh: Built static mesh [3.26s] /Game/FirstPerson/Environments/Level_02/Dark_Room.Dark_Room
-[2020.04.22-13.37.51:650][  0]LogStaticMesh: Building static mesh Tile_02...
-[2020.04.22-13.37.51:688][  0]LogStaticMesh: Built static mesh [0.04s] /Game/FirstPerson/Environments/Level_02/Tile_02.Tile_02
-[2020.04.22-13.37.55:921][  0]LogMaterial: Display: Missing cached shader map for material Level2Tiles, compiling. 
-[2020.04.22-13.37.55:988][  0]LogMaterial: Display: Missing cached shader map for material lambert5, compiling. 
-[2020.04.22-13.37.56:763][  0]LogEditorServer: Finished looking for orphan Actors (0.732 secs)
-[2020.04.22-13.37.57:782][  0]LogUObjectHash: Compacting FUObjectHashTables data took  57.51ms
-[2020.04.22-13.37.57:907][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2020.04.22-13.37.57:943][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 3.355ms to complete.
-[2020.04.22-13.37.57:943][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 99.332
-[2020.04.22-13.37.59:207][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2020.04.22-13.38.07:739][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 744
-[2020.04.22-13.38.07:739][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 734
-[2020.04.22-13.38.07:739][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 724
-[2020.04.22-13.38.07:739][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.22-13.38.08:185][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.22-13.38.08:231][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.22-13.38.08:250][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2020.04.22-13.38.10:013][  0]LogCollectionManager: Loaded 0 collections in 0.789583 seconds
-[2020.04.22-13.38.13:199][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Collections/' took 0.00s
-[2020.04.22-13.38.13:199][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/Developers/Austi/Collections/' took 0.00s
-[2020.04.22-13.38.13:199][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/Collections/' took 0.00s
-[2020.04.22-13.38.13:199][  0]LogContentBrowser: Native class hierarchy populated in 0.8211 seconds. Added 3037 classes and 719 folders.
-[2020.04.22-13.38.13:677][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0039 seconds. Added 0 classes and 0 folders.
-[2020.04.22-13.38.17:880][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0160 seconds. Added 0 classes and 0 folders.
-[2020.04.22-13.38.25:965][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0020 seconds. Added 2 classes and 3 folders.
-[2020.04.22-13.38.35:189][  0]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 714
-[2020.04.22-13.38.35:189][  0]LogSlate: Took 0.134824 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2020.04.22-13.38.35:503][  0]LogSlate: Took 0.097551 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2020.04.22-13.38.36:158][  0]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 704
-[2020.04.22-13.38.36:158][  0]LogSlate: Took 0.243168 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2020.04.22-13.38.40:317][  0]LogRenderer: Reallocating scene render targets to support 812x432 Format 10 NumSamples 1 (Frame:1).
-[2020.04.22-13.38.46:282][  0]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 694
-[2020.04.22-13.38.46:337][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0022 seconds. Added 0 classes and 0 folders.
-[2020.04.22-13.38.46:338][  0]LogLoad: (Engine Initialization) Total time: 642.61 seconds
-[2020.04.22-13.38.46:338][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2020.04.22-13.38.50:143][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2020.04.22-13.38.51:582][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/' took 3.90s
-[2020.04.22-13.39.10:177][  2]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 684
-[2020.04.22-13.39.14:321][  4]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 674
-[2020.04.22-13.39.14:796][  7]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 664
-[2020.04.22-13.39.18:313][ 20]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 654
-[2020.04.22-13.39.24:706][ 53]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.39.31:674][ 68]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 644
-[2020.04.22-13.39.34:842][ 73]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 634
-[2020.04.22-13.39.43:143][ 90]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 624
-[2020.04.22-13.39.47:257][118]LogAssetRegistry: Asset discovery search completed in 409.9023 seconds
-[2020.04.22-13.39.47:325][118]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000018 seconds (updated 0 objects)
-[2020.04.22-13.40.03:811][320]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 614
-[2020.04.22-13.40.06:008][382]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 604
-[2020.04.22-13.40.14:399][528]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 594
-[2020.04.22-13.40.31:391][743]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 584
-[2020.04.22-13.40.40:353][895]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 574
-[2020.04.22-13.40.40:353][895]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 564
-[2020.04.22-13.41.06:043][310]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 554
-[2020.04.22-13.41.07:031][332]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 544
-[2020.04.22-13.41.13:922][434]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 534
-[2020.04.22-13.41.36:946][712]LogSlate: Took 0.059879 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.22-13.41.40:810][715]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 524
-[2020.04.22-13.41.40:810][715]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.41.45:896][728]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 514
-[2020.04.22-13.41.59:194][772]LogSlate: Took 0.000824 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2020.04.22-13.42.01:002][772]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 504
-[2020.04.22-13.42.01:792][772]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
-[2020.04.22-13.42.14:266][772]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.42.14:266][772]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 494
-[2020.04.22-13.42.16:593][772]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 484
-[2020.04.22-13.42.17:552][772]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 474
-[2020.04.22-13.42.19:190][772]LogSavePackage: Moving '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/FirstPersonExampleMap24576F764656B21C89A9839D8ED83C69.tmp' to '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap'
-[2020.04.22-13.42.45:493][772]LogSavePackage: Moving '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/FirstPersonExampleMap_BuiltData65344F274A20DF5224D0D894AABC2848.tmp' to '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.uasset'
-[2020.04.22-13.42.46:074][772]AssetCheck: New page: Asset Save: multiple assets
-[2020.04.22-13.42.46:097][772]LogContentValidation: Display: Validating World /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
-[2020.04.22-13.42.46:106][772]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/FirstPersonCPP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
-[2020.04.22-13.43.03:275][803]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 464
-[2020.04.22-13.43.16:342][853]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 454
-[2020.04.22-13.43.24:527][883]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 444
-[2020.04.22-13.44.23:831][172]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 434
-[2020.04.22-13.44.28:491][193]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 424
-[2020.04.22-13.44.45:191][269]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 414
-[2020.04.22-13.45.27:277][480]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.45.27:911][482]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 404
-[2020.04.22-13.45.33:256][512]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.45.52:711][598]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 394
-[2020.04.22-13.45.58:459][623]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.46.00:495][634]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 384
-[2020.04.22-13.46.16:306][702]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.46.36:779][802]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 374
-[2020.04.22-13.46.39:850][815]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.46.44:527][839]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.47.01:776][914]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 364
-[2020.04.22-13.47.08:255][948]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.47.14:323][981]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 354
-[2020.04.22-13.47.33:279][ 74]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.47.54:345][191]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 344
-[2020.04.22-13.48.01:254][215]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 334
-[2020.04.22-13.48.25:523][357]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 324
-[2020.04.22-13.48.51:623][497]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 314
-[2020.04.22-13.48.55:325][517]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 304
-[2020.04.22-13.49.31:973][761]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 294
-[2020.04.22-13.49.57:928][867]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 284
-[2020.04.22-13.50.03:930][914]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 274
-[2020.04.22-13.50.30:470][ 87]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 264
-[2020.04.22-13.50.40:995][171]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 254
-[2020.04.22-13.50.57:490][205]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 244
-[2020.04.22-13.51.44:507][370]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 234
-[2020.04.22-13.52.09:077][465]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 224
-[2020.04.22-13.52.43:661][596]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 214
-[2020.04.22-13.53.16:778][724]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 204
-[2020.04.22-13.53.34:571][798]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 194
-[2020.04.22-13.54.24:149][978]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 184
-[2020.04.22-13.54.32:412][ 11]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 174
-[2020.04.22-13.55.14:440][179]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 164
-[2020.04.22-13.55.43:574][297]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 154
-[2020.04.22-13.56.11:205][397]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 144
-[2020.04.22-13.57.03:094][573]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 134
-[2020.04.22-13.57.20:237][627]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 124
-[2020.04.22-13.57.32:319][681]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 114
-[2020.04.22-13.58.07:392][831]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 104
-[2020.04.22-13.58.27:528][913]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-13.58.49:988][  4]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 94
-[2020.04.22-13.58.55:777][ 30]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 84
-[2020.04.22-14.00.27:567][196]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-14.00.30:967][209]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-14.00.35:571][222]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 74
-[2020.04.22-14.00.50:577][241]LogAudioMixer: Display: Audio Buffer Underrun detected.
-[2020.04.22-14.01.20:857][363]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 64
-[2020.04.22-14.01.28:001][440]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 54
-[2020.04.22-14.01.41:638][654]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 44
-[2020.04.22-14.01.43:756][692]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 34
-[2020.04.22-14.01.52:559][876]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 24
-[2020.04.22-14.02.02:923][ 38]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 15
-[2020.04.22-14.02.11:904][216]LogShaderCompilers: Display: Worker (3/3): shaders left to compile 9
-[2020.04.22-14.02.15:274][280]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
-[2020.04.22-14.02.15:842][287]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
-[2020.04.22-14.02.20:349][362]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:128][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.04.24-16.33.16:128][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.04.24-16.33.16:129][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:129][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:142][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.24-16.33.16:142][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.24-16.33.16:143][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.24-16.33.16:144][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.24-16.33.16:145][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.24-16.33.16:146][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:146][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.24-16.33.16:146][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.24-16.33.16:146][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:146][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.24-16.33.16:146][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.24-16.33.16:146][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.24-16.33.16:146][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.24-16.33.16:146][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.04.24-16.33.16:319][  0]LogHAL: Display: Platform has ~ 8 GB [8009211904 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.04.24-16.33.16:319][  0]LogInit: Going up to parent DeviceProfile []
+[2020.04.24-16.33.16:319][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.04.24-16.33.16:319][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.04.24-16.33.16:320][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.04.24-16.33.16:321][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Scalability.ini]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.04.24-16.33.16:322][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.04.24-16.33.16:386][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.04.24-16.33.16:386][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.04.24-16.33.16:386][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Config/Windows/Engine.ini]
+[2020.04.24-16.33.16:435][  0]LogInit: Computer: LAPTOP-EMDP0E89
+[2020.04.24-16.33.16:436][  0]LogInit: User: Austi
+[2020.04.24-16.33.16:436][  0]LogInit: CPU Page size=4096, Cores=2
+[2020.04.24-16.33.16:436][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.04.24-16.33.16:436][  0]LogMemory: Memory total: Physical=7.5GB (8GB approx)
+[2020.04.24-16.33.16:513][  0]LogMemory: Platform Memory Stats for Windows
+[2020.04.24-16.33.16:513][  0]LogMemory: Process Physical Memory: 105.20 MB used, 105.21 MB peak
+[2020.04.24-16.33.16:513][  0]LogMemory: Process Virtual Memory: 99.81 MB used, 99.81 MB peak
+[2020.04.24-16.33.16:513][  0]LogMemory: Physical Memory: 4870.73 MB used,  2767.45 MB free, 7638.18 MB total
+[2020.04.24-16.33.16:513][  0]LogMemory: Virtual Memory: 5131.64 MB used,  134212600.00 MB free, 134217728.00 MB total
+[2020.04.24-16.33.16:539][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.04.24-16.33.18:856][  0]LogInit: Using OS detected language (en-US).
+[2020.04.24-16.33.18:857][  0]LogInit: Using OS detected locale (en-US).
+[2020.04.24-16.33.19:237][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.04.24-16.33.24:305][  0]LogInit: Setting process to per monitor DPI aware
+[2020.04.24-16.33.25:874][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.04.24-16.33.25:874][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.04.24-16.33.45:675][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.24-16.33.45:675][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.04.24-16.33.45:675][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.04.24-16.33.45:675][  0]LogD3D11RHI: D3D11 adapters:
+[2020.04.24-16.33.45:724][  0]LogD3D11RHI:    0. 'AMD Radeon(TM) R6' (Feature Level 11_0)
+[2020.04.24-16.33.45:725][  0]LogD3D11RHI:       500/0/3819 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2020.04.24-16.33.45:733][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.04.24-16.33.45:734][  0]LogD3D11RHI:       0/0/3819 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.04.24-16.33.45:734][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.04.24-16.33.45:774][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.04.24-16.33.45:775][  0]LogD3D11RHI:     GPU DeviceId: 0x9874 (for the marketing name, search the web for "GPU Device Id")
+[2020.04.24-16.33.45:775][  0]LogWindows: EnumDisplayDevices:
+[2020.04.24-16.33.45:775][  0]LogWindows:    0. 'AMD Radeon(TM) R6' (P:1 D:1)
+[2020.04.24-16.33.45:777][  0]LogWindows:    1. 'AMD Radeon(TM) R6' (P:0 D:0)
+[2020.04.24-16.33.45:778][  0]LogWindows:    2. 'AMD Radeon(TM) R6' (P:0 D:0)
+[2020.04.24-16.33.45:779][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2020.04.24-16.33.45:779][  0]LogD3D11RHI:     Adapter Name: AMD Radeon(TM) R6
+[2020.04.24-16.33.45:779][  0]LogD3D11RHI:   Driver Version: 15.200.1065.0 (internal:15.200.1065.0, unified:15.200.1065.0)
+[2020.04.24-16.33.45:779][  0]LogD3D11RHI:      Driver Date: 7-21-2015
+[2020.04.24-16.33.45:779][  0]LogRHI: Texture pool is 350 MB (70% of 500 MB)
+[2020.04.24-16.33.46:126][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2020.04.24-16.33.46:126][  0]LogD3D11RHI: Async texture creation enabled
+[2020.04.24-16.33.46:166][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
+[2020.04.24-16.33.50:442][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.04.24-16.33.52:684][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2020.04.24-16.33.52:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.04.24-16.33.52:868][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2020.04.24-16.33.52:868][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.04.24-16.33.52:868][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.04.24-16.33.53:176][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.04.24-16.33.53:177][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.04.24-16.33.53:219][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.04.24-16.33.53:253][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.04.24-16.33.53:389][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.04.24-16.33.53:472][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.04.24-16.33.53:541][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.04.24-16.33.53:689][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.04.24-16.33.53:828][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.04.24-16.33.53:829][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.04.24-16.33.54:010][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.04.24-16.33.54:011][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.04.24-16.33.54:060][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.04.24-16.33.54:121][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.04.24-16.33.54:166][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.04.24-16.33.54:211][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.04.24-16.33.54:211][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.04.24-16.33.54:412][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.04.24-16.33.54:973][  0]LogShaderCompilers: Guid format shader working directory is -23 characters bigger than the processId version (../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Intermediate/Shaders/WorkingDirectory/12612/).
+[2020.04.24-16.33.55:015][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Austi/AppData/Local/Temp/UnrealShaderWorkingDir/9DA3D4B344E6093DBF1FB58092E4B063/'.
+[2020.04.24-16.33.55:024][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.04.24-16.33.55:024][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.04.24-16.33.55:024][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.04.24-16.34.11:586][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.04.24-16.34.13:647][  0]LogDerivedDataCache: Loaded boot cache 2.06s 92MB C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.24-16.34.13:647][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2020.04.24-16.34.13:648][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.04.24-16.34.13:648][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.04.24-16.34.13:648][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.24-16.34.13:648][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.04.24-16.34.13:726][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.04.24-16.34.13:726][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.04.24-16.34.13:726][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.04.24-16.34.13:734][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Austi/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.04.24-16.34.13:734][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.04.24-16.34.13:734][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.04.24-16.34.13:817][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2020.04.24-16.34.13:822][  0]LogSlate: Using FreeType 2.10.0
+[2020.04.24-16.34.14:048][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.04.24-16.34.16:304][  0]LogAssetRegistry: FAssetRegistry took 0.0077 seconds to start up
+[2020.04.24-16.34.18:113][  0]LogInit: Selected Device Profile: [Windows]
+[2020.04.24-16.34.20:336][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.04.24-16.34.20:336][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.04.24-16.34.20:336][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.04.24-16.34.20:336][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.04.24-16.34.20:336][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.04.24-16.34.20:543][  0]LogNetVersion: Test2 1.0.0, NetCL: 10570792, EngineNetVer: 13, GameNetVer: 0 (Checksum: 123441186)
+[2020.04.24-16.34.21:028][  0]LogInput: Warning: Action Jump uses deprecated key MotionController_Left_Trigger.
+[2020.04.24-16.34.21:028][  0]LogInput: Warning: Action Fire uses deprecated key MotionController_Right_Trigger.
+[2020.04.24-16.34.21:028][  0]LogInput: Warning: Action ResetVR uses deprecated key MotionController_Left_Grip1.
+[2020.04.24-16.34.54:128][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.227723 seconds
+[2020.04.24-16.34.54:146][  0]LogUObjectArray: 46750 objects as part of root set at end of initial load.
+[2020.04.24-16.34.54:146][  0]LogUObjectAllocator: 8137160 out of 0 bytes used by permanent object pool.
+[2020.04.24-16.34.54:146][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.04.24-16.35.00:343][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.04.24-16.35.04:003][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.04:003][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.04:103][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.04:133][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.04:148][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.05:903][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.04.24-16.35.06:117][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.24-16.35.06:117][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.04.24-16.35.07:111][  0]LogOcInput: OculusInput pre-init called
+[2020.04.24-16.35.07:257][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.04.24-16.35.07:257][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.04.24-16.35.08:264][  0]LogEngine: Initializing Engine...
+[2020.04.24-16.35.08:287][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.04.24-16.35.08:290][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2020.04.24-16.35.09:772][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.04.24-16.35.09:919][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.24-16.35.09:970][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.24-16.35.09:971][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.24-16.35.09:971][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.24-16.35.09:971][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Is Default: Yes
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: Channel Order:
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.24-16.35.10:051][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.04.24-16.35.10:314][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.24-16.35.10:327][  0]LogInit: FAudioDevice initialized.
+[2020.04.24-16.35.10:327][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.04.24-16.35.10:892][  0]LogDerivedDataCache: Saved boot cache 0.56s 92MB C:/Users/Austi/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2020.04.24-16.35.10:906][  0]LogInit: Texture streaming: Enabled
+[2020.04.24-16.35.11:108][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.04.24-16.35.11:145][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.04.24-16.35.11:170][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.04.24-16.35.11:640][  0]LogInit: Transaction tracking system initialized
+[2020.04.24-16.35.12:393][  0]BlueprintLog: New page: Editor Load
+[2020.04.24-16.35.13:143][  0]LocalizationService: Localization service is disabled
+[2020.04.24-16.35.16:336][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/' took 0.07s
+[2020.04.24-16.35.16:336][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.04.24-16.35.16:337][  0]LogCook: Display: Mobile HDR setting 1
+[2020.04.24-16.35.24:379][  0]SourceControl: Source control is disabled
+[2020.04.24-16.35.24:379][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.04.24-16.35.24:381][  0]LightingResults: New page: Lighting Build
+[2020.04.24-16.35.24:395][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.04.24-16.35.24:395][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.24-16.35.24:395][  0]MapCheck: New page: Map Check
+[2020.04.24-16.35.24:395][  0]LightingResults: New page: Lighting Build
+[2020.04.24-16.35.24:462][  0]LogUObjectHash: Compacting FUObjectHashTables data took   5.88ms
+[2020.04.24-16.35.46:067][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.24-16.35.46:260][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/SuitRoom_Map) is flushing async loading
+[2020.04.24-16.35.46:260][  0]LogStreaming: Display: Flushing async loaders.
+[2020.04.24-16.35.46:448][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/HubRoom_Map) is flushing async loading
+[2020.04.24-16.35.48:479][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/Deck) is flushing async loading
+[2020.04.24-16.36.04:038][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/MedBay) is flushing async loading
+[2020.04.24-16.36.04:209][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.04:210][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:218][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:218][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:222][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:222][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:222][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:222][  0]LogLinker: Warning: Failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:227][  0]LogLinker: Warning: While loading '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/MedBay.umap' failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:227][  0]LoadErrors: Failed to load /Game/FirstPersonCPP/Maps/MedBay_BuiltData.MedBay_BuiltData Referenced by PersistentLevel
+[2020.04.24-16.36.05:227][  0]LogLinker: Warning: While loading '../../../../../../Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/FirstPersonCPP/Maps/MedBay.umap' failed to load '/Game/FirstPersonCPP/Maps/MedBay_BuiltData': Can't find file.
+[2020.04.24-16.36.05:227][  0]LoadErrors: Failed to load /Game/FirstPersonCPP/Maps/MedBay_BuiltData.MedBay_BuiltData Referenced by PersistentLevel
+[2020.04.24-16.36.07:630][  0]LogStreaming: Display: ULevelStreaming::RequestLevel(/Game/FirstPersonCPP/Maps/Level2_Map) is flushing async loading
+[2020.04.24-16.36.08:320][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.04.24-16.36.08:411][  0]LogUObjectHash: Compacting FUObjectHashTables data took   7.13ms
+[2020.04.24-16.36.08:429][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.04.24-16.36.08:431][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.646ms to complete.
+[2020.04.24-16.36.08:431][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 44.052
+[2020.04.24-16.36.08:606][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.04.24-16.36.09:133][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.24-16.36.09:152][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.24-16.36.09:171][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.24-16.36.09:189][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.24-16.36.09:338][  0]LogCollectionManager: Loaded 0 collections in 0.008535 seconds
+[2020.04.24-16.36.09:405][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Saved/Collections/' took 0.00s
+[2020.04.24-16.36.09:406][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/Developers/Austi/Collections/' took 0.00s
+[2020.04.24-16.36.09:406][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/Collections/' took 0.00s
+[2020.04.24-16.36.09:406][  0]LogContentBrowser: Native class hierarchy populated in 0.0291 seconds. Added 3042 classes and 719 folders.
+[2020.04.24-16.36.09:442][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2020.04.24-16.36.12:748][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0014 seconds. Added 0 classes and 0 folders.
+[2020.04.24-16.36.12:789][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0013 seconds. Added 2 classes and 3 folders.
+[2020.04.24-16.36.12:947][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2020.04.24-16.36.12:948][  0]LogLoad: (Engine Initialization) Total time: 333.47 seconds
+[2020.04.24-16.36.12:948][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.04.24-16.36.13:379][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.04.24-16.36.13:509][  0]LogSlate: Took 0.035727 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.04.24-16.36.13:525][  0]LogSlate: Took 0.012466 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.04.24-16.36.13:557][  0]LogSlate: Took 0.020122 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.04.24-16.36.13:928][  0]LogSlate: Took 0.016898 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.04.24-16.36.14:022][  1]LogRenderer: Reallocating scene render targets to support 804x408 Format 10 NumSamples 1 (Frame:1).
+[2020.04.24-16.36.14:035][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/Austi/Documents/GitHub/EscapeTheAurora/Test2/Content/' took 1.06s
+[2020.04.24-16.36.17:516][  4]LogActor: Warning: Door_KeyCard_BP_C /Engine/Transient.World_3:PersistentLevel.Door_KeyCard_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.04.24-16.36.24:323][ 42]LogSlate: Window 'Message Log' being destroyed
+[2020.04.24-16.36.24:372][ 42]LogSlate: Window 'Message Log' being destroyed
+[2020.04.24-16.36.27:740][ 65]LogAssetRegistry: Asset discovery search completed in 131.4391 seconds
+[2020.04.24-16.36.27:781][ 65]LogCollectionManager: Fixed up redirectors for 0 collections in 0.005514 seconds (updated 0 objects)
+[2020.04.24-16.36.28:011][ 66]LogTemp: Repeating last play command: Selected Viewport
+[2020.04.24-16.36.28:239][ 66]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.24-16.36.28:327][ 66]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.04.24-16.36.28:503][ 66]PIE: New page: PIE session: FirstPersonExampleMap (Apr 24, 2020, 6:36:28 AM)
+[2020.04.24-16.36.28:575][ 66]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.04.24-16.36.28:578][ 66]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.04.24-16.36.28:618][ 66]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.24-16.36.28:836][ 66]LogPlayLevel: PIE: StaticDuplicateObject took: (0.216730s)
+[2020.04.24-16.36.28:843][ 66]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2020.04.24-16.36.28:856][ 66]LogPlayLevel: PIE: World Init took: (0.020291s)
+[2020.04.24-16.36.28:868][ 66]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.249411s)
+[2020.04.24-16.36.28:949][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   6.82ms
+[2020.04.24-16.36.28:980][ 66]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.04.24-16.36.28:981][ 66]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.04.24-16.36.28:981][ 66]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.04.24-16.36.28:983][ 66]LogAudio: Display: Using built-in audio occlusion.
+[2020.04.24-16.36.28:983][ 66]LogAudioMixer: Display: Initializing audio mixer.
+[2020.04.24-16.36.28:998][ 66]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2020.04.24-16.36.28:998][ 66]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: Is Default: Yes
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: Sample Rate: 48000
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: Channel Count Used: 2
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: Device Channel Count: 2
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: Channel Order:
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: 0: FrontLeft
+[2020.04.24-16.36.28:999][ 66]LogAudioMixer: Display: 1: FrontRight
+[2020.04.24-16.36.29:088][ 66]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2020.04.24-16.36.29:111][ 66]LogInit: FAudioDevice initialized.
+[2020.04.24-16.36.29:256][ 66]LogLoad: Game class is 'Test2GameMode'
+[2020.04.24-16.36.29:662][ 66]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2020.04.24-11.36.29
+[2020.04.24-16.36.29:874][ 66]LogWorld: Bringing up level for play took: 0.266760
+[2020.04.24-16.36.29:916][ 66]LogOnline: OSS: Creating online subsystem instance for: :Context_5
+[2020.04.24-16.36.30:277][ 66]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0025 seconds. Added 20 classes and 0 folders.
+[2020.04.24-16.36.30:813][ 66]PIE: Play in editor start time for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap 2.572
+[2020.04.24-16.36.30:814][ 66]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.24-16.36.40:455][128]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.24-16.36.40:485][128]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2020.04.24-16.36.40:525][128]LogAudioMixer: Display: Audio Buffer Underrun detected.
+[2020.04.24-16.36.40:525][128]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2020.04.24-16.36.40:831][128]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.24-16.36.41:521][128]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.04.24-16.36.41:521][128]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2020.04.24-16.36.41:794][128]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.24-16.36.42:466][128]LogStreaming: Display: UWorld::AddToWorld: unregistering components for /Game/FirstPersonCPP/Maps/UEDPIE_0_MedBay took (less than) 42.12 ms
+[2020.04.24-16.36.43:206][128]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.04.24-16.36.43:502][128]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.24-16.36.44:687][128]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.04.24-16.36.44:711][128]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap' with GeneratedClass '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap_C' with ClassGeneratedBy '/Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap:PersistentLevel.FirstPersonExampleMap'
+[2020.04.24-16.36.45:634][128]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.04.24-16.36.46:550][128]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2020.04.24-16.36.46:562][128]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
