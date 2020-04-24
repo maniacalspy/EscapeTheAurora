@@ -50,7 +50,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
 		class APuzzleBlock* _pPuzzleActor;
 
-	class AEndLevelTriggers* _pTriggerActor;
+	UPROPERTY(EditAnywhere, Category = "PuzzleGrid")
+		class AEndLevelTriggers* _pTriggerActor;
 
 	void createGrid();
 	void SetBlockStartPosition();
