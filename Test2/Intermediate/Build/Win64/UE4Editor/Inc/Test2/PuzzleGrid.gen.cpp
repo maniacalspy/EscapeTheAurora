@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_APuzzleGrid_ResetPuzzle();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	TEST2_API UClass* Z_Construct_UClass_AEndLevelTriggers_NoRegister();
 	TEST2_API UClass* Z_Construct_UClass_APuzzleBlock_NoRegister();
 // End Cross Module References
 	void APuzzleGrid::StaticRegisterNativesAPuzzleGrid()
@@ -71,6 +72,10 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_pTileGridMesh;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__pTriggerActor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__pTriggerActor;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp__pPuzzleActor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__pPuzzleActor;
@@ -107,6 +112,13 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleGrid_Statics::NewProp_pTileGridMesh = { "pTileGridMesh", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleGrid, pTileGridMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleGrid_Statics::NewProp_pTileGridMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleGrid_Statics::NewProp_pTileGridMesh_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pTriggerActor_MetaData[] = {
+		{ "Category", "PuzzleGrid" },
+		{ "ModuleRelativePath", "PuzzleGrid.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pTriggerActor = { "_pTriggerActor", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APuzzleGrid, _pTriggerActor), Z_Construct_UClass_AEndLevelTriggers_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pTriggerActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pTriggerActor_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pPuzzleActor_MetaData[] = {
 		{ "Category", "Puzzle Block" },
 		{ "ModuleRelativePath", "PuzzleGrid.h" },
@@ -116,6 +128,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APuzzleGrid_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleGrid_Statics::NewProp_LevelGridNumber,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleGrid_Statics::NewProp_pTileGridMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pTriggerActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APuzzleGrid_Statics::NewProp__pPuzzleActor,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APuzzleGrid_Statics::StaticCppClassTypeInfo = {
@@ -145,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodePuzzleGrid() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APuzzleGrid, 3788812665);
+	IMPLEMENT_CLASS(APuzzleGrid, 967350102);
 	template<> TEST2_API UClass* StaticClass<APuzzleGrid>()
 	{
 		return APuzzleGrid::StaticClass();

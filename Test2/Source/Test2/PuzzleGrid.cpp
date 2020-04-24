@@ -59,16 +59,16 @@ void APuzzleGrid::BeginPlay()
 
 	
 
+	if (_pTriggerActor == nullptr) {
+		//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelTriggers WITH THE LEVEL NUMBER APPENDED AT THE END
+		for (TActorIterator<AEndLevelTriggers> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
 
-	//NAMING CONVENTION REQUIREMENT: THE DOOR THE PUZZLE OPENS WHEN IT IS SOLVED MUST BE NAMED EndLevelTriggers WITH THE LEVEL NUMBER APPENDED AT THE END
-	for (TActorIterator<AEndLevelTriggers> ActorIterator(GetWorld()); ActorIterator; ++ActorIterator) {
-		
-		FString ActorName = (*ActorIterator)->GetName();
-		if (ActorName.Equals("EndLevelTriggers" + FString::FromInt(LevelGridNumber)) || ActorName.Equals("EndLevelTriggers_" + FString::FromInt(LevelGridNumber))) {
-			_pTriggerActor = *ActorIterator;
+			FString ActorName = (*ActorIterator)->GetName();
+			if (ActorName.Equals("EndLevelTriggers" + FString::FromInt(LevelGridNumber)) || ActorName.Equals("EndLevelTriggers_" + FString::FromInt(LevelGridNumber))) {
+				_pTriggerActor = *ActorIterator;
+			}
 		}
 	}
-
 	//verify puzzle block actor pointer
 	if (_pPuzzleActor != nullptr) {
 		_pPuzzleActor->SetAllCallBacks(([this]() {this->OnBlockDoneTipping(); }), ([this](FVector impactNormal) {return this->MoveBlock(impactNormal); }));

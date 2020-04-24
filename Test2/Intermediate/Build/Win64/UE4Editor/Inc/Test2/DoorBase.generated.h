@@ -99,7 +99,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoorBase); \
 
 
 #define Test2_Source_Test2_DoorBase_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__DoorFrameSkeleton() { return STRUCT_OFFSET(ADoorBase, DoorFrameSkeleton); } \
 	FORCEINLINE static uint32 __PPO__DoorPanelSkeleton() { return STRUCT_OFFSET(ADoorBase, DoorPanelSkeleton); } \
 	FORCEINLINE static uint32 __PPO__pOpenSound() { return STRUCT_OFFSET(ADoorBase, pOpenSound); }
 

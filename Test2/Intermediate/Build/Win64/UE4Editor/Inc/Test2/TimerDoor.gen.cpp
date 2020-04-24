@@ -104,7 +104,7 @@ void EmptyLinkFunctionForGeneratedCodeTimerDoor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATimerDoor, 2198196411);
+	IMPLEMENT_CLASS(ATimerDoor, 1623149902);
 	template<> TEST2_API UClass* StaticClass<ATimerDoor>()
 	{
 		return ATimerDoor::StaticClass();

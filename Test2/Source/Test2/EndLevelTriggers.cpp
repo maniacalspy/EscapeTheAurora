@@ -9,6 +9,8 @@
 // Sets default values
 AEndLevelTriggers::AEndLevelTriggers()
 {
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Scene component"));
+
 }
 
 
