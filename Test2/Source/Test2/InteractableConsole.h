@@ -21,6 +21,6 @@ public:
 	UPROPERTY(EditAnyWhere)
 		UStaticMeshComponent* pConsoleMesh;
 
-
+	virtual bool StartFocus_Implementation(AActor* Caller) override;
 	virtual void OnInteract_Implementation(AActor* Caller) override;
 };

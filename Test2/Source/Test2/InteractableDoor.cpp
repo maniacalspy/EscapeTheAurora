@@ -24,6 +24,14 @@ void AInteractableDoor::Tick(float DeltaTime)
 
 }
 
+bool AInteractableDoor::StartFocus_Implementation(AActor* Caller) {
+	if (bIsPowered) {
+			if(!bIsOpen) return SetPromptText(Caller, "open door");
+			else return SetPromptText(Caller, "close door");
+	}
+	return false;
+}
+
 void AInteractableDoor::OnInteract_Implementation(AActor* Caller) {
 	if (bIsPowered) {
 		if (!bIsOpen) OpenDoor();

@@ -153,7 +153,12 @@ public:
 	FORCEINLINE class TSubclassOf<class UPauseHudWidget>* GetPauseHudClass() { return &PauseHudClass; }
 
 	class UPauseHudWidget* GetPauseMenuInstance() { return PauseHudInstance; }
+	
+	class UETAHUD* GetGameHUDInstance() { return GameHudInstance; }
 
+	//sets the text prompt for player interaction, will always start with "Push E to ", so Intext should be the text that comes after, returns true if succeeded
+	UFUNCTION(BlueprintCallable, Category = "Interaction")
+		bool SetInteractionPromptText(FString Intext);
 private:
 
 	void HandleFocus();
@@ -178,10 +183,23 @@ private:
 	UPROPERTY()
 		TSubclassOf<class UHUDWidgetBase> ControlsHUD;
 
+	UPROPERTY()
+		TSubclassOf<class UETAHUD> GameHud;
+
+	UPROPERTY()
+		class UETAHUD* GameHudInstance;
+
+
 	class AActor* FocusedInteractable;
 
 	UPROPERTY(EditAnywhere, Category = "Interaction")
 		float InteractionDistance = 200.f;
+
+	UPROPERTY(EditAnywhere, Category = "Interaction")
+		TSubclassOf<class UHUDWidgetBase> InteractionPromptClass;
+
+	UPROPERTY()
+	class UEditableTextWidget* InteractionPromptInstance;
 
 	FCollisionQueryParams TraceParams;
 };

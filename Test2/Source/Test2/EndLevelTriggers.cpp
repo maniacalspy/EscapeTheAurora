@@ -1,6 +1,8 @@
  // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "EndLevelTriggers.h"
+#include "EndLevelDoor.h"
+#include "TimerDoor.h"
 #include "Engine/Engine.h"
 
 // Sets default values
@@ -81,6 +83,9 @@ void AEndLevelTriggers::PowerOnDoors() {
 		
 		APoweredDoor* PoweredDoor = Cast<APoweredDoor>(Door);
 		if (PoweredDoor) PoweredDoor->PowerOn();
+
+		ATimerDoor* TimerDoor = Cast<ATimerDoor>(Door);
+		if (TimerDoor) TimerDoor->bTimerIsRunning = true;
 	}
 }
 

@@ -2,6 +2,7 @@
 
 #include "Test2Character.h"
 #include "Test2Projectile.h"
+#include "ETAHUD.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -13,6 +14,7 @@
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
 #include "UObject/ConstructorHelpers.h"
 #include "Interactable.h"
+#include "EditableTextWidget.h"
 #include "Engine/Engine.h"
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
@@ -33,13 +35,18 @@ ATest2Character::ATest2Character()
 	BaseMoveSpeed = 30.f;
 
 
-	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPerson/UItesting/UI"));
 
 	PauseHudClass = MenuClassFinder.Class;
 
 	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
 
 	StartHud = StartMenuFinder.Class;
+
+	ConstructorHelpers::FClassFinder<UETAHUD> GameHUDClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD"));
+
+	GameHud = GameHUDClassFinder.Class;
+
 
 	ConstructorHelpers::FClassFinder<UHUDWidgetBase> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
 
@@ -95,40 +102,6 @@ void ATest2Character::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-
-	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
-
-	if (mycontroller) 
-	{
-			if (StartHud) 
-			{
-					StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
-					StartHudInstance->Setup();
-					StartHudInstance->OpenMenu();
-					mycontroller->SetPause(true);
-			}
-
-			else 
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
-			} 
-			
-
-			if (ControlsHUD) {
-				auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
-				ControlsHUDInstance->AddToViewport();
-			}
-
-			if (PauseHudClass) {
-				PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
-				PauseHudInstance->Setup();
-			}
-	}
-		
-	
-	
-	
-
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 
@@ -143,6 +116,46 @@ void ATest2Character::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (mycontroller)
+	{
+		if (StartHud)
+		{
+			StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
+			StartHudInstance->Setup();
+			StartHudInstance->OpenMenu();
+			mycontroller->SetPause(true);
+		}
+
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
+		}
+
+
+		if (ControlsHUD) {
+			auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
+			ControlsHUDInstance->AddToViewport();
+		}
+
+		if (PauseHudClass) {
+			PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
+			PauseHudInstance->Setup();
+		}
+
+		if (GameHud) {
+			GameHudInstance = CreateWidget<UETAHUD>(mycontroller, GameHud);
+			GameHudInstance->Setup();
+			GameHudInstance->AddToViewport();
+		}
+	}
+
+
+
+
+
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -208,10 +221,10 @@ void ATest2Character::TogglePause() {
 				if (!PauseHudInstance) {
 						PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
 						PauseHudInstance->Setup();
-						PauseHudInstance->OpenMenu();
+						PauseHudInstance->OpenPauseMenu();
 				}
 				else if (!(PauseHudInstance->IsInViewport())) {
-					PauseHudInstance->OpenMenu();
+					PauseHudInstance->OpenPauseMenu();
 				}
 			}
 		}
@@ -275,13 +288,13 @@ void ATest2Character::MoveRight(float Value)
 void ATest2Character::TurnAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
-	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
+	if (!(FMath::IsNearlyZero((double)Rate, .1))) AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
 void ATest2Character::LookUpAtRate(float Rate)
 {
 	// calculate delta for this frame from the rate information
-	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
+	if (!(FMath::IsNearlyZero((double)Rate, .1))) AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
 bool ATest2Character::EnableTouchscreenMovement(class UInputComponent* PlayerInputComponent)
@@ -303,6 +316,16 @@ void ATest2Character::Tick(float DeltaSeconds) {
 	Super::Tick(DeltaSeconds);
 	HandleFocus();
 }
+
+#pragma region Interaction
+
+bool ATest2Character::SetInteractionPromptText(FString Intext) {
+	if (InteractionPromptInstance) {
+		return (InteractionPromptInstance->SetText(Intext));
+	}
+	return true;
+}
+
 
 void ATest2Character::Interact() {
 	if (FocusedInteractable) {
@@ -348,12 +371,18 @@ void ATest2Character::HandleFocus() {
 				if (interface)
 				{
 					interface->Execute_EndFocus(FocusedInteractable);
+					if (InteractionPromptInstance) InteractionPromptInstance->RemoveFromViewport();
 				}
 			}
 			IInteractable* interface = Cast<IInteractable>(interactable);
 			if (interface)
 			{
-				interface->Execute_StartFocus(interactable);
+				if (InteractionPromptClass != nullptr && InteractionPromptInstance == nullptr) {
+					InteractionPromptInstance = CreateWidget<UEditableTextWidget>(GetWorld()->GetFirstPlayerController(), InteractionPromptClass);
+				}
+				if ((interface->Execute_StartFocus(interactable, this))) {
+					InteractionPromptInstance->AddToViewport();
+				}
 			}
 			FocusedInteractable = interactable;
 		}
@@ -366,9 +395,12 @@ void ATest2Character::HandleFocus() {
 			if (interface)
 			{
 				interface->Execute_EndFocus(FocusedInteractable);
+				if (InteractionPromptInstance != nullptr) InteractionPromptInstance->RemoveFromViewport();
 			}
 		}
 		FocusedInteractable = nullptr;
 	}
 
 }
+
+#pragma endregion

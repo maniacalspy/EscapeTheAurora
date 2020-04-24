@@ -1,9 +1,12 @@
 #pragma once
-//#include "PuzzleGrid.h"
+#include <initializer_list>
+#include "EngineUtils.h"
 
 enum class TT_tileTypes { Goal, Start, Basic, NonTraversable };
 enum class TT_tileStates { Empty, Covered};
 enum class _tileDirections {North, East, South, West};
+constexpr std::initializer_list<_tileDirections> allTileDirections = { _tileDirections::North, _tileDirections::South, _tileDirections::East, _tileDirections::West };
+
 
 class APuzzleGrid;
 

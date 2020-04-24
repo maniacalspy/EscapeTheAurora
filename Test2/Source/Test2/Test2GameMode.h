@@ -13,6 +13,8 @@ class ATest2GameMode : public AGameModeBase
 
 public:
 	ATest2GameMode();
+
+	void EnableMap();
 };
 
 
