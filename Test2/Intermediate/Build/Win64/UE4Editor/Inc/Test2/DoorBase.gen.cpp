@@ -132,9 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_MetaData[] = {
 		{ "Category", "Door" },
-		{ "Comment", "//UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = \"Door\")\n//\x09uint32 bIsPowered : 1;\n" },
 		{ "ModuleRelativePath", "DoorBase.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = \"Door\")\n       uint32 bIsPowered : 1;" },
 	};
 #endif
 	void Z_Construct_UClass_ADoorBase_Statics::NewProp_bIsOpen_SetBit(void* Obj)
@@ -153,10 +151,8 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData[] = {
 		{ "Category", "SkeletalMesh" },
-		{ "Comment", "/*UPROPERTY(EditAnywhere, Category = SkeletalMesh)\n\x09\x09""class USkeletalMeshComponent* DoorFrameSkeleton;*/" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "DoorBase.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere, Category = SkeletalMesh)\n               class USkeletalMeshComponent* DoorFrameSkeleton;" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton = { "DoorPanelSkeleton", nullptr, (EPropertyFlags)0x002008000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoorBase, DoorPanelSkeleton), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorBase_Statics::NewProp_DoorPanelSkeleton_MetaData)) };
@@ -192,7 +188,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoorBase, 1463338146);
+	IMPLEMENT_CLASS(ADoorBase, 4070996013);
 	template<> TEST2_API UClass* StaticClass<ADoorBase>()
 	{
 		return ADoorBase::StaticClass();
