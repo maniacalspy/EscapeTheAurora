@@ -175,10 +175,10 @@ private:
 		class UPauseHudWidget* PauseHudInstance;
 
 	UPROPERTY()
-		TSubclassOf<class UHUDWidgetBase> StartHud;
+		TSubclassOf<class UHUDWidgetBase> MainMenu;
 
 	UPROPERTY()
-		class UHUDWidgetBase* StartHudInstance;
+		class UHUDWidgetBase* MainMenuInstance;
 
 	UPROPERTY()
 		TSubclassOf<class UHUDWidgetBase> ControlsHUD;
