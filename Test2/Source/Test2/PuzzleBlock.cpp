@@ -55,15 +55,11 @@ APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
 	pBlockMesh->SetupAttachment(RootComponent);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Assets/Battery_1_0.Battery_1_0'"));
-	static ConstructorHelpers::FObjectFinder<UMaterial> BatteryMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Battery/Battery.Battery'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Meshes/Battery_2_0_BlockV2.Battery_2_0_BlockV2'"));
 
 	if (BatteryMeshAsset.Succeeded())
 	{
 		pBlockMesh->SetStaticMesh(BatteryMeshAsset.Object);
-		if (BatteryMaterialAsset.Succeeded()) {
-			pBlockMesh->SetMaterial(0, BatteryMaterialAsset.Object);
-		}
 		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(_boxExtents.Z / 2) * 2));
 	}
 	
