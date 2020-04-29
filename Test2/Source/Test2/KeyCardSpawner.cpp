@@ -25,6 +25,10 @@ void AKeyCardSpawner::Tick(float DeltaTime)
 
 }
 
+void AKeyCardSpawner::OnTriggered_Implementation() {
+	SpawnKey();
+}
+
 void AKeyCardSpawner::SpawnKey() {
 	
 	if (KeyCardClass == NULL)

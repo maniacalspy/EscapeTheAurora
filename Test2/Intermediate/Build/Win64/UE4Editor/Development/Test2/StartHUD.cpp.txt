@@ -1,8 +1,0 @@
-E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-E:\Nudge\Test2\Source\Test2\StartHUD.h
-D:\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
-D:\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
-D:\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
-D:\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
-D:\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\StartHUD.generated.h
