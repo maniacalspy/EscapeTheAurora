@@ -21,6 +21,7 @@
 			"PauseHudWidget.cpp.obj",
 			"PoweredDoor.cpp.obj",
 			"PoweredInteractableDoor.cpp.obj",
+			"PuzzleBlock.cpp.obj",
 			"PuzzleBlockComponent.cpp.obj",
 			"PuzzleGrid.cpp.obj",
 			"PuzzleGridComponent.cpp.obj",
@@ -32,8 +33,7 @@
 			"Test2Projectile.cpp.obj",
 			"TimerDoor.cpp.obj",
 			"Triggerable.cpp.obj",
-			"TriggeredMonster.cpp.obj",
-			"PuzzleBlock.cpp.obj"
+			"TriggeredMonster.cpp.obj"
 		],
 		"Module.Test2.gen.cpp.obj": [
 			"DoorBase.gen.cpp.obj",
