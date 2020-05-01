@@ -14,7 +14,6 @@
 			"IA_SuitPod.cpp.obj",
 			"Interactable.cpp.obj",
 			"InteractableActor.cpp.obj",
-			"InteractableConsole.cpp.obj",
 			"InteractableDoor.cpp.obj",
 			"KeyCardSpawner.cpp.obj",
 			"LevelGridStruct.cpp.obj",
@@ -33,7 +32,8 @@
 			"Test2Projectile.cpp.obj",
 			"TimerDoor.cpp.obj",
 			"Triggerable.cpp.obj",
-			"TriggeredMonster.cpp.obj"
+			"TriggeredMonster.cpp.obj",
+			"InteractableConsole.cpp.obj"
 		],
 		"Module.Test2.gen.cpp.obj": [
 			"DoorBase.gen.cpp.obj",

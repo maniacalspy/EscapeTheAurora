@@ -18,6 +18,8 @@ class TEST2_API AInteractableConsole : public AInteractableActor
 public:
 	AInteractableConsole();
 
+	bool bMapIsDownloaded;
+
 	UPROPERTY(EditAnyWhere)
 		UStaticMeshComponent* pConsoleMesh;
 
