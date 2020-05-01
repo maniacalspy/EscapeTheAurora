@@ -1,0 +1,247 @@
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/DoorBase.gen.cpp
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/DoorBase.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/EditableTextWidget.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/EditableTextWidget.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\HUDWidgetBase.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/Widget.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/Visual.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Visual.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Slate/WidgetTransform.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetTransform.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetNavigation.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\SlateCore\Public\Types/NavigationMetaData.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetNavigation.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Editor\UnrealEd\Public\Kismet2/CompilerResultsLog.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Editor\UnrealEd\Public\EdGraphToken.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\Widget.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/NamedSlotInterface.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\NamedSlotInterface.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Slate\Public\Widgets/Layout/Anchors.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Slate\Anchors.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimation.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequence.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSignedObject.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSignedObject.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrack.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\IMovieSceneTrackInstance.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneAnimTypeID.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSection.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneFwd.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSequenceID.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceID.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\KeyParams.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieScene.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSpawnable.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSpawnable.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneBinding.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBinding.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieScenePossessable.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScenePossessable.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneObjectBindingID.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneObjectBindingID.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneFrameMigration.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneFrameMigration.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneTimeController.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/QualifiedFrameTime.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieScene.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendType.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneBlendType.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Generators/MovieSceneEasingFunction.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEasingFunction.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSection.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/InlineValue.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Compilation/MovieSceneSegmentCompiler.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSegment.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSegment.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrack.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTemplate.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneTrackIdentifier.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Core\Public\UObject/EditorObjectVersion.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackIdentifier.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationField.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationKey.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationKey.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationField.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTrack.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieScenePlayback.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceTransform.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceTransform.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvalTemplate.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvalTemplateBase.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplateBase.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneExecutionTokens.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneExecutionToken.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationScope.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/PersistentEvaluationData.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationOperand.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationOperand.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceInstanceData.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceInstanceData.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingAccumulator.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/BlendableToken.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingActuatorID.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneBlendingActuator.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\IMovieScenePlayer.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieScenePreAnimatedState.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\MovieSceneSpawnRegister.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\IMovieSceneObjectSpawner.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationState.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/IMovieSceneMotionVectorSimulation.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/BlendableTokenStack.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneInitialValueStore.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/Blending/MovieSceneAccumulatedBlendState.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation\Blending\MovieSceneBlendingAccumulator.inl
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Compilation/MovieSceneTemplateInterrogation.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvalTemplate.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneTrackImplementation.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneTrackImplementation.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneEvaluationTree.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTrack.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSequenceHierarchy.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSectionParameters.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSectionParameters.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequenceHierarchy.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneEvaluationTemplate.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene\MovieSceneSequence.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Animation/WidgetAnimationBinding.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimationBinding.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetAnimation.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/WidgetBlueprintGeneratedClass.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\UMG\Public\Binding/DynamicPropertyPath.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\PropertyPath\Public\PropertyPathHelpers.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\PropertyPath\Public\PropertyTypeCompatibility.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath\PropertyPathHelpers.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EditableTextWidget.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/EndLevelDoor.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/EndLevelDoor.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\PoweredDoor.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\Triggerable.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Triggerable.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/EndLevelTriggers.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/EndLevelTriggers.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\KeyCardSpawner.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/ETAHUD.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/ETAHUD.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\ETAHUD.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/FitToGrid.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/FitToGrid.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/HUDWidgetBase.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/IA_MedBayMonster.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/IA_MedBayMonster.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\InteractableActor.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\Interactable.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\Test2Character.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\PauseHudWidget.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/IA_SuitPod.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/IA_SuitPod.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_SuitPod.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Interactable.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/InteractableActor.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/InteractableConsole.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/InteractableConsole.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableConsole.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/InteractableDoor.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/InteractableDoor.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableDoor.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/KeyCardSpawner.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PauseHudWidget.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredDoor.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredInteractableDoor.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/PoweredInteractableDoor.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredInteractableDoor.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleBlock.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/PuzzleBlock.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\functional
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\tuple
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\xutility
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\climits
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\cstring
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\utility
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\typeinfo
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\vcruntime_typeinfo.h
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\xmemory
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\cstdint
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\limits
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\cfloat
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\cwchar
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\cstdio
+H:\VS\2019\VC\Tools\MSVC\14.25.28610\INCLUDE\xatomic.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlock.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleBlockComponent.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/PuzzleBlockComponent.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlockComponent.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleGrid.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/PuzzleGrid.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\GridTile.h
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2\LevelGridStruct.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGrid.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleGridComponent.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/PuzzleGridComponent.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGridComponent.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/StartHUD.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/StartHUD.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\StartHUD.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2.init.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2Character.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2GameMode.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/Test2GameMode.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\Program Files (x86)\Unreal\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2GameMode.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2HUD.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/Test2HUD.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2HUD.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2Projectile.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/Test2Projectile.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TimerDoor.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/TimerDoor.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TimerDoor.generated.h
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Triggerable.gen.cpp
+H:/Unreal/Aurora/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TriggeredMonster.gen.cpp
+H:\Unreal\Aurora\Nudge\Test2\Source\Test2/TriggeredMonster.h
+H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TriggeredMonster.generated.h
