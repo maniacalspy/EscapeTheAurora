@@ -24,5 +24,6 @@ void AInteractableConsole::OnInteract_Implementation(AActor* caller) {
 		ATest2GameMode* gamemode = Cast<ATest2GameMode>(GetWorld()->GetAuthGameMode());
 
 		if (gamemode) gamemode->EnableMap();
+		bMapIsDownloaded = true;
 	}
 }
