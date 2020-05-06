@@ -6,9 +6,9 @@
 /NAME:"UE4Editor-Test2.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
-"E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.cpp.obj"
-"E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.gen.cpp.obj"
-"E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
-/OUT:"E:\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib"
+"H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.cpp.obj"
+"H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.gen.cpp.obj"
+"H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Default.rc2.res"
+/OUT:"H:\Unreal\Aurora\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib"
 /INCLUDE:IMPLEMENT_MODULE_Test2
