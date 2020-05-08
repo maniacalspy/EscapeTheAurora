@@ -28,8 +28,8 @@ void APuzzleGrid::PostInitializeComponents() {
 	Super::PostInitializeComponents();
 	_XScale = GetActorScale().X;
 	_YScale = GetActorScale().Y;
-	_tileWidth = 30.f * _YScale;
-	_tileHeight = 30.f * _XScale;
+	_tileWidth = 60.f * _YScale;
+	_tileHeight = 60.f * _XScale;
 
 
 	if (_pPuzzleActor == nullptr) {
@@ -212,7 +212,7 @@ void APuzzleGrid::SetBlockStartPosition() {
 		TilesBlockIsOn.Add(StartTileOne);
 		FVector StartPosition;
 
-		FQuat StartRotation = GetActorQuat() * FQuat(_pPuzzleActor->GetActorUpVector(), M_PI);
+		FQuat StartRotation = GetActorQuat();
 		switch (MyStartPoints.Num())
 		{
 		case 1:
