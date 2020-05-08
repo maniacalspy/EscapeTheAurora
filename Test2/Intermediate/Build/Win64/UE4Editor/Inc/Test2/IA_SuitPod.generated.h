@@ -61,7 +61,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AIA_SuitPod); \
 #define Test2_Source_Test2_IA_SuitPod_h_16_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__MeshComponent() { return STRUCT_OFFSET(AIA_SuitPod, MeshComponent); } \
 	FORCEINLINE static uint32 __PPO__FullMesh() { return STRUCT_OFFSET(AIA_SuitPod, FullMesh); } \
-	FORCEINLINE static uint32 __PPO__MeshMaterials() { return STRUCT_OFFSET(AIA_SuitPod, MeshMaterials); } \
 	FORCEINLINE static uint32 __PPO__Suitoff() { return STRUCT_OFFSET(AIA_SuitPod, Suitoff); }
 
 

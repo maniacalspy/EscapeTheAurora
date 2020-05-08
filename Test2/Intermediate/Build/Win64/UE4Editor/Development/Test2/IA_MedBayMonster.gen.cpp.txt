@@ -1,12 +1,12 @@
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2/IA_MedBayMonster.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableActor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Interactable.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\HUDWidgetBase.h
+D:\Code\Nudge\Test2\Source\Test2/IA_MedBayMonster.h
+D:\Code\Nudge\Test2\Source\Test2\InteractableActor.h
+D:\Code\Nudge\Test2\Source\Test2\Interactable.h
+D:\Code\Nudge\Test2\Source\Test2\Test2Character.h
+D:\Code\Nudge\Test2\Source\Test2\PauseHudWidget.h
+D:\Code\Nudge\Test2\Source\Test2\HUDWidgetBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -122,13 +122,13 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h

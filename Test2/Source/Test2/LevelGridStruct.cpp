@@ -49,6 +49,7 @@ extern TT_tileTypes Level_Four_Grid[63] =
 LevelGrid* Level_Four = new LevelGrid(7, 9, 1, 1, Level_Four_Grid);
 
 
+
 LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid)
 {
 	RowCount = rows;

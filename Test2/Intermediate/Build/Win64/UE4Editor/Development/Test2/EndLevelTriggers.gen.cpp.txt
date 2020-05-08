@@ -1,16 +1,18 @@
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2/EndLevelTriggers.h
+D:\Code\Nudge\Test2\Source\Test2/EndLevelTriggers.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\DoorBase.h
+D:\Code\Nudge\Test2\Source\Test2\DoorBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+D:\Code\Nudge\Test2\Source\Test2\Triggerable.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Triggerable.generated.h
+D:\Code\Nudge\Test2\Source\Test2\KeyCardSpawner.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h

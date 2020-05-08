@@ -6,19 +6,19 @@
 #include "ConstructorHelpers.h"
 
 APoweredDoor::APoweredDoor() {
-	static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
+	/*static ConstructorHelpers::FObjectFinder<UMaterial> PanelOnMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Door/DoorMaterial.DoorMaterial'"));
 	if (PanelOnMaterialAsset.Succeeded()) {
 		pPanelOnMaterial = PanelOnMaterialAsset.Object;
-	}
+	}*/
 
 }
 
 void APoweredDoor::BeginPlay() {
 	Super::BeginPlay();
 
-	if (bIsPowered) {
+	/*if (bIsPowered) {
 		SwapDoorMaterial();
-	}
+	}*/
 
 }
 
@@ -32,11 +32,11 @@ void APoweredDoor::OpenDoor_Implementation() {
 }
 
 void APoweredDoor::PowerOn_Implementation() {
-	SwapDoorMaterial();
+	//SwapDoorMaterial();
 	bIsPowered = true;
 }
 
 
-void APoweredDoor::SwapDoorMaterial() {
-	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
-}
+//void APoweredDoor::SwapDoorMaterial() {
+//	if (pPanelOnMaterial) DoorPanelSkeleton->SetMaterial(0, pPanelOnMaterial->GetMaterial());
+//}

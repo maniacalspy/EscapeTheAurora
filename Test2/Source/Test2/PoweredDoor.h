@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "DoorBase.h"
+#include "Triggerable.h"
 #include "PoweredDoor.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class TEST2_API APoweredDoor : public ADoorBase
+class TEST2_API APoweredDoor : public ADoorBase, public ITriggerable
 {
 	GENERATED_BODY()
 	
@@ -28,11 +29,11 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	void SwapDoorMaterial();
+	/*void SwapDoorMaterial();*/
 
 	class UMaterial* pPanelOffMaterial;
 
-	class UMaterial* pPanelOnMaterial;
+	//class UMaterial* pPanelOnMaterial;
 
 	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Door")
 		uint32 bIsPowered : 1;
