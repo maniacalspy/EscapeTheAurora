@@ -395,7 +395,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							float Xoffset = _tileHeight;
 							Xoffset *= (FVector::DotProduct(RotatingAxis, GetActorRightVector()) / (RotatingAxis.Size() * GetActorRightVector().Size()));
 							float Yoffset = _tileWidth;
-							Yoffset *= (FVector::DotProduct(RotatingAxis, GetActorForwardVector()) / (RotatingAxis.Size() * GetActorForwardVector().Size()));
+							Yoffset *= -(FVector::DotProduct(RotatingAxis, GetActorForwardVector()) / (RotatingAxis.Size() * GetActorForwardVector().Size()));
 							IsInvalidTip = true;
 							LastValidRotation = _pPuzzleActor->GetActorQuat();
 							LastValidLocation = _pPuzzleActor->GetActorLocation();
@@ -403,6 +403,20 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
 							DestLocation = *new FVector(XMidPoint + Xoffset/2, YMidPoint + Yoffset/2, _pPuzzleActor->GetActorLocation().Z);
 							DestRotation = *new FQuat(RotatingAxis, M_PI_4) * _pPuzzleActor->GetActorQuat();
+
+
+							/*float Xoffset = _tileHeight;
+							Xoffset *= (FVector::DotProduct(RotatingAxis, GetActorRightVector()) / (RotatingAxis.Size() * GetActorRightVector().Size()));
+							float Yoffset = _tileWidth;
+							Yoffset *= -(FVector::DotProduct(RotatingAxis, GetActorForwardVector()) / (RotatingAxis.Size() * GetActorForwardVector().Size()));
+							IsInvalidTip = true;
+							LastValidRotation = _pPuzzleActor->GetActorQuat();
+							LastValidLocation = _pPuzzleActor->GetActorLocation();
+							float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
+							float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
+							DestLocation = *new FVector(XMidPoint + (Xoffset * CosAngle - Yoffset * SinAngle), YMidPoint + (Yoffset * CosAngle + Xoffset * SinAngle), _pPuzzleActor->GetActorLocation().Z);
+							DestRotation = *new FQuat(RotatingAxis, M_PI_4) * _pPuzzleActor->GetActorQuat();*/
+
 
 						} //end of else
 
@@ -475,7 +489,7 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 					LastValidLocation = _pPuzzleActor->GetActorLocation();
 					float XMidPoint = (TilesBlockIsOn[0]->xPos + TilesBlockIsOn[1]->xPos) / 2;
 					float YMidPoint = (TilesBlockIsOn[0]->yPos + TilesBlockIsOn[1]->yPos) / 2;
-					DestLocation = *new FVector(XMidPoint + (Xoffset * CosAngle  - Yoffset * SinAngle), YMidPoint + (Yoffset * CosAngle + Xoffset * SinAngle), _pPuzzleActor->GetActorLocation().Z);
+					DestLocation = *new FVector(XMidPoint + (Xoffset * CosAngle  - Yoffset * SinAngle)/2, YMidPoint + (Yoffset * CosAngle + Xoffset * SinAngle)/2, _pPuzzleActor->GetActorLocation().Z);
 					DestRotation = *new FQuat(RotatingAxis, M_PI_4) * _pPuzzleActor->GetActorQuat();
 				}
 				else {
