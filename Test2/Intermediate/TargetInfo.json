@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Test2",
-			"Path": "E:\\Nudge\\Test2\\Source\\Test2.Target.cs",
+			"Path": "D:\\Code\\Nudge\\Test2\\Source\\Test2.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "Test2Editor",
-			"Path": "E:\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
+			"Path": "D:\\Code\\Nudge\\Test2\\Source\\Test2Editor.Target.cs",
 			"Type": "Editor"
 		}
 	]

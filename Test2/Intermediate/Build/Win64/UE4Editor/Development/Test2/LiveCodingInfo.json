@@ -17,10 +17,13 @@
 			"InteractableConsole.cpp.obj",
 			"InteractableDoor.cpp.obj",
 			"KeyCardSpawner.cpp.obj",
+			"LevelGridStruct.cpp.obj",
 			"PauseHudWidget.cpp.obj",
 			"PoweredDoor.cpp.obj",
 			"PoweredInteractableDoor.cpp.obj",
+			"PuzzleBlock.cpp.obj",
 			"PuzzleBlockComponent.cpp.obj",
+			"PuzzleGrid.cpp.obj",
 			"PuzzleGridComponent.cpp.obj",
 			"StartHUD.cpp.obj",
 			"Test2.cpp.obj",
@@ -30,10 +33,7 @@
 			"Test2Projectile.cpp.obj",
 			"TimerDoor.cpp.obj",
 			"Triggerable.cpp.obj",
-			"TriggeredMonster.cpp.obj",
-			"LevelGridStruct.cpp.obj",
-			"PuzzleBlock.cpp.obj",
-			"PuzzleGrid.cpp.obj"
+			"TriggeredMonster.cpp.obj"
 		],
 		"Module.Test2.gen.cpp.obj": [
 			"DoorBase.gen.cpp.obj",

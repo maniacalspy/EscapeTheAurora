@@ -34,6 +34,8 @@
 /FUNCTIONPADMIN
 "D:\Code\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Engine\SharedPCH.Engine.h.obj"
 "D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\LevelGridStruct.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleBlock.cpp.obj"
+"D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PuzzleGrid.cpp.obj"
 "D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Module.Test2.cpp.obj"
 "D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\PoweredInteractableDoor.gen.cpp.obj"
 "D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Triggerable.gen.cpp.obj"
