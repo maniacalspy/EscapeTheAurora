@@ -205,7 +205,7 @@ void APuzzleBlock::SetDestRotation(FQuat destRotation) {
 void APuzzleBlock::EnableHologram(FVector PushSide) {
 	if (_hologramComponents.Num() > 0) {
 		FVector Axis[] = { GetActorUpVector().GetSafeNormal(), -GetActorUpVector().GetSafeNormal(), GetActorForwardVector().GetSafeNormal(),
-		-GetActorForwardVector().GetSafeNormal() ,  GetActorRightVector().GetSafeNormal() , -GetActorRightVector().GetSafeNormal() };
+		-GetActorForwardVector().GetSafeNormal() ,  -GetActorRightVector().GetSafeNormal() , GetActorRightVector().GetSafeNormal() };
 
 		for (int i = 0; i < 6; i++) {
 			if (Axis[i].Equals(PushSide, .05)) {
