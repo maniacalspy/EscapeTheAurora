@@ -101,6 +101,85 @@ LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: Test2
+Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="D:/Code/Nudge/Test2/Test2.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (D:\Code\Nudge).
+Creating makefile for Test2Editor (no existing makefile)
+@progress push 5%
+Parsing headers for Test2Editor
+  Running UnrealHeaderTool "D:\Code\Nudge\Test2\Test2.uproject" "D:\Code\Nudge\Test2\Intermediate\Build\Win64\Test2Editor\Development\Test2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+Reflection code generated for Test2Editor in 5.5192973 seconds
+@progress pop
+Building Test2Editor...
+Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+[Adaptive unity build] Excluded from Test2.gen unity file: PoweredInteractableDoor.gen.cpp, Triggerable.gen.cpp
+Building 8 actions with 6 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 12%
+  [1/8] SharedPCH.Engine.cpp
+  @progress 'Compiling C++ source code...' 25%
+  [2/8] Triggerable.gen.cpp
+  @progress 'Compiling C++ source code...' 38%
+  [3/8] PoweredInteractableDoor.gen.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [4/8] Module.Test2.gen.cpp
+  @progress 'Compiling C++ source code...' 62%
+  [5/8] Module.Test2.cpp
+  D:/Code/Nudge/Test2/Source/Test2/Test2Character.cpp(353): warning C4459: declaration of 'Start' hides global declaration
+  D:/Code/Nudge/Test2/Source/Test2/LevelGridStruct.cpp(10): note: see declaration of 'Start'
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/Array.h(799): warning C4459: declaration of 'Start' hides global declaration
+  D:/Code/Nudge/Test2/Source/Test2/LevelGridStruct.cpp(10): note: see declaration of 'Start'
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/Array.h(798): note: while compiling class template member function 'int TArray<FGuid,FDefaultAllocator>::Find(const FGuid &) const'
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Containers/Array.h(786): note: see reference to function template instantiation 'int TArray<FGuid,FDefaultAllocator>::Find(const FGuid &) const' being compiled
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/Level.h(411): note: see reference to class template instantiation 'TArray<FGuid,FDefaultAllocator>' being compiled
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Algo/BinarySearch.h(26): warning C4459: declaration of 'Start' hides global declaration
+  D:/Code/Nudge/Test2/Source/Test2/LevelGridStruct.cpp(10): note: see declaration of 'Start'
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Algo/BinarySearch.h(94): note: see reference to function template instantiation 'SIZE_T AlgoImpl::LowerBoundInternal<UObject*,ValueType,FIdentityFunctor,SortPredicateType>(RangeValueType *,const SIZE_T,const PredicateValueType &,ProjectionType,SortPredicateType)' being compiled
+          with
+          [
+              ValueType=UObject *,
+              SortPredicateType=TLess<void>,
+              RangeValueType=UObject *,
+              PredicateValueType=UObject *,
+              ProjectionType=FIdentityFunctor
+          ]
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Algo/BinarySearch.h(175): note: see reference to function template instantiation 'int32 Algo::LowerBound<RangeType,ValueType,SortPredicateType>(RangeType &,const ValueType &,SortPredicateType)' being compiled
+          with
+          [
+              RangeType=TArray<UObject *,FDefaultAllocator>,
+              ValueType=UObject *,
+              SortPredicateType=TLess<void>
+          ]
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Algo/BinarySearch.h(190): note: see reference to function template instantiation 'int32 Algo::BinarySearch<RangeType,ValueType,TLess<void>>(RangeType &,const ValueType &,SortPredicateType)' being compiled
+          with
+          [
+              RangeType=TArray<UObject *,FDefaultAllocator>,
+              ValueType=UObject *,
+              SortPredicateType=TLess<void>
+          ]
+  C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\Serialization/FindReferencersArchive.h(112): note: see reference to function template instantiation 'int32 Algo::BinarySearch<TArray<UObject *,FDefaultAllocator>,UObject*>(RangeType &,const ValueType &)' being compiled
+          with
+          [
+              RangeType=TArray<UObject *,FDefaultAllocator>,
+              ValueType=UObject *
+          ]
+  @progress 'Compiling C++ source code...' 75%
+  [6/8] UE4Editor-Test2.lib
+     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.exp
+  @progress 'Compiling C++ source code...' 88%
+  [7/8] UE4Editor-Test2.dll
+     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [8/8] Test2Editor.target
+Total time in Parallel executor: 54.26 seconds
+Total execution time: 61.79 seconds
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1
