@@ -13,7 +13,6 @@ UCLASS()
 class TEST2_API AInteractableConsole : public AInteractableActor
 {
 	GENERATED_BODY()
-	
 
 public:
 	AInteractableConsole();

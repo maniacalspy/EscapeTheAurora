@@ -11,7 +11,7 @@ LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.092233
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
-LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -6:00, Platform Override: ''
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
 LogPluginManager: Mounting plugin AISupport
 LogPluginManager: Mounting plugin LightPropagationVolume
@@ -101,6 +101,40 @@ LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: Test2
+Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="D:/Code/Nudge/Test2/Test2.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (D:\Code\Nudge).
+Creating makefile for Test2Editor (no existing makefile)
+@progress push 5%
+@progress pop
+Building Test2Editor...
+Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Upgrade]
+[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
+[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
+[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
+[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
+[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[Upgrade]
+[Adaptive unity build] Excluded from Test2.gen unity file: PoweredInteractableDoor.gen.cpp, Triggerable.gen.cpp
+Building 6 actions with 6 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 17%
+  [1/6] Triggerable.gen.cpp
+  @progress 'Compiling C++ source code...' 33%
+  [2/6] PoweredInteractableDoor.gen.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [3/6] Module.Test2.gen.cpp
+  @progress 'Compiling C++ source code...' 67%
+  [4/6] UE4Editor-Test2.lib
+     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.exp
+  @progress 'Compiling C++ source code...' 83%
+  [5/6] UE4Editor-Test2.dll
+     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [6/6] Test2Editor.target
+Total time in Parallel executor: 5.82 seconds
+Total execution time: 7.61 seconds
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1
@@ -122,8 +156,8 @@ LogInit:  - BufferSize = 65536
 LogOnline: OSS: Creating online subsystem instance for: NULL
 LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
 LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-LogInit: Build: ++UE4+Release-4.24-CL-11100242
-LogInit: Engine Version: 4.24.2-11100242+++UE4+Release-4.24
+LogInit: Build: ++UE4+Release-4.24-CL-11590370
+LogInit: Engine Version: 4.24.3-11590370+++UE4+Release-4.24
 LogInit: Compatible Engine Version: 4.24.0-10570792+++UE4+Release-4.24
 LogInit: Net CL: 10570792
 LogInit: OS: Windows 10 (Release 1903) (), CPU: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, GPU: Intel(R) HD Graphics 530
