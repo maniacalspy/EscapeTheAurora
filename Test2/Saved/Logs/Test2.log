@@ -101,40 +101,6 @@ LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
 LogPluginManager: Mounting plugin ScreenshotTools
-LogInit: Warning: Incompatible or missing module: Test2
-Running C:/Program Files/Epic Games/UE_4.24/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="D:/Code/Nudge/Test2/Test2.uproject" -TargetType=Editor -Progress -NoHotReloadFromIDE
-Using 'git status' to determine working set for adaptive non-unity build (D:\Code\Nudge).
-Creating makefile for Test2Editor (no existing makefile)
-@progress push 5%
-@progress pop
-Building Test2Editor...
-Using Visual Studio 2019 14.25.28614 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[Upgrade]
-[Upgrade] Using backward-compatible build settings. The latest version of UE4 sets the following values by default, which may require code changes:
-[Upgrade]     bLegacyPublicIncludePaths = false                 => Omits subfolders from public include paths to reduce compiler command line length. (Previously: true).
-[Upgrade]     ShadowVariableWarningLevel = WarningLevel.Error   => Treats shadowed variable warnings as errors. (Previously: WarningLevel.Warning).
-[Upgrade]     PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs   => Set in build.cs files to enables IWYU-style PCH model. See https://docs.unrealengine.com/en-US/Programming/BuildTools/UnrealBuildTool/IWYU/index.html. (Previously: PCHUsageMode.UseSharedPCHs).
-[Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V2;' in Test2Editor.Target.cs, and explicitly overriding settings that differ from the new defaults.
-[Upgrade]
-[Adaptive unity build] Excluded from Test2.gen unity file: PoweredInteractableDoor.gen.cpp, Triggerable.gen.cpp
-Building 6 actions with 6 processes...
-  @progress 'Compiling C++ source code...' 0%
-  @progress 'Compiling C++ source code...' 17%
-  [1/6] Triggerable.gen.cpp
-  @progress 'Compiling C++ source code...' 33%
-  [2/6] PoweredInteractableDoor.gen.cpp
-  @progress 'Compiling C++ source code...' 50%
-  [3/6] Module.Test2.gen.cpp
-  @progress 'Compiling C++ source code...' 67%
-  [4/6] UE4Editor-Test2.lib
-     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.exp
-  @progress 'Compiling C++ source code...' 83%
-  [5/6] UE4Editor-Test2.dll
-     Creating library D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.lib and object D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\UE4Editor-Test2.suppressed.exp
-  @progress 'Compiling C++ source code...' 100%
-  [6/6] Test2Editor.target
-Total time in Parallel executor: 5.82 seconds
-Total execution time: 7.61 seconds
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.1.1
