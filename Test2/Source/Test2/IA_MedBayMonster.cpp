@@ -16,7 +16,7 @@ AIA_MedBayMonster::AIA_MedBayMonster() {
 
 
 bool AIA_MedBayMonster::StartFocus_Implementation(AActor* Caller) {
-	return SetPromptText(Caller, "desecrate body");
+	return SetPromptText(Caller, "investigate");
 }
 
 

@@ -15,6 +15,7 @@
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/KeyCardSpawner.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PauseHudWidget.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredDoor.gen.cpp"
+#include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredInteractableDoor.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleBlock.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleBlockComponent.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleGrid.gen.cpp"
@@ -26,4 +27,5 @@
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2HUD.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2Projectile.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TimerDoor.gen.cpp"
+#include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Triggerable.gen.cpp"
 #include "D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TriggeredMonster.gen.cpp"
