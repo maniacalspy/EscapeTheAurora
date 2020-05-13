@@ -18,6 +18,7 @@ void EmptyLinkFunctionForGeneratedCodeIA_MedBayMonster() {}
 	TEST2_API UClass* Z_Construct_UClass_AInteractableActor();
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 // End Cross Module References
 	void AIA_MedBayMonster::StaticRegisterNativesAIA_MedBayMonster()
 	{
@@ -36,6 +37,10 @@ void EmptyLinkFunctionForGeneratedCodeIA_MedBayMonster() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractSound;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -59,8 +64,17 @@ void EmptyLinkFunctionForGeneratedCodeIA_MedBayMonster() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0020080000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIA_MedBayMonster, MeshComponent), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_MeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_MeshComponent_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_InteractSound_MetaData[] = {
+		{ "Category", "Audio" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "IA_MedBayMonster.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_InteractSound = { "InteractSound", nullptr, (EPropertyFlags)0x00100000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AIA_MedBayMonster, InteractSound), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_InteractSound_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_InteractSound_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIA_MedBayMonster_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_MeshComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIA_MedBayMonster_Statics::NewProp_InteractSound,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AIA_MedBayMonster_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AIA_MedBayMonster>::IsAbstract,
@@ -89,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeIA_MedBayMonster() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AIA_MedBayMonster, 814806040);
+	IMPLEMENT_CLASS(AIA_MedBayMonster, 1491342682);
 	template<> TEST2_API UClass* StaticClass<AIA_MedBayMonster>()
 	{
 		return AIA_MedBayMonster::StaticClass();

@@ -17,6 +17,9 @@ class TEST2_API AIA_MedBayMonster : public AInteractableActor
 public:
 	AIA_MedBayMonster();
 
+	UPROPERTY(VisibleDefaultsOnly, Category = Audio)
+		class UAudioComponent* InteractSound;
+
 protected:
 	
 	UPROPERTY(EditAnywhere, Category = Mesh)

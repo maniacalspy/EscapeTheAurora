@@ -3,6 +3,7 @@
 
 #include "IA_MedBayMonster.h"
 #include "components/SkeletalMeshComponent.h"
+#include "components/AudioComponent.h"
 #include "engine/Engine.h"
 
 
@@ -10,6 +11,9 @@ AIA_MedBayMonster::AIA_MedBayMonster() {
 	RootComponent = CreateDefaultSubobject<USceneComponent>("Scene Component");
 
 	MeshComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Mesh Component"));
+	
+	
+	InteractSound = CreateDefaultSubobject<UAudioComponent>(TEXT("InteractSound"));
 
 	MeshComponent->SetupAttachment(RootComponent);
 }
