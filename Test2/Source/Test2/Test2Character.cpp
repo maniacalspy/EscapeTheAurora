@@ -331,12 +331,10 @@ void ATest2Character::Interact() {
 	if (FocusedInteractable) {
 		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
 		if (interactinterface == NULL) {
-			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
 			return;
 		}
 		interactinterface->Execute_OnInteract(FocusedInteractable, this);
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("No Interactable"));
 }
 
 AActor* ATest2Character::FindActorInLOS() {

@@ -179,6 +179,9 @@ D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableDoo
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/KeyCardSpawner.gen.cpp
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PauseHudWidget.gen.cpp
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredDoor.gen.cpp
+D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PoweredInteractableDoor.gen.cpp
+D:\Code\Nudge\Test2\Source\Test2/PoweredInteractableDoor.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredInteractableDoor.generated.h
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/PuzzleBlock.gen.cpp
 D:\Code\Nudge\Test2\Source\Test2/PuzzleBlock.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
@@ -220,7 +223,6 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\StartHUD.generated.h
-D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2.init.gen.cpp
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2Character.gen.cpp
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Test2GameMode.gen.cpp
 D:\Code\Nudge\Test2\Source\Test2/Test2GameMode.h
@@ -238,6 +240,7 @@ D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TimerDoor.gen.cpp
 D:\Code\Nudge\Test2\Source\Test2/TimerDoor.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TimerDoor.generated.h
+D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/Triggerable.gen.cpp
 D:/Code/Nudge/Test2/Intermediate/Build/Win64/UE4Editor/Inc/Test2/TriggeredMonster.gen.cpp
 D:\Code\Nudge\Test2\Source\Test2/TriggeredMonster.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TriggeredMonster.generated.h

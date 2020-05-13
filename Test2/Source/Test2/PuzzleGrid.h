@@ -81,6 +81,8 @@ private:
 
 	void MoveBlock(FVector impactNormal);
 
+	void SetDestinationViaTiles(TArray<GridTile*> DestTiles, FVector Axis);
+
 	void CheckPuzzleSolved();
 
 	void OnPuzzleSolved();

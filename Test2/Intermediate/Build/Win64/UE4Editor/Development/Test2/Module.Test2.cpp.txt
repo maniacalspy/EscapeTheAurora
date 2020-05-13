@@ -152,8 +152,8 @@ D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.gener
 D:/Code/Nudge/Test2/Source/Test2/GridTile.cpp
 D:\Code\Nudge\Test2\Source\Test2\GridTile.h
 D:/Code/Nudge/Test2/Source/Test2/HUDWidgetBase.cpp
-D:/Code/Nudge/Test2/Source/Test2/IA_MedBayMonster.cpp
-D:\Code\Nudge\Test2\Source\Test2\IA_MedBayMonster.h
+D:/Code/Nudge/Test2/Source/Test2/IA_SuitPod.cpp
+D:\Code\Nudge\Test2\Source\Test2\IA_SuitPod.h
 D:\Code\Nudge\Test2\Source\Test2\InteractableActor.h
 D:\Code\Nudge\Test2\Source\Test2\Interactable.h
 D:\Code\Nudge\Test2\Source\Test2\Test2Character.h
@@ -166,9 +166,6 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
-D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h
-D:/Code/Nudge/Test2/Source/Test2/IA_SuitPod.cpp
-D:\Code\Nudge\Test2\Source\Test2\IA_SuitPod.h
 D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_SuitPod.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h

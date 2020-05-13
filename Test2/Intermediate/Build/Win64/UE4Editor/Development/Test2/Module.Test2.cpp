@@ -7,7 +7,6 @@
 #include "D:/Code/Nudge/Test2/Source/Test2/FitToGrid.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/GridTile.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/HUDWidgetBase.cpp"
-#include "D:/Code/Nudge/Test2/Source/Test2/IA_MedBayMonster.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/IA_SuitPod.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/Interactable.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/InteractableActor.cpp"
