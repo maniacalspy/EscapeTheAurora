@@ -21,5 +21,5 @@ bool AIA_MedBayMonster::StartFocus_Implementation(AActor* Caller) {
 
 
 void AIA_MedBayMonster::OnInteract_Implementation(AActor* Caller) {
-	GEngine->AddOnScreenDebugMessage(1, 4.f, FColor::Red, TEXT("Gross"));
+	if (MeshComponent->HasValidAnimationInstance()) MeshComponent->Play(false);
 }
