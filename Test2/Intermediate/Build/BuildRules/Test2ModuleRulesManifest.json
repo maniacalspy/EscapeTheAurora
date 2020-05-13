@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Code\\Nudge\\Test2\\Source\\Test2\\Test2.Build.cs",
-		"D:\\Code\\Nudge\\Test2\\Source\\Test2.Target.cs",
-		"D:\\Code\\Nudge\\Test2\\Source\\Test2Editor.Target.cs"
+		"C:\\Users\\Adrian Burk\\Documents\\GitHub\\Nudge\\Test2\\Source\\Test2\\Test2.Build.cs",
+		"C:\\Users\\Adrian Burk\\Documents\\GitHub\\Nudge\\Test2\\Source\\Test2.Target.cs",
+		"C:\\Users\\Adrian Burk\\Documents\\GitHub\\Nudge\\Test2\\Source\\Test2Editor.Target.cs"
 	],
-	"EngineVersion": "4.24.3"
+	"EngineVersion": "4.24.2"
 }

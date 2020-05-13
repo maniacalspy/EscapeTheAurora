@@ -10,8 +10,8 @@
 	{
 		"MajorVersion": 4,
 		"MinorVersion": 24,
-		"PatchVersion": 3,
-		"Changelist": 11590370,
+		"PatchVersion": 2,
+		"Changelist": 11100242,
 		"CompatibleChangelist": 10570792,
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 1,
@@ -27,6 +27,10 @@
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Cmd.exe",
 			"Type": "Executable"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/SoundVisualizations/Binaries/Win64/UE4Editor-SoundVisualizations.dll",
+			"Type": "DynamicLibrary"
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
@@ -621,22 +625,6 @@
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Sockets.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-SSL.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-HTTP.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
-			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-AnalyticsET.dll",
-			"Type": "DynamicLibrary"
-		},
-		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-EditorAnalyticsSession.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -774,6 +762,22 @@
 		},
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-HeadMountedDisplay.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Sockets.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-SSL.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-HTTP.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-AnalyticsET.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
@@ -2025,6 +2029,10 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Runtime/SoundVisualizations/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2344,6 +2352,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/Test2.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Runtime/SoundVisualizations/SoundVisualizations.uplugin",
 			"Type": "UFS"
 		},
 		{
