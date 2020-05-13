@@ -31,6 +31,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShowControlsWidget) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ShowControlsWidget(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -50,6 +58,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShowControlsWidget) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ShowControlsWidget(); \
 		P_NATIVE_END; \
 	}
 

@@ -135,10 +135,7 @@ void ATest2Character::BeginPlay()
 		}
 
 
-		if (ControlsHUD) {
-			auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
-			ControlsHUDInstance->AddToViewport();
-		}
+		
 
 		if (PauseHudClass) {
 			PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
@@ -157,6 +154,16 @@ void ATest2Character::BeginPlay()
 
 
 }
+
+void ATest2Character::ShowControlsWidget() {
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (ControlsHUD) {
+		auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
+		ControlsHUDInstance->AddToViewport();
+	}
+}
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input

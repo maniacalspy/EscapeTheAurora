@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_Interact();
 	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_SetInteractionPromptText();
+	TEST2_API UFunction* Z_Construct_UFunction_ATest2Character_ShowControlsWidget();
 	TEST2_API UClass* Z_Construct_UClass_UEditableTextWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	TEST2_API UClass* Z_Construct_UClass_UHUDWidgetBase_NoRegister();
@@ -39,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Interact", &ATest2Character::execInteract },
 			{ "SetInteractionPromptText", &ATest2Character::execSetInteractionPromptText },
+			{ "ShowControlsWidget", &ATest2Character::execShowControlsWidget },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -105,6 +107,29 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATest2Character_SetInteractionPromptText_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics::Function_MetaDataParams[] = {
+		{ "Category", "HUD" },
+		{ "ModuleRelativePath", "Test2Character.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ATest2Character, nullptr, "ShowControlsWidget", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ATest2Character_ShowControlsWidget()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ATest2Character_ShowControlsWidget_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -231,6 +256,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ATest2Character_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ATest2Character_Interact, "Interact" }, // 717337324
 		{ &Z_Construct_UFunction_ATest2Character_SetInteractionPromptText, "SetInteractionPromptText" }, // 3163781537
+		{ &Z_Construct_UFunction_ATest2Character_ShowControlsWidget, "ShowControlsWidget" }, // 372229987
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest2Character_Statics::Class_MetaDataParams[] = {
@@ -509,7 +535,7 @@ void EmptyLinkFunctionForGeneratedCodeTest2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest2Character, 42483156);
+	IMPLEMENT_CLASS(ATest2Character, 300879523);
 	template<> TEST2_API UClass* StaticClass<ATest2Character>()
 	{
 		return ATest2Character::StaticClass();

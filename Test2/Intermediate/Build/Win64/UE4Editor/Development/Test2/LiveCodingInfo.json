@@ -10,6 +10,7 @@
 			"FitToGrid.cpp.obj",
 			"GridTile.cpp.obj",
 			"HUDWidgetBase.cpp.obj",
+			"IA_MedBayMonster.cpp.obj",
 			"IA_SuitPod.cpp.obj",
 			"Interactable.cpp.obj",
 			"InteractableActor.cpp.obj",
@@ -26,14 +27,13 @@
 			"PuzzleGridComponent.cpp.obj",
 			"StartHUD.cpp.obj",
 			"Test2.cpp.obj",
-			"Test2Character.cpp.obj",
 			"Test2GameMode.cpp.obj",
 			"Test2HUD.cpp.obj",
 			"Test2Projectile.cpp.obj",
 			"TimerDoor.cpp.obj",
 			"Triggerable.cpp.obj",
 			"TriggeredMonster.cpp.obj",
-			"IA_MedBayMonster.cpp.obj"
+			"Test2Character.cpp.obj"
 		],
 		"Module.Test2.gen.cpp.obj": [
 			"DoorBase.gen.cpp.obj",
@@ -43,6 +43,7 @@
 			"ETAHUD.gen.cpp.obj",
 			"FitToGrid.gen.cpp.obj",
 			"HUDWidgetBase.gen.cpp.obj",
+			"IA_MedBayMonster.gen.cpp.obj",
 			"IA_SuitPod.gen.cpp.obj",
 			"Interactable.gen.cpp.obj",
 			"InteractableActor.gen.cpp.obj",
@@ -57,15 +58,14 @@
 			"PuzzleGrid.gen.cpp.obj",
 			"PuzzleGridComponent.gen.cpp.obj",
 			"StartHUD.gen.cpp.obj",
+			"Test2.init.gen.cpp.obj",
 			"Test2Character.gen.cpp.obj",
 			"Test2GameMode.gen.cpp.obj",
 			"Test2HUD.gen.cpp.obj",
 			"Test2Projectile.gen.cpp.obj",
 			"TimerDoor.gen.cpp.obj",
 			"Triggerable.gen.cpp.obj",
-			"TriggeredMonster.gen.cpp.obj",
-			"IA_MedBayMonster.gen.cpp.obj",
-			"Test2.init.gen.cpp.obj"
+			"TriggeredMonster.gen.cpp.obj"
 		]
 	}
 }
