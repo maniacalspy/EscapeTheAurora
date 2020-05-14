@@ -20,6 +20,7 @@
 #include "D:/Code/Nudge/Test2/Source/Test2/PoweredInteractableDoor.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/PuzzleBlock.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/PuzzleBlockComponent.cpp"
+#include "D:/Code/Nudge/Test2/Source/Test2/PuzzleGrid.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/PuzzleGridComponent.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/StartHUD.cpp"
 #include "D:/Code/Nudge/Test2/Source/Test2/Test2.cpp"
