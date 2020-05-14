@@ -17,7 +17,7 @@ class TEST2_API AIA_MedBayMonster : public AInteractableActor
 public:
 	AIA_MedBayMonster();
 
-	UPROPERTY(VisibleDefaultsOnly, Category = Audio)
+	UPROPERTY(EditAnywhere, Category = Audio)
 		class UAudioComponent* InteractSound;
 
 protected:

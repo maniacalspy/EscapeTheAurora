@@ -26,4 +26,5 @@ bool AIA_MedBayMonster::StartFocus_Implementation(AActor* Caller) {
 
 void AIA_MedBayMonster::OnInteract_Implementation(AActor* Caller) {
 	if (MeshComponent->HasValidAnimationInstance()) MeshComponent->Play(false);
+	if (InteractSound) InteractSound->Play();
 }
