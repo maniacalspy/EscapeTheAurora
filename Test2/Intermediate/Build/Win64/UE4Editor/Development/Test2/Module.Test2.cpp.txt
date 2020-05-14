@@ -1,12 +1,12 @@
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/DoorBase.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\DoorBase.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Development\Test2\Definitions.Test2.h
+D:/Code/Nudge/Test2/Source/Test2/DoorBase.cpp
+D:\Code\Nudge\Test2\Source\Test2\DoorBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/EditableTextWidget.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\EditableTextWidget.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\HUDWidgetBase.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\DoorBase.generated.h
+D:/Code/Nudge/Test2/Source/Test2/EditableTextWidget.cpp
+D:\Code\Nudge\Test2\Source\Test2\EditableTextWidget.h
+D:\Code\Nudge\Test2\Source\Test2\HUDWidgetBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h
@@ -122,80 +122,80 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EditableTextWidget.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/EndLevelDoor.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelDoor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PoweredDoor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Triggerable.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Triggerable.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/EndLevelTriggers.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\EndLevelTriggers.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\HUDWidgetBase.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EditableTextWidget.generated.h
+D:/Code/Nudge/Test2/Source/Test2/EndLevelDoor.cpp
+D:\Code\Nudge\Test2\Source\Test2\EndLevelDoor.h
+D:\Code\Nudge\Test2\Source\Test2\PoweredDoor.h
+D:\Code\Nudge\Test2\Source\Test2\Triggerable.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Triggerable.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredDoor.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelDoor.generated.h
+D:/Code/Nudge/Test2/Source/Test2/EndLevelTriggers.cpp
+D:\Code\Nudge\Test2\Source\Test2\EndLevelTriggers.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\KeyCardSpawner.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
+D:\Code\Nudge\Test2\Source\Test2\KeyCardSpawner.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\KeyCardSpawner.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\TimerDoor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TimerDoor.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/ETAHUD.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\ETAHUD.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\ETAHUD.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/FitToGrid.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\FitToGrid.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/GridTile.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\GridTile.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/HUDWidgetBase.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/IA_MedBayMonster.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\IA_MedBayMonster.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableActor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Interactable.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Character.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PauseHudWidget.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\EndLevelTriggers.generated.h
+D:\Code\Nudge\Test2\Source\Test2\TimerDoor.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TimerDoor.generated.h
+D:/Code/Nudge/Test2/Source/Test2/ETAHUD.cpp
+D:\Code\Nudge\Test2\Source\Test2\ETAHUD.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\ETAHUD.generated.h
+D:/Code/Nudge/Test2/Source/Test2/FitToGrid.cpp
+D:\Code\Nudge\Test2\Source\Test2\FitToGrid.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\FitToGrid.generated.h
+D:/Code/Nudge/Test2/Source/Test2/GridTile.cpp
+D:\Code\Nudge\Test2\Source\Test2\GridTile.h
+D:/Code/Nudge/Test2/Source/Test2/HUDWidgetBase.cpp
+D:/Code/Nudge/Test2/Source/Test2/IA_MedBayMonster.cpp
+D:\Code\Nudge\Test2\Source\Test2\IA_MedBayMonster.h
+D:\Code\Nudge\Test2\Source\Test2\InteractableActor.h
+D:\Code\Nudge\Test2\Source\Test2\Interactable.h
+D:\Code\Nudge\Test2\Source\Test2\Test2Character.h
+D:\Code\Nudge\Test2\Source\Test2\PauseHudWidget.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PauseHudWidget.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/IA_SuitPod.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\IA_SuitPod.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_SuitPod.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Character.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Interactable.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableActor.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_MedBayMonster.generated.h
+D:/Code/Nudge/Test2/Source/Test2/IA_SuitPod.cpp
+D:\Code\Nudge\Test2\Source\Test2\IA_SuitPod.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\IA_SuitPod.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Interactable.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/InteractableActor.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/InteractableConsole.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableConsole.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableConsole.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2GameMode.h
+D:/Code/Nudge/Test2/Source/Test2/Interactable.cpp
+D:/Code/Nudge/Test2/Source/Test2/InteractableActor.cpp
+D:/Code/Nudge/Test2/Source/Test2/InteractableConsole.cpp
+D:\Code\Nudge\Test2\Source\Test2\InteractableConsole.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableConsole.generated.h
+D:\Code\Nudge\Test2\Source\Test2\Test2GameMode.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2GameMode.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/InteractableDoor.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\InteractableDoor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableDoor.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/KeyCardSpawner.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/LevelGridStruct.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\LevelGridStruct.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PauseHudWidget.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PoweredDoor.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PoweredInteractableDoor.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PoweredInteractableDoor.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredInteractableDoor.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PuzzleBlock.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleBlock.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2GameMode.generated.h
+D:/Code/Nudge/Test2/Source/Test2/InteractableDoor.cpp
+D:\Code\Nudge\Test2\Source\Test2\InteractableDoor.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\InteractableDoor.generated.h
+D:/Code/Nudge/Test2/Source/Test2/KeyCardSpawner.cpp
+D:/Code/Nudge/Test2/Source/Test2/LevelGridStruct.cpp
+D:\Code\Nudge\Test2\Source\Test2\LevelGridStruct.h
+D:/Code/Nudge/Test2/Source/Test2/PauseHudWidget.cpp
+D:/Code/Nudge/Test2/Source/Test2/PoweredDoor.cpp
+D:/Code/Nudge/Test2/Source/Test2/PoweredInteractableDoor.cpp
+D:\Code\Nudge\Test2\Source\Test2\PoweredInteractableDoor.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PoweredInteractableDoor.generated.h
+D:/Code/Nudge/Test2/Source/Test2/PuzzleBlock.cpp
+D:\Code\Nudge\Test2\Source\Test2\PuzzleBlock.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
@@ -215,15 +215,15 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\cwchar
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\cstdio
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\xatomic.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlock.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlock.generated.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\math.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_math_defines.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PuzzleBlockComponent.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleBlockComponent.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlockComponent.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PuzzleGrid.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleGrid.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGrid.generated.h
+D:/Code/Nudge/Test2/Source/Test2/PuzzleBlockComponent.cpp
+D:\Code\Nudge\Test2\Source\Test2\PuzzleBlockComponent.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleBlockComponent.generated.h
+D:/Code/Nudge/Test2/Source/Test2/PuzzleGrid.cpp
+D:\Code\Nudge\Test2\Source\Test2\PuzzleGrid.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGrid.generated.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\iostream
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\istream
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\ostream
@@ -247,22 +247,22 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.25.28610\INCLUDE\xlocinfo.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\locale.h
 C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\math.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/PuzzleGridComponent.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\PuzzleGridComponent.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGridComponent.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/StartHUD.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\StartHUD.h
+D:/Code/Nudge/Test2/Source/Test2/PuzzleGridComponent.cpp
+D:\Code\Nudge\Test2\Source\Test2\PuzzleGridComponent.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\PuzzleGridComponent.generated.h
+D:/Code/Nudge/Test2/Source/Test2/StartHUD.cpp
+D:\Code\Nudge\Test2\Source\Test2\StartHUD.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\StartHUD.generated.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Test2.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Test2Character.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2Projectile.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile.generated.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\StartHUD.generated.h
+D:/Code/Nudge/Test2/Source/Test2/Test2.cpp
+D:\Code\Nudge\Test2\Source\Test2\Test2.h
+D:/Code/Nudge/Test2/Source/Test2/Test2Character.cpp
+D:\Code\Nudge\Test2\Source\Test2\Test2Projectile.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2Projectile.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
@@ -295,9 +295,9 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Pub
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Test2GameMode.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\Test2HUD.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2HUD.generated.h
+D:/Code/Nudge/Test2/Source/Test2/Test2GameMode.cpp
+D:\Code\Nudge\Test2\Source\Test2\Test2HUD.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\Test2HUD.generated.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\Engine.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Core\Public\Core.h
@@ -917,10 +917,10 @@ C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Slate\Public\Widgets/I
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Slate\Public\Framework/Application/SlateUser.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Slate\Public\SlateScope.h
 C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Slate\Public\Framework/Docking/LayoutService.h
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Test2HUD.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Test2Projectile.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/TimerDoor.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/Triggerable.cpp
-C:/Users/Adrian Burk/Documents/GitHub/Nudge/Test2/Source/Test2/TriggeredMonster.cpp
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Source\Test2\TriggeredMonster.h
-C:\Users\Adrian Burk\Documents\GitHub\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TriggeredMonster.generated.h
+D:/Code/Nudge/Test2/Source/Test2/Test2HUD.cpp
+D:/Code/Nudge/Test2/Source/Test2/Test2Projectile.cpp
+D:/Code/Nudge/Test2/Source/Test2/TimerDoor.cpp
+D:/Code/Nudge/Test2/Source/Test2/Triggerable.cpp
+D:/Code/Nudge/Test2/Source/Test2/TriggeredMonster.cpp
+D:\Code\Nudge\Test2\Source\Test2\TriggeredMonster.h
+D:\Code\Nudge\Test2\Intermediate\Build\Win64\UE4Editor\Inc\Test2\TriggeredMonster.generated.h

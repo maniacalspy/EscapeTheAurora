@@ -57,6 +57,9 @@ public:
 
 	float BaseMoveSpeed;
 
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+		void ShowControlsWidget();
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
