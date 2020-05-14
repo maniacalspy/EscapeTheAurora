@@ -23,17 +23,17 @@
 			"PoweredInteractableDoor.cpp.obj",
 			"PuzzleBlock.cpp.obj",
 			"PuzzleBlockComponent.cpp.obj",
-			"PuzzleGrid.cpp.obj",
 			"PuzzleGridComponent.cpp.obj",
 			"StartHUD.cpp.obj",
 			"Test2.cpp.obj",
+			"Test2Character.cpp.obj",
 			"Test2GameMode.cpp.obj",
 			"Test2HUD.cpp.obj",
 			"Test2Projectile.cpp.obj",
 			"TimerDoor.cpp.obj",
 			"Triggerable.cpp.obj",
 			"TriggeredMonster.cpp.obj",
-			"Test2Character.cpp.obj"
+			"PuzzleGrid.cpp.obj"
 		],
 		"Module.Test2.gen.cpp.obj": [
 			"DoorBase.gen.cpp.obj",

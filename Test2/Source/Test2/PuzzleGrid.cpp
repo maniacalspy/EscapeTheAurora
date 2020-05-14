@@ -371,7 +371,8 @@ void APuzzleGrid::MoveBlock(FVector impactNormal) {
 							IsInvalidTip = true;
 							LastValidRotation = _pPuzzleActor -> GetActorQuat();
 							LastValidLocation = _pPuzzleActor -> GetActorLocation();
-							SetDestinationViaTiles({ FirstOtherTile, SecondOtherTile }, RotatingAxis);
+							DestLocation = *new FVector((FirstOtherTile->xPos + SecondOtherTile->xPos) / 2, (FirstOtherTile->yPos + SecondOtherTile->yPos) / 2, (GetActorLocation().Z + _pPuzzleActor->_boxExtents.Z * _pPuzzleActor->GetActorScale().Z));
+							DestRotation = *new FQuat(RotatingAxis, M_PI_4) * _pPuzzleActor->GetActorQuat();
 						}
 						else {
 							float Xoffset = _tileHeight;
