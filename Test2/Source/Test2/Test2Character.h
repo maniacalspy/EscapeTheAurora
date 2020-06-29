@@ -57,6 +57,9 @@ public:
 
 	float BaseMoveSpeed;
 
+	UFUNCTION(BlueprintCallable, Category = "HUD")
+		void ShowControlsWidget();
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -153,6 +156,8 @@ public:
 	FORCEINLINE class TSubclassOf<class UPauseHudWidget>* GetPauseHudClass() { return &PauseHudClass; }
 
 	class UPauseHudWidget* GetPauseMenuInstance() { return PauseHudInstance; }
+	
+	class UETAHUD* GetGameHUDInstance() { return GameHudInstance; }
 
 	//sets the text prompt for player interaction, will always start with "Push E to ", so Intext should be the text that comes after, returns true if succeeded
 	UFUNCTION(BlueprintCallable, Category = "Interaction")
@@ -173,13 +178,19 @@ private:
 		class UPauseHudWidget* PauseHudInstance;
 
 	UPROPERTY()
-		TSubclassOf<class UHUDWidgetBase> StartHud;
+		TSubclassOf<class UHUDWidgetBase> MainMenu;
 
 	UPROPERTY()
-		class UHUDWidgetBase* StartHudInstance;
+		class UHUDWidgetBase* MainMenuInstance;
 
 	UPROPERTY()
 		TSubclassOf<class UHUDWidgetBase> ControlsHUD;
+
+	UPROPERTY()
+		TSubclassOf<class UETAHUD> GameHud;
+
+	UPROPERTY()
+		class UETAHUD* GameHudInstance;
 
 
 	class AActor* FocusedInteractable;

@@ -13,10 +13,11 @@ UCLASS()
 class TEST2_API AInteractableConsole : public AInteractableActor
 {
 	GENERATED_BODY()
-	
 
 public:
 	AInteractableConsole();
+
+	bool bMapIsDownloaded;
 
 	UPROPERTY(EditAnyWhere)
 		UStaticMeshComponent* pConsoleMesh;

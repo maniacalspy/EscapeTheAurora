@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeKeyCardSpawner() {}
 	UPackage* Z_Construct_UPackage__Script_Test2();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	TEST2_API UClass* Z_Construct_UClass_UTriggerable_NoRegister();
 // End Cross Module References
 	void AKeyCardSpawner::StaticRegisterNativesAKeyCardSpawner()
 	{
@@ -38,6 +39,7 @@ void EmptyLinkFunctionForGeneratedCodeKeyCardSpawner() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_KeyCardClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -61,6 +63,9 @@ void EmptyLinkFunctionForGeneratedCodeKeyCardSpawner() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AKeyCardSpawner_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKeyCardSpawner_Statics::NewProp_KeyCardClass,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AKeyCardSpawner_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UTriggerable_NoRegister, (int32)VTABLE_OFFSET(AKeyCardSpawner, ITriggerable), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AKeyCardSpawner_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AKeyCardSpawner>::IsAbstract,
 	};
@@ -71,11 +76,11 @@ void EmptyLinkFunctionForGeneratedCodeKeyCardSpawner() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_AKeyCardSpawner_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AKeyCardSpawner_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AKeyCardSpawner_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AKeyCardSpawner_Statics::Class_MetaDataParams))
 	};
@@ -88,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeKeyCardSpawner() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AKeyCardSpawner, 1498499961);
+	IMPLEMENT_CLASS(AKeyCardSpawner, 1385671477);
 	template<> TEST2_API UClass* StaticClass<AKeyCardSpawner>()
 	{
 		return AKeyCardSpawner::StaticClass();

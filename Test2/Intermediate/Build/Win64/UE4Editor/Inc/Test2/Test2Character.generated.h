@@ -31,6 +31,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShowControlsWidget) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ShowControlsWidget(); \
+		P_NATIVE_END; \
 	}
 
 
@@ -50,6 +58,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		*(bool*)Z_Param__Result=P_THIS->SetInteractionPromptText(Z_Param_Intext); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execShowControlsWidget) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->ShowControlsWidget(); \
 		P_NATIVE_END; \
 	}
 
@@ -107,9 +123,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest2Character); \
 	FORCEINLINE static uint32 __PPO__L_MotionController() { return STRUCT_OFFSET(ATest2Character, L_MotionController); } \
 	FORCEINLINE static uint32 __PPO__PauseHudClass() { return STRUCT_OFFSET(ATest2Character, PauseHudClass); } \
 	FORCEINLINE static uint32 __PPO__PauseHudInstance() { return STRUCT_OFFSET(ATest2Character, PauseHudInstance); } \
-	FORCEINLINE static uint32 __PPO__StartHud() { return STRUCT_OFFSET(ATest2Character, StartHud); } \
-	FORCEINLINE static uint32 __PPO__StartHudInstance() { return STRUCT_OFFSET(ATest2Character, StartHudInstance); } \
+	FORCEINLINE static uint32 __PPO__MainMenu() { return STRUCT_OFFSET(ATest2Character, MainMenu); } \
+	FORCEINLINE static uint32 __PPO__MainMenuInstance() { return STRUCT_OFFSET(ATest2Character, MainMenuInstance); } \
 	FORCEINLINE static uint32 __PPO__ControlsHUD() { return STRUCT_OFFSET(ATest2Character, ControlsHUD); } \
+	FORCEINLINE static uint32 __PPO__GameHud() { return STRUCT_OFFSET(ATest2Character, GameHud); } \
+	FORCEINLINE static uint32 __PPO__GameHudInstance() { return STRUCT_OFFSET(ATest2Character, GameHudInstance); } \
 	FORCEINLINE static uint32 __PPO__InteractionDistance() { return STRUCT_OFFSET(ATest2Character, InteractionDistance); } \
 	FORCEINLINE static uint32 __PPO__InteractionPromptClass() { return STRUCT_OFFSET(ATest2Character, InteractionPromptClass); } \
 	FORCEINLINE static uint32 __PPO__InteractionPromptInstance() { return STRUCT_OFFSET(ATest2Character, InteractionPromptInstance); }

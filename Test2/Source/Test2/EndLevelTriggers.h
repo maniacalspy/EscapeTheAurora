@@ -3,8 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "EndLevelDoor.h"
 #include "EngineUtils.h"
+#include "DoorBase.h"
+#include "Triggerable.h"
 #include "GameFramework/Actor.h"
 #include "KeyCardSpawner.h"
 #include "Components/LightComponent.h"
@@ -26,13 +27,11 @@ protected:
 
 	virtual void PostInitializeComponents() override;
 
-	TArray<ADoorBase*> DoorsToTrigger;
-
 	TArray<ULightComponent*> LightsToTrigger;
 
 	TArray<UAudioComponent*> SoundsToTrigger;
 
-	TArray<AKeyCardSpawner*> KeySpawners;
+	TArray<AActor*> ObjectsToTrigger;
 
 	UFUNCTION()
 		void DebugPing();
@@ -45,7 +44,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	void OnLevelEnded();
 	void TriggerAll();
 	
 };

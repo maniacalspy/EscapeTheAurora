@@ -13,8 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST2_EndLevelTriggers_generated_h
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_SPARSE_DATA
-#define Test2_Source_Test2_EndLevelTriggers_h_17_RPC_WRAPPERS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_SPARSE_DATA
+#define Test2_Source_Test2_EndLevelTriggers_h_18_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execPlayNextSound) \
 	{ \
@@ -33,7 +33,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execPlayNextSound) \
 	{ \
@@ -52,7 +52,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_INCLASS_NO_PURE_DECLS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAEndLevelTriggers(); \
 	friend struct Z_Construct_UClass_AEndLevelTriggers_Statics; \
@@ -61,7 +61,7 @@ public: \
 	DECLARE_SERIALIZER(AEndLevelTriggers)
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_INCLASS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAEndLevelTriggers(); \
 	friend struct Z_Construct_UClass_AEndLevelTriggers_Statics; \
@@ -70,7 +70,7 @@ public: \
 	DECLARE_SERIALIZER(AEndLevelTriggers)
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_STANDARD_CONSTRUCTORS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AEndLevelTriggers(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AEndLevelTriggers) \
@@ -83,7 +83,7 @@ private: \
 public:
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_ENHANCED_CONSTRUCTORS \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AEndLevelTriggers(AEndLevelTriggers&&); \
@@ -94,28 +94,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AEndLevelTriggers); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AEndLevelTriggers)
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_PRIVATE_PROPERTY_OFFSET
-#define Test2_Source_Test2_EndLevelTriggers_h_14_PROLOG
-#define Test2_Source_Test2_EndLevelTriggers_h_17_GENERATED_BODY_LEGACY \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_PRIVATE_PROPERTY_OFFSET
+#define Test2_Source_Test2_EndLevelTriggers_h_15_PROLOG
+#define Test2_Source_Test2_EndLevelTriggers_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_EndLevelTriggers_h_17_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_EndLevelTriggers_h_17_SPARSE_DATA \
-	Test2_Source_Test2_EndLevelTriggers_h_17_RPC_WRAPPERS \
-	Test2_Source_Test2_EndLevelTriggers_h_17_INCLASS \
-	Test2_Source_Test2_EndLevelTriggers_h_17_STANDARD_CONSTRUCTORS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelTriggers_h_18_SPARSE_DATA \
+	Test2_Source_Test2_EndLevelTriggers_h_18_RPC_WRAPPERS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_INCLASS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Test2_Source_Test2_EndLevelTriggers_h_17_GENERATED_BODY \
+#define Test2_Source_Test2_EndLevelTriggers_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test2_Source_Test2_EndLevelTriggers_h_17_PRIVATE_PROPERTY_OFFSET \
-	Test2_Source_Test2_EndLevelTriggers_h_17_SPARSE_DATA \
-	Test2_Source_Test2_EndLevelTriggers_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	Test2_Source_Test2_EndLevelTriggers_h_17_INCLASS_NO_PURE_DECLS \
-	Test2_Source_Test2_EndLevelTriggers_h_17_ENHANCED_CONSTRUCTORS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_PRIVATE_PROPERTY_OFFSET \
+	Test2_Source_Test2_EndLevelTriggers_h_18_SPARSE_DATA \
+	Test2_Source_Test2_EndLevelTriggers_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_INCLASS_NO_PURE_DECLS \
+	Test2_Source_Test2_EndLevelTriggers_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

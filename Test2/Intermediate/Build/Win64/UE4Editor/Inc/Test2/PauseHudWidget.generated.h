@@ -14,8 +14,29 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define TEST2_PauseHudWidget_generated_h
 
 #define Test2_Source_Test2_PauseHudWidget_h_15_SPARSE_DATA
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS
-#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS \
+	virtual void OpenPauseMenu_Implementation(); \
+ \
+	DECLARE_FUNCTION(execOpenPauseMenu) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenPauseMenu_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
+#define Test2_Source_Test2_PauseHudWidget_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOpenPauseMenu) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OpenPauseMenu_Implementation(); \
+		P_NATIVE_END; \
+	}
+
+
 #define Test2_Source_Test2_PauseHudWidget_h_15_EVENT_PARMS
 #define Test2_Source_Test2_PauseHudWidget_h_15_CALLBACK_WRAPPERS
 #define Test2_Source_Test2_PauseHudWidget_h_15_INCLASS_NO_PURE_DECLS \

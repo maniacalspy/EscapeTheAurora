@@ -2,6 +2,7 @@
 
 #include "Test2Character.h"
 #include "Test2Projectile.h"
+#include "ETAHUD.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -34,13 +35,18 @@ ATest2Character::ATest2Character()
 	BaseMoveSpeed = 30.f;
 
 
-	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Pause_HUD"));
+	ConstructorHelpers::FClassFinder<UPauseHudWidget> MenuClassFinder(TEXT("/Game/FirstPerson/UItesting/UI"));
 
 	PauseHudClass = MenuClassFinder.Class;
 
-	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Start_HUD"));
+	ConstructorHelpers::FClassFinder<UHUDWidgetBase> StartMenuFinder(TEXT("/Game/FirstPerson/UItesting/MainMenu"));
 
-	StartHud = StartMenuFinder.Class;
+	MainMenu = StartMenuFinder.Class;
+
+	ConstructorHelpers::FClassFinder<UETAHUD> GameHUDClassFinder(TEXT("/Game/FirstPerson/UItesting/HUD"));
+
+	GameHud = GameHUDClassFinder.Class;
+
 
 	ConstructorHelpers::FClassFinder<UHUDWidgetBase> ControlsHUDFinder(TEXT("/Game/FirstPersonCPP/Blueprints/Controls_HUD"));
 
@@ -96,40 +102,6 @@ void ATest2Character::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
-
-	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
-
-	if (mycontroller) 
-	{
-			if (StartHud) 
-			{
-					StartHudInstance = CreateWidget<UHUDWidgetBase>(mycontroller, StartHud);
-					StartHudInstance->Setup();
-					StartHudInstance->OpenMenu();
-					mycontroller->SetPause(true);
-			}
-
-			else 
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
-			} 
-			
-
-			if (ControlsHUD) {
-				auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
-				ControlsHUDInstance->AddToViewport();
-			}
-
-			if (PauseHudClass) {
-				PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
-				PauseHudInstance->Setup();
-			}
-	}
-		
-	
-	
-	
-
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	//FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
 
@@ -144,7 +116,54 @@ void ATest2Character::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (mycontroller)
+	{
+		if (MainMenu)
+		{
+			MainMenuInstance = CreateWidget<UHUDWidgetBase>(mycontroller, MainMenu);
+			MainMenuInstance->Setup();
+			MainMenuInstance->OpenMenu();
+			mycontroller->SetPause(true);
+		}
+
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Green, TEXT("HUD Class = Null"));
+		}
+
+
+		
+
+		if (PauseHudClass) {
+			PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
+			PauseHudInstance->Setup();
+		}
+
+		if (GameHud) {
+			GameHudInstance = CreateWidget<UETAHUD>(mycontroller, GameHud);
+			GameHudInstance->Setup();
+			GameHudInstance->AddToViewport();
+		}
+	}
+
+
+
+
+
 }
+
+void ATest2Character::ShowControlsWidget() {
+	APlayerController* mycontroller = GetWorld()->GetFirstPlayerController();
+
+	if (ControlsHUD) {
+		auto ControlsHUDInstance = CreateWidget<UHUDWidgetBase>(mycontroller, ControlsHUD);
+		ControlsHUDInstance->AddToViewport();
+	}
+}
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -209,15 +228,15 @@ void ATest2Character::TogglePause() {
 				if (!PauseHudInstance) {
 						PauseHudInstance = CreateWidget<UPauseHudWidget>(mycontroller, PauseHudClass);
 						PauseHudInstance->Setup();
-						PauseHudInstance->OpenMenu();
+						PauseHudInstance->OpenPauseMenu();
 				}
 				else if (!(PauseHudInstance->IsInViewport())) {
-					PauseHudInstance->OpenMenu();
+					PauseHudInstance->OpenPauseMenu();
 				}
 			}
 		}
 		else {
-			if (StartHudInstance->IsVisible()) StartHudInstance->CloseMenu();
+			if (MainMenuInstance->IsVisible()) MainMenuInstance->CloseMenu();
 			if(PauseHudInstance) PauseHudInstance->CloseMenu();
 		}
 		mycontroller->SetPause(!isPaused);
@@ -319,12 +338,10 @@ void ATest2Character::Interact() {
 	if (FocusedInteractable) {
 		IInteractable* interactinterface = Cast<IInteractable>(FocusedInteractable);
 		if (interactinterface == NULL) {
-			GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("Cast Failed"));
 			return;
 		}
 		interactinterface->Execute_OnInteract(FocusedInteractable, this);
 	}
-	else GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, TEXT("No Interactable"));
 }
 
 AActor* ATest2Character::FindActorInLOS() {

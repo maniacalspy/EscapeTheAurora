@@ -9,7 +9,7 @@
 #include "InteractableDoor.generated.h"
 
 UCLASS()
-class TEST2_API AInteractableDoor : public APoweredDoor, public IInteractable
+class TEST2_API AInteractableDoor : public ADoorBase, public IInteractable
 {
 	GENERATED_BODY()
 	

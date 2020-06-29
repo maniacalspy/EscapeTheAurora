@@ -10,7 +10,7 @@
 #include "Test2Character.h"
 
 // Sets default values
-APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
+APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(32,32,62))
 {
 	_isTipping = false;
 	_canBePushed = true;
@@ -24,7 +24,7 @@ APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 	
 	MyComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	MyComp->SetupAttachment(RootComponent);
-	MyComp->SetRelativeLocation(*new FVector(0, 0, 31.f));
+	MyComp->SetRelativeLocation(*new FVector(0, 0, _boxExtents.Z));
 	MyComp->SetBoxExtent(_boxExtents);
 
 
@@ -55,16 +55,12 @@ APuzzleBlock::APuzzleBlock() : _boxExtents(*new FVector(16,16,31))
 	pBlockMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Block_Mesh"));
 	pBlockMesh->SetupAttachment(RootComponent);
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Assets/Battery_1_0.Battery_1_0'"));
-	static ConstructorHelpers::FObjectFinder<UMaterial> BatteryMaterialAsset(TEXT("Material'/Game/FirstPerson/Textures/Battery/Battery.Battery'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> BatteryMeshAsset(TEXT("StaticMesh'/Game/FirstPerson/Meshes/Battery_2_0_BlockV2.Battery_2_0_BlockV2'"));
 
 	if (BatteryMeshAsset.Succeeded())
 	{
 		pBlockMesh->SetStaticMesh(BatteryMeshAsset.Object);
-		if (BatteryMaterialAsset.Succeeded()) {
-			pBlockMesh->SetMaterial(0, BatteryMaterialAsset.Object);
-		}
-		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(_boxExtents.Z / 2) * 2));
+		pBlockMesh->SetRelativeLocation(*new FVector(0, 0, -(_boxExtents.Z)));
 	}
 	
 }
@@ -77,13 +73,6 @@ void APuzzleBlock::BeginPlay()
 
 void APuzzleBlock::PostInitializeComponents() {
 	Super::PostInitializeComponents();
-	
-	/*for (int i = 0; i < pBlockMesh->GetNumChildrenComponents(); i++) {
-		UStaticMeshComponent* temp = Cast<UStaticMeshComponent>(pBlockMesh->GetChildComponent(i));
-		if (temp) {
-			_hologramComponents.Add(temp);
-		}
-	}*/
 
 	if (_hologramMeshes.Num() > 0) {
 		for (auto mesh : _hologramMeshes) {
@@ -133,7 +122,7 @@ void APuzzleBlock::TellGridBlockTipped() {
 }
 
 
-///<summary> Set all the puzzle block's callback functions
+///<summary> Set all the puzzle block's callback functions, this is a setter dependency injection
 /// <param name="pTippedCB">pointer to function that should be called when the block is done tipping</param>
 /// <param name="pMoveCB">pointer to function that should be called to get the block to move, the function must take in an FVector and return void</param>
 ///</summary>
@@ -216,7 +205,7 @@ void APuzzleBlock::SetDestRotation(FQuat destRotation) {
 void APuzzleBlock::EnableHologram(FVector PushSide) {
 	if (_hologramComponents.Num() > 0) {
 		FVector Axis[] = { GetActorUpVector().GetSafeNormal(), -GetActorUpVector().GetSafeNormal(), GetActorForwardVector().GetSafeNormal(),
-		-GetActorForwardVector().GetSafeNormal() ,  GetActorRightVector().GetSafeNormal() , -GetActorRightVector().GetSafeNormal() };
+		-GetActorForwardVector().GetSafeNormal() ,  -GetActorRightVector().GetSafeNormal() , GetActorRightVector().GetSafeNormal() };
 
 		for (int i = 0; i < 6; i++) {
 			if (Axis[i].Equals(PushSide, .05)) {

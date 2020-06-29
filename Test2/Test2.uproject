@@ -13,5 +13,11 @@
 				"UMG"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "SoundVisualizations",
+			"Enabled": true
+		}
 	]
 }

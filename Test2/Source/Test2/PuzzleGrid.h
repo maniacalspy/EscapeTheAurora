@@ -50,7 +50,8 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Puzzle Block")
 		class APuzzleBlock* _pPuzzleActor;
 
-	class AEndLevelTriggers* _pTriggerActor;
+	UPROPERTY(EditAnywhere, Category = "PuzzleGrid")
+		class AEndLevelTriggers* _pTriggerActor;
 
 	void createGrid();
 	void SetBlockStartPosition();
@@ -79,6 +80,8 @@ private:
 	FVector FindRotateAxis(FVector impactNormal);
 
 	void MoveBlock(FVector impactNormal);
+
+	void SetDestinationViaTiles(TArray<GridTile*> DestTiles, FVector Axis);
 
 	void CheckPuzzleSolved();
 

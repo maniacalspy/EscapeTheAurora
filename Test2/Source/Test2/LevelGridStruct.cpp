@@ -35,18 +35,19 @@ extern TT_tileTypes Level_Three_Grid[15] =
 };
 LevelGrid* Level_Three = new LevelGrid(5, 3, 1, 1, Level_Three_Grid);
 
-extern TT_tileTypes Level_Four_Grid[63] =
+extern TT_tileTypes Level_Four_Grid[42] =
 {
-	Basic, Basic, Basic, Basic, Basic, Goal, Basic, Basic, Basic, 
-	Basic, Basic, NT, Basic, Basic, Basic, NT, NT, Basic, 
-	Basic, Basic, Basic, NT, NT, Basic, NT, NT, Basic, 
-	Basic, NT, Basic, Basic, Basic, Basic, Basic, Basic, Basic, 
-	NT, NT, Basic, NT, Basic, NT, NT, NT, Basic, 
-	Basic, Basic, Basic, Basic, Basic,NT, NT, NT, Basic, 
-	Basic, Basic, NT, Basic, Basic, Start, Basic, Basic, Basic
+	Basic, Basic, Basic, Basic, Basic, Goal,
+	Basic, Basic, NT, Basic, Basic, Basic, 
+	Basic, Basic, Basic, NT, NT, Basic, 
+	Basic, NT, Basic, Basic, Basic, Basic, 
+	NT, NT, Basic, NT, Basic, NT, 
+	Basic, Basic, Basic, Basic, Basic,NT,
+	Basic, Basic, NT, Basic, Basic, Start,
 
 };
-LevelGrid* Level_Four = new LevelGrid(7, 9, 1, 1, Level_Four_Grid);
+LevelGrid* Level_Four = new LevelGrid(7, 6, 1, 1, Level_Four_Grid);
+
 
 
 LevelGrid::LevelGrid(int rows, int columns, int startspots, int goalspots, TT_tileTypes* grid)
